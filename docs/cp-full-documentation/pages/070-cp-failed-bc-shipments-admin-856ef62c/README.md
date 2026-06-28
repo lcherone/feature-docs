@@ -16,8 +16,7 @@ Admin listing for shipmnets that have failed to send to Business Central
 
 ## Using This Page
 
-1. Open Failed Shipments from the CP navigation.
-2. Scan the fields in the table to find the failed shipment you need.
+1. Scan the fields in the table to find the failed shipment you need.
 
 ## What You Can Do
 
@@ -25,18 +24,7 @@ Admin listing for shipmnets that have failed to send to Business Central
 
 Review the visible fields to check what already exists.
 
-- Field: Locale
-- Field: Error
-- Field: Error Created
-- Field: Automated Status
-- Field: Manual Status
-- Field: Date Issue Resolved
-- Field: Order Reference
-- Field: Order Status
-- Field: Shipment Reference
-- Field: Shipment Status
-- Field: Shipment Created
-- Field: Shipment Value
+- Visible fields include Locale, Error, Error Created, Automated Status, Manual Status, Date Issue Resolved, Order Reference, and Order Status.
 
 Example rows:
 
@@ -46,7 +34,7 @@ Example rows:
 | EU | {"validation_error":"Order must be sent first"} | 9:59am - 12 Jun 26 | Unresolved |  |  |
 | US | {"validation_error":"Order must be sent first"} | 9:59am - 12 Jun 26 | Unresolved |  |  |
 
-## Available Actions
+## Page Sections
 
 - Unresolved
 - All

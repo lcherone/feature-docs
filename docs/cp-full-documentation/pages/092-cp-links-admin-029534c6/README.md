@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/links-admin](https://sohohome.com/cp/links-admin)
 
-Links covers the admin screen used to review and maintain links.
+for links Maintain a list of redirects from an urlname to an url
 
 ![Links overview](images/page-desktop.png)
 
@@ -12,7 +12,7 @@ Links covers the admin screen used to review and maintain links.
 
 ## Related Pages
 
-- [Edit Link](../093-cp-links-admin-edit-1-6368353b/README.md): Open an existing link when you need to check the setup or make a change.
+- [Edit Link](../093-cp-links-admin-edit-id-6368353b/README.md): Open an existing link when you need to check the setup or make a change.
 
 ## How It Works
 
@@ -20,8 +20,7 @@ Links covers the admin screen used to review and maintain links.
 
 ## Using This Page
 
-1. Open Links from the CP navigation.
-2. Search or filter until you find the link you need.
+1. Search or filter until you find the link you need.
 
 ## What You Can Do
 
@@ -29,44 +28,8 @@ Links covers the admin screen used to review and maintain links.
 
 Search or filter the visible fields to find the link you need.
 
-- Field: Name
-- Field: From
-- Field: Url
+- Visible fields include Name, From, and Url.
 
 ### Update settings
 
 Use the fields on this screen to make the change, then save once the values are correct.
-
-## Key Settings
-
-The sections below highlight the settings people are most likely to change.
-
-### listing-link-form
-
-#### Link Name
-
-![Link Name](images/field-002-inline-1-link-name.png)
-
-*Link Name setting*
-
-Set the Link Name value for each relevant row in this section.
-
-**Validation:** Required.
-
-#### Link Urlname
-
-![Link Urlname](images/field-003-inline-1-link-urlname.png)
-
-*Link Urlname setting*
-
-Set the Link Urlname value for each relevant row in this section.
-
-#### Link URL
-
-![Link URL](images/field-004-inline-1-link-url.png)
-
-*Link URL setting*
-
-Set the Link URL value for each relevant row in this section.
-
-**Validation:** Required.

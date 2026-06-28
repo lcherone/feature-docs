@@ -1,0 +1,63 @@
+{
+  "siteName": "Soho Home CP",
+  "generatedAt": "2026-06-28T02:05:33.394Z",
+  "runDir": "/Volumes/casey/shares/clients/soho-home/dev/releases/20231009091323/.vscode/feature-docs/docs/cp-design-copy-check",
+  "pageCount": 1,
+  "crawl": {
+    "skippedDuplicateRoutes": 0,
+    "skippedDisallowedUrls": 0,
+    "skippedInaccessibleUrls": 0
+  },
+  "pages": [
+    {
+      "title": "Design Service Settings",
+      "indexTitle": "Design Service Settings",
+      "description": "Design Service Settings controls the admin-managed settings and content used by the Design Service journey.",
+      "url": "https://dev.soho-home.local/cp/design-service-settings-admin",
+      "publicUrl": "https://sohohome.com/cp/design-service-settings-admin",
+      "routeKey": "https://dev.soho-home.local|cp|design-service-settings-admin|index|design-service-settings-admin",
+      "routeMetadata": null,
+      "slug": "001-cp-design-service-settings-admin-a125ea54",
+      "docFile": "pages/001-cp-design-service-settings-admin-a125ea54/README.md",
+      "codeDocFile": ".vscode/code-docs/cp-design-service-settings-admin.md",
+      "relatedPages": [],
+      "screenshots": [
+        "pages/001-cp-design-service-settings-admin-a125ea54/images/page-desktop.png"
+      ],
+      "fieldScreenshots": [
+        "pages/001-cp-design-service-settings-admin-a125ea54/images/field-001-terms-header.png"
+      ],
+      "fieldCount": 3,
+      "codeContext": {
+        "route": {
+          "controllerAlias": "design-service-settings-admin",
+          "action": "index",
+          "pattern": ""
+        },
+        "controller": {
+          "alias": "design-service-settings-admin",
+          "className": "Soho\\Ecom\\Controller\\DesignServiceSettingsAdmin",
+          "file": "vendor/soho/ecom/src/Controller/DesignServiceSettingsAdmin.php",
+          "actionMethod": "indexAction",
+          "hasActionMethod": false
+        },
+        "model": {
+          "alias": "DesignService_Settings",
+          "className": "Soho\\Ecom\\Model\\DesignServiceSettings",
+          "file": "vendor/soho/ecom/src/Model/DesignServiceSettings.php",
+          "xmlFile": "vendor/soho/ecom/src/Model/DesignServiceSettings.xml",
+          "itemName": "design_service_setting",
+          "tableName": "design_service_settings"
+        },
+        "featureSummary": {
+          "description": "Design Service Settings controls the admin-managed settings and content used by the Design Service journey.",
+          "notes": [
+            "Makes sure the transfer property is set appropriately.",
+            "The key fields are Terms Header, Terms Copy, and Terms Checkbox Copy, which explain what the record is for and how it can be used."
+          ]
+        }
+      },
+      "technicalError": ""
+    }
+  ]
+}

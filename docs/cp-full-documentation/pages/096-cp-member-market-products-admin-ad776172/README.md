@@ -12,7 +12,7 @@ Admin listing for member market products.
 
 ## Related Pages
 
-- [Edit Member Market Product Sku](../097-cp-member-market-products-admin-edit-1-4232c8a4/README.md): Open an existing member market product sku when you need to check the setup or make a change.
+- [Edit Member Market Product Sku](../097-cp-member-market-products-admin-edit-id-4232c8a4/README.md): Open an existing member market product sku when you need to check the setup or make a change.
 
 ## How It Works
 
@@ -21,8 +21,7 @@ Admin listing for member market products.
 
 ## Using This Page
 
-1. Open Member Market Product Skus from the CP navigation.
-2. Search or filter until you find the member market product sku you need.
+1. Search or filter until you find the member market product sku you need.
 
 ## What You Can Do
 
@@ -30,9 +29,7 @@ Admin listing for member market products.
 
 Search or filter the visible fields to find the member market product sku you need.
 
-- Field: SKU
-- Field: Status
-- Field: Commission %
+- Visible fields include SKU, Status, and Commission %.
 
 Example rows:
 

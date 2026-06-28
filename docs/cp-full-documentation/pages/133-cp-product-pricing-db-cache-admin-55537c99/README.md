@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/product-pricing-db-cache-admin](https://sohohome.com/cp/product-pricing-db-cache-admin)
 
-Controller for DB Cache of current pricing
+Pricing Cache lets admins find and review existing pricing cache.
 
 ![Pricing Cache overview](images/page-desktop.png)
 
@@ -18,8 +18,7 @@ Controller for DB Cache of current pricing
 
 ## Using This Page
 
-1. Open Pricing Cache from the CP navigation.
-2. Search or filter until you find the pricing cache you need.
+1. Search or filter until you find the pricing cache you need.
 
 ## What You Can Do
 
@@ -27,12 +26,7 @@ Controller for DB Cache of current pricing
 
 Search or filter the visible fields to find the pricing cache you need.
 
-- Field: Country
-- Field: SKU
-- Field: Base Price
-- Field: Sale Price
-- Field: Created
-- Field: Updated
+- Visible fields include Country, SKU, Base Price, Sale Price, Created, and Updated.
 
 Example rows:
 

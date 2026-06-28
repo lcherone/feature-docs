@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/shipping-duo-settings-admin](https://sohohome.com/cp/shipping-duo-settings-admin)
 
-Duo Settings covers the admin screen used to review and maintain duo settings.
+Duo Shipping Settings.
 
 ![Duo Settings overview](images/page-desktop.png)
 
@@ -17,8 +17,7 @@ Duo Settings covers the admin screen used to review and maintain duo settings.
 
 ## Using This Page
 
-1. Open Duo Settings from the CP navigation.
-2. Scan the fields in the table to find the duo setting you need.
+1. Scan the fields in the table to find the duo setting you need.
 
 ## What You Can Do
 
@@ -26,9 +25,7 @@ Duo Settings covers the admin screen used to review and maintain duo settings.
 
 Review the visible fields to check what already exists.
 
-- Field: Hub Name
-- Field: Site Name
-- Field: Post-Code Coverage
+- Visible fields include Hub Name, Site Name, and Post-Code Coverage.
 
 Example rows:
 
@@ -48,19 +45,11 @@ Use the fields on this screen to make the change, then save once the values are 
 
 #### LGW - Gatwick
 
-![LGW - Gatwick](images/field-001-lgw-gatwick.png)
-
-*LGW - Gatwick setting*
-
 Turn this on when LGW - gatwick should apply. Leave it off when it should not.
 
 **Notes:** Allow dates from these depos
 
 #### BRS - Bristol
-
-![BRS - Bristol](images/field-002-brs-bristol.png)
-
-*BRS - Bristol setting*
 
 Turn this on when BRS - bristol should apply. Leave it off when it should not.
 
@@ -68,19 +57,11 @@ Turn this on when BRS - bristol should apply. Leave it off when it should not.
 
 #### IPW - Ipswitch
 
-![IPW - Ipswitch](images/field-003-ipw-ipswitch.png)
-
-*IPW - Ipswitch setting*
-
 Turn this on when IPW - ipswitch should apply. Leave it off when it should not.
 
 **Notes:** Allow dates from these depos
 
 #### GLA - Coatbridge
-
-![GLA - Coatbridge](images/field-004-gla-coatbridge.png)
-
-*GLA - Coatbridge setting*
 
 Turn this on when GLA - coatbridge should apply. Leave it off when it should not.
 
@@ -88,29 +69,17 @@ Turn this on when GLA - coatbridge should apply. Leave it off when it should not
 
 #### NCL - Gateshead
 
-![NCL - Gateshead](images/field-005-ncl-gateshead.png)
-
-*NCL - Gateshead setting*
-
 Turn this on when NCL - gateshead should apply. Leave it off when it should not.
 
 **Notes:** Allow dates from these depos
 
 #### ORM - Northampton
 
-![ORM - Northampton](images/field-006-orm-northampton.png)
-
-*ORM - Northampton setting*
-
 Turn this on when ORM - northampton should apply. Leave it off when it should not.
 
 **Notes:** Allow dates from these depos
 
 #### Fetch Extended Dates?
-
-![Fetch Extended Dates?](images/field-007-fetch-extended-dates.png)
-
-*Fetch Extended Dates? setting*
 
 Turn this on when fetch extended dates? should apply. Leave it off when it should not.
 

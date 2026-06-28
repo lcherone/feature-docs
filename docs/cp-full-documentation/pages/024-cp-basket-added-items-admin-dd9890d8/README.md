@@ -12,12 +12,11 @@ Basket - Added Items lets admins find and review existing basket - added items.
 
 ## Related Pages
 
-- [View Basket - Added Item](../025-cp-basket-added-items-admin-view-1-c41a1c99/README.md): Open an existing basket - added item when you need to check the full details.
+- [View Basket - Added Item](../025-cp-basket-added-items-admin-view-id-c41a1c99/README.md): Open an existing basket - added item when you need to check the full details.
 
 ## Using This Page
 
-1. Open Basket - Added Items from the CP navigation.
-2. Scan the fields in the table to find the basket - added item you need.
+1. Scan the fields in the table to find the basket - added item you need.
 
 ## What You Can Do
 
@@ -25,16 +24,12 @@ Basket - Added Items lets admins find and review existing basket - added items.
 
 Review the visible fields to check what already exists.
 
-- Field: Item
-- Field: Customer
-- Field: Count
-- Field: Created
-- Field: Last Updated
+- Visible fields include Item, Customer, Count, Created, and Last Updated.
 
 Example rows:
 
 | Item | Customer | Count | Created | Last Updated |
 | --- | --- | --- | --- | --- |
-| Verity Floor Lamp | karenhartleythomas@hotmail.co.uk | 1 | 9:35am - 10 Nov 25 | 9:35am - 10 Nov 25 |
-| Lyla Footstool, Wimpole Stripe | ewahemmerling@yahoo.com | 1 | 9:37am - 10 Nov 25 | 9:37am - 10 Nov 25 |
-| Janie Portable Lamp, Pink | ewahemmerling@yahoo.com | 1 | 9:37am - 10 Nov 25 | 9:37am - 10 Nov 25 |
+| [hidden] | [hidden] | 1 | 9:35am - 10 Nov 25 | 9:35am - 10 Nov 25 |
+| [hidden] | [hidden] | 1 | 9:37am - 10 Nov 25 | 9:37am - 10 Nov 25 |
+| [hidden] | [hidden] | 1 | 9:37am - 10 Nov 25 | 9:37am - 10 Nov 25 |

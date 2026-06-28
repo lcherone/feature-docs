@@ -1,6 +1,6 @@
 # Cookie settings
 
-[Home](../../index.md) / Cookie settings
+[Home](../../index.md) / Cookie Settings
 
 URL: [https://sohohome.com/cp/cookies-settings-admin](https://sohohome.com/cp/cookies-settings-admin)
 
@@ -27,25 +27,17 @@ Use the fields on this screen to make the change, then save once the values are 
 
 #### Yes
 
-![Yes](images/field-001-yes.png)
-
-*Yes setting*
-
 Choose the option that matches this yes.
 
 **Notes:** optional
 
 #### No
 
-![No](images/field-002-no.png)
-
-*No setting*
-
 Choose the option that matches this no.
 
 **Notes:** optional
 
-## Available Actions
+## Page Sections
 
 - Main
 - Google Consent Mode

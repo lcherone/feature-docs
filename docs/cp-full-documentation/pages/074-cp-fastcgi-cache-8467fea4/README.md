@@ -27,7 +27,7 @@ FastCGI Cache shows the details for this fastcgi cache.
 
 Use the expected format shown by the placeholder: "https://d3r.com/example".
 
-## Available Actions
+## Page Sections
 
 - Purge URL
 - Purge all

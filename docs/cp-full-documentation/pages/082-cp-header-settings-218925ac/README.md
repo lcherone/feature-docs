@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/header-settings](https://sohohome.com/cp/header-settings)
 
-Header Settings covers the admin screen used to review and maintain header settings.
+Header Settings
 
 ![Header Settings overview](images/page-desktop.png)
 

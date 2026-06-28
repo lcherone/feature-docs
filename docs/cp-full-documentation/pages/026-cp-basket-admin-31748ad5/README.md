@@ -1,10 +1,10 @@
 # Basket Sidebar content
 
-[Home](../../index.md) / Basket Sidebar content
+[Home](../../index.md) / Basket Sidebar Content
 
 URL: [https://sohohome.com/cp/basket-admin](https://sohohome.com/cp/basket-admin)
 
-Basket Sidebar content covers the admin screen used to review and maintain basket sidebar content.
+Basket Sidebar content contains the fields an admin uses to maintain this basket sidebar content.
 
 ![Basket Sidebar content overview](images/page-desktop.png)
 
@@ -45,7 +45,7 @@ Add the security note.
 
 **Validation:** Required.
 
-## Available Actions
+## Page Sections
 
 - Setup
 - Delivery

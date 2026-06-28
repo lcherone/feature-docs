@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/stockitem-specifications-admin](https://sohohome.com/cp/stockitem-specifications-admin)
 
-SKU Specifications covers the admin screen used to review and maintain sku specifications.
+Local implementation of stock item specification
 
 ![SKU Specifications overview](images/page-desktop.png)
 
@@ -17,8 +17,7 @@ SKU Specifications covers the admin screen used to review and maintain sku speci
 
 ## Using This Page
 
-1. Open SKU Specifications from the CP navigation.
-2. Search or filter until you find the SKU specification you need.
+1. Search or filter until you find the SKU specification you need.
 
 ## What You Can Do
 
@@ -26,18 +25,7 @@ SKU Specifications covers the admin screen used to review and maintain sku speci
 
 Search or filter the visible fields to find the SKU specification you need.
 
-- Field: Stock Item SKU
-- Field: Stock Item Title
-- Field: Stock Item Status
-- Field: Item Category
-- Field: Main Category
-- Field: Season
-- Field: Discontinued Regions
-- Field: Additional dimensions
-- Field: Adjustable shelf?
-- Field: Arm height
-- Field: Assembled size
-- Field: Assembly required
+- Visible fields include Stock Item SKU, Stock Item Title, Stock Item Status, Item Category, Main Category, Season, Discontinued Regions, and Additional dimensions.
 
 Example rows:
 

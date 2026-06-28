@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/auto-renewal-summary-admin](https://sohohome.com/cp/auto-renewal-summary-admin)
 
-Auto Renewal Summaries covers the admin screen used to review and maintain auto renewal summaries.
+Auto Renewal Summary.
 
 ![Auto Renewal Summaries overview](images/page-desktop.png)
 
@@ -12,7 +12,7 @@ Auto Renewal Summaries covers the admin screen used to review and maintain auto 
 
 ## Related Pages
 
-- [View Auto Renewal Summary](../023-cp-auto-renewal-summary-admin-view-1901-6650a104/README.md): Open an existing auto renewal summary when you need to check the full details.
+- [View Auto Renewal Summary](../023-cp-auto-renewal-summary-admin-view-id-6650a104/README.md): Open an existing auto renewal summary when you need to check the full details.
 
 ## How It Works
 
@@ -22,8 +22,7 @@ Auto Renewal Summaries covers the admin screen used to review and maintain auto 
 
 ## Using This Page
 
-1. Open Auto Renewal Summaries from the CP navigation.
-2. Scan the fields in the table to find the auto renewal summary you need.
+1. Scan the fields in the table to find the auto renewal summary you need.
 
 ## What You Can Do
 
@@ -31,15 +30,7 @@ Auto Renewal Summaries covers the admin screen used to review and maintain auto 
 
 Review the visible fields to check what already exists.
 
-- Field: Type
-- Field: Run Date
-- Field: Locale
-- Field: Dry Run?
-- Field: Initial Count
-- Field: Successful Count
-- Field: Discarded Count
-- Field: Failed Count
-- Field: Created
+- Visible fields include Type, Run Date, Locale, Dry Run?, Initial Count, Successful Count, Discarded Count, and Failed Count.
 
 Example rows:
 
@@ -49,7 +40,7 @@ Example rows:
 | Auto Renewals | 12:00am - 25 Jun 25 | EU | No | 0 | 0 |
 | Auto Renewals | 12:00am - 25 Jun 25 | UK | No | 6 | 6 |
 
-## Available Actions
+## Page Sections
 
 - Summary
 - Successful

@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/attribute-labels-admin](https://sohohome.com/cp/attribute-labels-admin)
 
-List the attribute labels
+Local label
 
 ![Attribute Labels overview](images/page-desktop.png)
 
@@ -12,7 +12,7 @@ List the attribute labels
 
 ## Related Pages
 
-- [Edit Attribute Label](../020-cp-attribute-labels-admin-edit-1-a43265f5/README.md): Open an existing attribute label when you need to check the setup or make a change.
+- [Edit Attribute Label](../020-cp-attribute-labels-admin-edit-id-a43265f5/README.md): Open an existing attribute label when you need to check the setup or make a change.
 
 ## How It Works
 
@@ -22,8 +22,7 @@ List the attribute labels
 
 ## Using This Page
 
-1. Open Attribute Labels from the CP navigation.
-2. Search or filter until you find the attribute label you need.
+1. Search or filter until you find the attribute label you need.
 
 ## What You Can Do
 
@@ -31,8 +30,7 @@ List the attribute labels
 
 Search or filter the visible fields to find the attribute label you need.
 
-- Field: Title
-- Field: Type
+- Visible fields include Title and Type.
 
 Example rows:
 

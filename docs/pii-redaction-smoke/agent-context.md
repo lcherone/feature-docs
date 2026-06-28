@@ -1,0 +1,264 @@
+# Soho Home CP Feature Docs Agent Context
+
+Generated: 2026-06-28T01:08:15.182Z
+
+Use this file as the handoff for Codex to produce final operator documentation. Read the referenced controller, model, XML, and view files before finalising page purpose, field behaviour, validation, and side effects.
+
+## store admin
+
+- URL: https://dev.soho-home.local/cp/store-admin
+- Documentation route key: https://dev.soho-home.local|cp|store-admin|index|store-admin
+- Draft doc: pages/001-cp-store-admin-998dd625/README.md
+- Code analysis doc: .vscode/code-docs/cp-store-admin.md
+- Page screenshots: pages/001-cp-store-admin-998dd625/images/page-desktop.png
+- Field count: 3
+- Controller: App\Ecom\StoreControllerAdmin (store-admin)
+- Controller file: src/Ecom/StoreControllerAdmin.php
+- Action method: indexAction
+
+### DOM Fields
+
+- 1. Keyword search (text)
+  - DOM name: `search`
+  - Screenshot: pages/001-cp-store-admin-998dd625/images/field-001-keyword-search.png
+- 2. select (select)
+  - Screenshot: pages/001-cp-store-admin-998dd625/images/field-002-select.png
+- 3. select (select)
+  - Screenshot: pages/001-cp-store-admin-998dd625/images/field-003-select.png
+
+### Source References
+
+- provider: src/Ecom/Provider.php
+- controller: src/Ecom/StoreControllerAdmin.php
+- parent-controller: vendor/soho/ecom/src/Controller/StoreAdmin.php
+- referenced-class: src/Ecom/Model/Address.php
+- referenced-class: src/Ecom/Model/BasketPage.php
+- referenced-class: src/Ecom/Model/LineItem.php
+- referenced-class: src/Ecom/Model/Order.php
+- referenced-class: src/Ecom/Model/ThanksPage.php
+- referenced-class: src/Ecom/Model/Customer.php
+- referenced-class: src/Ecom/Model/GiftMessage.php
+- referenced-class: src/Ecom/Model/Shipment.php
+- referenced-class: src/Ecom/Shipping/Model/Option.php
+- referenced-class: src/Ecom/Shipping/Model/Bespoke.php
+- referenced-class: src/Ecom/Offers/Model/Offer.php
+- referenced-class: src/Ecom/Model/CrossSellSettings.php
+- referenced-class: src/Ecom/Model/MtoSettings.php
+- referenced-class: src/Ecom/BasketController.php
+- referenced-class: src/Ecom/BasketAdminController.php
+- referenced-class: src/Ecom/CheckoutController.php
+- referenced-class: src/Ecom/StoreControllerAdmin.php
+- referenced-class: src/Ecom/AdminBasket/Controller/Basket.php
+- referenced-class: src/Ecom/ShipmentsAdminController.php
+- referenced-class: src/Ecom/Shipping/OptionsAdmin.php
+- referenced-class: src/Ecom/Mail/Mailer.php
+- referenced-class: src/Ecom/Mail/ServiceMailer.php
+- referenced-class: vendor/d3r/payment/src/Mailer/AdyenPayByLink.php
+- referenced-class: src/Ecom/Mail/PayByLink.php
+- referenced-class: src/Ecom/Mail/QuoteMailer.php
+- referenced-class: src/Ecom/Basket.php
+- referenced-class: src/Ecom/Shipping/Handler.php
+- referenced-class: src/Ecom/Offers/Type/Basket.php
+- referenced-class: src/Ecom/Offers/Type/ProductDiscount.php
+- referenced-class: src/Ecom/Offers/Type/FreeProduct.php
+- referenced-class: src/Ecom/Offers/Type/ProductFixedDiscount.php
+- referenced-class: src/Ecom/Offers/Type/Shipping.php
+- referenced-class: src/Ecom/Offers/Type/FreeProductSelection.php
+- referenced-class: vendor/d3r/checkout/src/OrderProcessor.php
+- referenced-class: src/Ecom/OrderProcessor.php
+- referenced-class: vendor/d3r/checkout/src/Fieldset/Order.php
+- referenced-class: src/Ecom/Checkout/Fieldset/Order.php
+- referenced-class: vendor/d3r/checkout/src/Fieldset/Customer.php
+- referenced-class: src/Ecom/Checkout/Fieldset/Customer.php
+- referenced-class: vendor/d3r/checkout/src/Fieldset/BillingAddress.php
+- referenced-class: src/Ecom/Checkout/Fieldset/BillingAddress.php
+- referenced-class: vendor/d3r/checkout/src/Payment/MethodsInterface.php
+- referenced-class: vendor/d3r/flipflop/src/ManagerInterface.php
+- referenced-class: src/Ecom/EventHandler.php
+- referenced-class: vendor/d3r/ecom-admin-basket/src/ItemFinder/Entity/Section.php
+- referenced-class: src/Ecom/Action/Accept.php
+- referenced-class: src/Ecom/Action/Quote.php
+- referenced-class: src/Ecom/Action/Quoted.php
+- referenced-class: src/Ecom/Action/CloseQuote.php
+- referenced-class: src/Ecom/Action/InteriorDesign.php
+- referenced-class: src/Ecom/Action/UnInteriorDesign.php
+- referenced-class: src/Ecom/Action/RetailAmsterdam.php
+- referenced-class: src/Ecom/Action/RetailAustin.php
+- referenced-class: src/Ecom/Action/RetailBicester.php
+- referenced-class: src/Ecom/Action/RetailBerlin.php
+- referenced-class: src/Ecom/Action/RetailCarnaby.php
+- referenced-class: src/Ecom/Action/RetailChicagoStudio.php
+- referenced-class: src/Ecom/Action/RetailDumbo.php
+- referenced-class: src/Ecom/Action/RetailKingsRoad.php
+- referenced-class: src/Ecom/Action/RetailMelrose.php
+- referenced-class: src/Ecom/Action/RetailMiamiBeachHouse.php
+- referenced-class: src/Ecom/Action/RetailNashville.php
+- referenced-class: src/Ecom/Action/RetailRome.php
+- referenced-class: src/Ecom/Action/RetailSampleSale.php
+- referenced-class: src/Ecom/Action/RetailTrainingUk.php
+- referenced-class: src/Ecom/Action/RetailTrainingUs.php
+- referenced-class: src/Ecom/Action/RetailLAWarehouse.php
+- referenced-class: src/Ecom/Action/RetailWestbourneGrove.php
+- referenced-class: src/Ecom/Action/RetailWholesale.php
+- referenced-class: src/Ecom/Action/RetailWoodshed.php
+- referenced-class: src/Ecom/Action/Edit.php
+- referenced-class: src/Ecom/Action/SendQuote.php
+- referenced-class: src/Ecom/Action/ViewQuote.php
+- referenced-class: src/Ecom/Action/CreatePayByLink.php
+- referenced-class: src/Ecom/Action/ResendConfirmation.php
+- referenced-class: src/Ecom/Action/AbandonedBasketEmail.php
+- referenced-class: src/Ecom/Action/RefundToVoucher.php
+- referenced-class: vendor/soho/ecom/src/Action/ResendGEPBL.php
+- referenced-class: src/Ecom/State/Open.php
+- referenced-class: src/Ecom/State/Quote.php
+- referenced-class: src/Ecom/State/ClosedQuote.php
+- referenced-class: src/Ecom/State/InvoiceRaised.php
+- referenced-class: src/Ecom/Flag/Quoted.php
+- referenced-class: src/Ecom/Flag/InteriorDesign.php
+- referenced-class: src/Ecom/Flag/RetailAmsterdam.php
+- referenced-class: src/Ecom/Flag/RetailAustin.php
+- referenced-class: src/Ecom/Flag/RetailBicester.php
+- referenced-class: src/Ecom/Flag/RetailBerlin.php
+- referenced-class: src/Ecom/Flag/RetailCarnaby.php
+- referenced-class: src/Ecom/Flag/RetailChicagoStudio.php
+- referenced-class: src/Ecom/Flag/RetailDumbo.php
+- referenced-class: src/Ecom/Flag/RetailKingsRoad.php
+- referenced-class: src/Ecom/Flag/RetailMelrose.php
+- referenced-class: src/Ecom/Flag/RetailMiamiBeachHouse.php
+- referenced-class: src/Ecom/Flag/RetailNashville.php
+- referenced-class: src/Ecom/Flag/RetailRome.php
+- referenced-class: src/Ecom/Flag/RetailSampleSale.php
+- referenced-class: src/Ecom/Flag/RetailTrainingUk.php
+- referenced-class: src/Ecom/Flag/RetailTrainingUs.php
+- referenced-class: src/Ecom/Flag/RetailLAWarehouse.php
+- referenced-class: src/Ecom/Flag/RetailWestbourneGrove.php
+- referenced-class: src/Ecom/Flag/RetailWholesale.php
+- referenced-class: src/Ecom/Flag/RetailWoodshed.php
+
+## Store Show
+
+- URL: https://dev.soho-home.local/cp/store-admin/show/:id
+- Documentation route key: https://dev.soho-home.local|cp|store-admin|show|store-admin/show/:identifier
+- Draft doc: pages/002-cp-store-admin-show-id-03c4a77f/README.md
+- Code analysis doc: .vscode/code-docs/cp-store-admin-show.md
+- Page screenshots: pages/002-cp-store-admin-show-id-03c4a77f/images/page-desktop.png
+- Field count: 2
+- Controller: App\Ecom\StoreControllerAdmin (store-admin)
+- Controller file: src/Ecom/StoreControllerAdmin.php
+- Action method: showAction (inherited or unresolved)
+
+### DOM Fields
+
+- 1. select_retail_flag (select)
+  - Screenshot: pages/002-cp-store-admin-show-id-03c4a77f/images/field-001-select-retail-flag.png
+- 2. Search for admin... (text)
+  - Screenshot: pages/002-cp-store-admin-show-id-03c4a77f/images/field-002-search-for-admin.png
+
+### Source References
+
+- provider: src/Ecom/Provider.php
+- controller: src/Ecom/StoreControllerAdmin.php
+- parent-controller: vendor/soho/ecom/src/Controller/StoreAdmin.php
+- referenced-class: src/Ecom/Model/Address.php
+- referenced-class: src/Ecom/Model/BasketPage.php
+- referenced-class: src/Ecom/Model/LineItem.php
+- referenced-class: src/Ecom/Model/Order.php
+- referenced-class: src/Ecom/Model/ThanksPage.php
+- referenced-class: src/Ecom/Model/Customer.php
+- referenced-class: src/Ecom/Model/GiftMessage.php
+- referenced-class: src/Ecom/Model/Shipment.php
+- referenced-class: src/Ecom/Shipping/Model/Option.php
+- referenced-class: src/Ecom/Shipping/Model/Bespoke.php
+- referenced-class: src/Ecom/Offers/Model/Offer.php
+- referenced-class: src/Ecom/Model/CrossSellSettings.php
+- referenced-class: src/Ecom/Model/MtoSettings.php
+- referenced-class: src/Ecom/BasketController.php
+- referenced-class: src/Ecom/BasketAdminController.php
+- referenced-class: src/Ecom/CheckoutController.php
+- referenced-class: src/Ecom/StoreControllerAdmin.php
+- referenced-class: src/Ecom/AdminBasket/Controller/Basket.php
+- referenced-class: src/Ecom/ShipmentsAdminController.php
+- referenced-class: src/Ecom/Shipping/OptionsAdmin.php
+- referenced-class: src/Ecom/Mail/Mailer.php
+- referenced-class: src/Ecom/Mail/ServiceMailer.php
+- referenced-class: vendor/d3r/payment/src/Mailer/AdyenPayByLink.php
+- referenced-class: src/Ecom/Mail/PayByLink.php
+- referenced-class: src/Ecom/Mail/QuoteMailer.php
+- referenced-class: src/Ecom/Basket.php
+- referenced-class: src/Ecom/Shipping/Handler.php
+- referenced-class: src/Ecom/Offers/Type/Basket.php
+- referenced-class: src/Ecom/Offers/Type/ProductDiscount.php
+- referenced-class: src/Ecom/Offers/Type/FreeProduct.php
+- referenced-class: src/Ecom/Offers/Type/ProductFixedDiscount.php
+- referenced-class: src/Ecom/Offers/Type/Shipping.php
+- referenced-class: src/Ecom/Offers/Type/FreeProductSelection.php
+- referenced-class: vendor/d3r/checkout/src/OrderProcessor.php
+- referenced-class: src/Ecom/OrderProcessor.php
+- referenced-class: vendor/d3r/checkout/src/Fieldset/Order.php
+- referenced-class: src/Ecom/Checkout/Fieldset/Order.php
+- referenced-class: vendor/d3r/checkout/src/Fieldset/Customer.php
+- referenced-class: src/Ecom/Checkout/Fieldset/Customer.php
+- referenced-class: vendor/d3r/checkout/src/Fieldset/BillingAddress.php
+- referenced-class: src/Ecom/Checkout/Fieldset/BillingAddress.php
+- referenced-class: vendor/d3r/checkout/src/Payment/MethodsInterface.php
+- referenced-class: vendor/d3r/flipflop/src/ManagerInterface.php
+- referenced-class: src/Ecom/EventHandler.php
+- referenced-class: vendor/d3r/ecom-admin-basket/src/ItemFinder/Entity/Section.php
+- referenced-class: src/Ecom/Action/Accept.php
+- referenced-class: src/Ecom/Action/Quote.php
+- referenced-class: src/Ecom/Action/Quoted.php
+- referenced-class: src/Ecom/Action/CloseQuote.php
+- referenced-class: src/Ecom/Action/InteriorDesign.php
+- referenced-class: src/Ecom/Action/UnInteriorDesign.php
+- referenced-class: src/Ecom/Action/RetailAmsterdam.php
+- referenced-class: src/Ecom/Action/RetailAustin.php
+- referenced-class: src/Ecom/Action/RetailBicester.php
+- referenced-class: src/Ecom/Action/RetailBerlin.php
+- referenced-class: src/Ecom/Action/RetailCarnaby.php
+- referenced-class: src/Ecom/Action/RetailChicagoStudio.php
+- referenced-class: src/Ecom/Action/RetailDumbo.php
+- referenced-class: src/Ecom/Action/RetailKingsRoad.php
+- referenced-class: src/Ecom/Action/RetailMelrose.php
+- referenced-class: src/Ecom/Action/RetailMiamiBeachHouse.php
+- referenced-class: src/Ecom/Action/RetailNashville.php
+- referenced-class: src/Ecom/Action/RetailRome.php
+- referenced-class: src/Ecom/Action/RetailSampleSale.php
+- referenced-class: src/Ecom/Action/RetailTrainingUk.php
+- referenced-class: src/Ecom/Action/RetailTrainingUs.php
+- referenced-class: src/Ecom/Action/RetailLAWarehouse.php
+- referenced-class: src/Ecom/Action/RetailWestbourneGrove.php
+- referenced-class: src/Ecom/Action/RetailWholesale.php
+- referenced-class: src/Ecom/Action/RetailWoodshed.php
+- referenced-class: src/Ecom/Action/Edit.php
+- referenced-class: src/Ecom/Action/SendQuote.php
+- referenced-class: src/Ecom/Action/ViewQuote.php
+- referenced-class: src/Ecom/Action/CreatePayByLink.php
+- referenced-class: src/Ecom/Action/ResendConfirmation.php
+- referenced-class: src/Ecom/Action/AbandonedBasketEmail.php
+- referenced-class: src/Ecom/Action/RefundToVoucher.php
+- referenced-class: vendor/soho/ecom/src/Action/ResendGEPBL.php
+- referenced-class: src/Ecom/State/Open.php
+- referenced-class: src/Ecom/State/Quote.php
+- referenced-class: src/Ecom/State/ClosedQuote.php
+- referenced-class: src/Ecom/State/InvoiceRaised.php
+- referenced-class: src/Ecom/Flag/Quoted.php
+- referenced-class: src/Ecom/Flag/InteriorDesign.php
+- referenced-class: src/Ecom/Flag/RetailAmsterdam.php
+- referenced-class: src/Ecom/Flag/RetailAustin.php
+- referenced-class: src/Ecom/Flag/RetailBicester.php
+- referenced-class: src/Ecom/Flag/RetailBerlin.php
+- referenced-class: src/Ecom/Flag/RetailCarnaby.php
+- referenced-class: src/Ecom/Flag/RetailChicagoStudio.php
+- referenced-class: src/Ecom/Flag/RetailDumbo.php
+- referenced-class: src/Ecom/Flag/RetailKingsRoad.php
+- referenced-class: src/Ecom/Flag/RetailMelrose.php
+- referenced-class: src/Ecom/Flag/RetailMiamiBeachHouse.php
+- referenced-class: src/Ecom/Flag/RetailNashville.php
+- referenced-class: src/Ecom/Flag/RetailRome.php
+- referenced-class: src/Ecom/Flag/RetailSampleSale.php
+- referenced-class: src/Ecom/Flag/RetailTrainingUk.php
+- referenced-class: src/Ecom/Flag/RetailTrainingUs.php
+- referenced-class: src/Ecom/Flag/RetailLAWarehouse.php
+- referenced-class: src/Ecom/Flag/RetailWestbourneGrove.php
+- referenced-class: src/Ecom/Flag/RetailWholesale.php
+- referenced-class: src/Ecom/Flag/RetailWoodshed.php

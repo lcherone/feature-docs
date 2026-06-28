@@ -1,10 +1,10 @@
 # Shipping Exclusions
 
-[Home](../../index.md) / Create Shipping Exclusion
+[Home](../../index.md) / [Shipping Exclusions](../172-cp-shipping-exclusions-admin-e4ddfa2f/README.md) / Create Shipping Exclusion
 
 URL: [https://sohohome.com/cp/shipping-exclusions-admin/edit/new](https://sohohome.com/cp/shipping-exclusions-admin/edit/new)
 
-Shipping Exclusions covers the admin screen used to review and maintain shipping exclusions.
+Dates that don't count as working days
 
 ![Shipping Exclusions overview](images/page-desktop.png)
 
@@ -12,7 +12,7 @@ Shipping Exclusions covers the admin screen used to review and maintain shipping
 
 ## Related Pages
 
-- [Shipping Exclusions](../172-cp-shipping-exclusions-admin-e4ddfa2f/README.md): Shipping Exclusions covers the admin screen used to review and maintain shipping exclusions.
+- [Shipping Exclusions](../172-cp-shipping-exclusions-admin-e4ddfa2f/README.md): Dates that don't count as working days
 
 ## How It Works
 

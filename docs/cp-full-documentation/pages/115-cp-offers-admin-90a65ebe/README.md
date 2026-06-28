@@ -12,7 +12,7 @@ Simple offer override
 
 ## Related Pages
 
-- [Edit Offer](../116-cp-offers-admin-edit-528-1b43ebef/README.md): Open an existing offer when you need to check the setup or make a change.
+- [Edit Offer](../116-cp-offers-admin-edit-id-1b43ebef/README.md): Open an existing offer when you need to check the setup or make a change.
 
 ## How It Works
 
@@ -21,8 +21,7 @@ Simple offer override
 
 ## Using This Page
 
-1. Open Offers from the CP navigation.
-2. Search or filter until you find the offer you need.
+1. Search or filter until you find the offer you need.
 
 ## What You Can Do
 
@@ -30,43 +29,16 @@ Simple offer override
 
 Search or filter the visible fields to find the offer you need.
 
-- Field: Type
-- Field: Name
-- Field: Code
-- Field: Maximum uses
-- Field: Times used
-- Field: Exclusivity
-- Field: Status
-- Field: Valid Currencies
-- Field: Membership Renewals only
-- Field: Member only
-- Field: Exclude members
-- Field: Exclude Trade Tiers
+- Visible fields include Type, Name, Code, Maximum uses, Times used, Exclusivity, Status, and Valid Currencies.
 
 Example rows:
 
 | Type | Name | Code | Maximum uses | Times used | Exclusivity |
 | --- | --- | --- | --- | --- | --- |
-|  | Product Fixed Price Discount | S251110173171I | S251110173171I | 1 | 2 |
+|  | Product Fixed Price Discount | [hidden] | [hidden] | 1 | 2 |
 |  | Basket Discount Offer | MIAMITRADE | MIAMITRADE | 5 | 2 |
-|  | Product Fixed Price Discount | S2512150845N33 | S2512150845N33 | 1 | 0 |
+|  | Product Fixed Price Discount | [hidden] | [hidden] | 1 | 0 |
 
 ### Update settings
 
 Use the fields on this screen to make the change, then save once the values are correct.
-
-## Key Settings
-
-The sections below highlight the settings people are most likely to change.
-
-### listing-offers_offer-form
-
-#### Offer Status
-
-![Offer Status](images/field-002-inline-528-offer-status.png)
-
-*Offer Status setting*
-
-Set the Offer Status value for each relevant row in this section.
-
-**Options:** Active, Inactive

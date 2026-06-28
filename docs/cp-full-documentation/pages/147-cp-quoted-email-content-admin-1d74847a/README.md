@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/quoted-email-content-admin](https://sohohome.com/cp/quoted-email-content-admin)
 
-Quoted Notification Email Settings covers the admin screen used to review and maintain quoted notification email settings.
+Model for Quoted Email Notification Content
 
 ![Quoted Notification Email Settings overview](images/page-desktop.png)
 
@@ -31,10 +31,6 @@ Use the fields on this screen to make the change, then save once the values are 
 
 #### Active?
 
-![Active?](images/field-001-active.png)
-
-*Active? setting*
-
 Turn this on when active? should apply. Leave it off when it should not.
 
 #### Subject Line
@@ -49,13 +45,9 @@ Add the subject line.
 
 #### Email Body
 
-![Email Body](images/field-003-email-body.png)
-
-*Email Body setting*
-
 Write the email body content.
 
-## Available Actions
+## Page Sections
 
 - General
 - Interior Design

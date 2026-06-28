@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/stock-admin](https://sohohome.com/cp/stock-admin)
 
-Stock covers the admin screen used to review and maintain stock.
+Stock for the given location / pool
 
 ![Stock overview](images/page-desktop.png)
 
@@ -12,7 +12,7 @@ Stock covers the admin screen used to review and maintain stock.
 
 ## Related Pages
 
-- [Edit Stock](../182-cp-stock-admin-edit-1-5f5372eb/README.md): Open an existing stock when you need to check the setup or make a change.
+- [Edit Stock](../182-cp-stock-admin-edit-id-5f5372eb/README.md): Open an existing stock when you need to check the setup or make a change.
 
 ## How It Works
 
@@ -22,8 +22,7 @@ Stock covers the admin screen used to review and maintain stock.
 
 ## Using This Page
 
-1. Open Stock from the CP navigation.
-2. Search or filter until you find the stock you need.
+1. Search or filter until you find the stock you need.
 
 ## What You Can Do
 
@@ -31,11 +30,7 @@ Stock covers the admin screen used to review and maintain stock.
 
 Search or filter the visible fields to find the stock you need.
 
-- Field: SKU
-- Field: Region
-- Field: Pool
-- Field: Store
-- Field: Quantity
+- Visible fields include SKU, Region, Pool, Store, and Quantity.
 
 Example rows:
 

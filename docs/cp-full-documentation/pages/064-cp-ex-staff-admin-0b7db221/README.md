@@ -21,8 +21,7 @@ Blacklist for staff group emails
 
 ## Using This Page
 
-1. Open Ex-Staff from the CP navigation.
-2. Search or filter until you find the ex-staff you need.
+1. Search or filter until you find the ex-staff you need.
 
 ## What You Can Do
 
@@ -30,17 +29,4 @@ Blacklist for staff group emails
 
 Search or filter the visible fields to find the ex-staff you need.
 
-- Field: Email Address
-- Field: Created
-
-Example rows:
-
-| Email Address | Created |
-| --- | --- |
-| cerrnsahin@icloud.com | 8:42am - 3 Apr 25 |
-| varvararaa@gmail.com | 8:42am - 3 Apr 25 |
-| f.falcione97@gmail.com | 8:42am - 3 Apr 25 |
-
-## Available Actions
-
-- Import csv
+- Visible fields include Email Address and Created.

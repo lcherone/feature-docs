@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/products-seasons-admin](https://sohohome.com/cp/products-seasons-admin)
 
-Product Seasons covers the admin screen used to review and maintain product seasons.
+Season manages product seasons for "New In" badge scheduling
 
 ![Product Seasons overview](images/page-desktop.png)
 
@@ -12,7 +12,7 @@ Product Seasons covers the admin screen used to review and maintain product seas
 
 ## Related Pages
 
-- [Edit Product Season](../146-cp-products-seasons-admin-edit-21-5fa80e1a/README.md): Open an existing product season when you need to check the setup or make a change.
+- [Edit Product Season](../146-cp-products-seasons-admin-edit-id-5fa80e1a/README.md): Open an existing product season when you need to check the setup or make a change.
 
 ## How It Works
 
@@ -20,8 +20,7 @@ Product Seasons covers the admin screen used to review and maintain product seas
 
 ## Using This Page
 
-1. Open Product Seasons from the CP navigation.
-2. Search or filter until you find the product season you need.
+1. Search or filter until you find the product season you need.
 
 ## What You Can Do
 
@@ -29,11 +28,7 @@ Product Seasons covers the admin screen used to review and maintain product seas
 
 Search or filter the visible fields to find the product season you need.
 
-- Field: Name
-- Field: Badge Label
-- Field: Has Active Badge
-- Field: Scheduled Start
-- Field: Scheduled End
+- Visible fields include Name, Badge Label, Has Active Badge, Scheduled Start, and Scheduled End.
 
 Example rows:
 

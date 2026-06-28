@@ -41,20 +41,12 @@ Add the title (optional).
 
 #### Description (optional)
 
-![Description optional](images/field-002-description-optional.png)
-
-*Description (optional) setting*
-
 Write the description (optional) content.
 
 #### Terms and Conditions (optional)
 
-![Terms and Conditions optional](images/field-003-terms-and-conditions-optional.png)
-
-*Terms and Conditions (optional) setting*
-
 Write the terms and conditions (optional) content.
 
-## Available Actions
+## Page Sections
 
 - Upload Files

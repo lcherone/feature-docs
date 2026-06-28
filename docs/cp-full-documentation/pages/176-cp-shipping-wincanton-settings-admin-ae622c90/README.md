@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/shipping-wincanton-settings-admin](https://sohohome.com/cp/shipping-wincanton-settings-admin)
 
-Wincanton Settings covers the admin screen used to review and maintain wincanton settings.
+Wincanton Shipping Settings.
 
 ![Wincanton Settings overview](images/page-desktop.png)
 
@@ -93,9 +93,5 @@ Add the fixed ISO country code (optional).
 **Notes:** Force the Country Code for all Orders going to Wincanton
 
 #### Notify WMS on Export Failure
-
-![Notify WMS on Export Failure](images/field-007-notify-wms-on-export-failure.png)
-
-*Notify WMS on Export Failure setting*
 
 Turn this on when notify WMS on export failure should apply. Leave it off when it should not.

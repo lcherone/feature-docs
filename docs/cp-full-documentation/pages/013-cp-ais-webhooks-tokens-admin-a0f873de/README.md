@@ -12,7 +12,7 @@ Webhook Tokens are bearer tokens used to authorise incoming AIS webhook requests
 
 ## Related Pages
 
-- [Edit Webhook Token](../014-cp-ais-webhooks-tokens-admin-edit-1-17da0623/README.md): Open an existing webhook token when you need to check the setup or make a change.
+- [Edit Webhook Token](../014-cp-ais-webhooks-tokens-admin-edit-id-17da0623/README.md): Open an existing webhook token when you need to check the setup or make a change.
 
 ## How It Works
 
@@ -24,8 +24,7 @@ Webhook Tokens are bearer tokens used to authorise incoming AIS webhook requests
 
 ## Using This Page
 
-1. Open Webhook Tokens from the CP navigation.
-2. Search or filter until you find the webhook token you need.
+1. Search or filter until you find the webhook token you need.
 
 ## What You Can Do
 
@@ -33,12 +32,7 @@ Webhook Tokens are bearer tokens used to authorise incoming AIS webhook requests
 
 Search or filter the visible fields to find the webhook token you need.
 
-- Field: Name
-- Field: Environment
-- Field: Status
-- Field: Last Accessed
-- Field: Created
-- Field: Updated
+- Visible fields include Name, Environment, Status, Last Accessed, Created, and Updated.
 
 Example rows:
 

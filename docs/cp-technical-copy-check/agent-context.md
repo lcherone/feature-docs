@@ -1,0 +1,1032 @@
+# Soho Home CP Feature Docs Agent Context
+
+Generated: 2026-06-28T01:55:06.229Z
+
+Use this file as the handoff for Codex to produce final operator documentation. Read the referenced controller, model, XML, and view files before finalising page purpose, field behaviour, validation, and side effects.
+
+## Customers
+
+- URL: https://dev.soho-home.local/cp/customers
+- Documentation route key: https://dev.soho-home.local|cp|customers|index|customers
+- Draft doc: pages/001-cp-customers-cbb2a4e5/README.md
+- Code analysis doc: .vscode/code-docs/cp-customers.md
+- Page screenshots: pages/001-cp-customers-cbb2a4e5/images/page-desktop.png
+- Field count: 1
+- Controller: Soho\Ecom\Controller\CustomerAdmin (customers)
+- Controller file: vendor/soho/ecom/src/Controller/CustomerAdmin.php
+- Action method: indexAction (inherited or unresolved)
+- Model: Store_Customer => App\Ecom\Model\Customer
+- Model file: src/Ecom/Model/Customer.php
+- Model XML: src/Ecom/Model/Customer.xml
+- Model item prefix: unresolved
+
+### DOM Fields
+
+- 1. Keyword search (text)
+  - DOM name: `search`
+  - Screenshot: pages/001-cp-customers-cbb2a4e5/images/field-001-keyword-search.png
+
+### Source References
+
+- provider: vendor/soho/ecom/src/Provider.php
+- controller: vendor/soho/ecom/src/Controller/CustomerAdmin.php
+- parent-controller: vendor/soho/accounts/src/ControllerAdmin.php
+- referenced-class: vendor/soho/ecom/src/Model/DesignServiceSettings.php
+- referenced-class: vendor/soho/ecom/src/Mail/Log.php
+- referenced-class: vendor/soho/ecom/src/Model/InvoiceSettings.php
+- referenced-class: vendor/soho/ecom/src/Model/MemberMarketProduct.php
+- referenced-class: vendor/soho/ecom/src/Model/MtoSettings.php
+- referenced-class: vendor/soho/ecom/src/Offers/Model/Offer.php
+- referenced-class: vendor/soho/ecom/src/Reasons/Model/Reason.php
+- referenced-class: vendor/soho/ecom/src/Reasons/Model/Group.php
+- referenced-class: vendor/soho/ecom/src/Returns/Model/ReturnSet.php
+- referenced-class: vendor/soho/ecom/src/Returns/Model/Item.php
+- referenced-class: vendor/soho/ecom/src/Returns/Model/Story.php
+- referenced-class: vendor/soho/ecom/src/Returns/Model/Queue.php
+- referenced-class: vendor/soho/ecom/src/Returns/Model/QueueAspect.php
+- referenced-class: vendor/soho/ecom/src/Returns/Model/QueueItem.php
+- referenced-class: vendor/soho/ecom/src/Basket/Model/AddedItem.php
+- referenced-class: vendor/soho/ecom/src/Model/Adjustment.php
+- referenced-class: vendor/soho/ecom/src/Model/AdjustmentItem.php
+- referenced-class: vendor/soho/ecom/src/Model/AdjustmentGroup.php
+- referenced-class: vendor/soho/ecom/src/Model/AdjustmentSummary.php
+- referenced-class: vendor/soho/ecom/src/Model/AdjustmentSummaryTransaction.php
+- referenced-class: vendor/soho/ecom/src/Model/BasketPage.php
+- referenced-class: vendor/soho/ecom/src/Model/Card.php
+- referenced-class: vendor/soho/ecom/src/Model/CheckoutPage.php
+- referenced-class: vendor/soho/ecom/src/Model/Currency.php
+- referenced-class: vendor/soho/ecom/src/Model/Customer.php
+- referenced-class: vendor/soho/ecom/src/Model/CustomerGroup.php
+- referenced-class: vendor/soho/ecom/src/Model/CustomerGroupLink.php
+- referenced-class: vendor/soho/ecom/src/Model/CustomerSpendRecord.php
+- referenced-class: vendor/soho/ecom/src/Model/ExStaff.php
+- referenced-class: vendor/soho/ecom/src/Model/GiftMessage.php
+- referenced-class: vendor/soho/ecom/src/Model/LineItem.php
+- referenced-class: vendor/soho/ecom/src/Model/Order.php
+- referenced-class: vendor/soho/ecom/src/Model/InvoiceDetails.php
+- referenced-class: vendor/soho/ecom/src/Model/ThanksPage.php
+- referenced-class: vendor/soho/ecom/src/Model/Transaction.php
+- referenced-class: vendor/soho/ecom/src/Model/Shipment.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Model/CountryGroup.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Model/DuoSettings.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Model/Exclusion.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Model/Holiday.php
+- referenced-class: vendor/soho/ecom/src/Model/ShipmentLineItem.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Model/Option.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Model/WincantonSettings.php
+- referenced-class: vendor/soho/ecom/src/Supplier/Model/Holiday.php
+- referenced-class: vendor/soho/ecom/src/Item/StockAdjustment.php
+- referenced-class: vendor/soho/ecom/src/Model/StockNotification.php
+- referenced-class: vendor/soho/ecom/src/Model/StockNotificationAspect.php
+- referenced-class: vendor/soho/ecom/src/Model/StockNotificationSettings.php
+- referenced-class: vendor/soho/ecom/src/Model/TradeTier.php
+- referenced-class: vendor/soho/ecom/src/Model/TradeTierSettings.php
+- referenced-class: vendor/soho/ecom/src/Model/Note.php
+- referenced-class: vendor/soho/ecom/src/Model/EmptyShipmentsAspect.php
+- referenced-class: vendor/soho/ecom/src/Model/MissingShipmentsAspect.php
+- referenced-class: vendor/soho/ecom/src/Model/PendingShipmentsAspect.php
+- referenced-class: vendor/soho/ecom/src/Model/DelayedDispatchEmailSettings.php
+- referenced-class: vendor/soho/ecom/src/Model/OrderIssueEmailSettings.php
+- referenced-class: vendor/soho/ecom/src/Model/MtoServiceEmailSettings.php
+- referenced-class: vendor/soho/ecom/src/Model/GiftingSettings.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Model/ClientLog.php
+- referenced-class: vendor/soho/ecom/src/Controller/AdjustmentSummaryAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/Basket.php
+- referenced-class: vendor/d3r/ecom/src/Controller/BasketAdmin.php
+- referenced-class: vendor/soho/ecom/src/AdminBasket/Controller/Finder.php
+- referenced-class: vendor/soho/ecom/src/Controller/Checkout.php
+- referenced-class: vendor/d3r/ecom/src/Controller/CheckoutAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/CurrenciesAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/CustomerAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/CustomerGroupsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/DelayedDispatchEmailSettings.php
+- referenced-class: vendor/soho/ecom/src/Mail/LogControllerAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/EmptyShipmentsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/MissingShipmentsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/PendingShipmentsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/ExStaffAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/GiftingSettingsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/InvoiceSettingsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/LineItemAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/MemberMarketProductsControllerAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/DesignServiceSettingsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/MtoSettingsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/MtoServiceEmailSettingsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/NotesAdminController.php
+- referenced-class: vendor/soho/ecom/src/Controller/OrderIssueEmailSettings.php
+- referenced-class: vendor/soho/ecom/src/Offers/Controller/Admin.php
+- referenced-class: vendor/soho/ecom/src/Controller/ThreeDSecure.php
+- referenced-class: vendor/soho/ecom/src/Returns/AdminController.php
+- referenced-class: vendor/soho/ecom/src/Returns/QueueAdminController.php
+- referenced-class: vendor/soho/ecom/src/Returns/StoriesAdminController.php
+- referenced-class: vendor/soho/ecom/src/Reasons/ReasonsAdminController.php
+- referenced-class: vendor/soho/ecom/src/Reasons/GroupsAdminController.php
+- referenced-class: vendor/soho/ecom/src/Controller/ShipmentsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Controller/OptionsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Controller/ExclusionsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Controller/CountryGroupsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Controller/HolidaysAdmin.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Controller/DuoSettingsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Controller/WincantonSettingsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Controller/ClientLogAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/StoreAdmin.php
+- referenced-class: vendor/soho/ecom/src/Supplier/Controller/HolidaysAdmin.php
+- referenced-class: vendor/soho/ecom/src/AdminBasket/Controller/Basket.php
+- referenced-class: vendor/soho/ecom/src/Controller/StockNotificationsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/StockNotificationSettingsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/TaxAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/TradeTiersAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/TradeTierSettingsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Model/Field/ManyToManyOpt.php
+- referenced-class: vendor/soho/ecom/src/Model/Field/DynamicCalculated.php
+- referenced-class: vendor/soho/ecom/src/Item/MembershipItem.php
+- referenced-class: vendor/soho/ecom/src/Model/MemberMarketProductItem.php
+- referenced-class: vendor/soho/ecom/src/Membership/RenewalBasket.php
+- referenced-class: vendor/soho/ecom/src/Adjustment/Helper.php
+- referenced-class: vendor/soho/ecom/src/Basket.php
+- referenced-class: vendor/soho/ecom/src/Basket/BasketMerger.php
+- referenced-class: vendor/d3r/ecom/src/Basket/Storage/BasketStorageInterface.php
+- referenced-class: vendor/d3r/ecom/src/Basket/Storage/DatabaseStorageMigrate.php
+- referenced-class: vendor/soho/ecom/src/Factory/OrderFactory.php
+- referenced-class: vendor/soho/ecom/src/Model/OrderSummary.php
+- referenced-class: vendor/soho/ecom/src/Mail/SupplierMailer.php
+- referenced-class: vendor/soho/ecom/src/Mail/InvoiceMailer.php
+- referenced-class: vendor/soho/ecom/src/Mail/JourneyMailer.php
+- referenced-class: vendor/soho/ecom/src/Mail/ServiceMailer.php
+- referenced-class: vendor/d3r/payment/src/Mailer/AdyenPayByLink.php
+- referenced-class: vendor/soho/ecom/src/Payment/Mailer/PayByLink.php
+- referenced-class: vendor/soho/ecom/src/Pricing/Advisor.php
+- referenced-class: vendor/soho/ecom/src/Pricing/Converter.php
+- referenced-class: vendor/soho/ecom/src/Item/Custom/Surcharge.php
+- referenced-class: vendor/d3r/ecom-admin-basket/src/Mediator/LegacyMediator.php
+- referenced-class: vendor/soho/ecom/src/AdminBasket/Mediators/MemberMarketProduct.php
+- referenced-class: vendor/soho/ecom/src/Item/DonationUA.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Handler.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Option/Gift/Wrap.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Option/Gift/Box.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Option/Trade.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Option/Takeaway.php
+- referenced-class: vendor/soho/ecom/src/Offers/Type/ProductDiscount.php
+- referenced-class: vendor/soho/ecom/src/Offers/Type/BasketDiscount.php
+- referenced-class: vendor/soho/ecom/src/Offers/Type/FreeProduct.php
+- referenced-class: vendor/soho/ecom/src/Offers/Type/Shipping.php
+- referenced-class: vendor/soho/ecom/src/Offers/Type/FreeProductSelection.php
+- referenced-class: vendor/soho/ecom/src/Offers/Distributor/Collection.php
+- referenced-class: vendor/soho/ecom/src/Personalisation/Helper.php
+- referenced-class: vendor/soho/ecom/src/Personalisation/Model/PersonalisationAddon.php
+- referenced-class: vendor/soho/ecom/src/Adjustment/Strategy/Add.php
+- referenced-class: vendor/soho/ecom/src/Adjustment/Strategy/Replace.php
+- referenced-class: vendor/soho/ecom/src/Adjustment/Strategy/Cancel.php
+- referenced-class: vendor/soho/ecom/src/Adjustment/Strategy/Discount.php
+- referenced-class: vendor/soho/ecom/src/Adjustment/Strategy/DiscountPercentage.php
+- referenced-class: vendor/d3r/checkout/src/OrderProcessor.php
+- referenced-class: vendor/soho/ecom/src/OrderProcessor.php
+- referenced-class: vendor/d3r/checkout/src/Fieldset/Order.php
+- referenced-class: vendor/soho/ecom/src/Checkout/Fieldset/Order.php
+- referenced-class: vendor/d3r/checkout/src/Fieldset/Customer.php
+- referenced-class: vendor/soho/ecom/src/Checkout/Fieldset/Customer.php
+- referenced-class: vendor/d3r/checkout/src/Fieldset/DeliveryAddress.php
+- referenced-class: vendor/soho/ecom/src/Checkout/Fieldset/DeliveryAddress.php
+- referenced-class: vendor/soho/ecom/src/Checkout/Fieldset/Invoice.php
+- referenced-class: vendor/soho/ecom/src/Checkout/Fieldset/Payment.php
+- referenced-class: vendor/soho/ecom/src/Checkout/Fieldset/Personal.php
+- referenced-class: vendor/soho/ecom/src/Action/CreatePayByLink.php
+- referenced-class: vendor/soho/ecom/src/Action/ExpirePayByLink.php
+- referenced-class: vendor/soho/ecom/src/Entity/RemoteShipment.php
+- referenced-class: vendor/d3r/checkout/src/Payment/MethodsInterface.php
+- referenced-class: vendor/soho/ecom/src/BasketEventHandler.php
+- referenced-class: vendor/soho/ecom/src/EventHandler.php
+- referenced-class: vendor/soho/ecom/src/Cookie/BasketCount.php
+- referenced-class: vendor/soho/ecom/src/Cookie/ReturningCustomer.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Client/Wincanton/SoapClient.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Client/Wincanton/AvailabilityOrder.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Client/Wincanton/CreateOrder.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Client/Mail/Mailer.php
+- referenced-class: vendor/d3r/metrics-collector/src/CollectorInterface.php
+- referenced-class: vendor/d3r/ecom-admin-basket/src/Item/Metadata.php
+- referenced-class: vendor/d3r/ecom-admin-basket/src/ItemFinder/Entity/Section.php
+- referenced-class: vendor/soho/ecom/src/Model/Filter/ActiveAdmin.php
+- referenced-class: vendor/soho/ecom/src/Helper.php
+- referenced-class: vendor/soho/ecom/src/Action/AbandonedBasketEmail.php
+- referenced-class: vendor/soho/ecom/src/Action/Accept.php
+- referenced-class: vendor/soho/ecom/src/Action/AddToBasket.php
+- referenced-class: vendor/soho/ecom/src/Action/Adjust.php
+- referenced-class: vendor/soho/ecom/src/Action/AutoRenewMembership.php
+- referenced-class: vendor/soho/ecom/src/Action/PayWithVoucher.php
+- referenced-class: vendor/soho/ecom/src/Action/Avalara.php
+- referenced-class: vendor/soho/ecom/src/Action/BusinessCentral.php
+- referenced-class: vendor/soho/ecom/src/Action/Cancel.php
+- referenced-class: vendor/soho/ecom/src/Action/Close.php
+- referenced-class: vendor/soho/ecom/src/Action/Edit.php
+- referenced-class: vendor/soho/ecom/src/Action/GenerateAmendedReceipt.php
+- referenced-class: vendor/soho/ecom/src/Action/GenerateVatReceipt.php
+- referenced-class: vendor/soho/ecom/src/Action/Invoice.php
+- referenced-class: vendor/soho/ecom/src/Action/InvoiceRaised.php
+- referenced-class: vendor/soho/ecom/src/Action/ViewInvoice.php
+- referenced-class: vendor/soho/ecom/src/Action/ManualPay.php
+- referenced-class: vendor/soho/ecom/src/Action/ManualRefund.php
+- referenced-class: vendor/soho/ecom/src/Action/Open.php
+- referenced-class: vendor/soho/ecom/src/Action/Refund.php
+- referenced-class: vendor/soho/ecom/src/Action/RefundToVoucher.php
+- referenced-class: vendor/soho/ecom/src/Action/ResendConfirmation.php
+- referenced-class: vendor/soho/ecom/src/Action/ResendInvoice.php
+- referenced-class: vendor/soho/ecom/src/Action/Sage.php
+- referenced-class: vendor/soho/ecom/src/Action/SendApplication.php
+- referenced-class: vendor/soho/ecom/src/Action/SkipStockCheck.php
+- referenced-class: vendor/soho/ecom/src/Action/UnSkipStockCheck.php
+- referenced-class: vendor/soho/ecom/src/Action/UnmarkVip.php
+- referenced-class: vendor/soho/ecom/src/Action/MarkVip.php
+- referenced-class: vendor/soho/ecom/src/Flag/AbandonedBasketEmail.php
+- referenced-class: vendor/soho/ecom/src/Flag/AutoRenewMembership.php
+- referenced-class: vendor/soho/ecom/src/Flag/AutoRenewedMembership.php
+- referenced-class: vendor/soho/ecom/src/Flag/Balanced.php
+- referenced-class: vendor/soho/ecom/src/Flag/Consolidated.php
+- referenced-class: vendor/soho/ecom/src/Flag/CpOrder.php
+- referenced-class: vendor/soho/ecom/src/Flag/CustomerLoggedIn.php
+- referenced-class: vendor/soho/ecom/src/Flag/InvoiceRaised.php
+- referenced-class: vendor/soho/ecom/src/Flag/Member.php
+- referenced-class: vendor/soho/ecom/src/Flag/MembershipPurchase.php
+- referenced-class: vendor/soho/ecom/src/Flag/MembershipApplicationSent.php
+- referenced-class: vendor/soho/ecom/src/Flag/MembershipApplicationFailed.php
+- referenced-class: vendor/soho/ecom/src/Flag/MtoTermsChecked.php
+- referenced-class: vendor/soho/ecom/src/Flag/DesignServiceTermsChecked.php
+- referenced-class: vendor/soho/ecom/src/Flag/SentToAvalara.php
+- referenced-class: vendor/soho/ecom/src/Flag/SentToBusinessCentral.php
+- referenced-class: vendor/soho/ecom/src/Flag/SentToSage.php
+- referenced-class: vendor/soho/ecom/src/Flag/SkipStockCheck.php
+- referenced-class: vendor/soho/ecom/src/Flag/Trade.php
+- referenced-class: vendor/soho/ecom/src/Flag/VatExempt.php
+- referenced-class: vendor/soho/ecom/src/Flag/Vip.php
+- referenced-class: vendor/soho/ecom/src/State/NewOrder.php
+- referenced-class: vendor/soho/ecom/src/State/Open.php
+- referenced-class: vendor/soho/ecom/src/State/Cancelled.php
+- referenced-class: vendor/soho/ecom/src/State/Closed.php
+- referenced-class: vendor/soho/ecom/src/State/InvoiceRaised.php
+- referenced-class: vendor/soho/ecom/src/State/Waiting.php
+- referenced-class: vendor/soho/ecom/src/State/Issue.php
+- referenced-class: vendor/soho/ecom/src/Mail/LogHandler.php
+- referenced-class: vendor/soho/ecom/src/Middleware/Cookies.php
+- provider: src/Ecom/Provider.php
+- model: src/Ecom/Model/Customer.php
+- parent-model: vendor/soho/ecom/src/Model/Customer.php
+- model-xml: src/Ecom/Model/Customer.xml
+
+## Image Asset Admin
+
+- URL: https://dev.soho-home.local/cp/image-asset-admin
+- Documentation route key: https://dev.soho-home.local|cp|image-asset-admin|index|image-asset-admin
+- Draft doc: pages/002-cp-image-asset-admin-1c8e0118/README.md
+- Code analysis doc: .vscode/code-docs/cp-image-asset-admin.md
+- Page screenshots: pages/002-cp-image-asset-admin-1c8e0118/images/page-desktop.png
+- Field count: 2
+- Controller: Controller\AdminController (image-asset-admin)
+- Controller file: unresolved
+- Action method: indexAction (inherited or unresolved)
+
+### DOM Fields
+
+- 1. Keyword search (text)
+  - DOM name: `search`
+  - Screenshot: pages/002-cp-image-asset-admin-1c8e0118/images/field-001-keyword-search.png
+- 2. select (select)
+  - Screenshot: pages/002-cp-image-asset-admin-1c8e0118/images/field-002-select.png
+
+### Source References
+
+- provider: src/ImageAssets/Provider.php
+
+## Returns
+
+- URL: https://dev.soho-home.local/cp/returns-admin
+- Documentation route key: https://dev.soho-home.local|cp|returns-admin|index|returns-admin
+- Draft doc: pages/003-cp-returns-admin-799f6596/README.md
+- Code analysis doc: .vscode/code-docs/cp-returns-admin.md
+- Page screenshots: pages/003-cp-returns-admin-799f6596/images/page-desktop.png
+- Field count: 1
+- Controller: Soho\Ecom\Returns\AdminController (returns-admin)
+- Controller file: vendor/soho/ecom/src/Returns/AdminController.php
+- Action method: indexAction (inherited or unresolved)
+- Model: Returns_Return => Soho\Ecom\Returns\Model\ReturnSet
+- Model file: vendor/soho/ecom/src/Returns/Model/ReturnSet.php
+- Model XML: vendor/soho/ecom/src/Returns/Model/ReturnSet.xml
+- Model item prefix: return
+
+### DOM Fields
+
+- 1. Keyword search (text)
+  - DOM name: `search`
+  - Screenshot: pages/003-cp-returns-admin-799f6596/images/field-001-keyword-search.png
+
+### Source References
+
+- provider: vendor/soho/ecom/src/Provider.php
+- controller: vendor/soho/ecom/src/Returns/AdminController.php
+- parent-controller: vendor/d3r/returns/src/AdminController.php
+- referenced-class: vendor/soho/ecom/src/Model/DesignServiceSettings.php
+- referenced-class: vendor/soho/ecom/src/Mail/Log.php
+- referenced-class: vendor/soho/ecom/src/Model/InvoiceSettings.php
+- referenced-class: vendor/soho/ecom/src/Model/MemberMarketProduct.php
+- referenced-class: vendor/soho/ecom/src/Model/MtoSettings.php
+- referenced-class: vendor/soho/ecom/src/Offers/Model/Offer.php
+- referenced-class: vendor/soho/ecom/src/Reasons/Model/Reason.php
+- referenced-class: vendor/soho/ecom/src/Reasons/Model/Group.php
+- referenced-class: vendor/soho/ecom/src/Returns/Model/ReturnSet.php
+- referenced-class: vendor/soho/ecom/src/Returns/Model/Item.php
+- referenced-class: vendor/soho/ecom/src/Returns/Model/Story.php
+- referenced-class: vendor/soho/ecom/src/Returns/Model/Queue.php
+- referenced-class: vendor/soho/ecom/src/Returns/Model/QueueAspect.php
+- referenced-class: vendor/soho/ecom/src/Returns/Model/QueueItem.php
+- referenced-class: vendor/soho/ecom/src/Basket/Model/AddedItem.php
+- referenced-class: vendor/soho/ecom/src/Model/Adjustment.php
+- referenced-class: vendor/soho/ecom/src/Model/AdjustmentItem.php
+- referenced-class: vendor/soho/ecom/src/Model/AdjustmentGroup.php
+- referenced-class: vendor/soho/ecom/src/Model/AdjustmentSummary.php
+- referenced-class: vendor/soho/ecom/src/Model/AdjustmentSummaryTransaction.php
+- referenced-class: vendor/soho/ecom/src/Model/BasketPage.php
+- referenced-class: vendor/soho/ecom/src/Model/Card.php
+- referenced-class: vendor/soho/ecom/src/Model/CheckoutPage.php
+- referenced-class: vendor/soho/ecom/src/Model/Currency.php
+- referenced-class: vendor/soho/ecom/src/Model/Customer.php
+- referenced-class: vendor/soho/ecom/src/Model/CustomerGroup.php
+- referenced-class: vendor/soho/ecom/src/Model/CustomerGroupLink.php
+- referenced-class: vendor/soho/ecom/src/Model/CustomerSpendRecord.php
+- referenced-class: vendor/soho/ecom/src/Model/ExStaff.php
+- referenced-class: vendor/soho/ecom/src/Model/GiftMessage.php
+- referenced-class: vendor/soho/ecom/src/Model/LineItem.php
+- referenced-class: vendor/soho/ecom/src/Model/Order.php
+- referenced-class: vendor/soho/ecom/src/Model/InvoiceDetails.php
+- referenced-class: vendor/soho/ecom/src/Model/ThanksPage.php
+- referenced-class: vendor/soho/ecom/src/Model/Transaction.php
+- referenced-class: vendor/soho/ecom/src/Model/Shipment.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Model/CountryGroup.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Model/DuoSettings.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Model/Exclusion.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Model/Holiday.php
+- referenced-class: vendor/soho/ecom/src/Model/ShipmentLineItem.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Model/Option.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Model/WincantonSettings.php
+- referenced-class: vendor/soho/ecom/src/Supplier/Model/Holiday.php
+- referenced-class: vendor/soho/ecom/src/Item/StockAdjustment.php
+- referenced-class: vendor/soho/ecom/src/Model/StockNotification.php
+- referenced-class: vendor/soho/ecom/src/Model/StockNotificationAspect.php
+- referenced-class: vendor/soho/ecom/src/Model/StockNotificationSettings.php
+- referenced-class: vendor/soho/ecom/src/Model/TradeTier.php
+- referenced-class: vendor/soho/ecom/src/Model/TradeTierSettings.php
+- referenced-class: vendor/soho/ecom/src/Model/Note.php
+- referenced-class: vendor/soho/ecom/src/Model/EmptyShipmentsAspect.php
+- referenced-class: vendor/soho/ecom/src/Model/MissingShipmentsAspect.php
+- referenced-class: vendor/soho/ecom/src/Model/PendingShipmentsAspect.php
+- referenced-class: vendor/soho/ecom/src/Model/DelayedDispatchEmailSettings.php
+- referenced-class: vendor/soho/ecom/src/Model/OrderIssueEmailSettings.php
+- referenced-class: vendor/soho/ecom/src/Model/MtoServiceEmailSettings.php
+- referenced-class: vendor/soho/ecom/src/Model/GiftingSettings.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Model/ClientLog.php
+- referenced-class: vendor/soho/ecom/src/Controller/AdjustmentSummaryAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/Basket.php
+- referenced-class: vendor/d3r/ecom/src/Controller/BasketAdmin.php
+- referenced-class: vendor/soho/ecom/src/AdminBasket/Controller/Finder.php
+- referenced-class: vendor/soho/ecom/src/Controller/Checkout.php
+- referenced-class: vendor/d3r/ecom/src/Controller/CheckoutAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/CurrenciesAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/CustomerAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/CustomerGroupsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/DelayedDispatchEmailSettings.php
+- referenced-class: vendor/soho/ecom/src/Mail/LogControllerAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/EmptyShipmentsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/MissingShipmentsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/PendingShipmentsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/ExStaffAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/GiftingSettingsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/InvoiceSettingsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/LineItemAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/MemberMarketProductsControllerAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/DesignServiceSettingsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/MtoSettingsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/MtoServiceEmailSettingsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/NotesAdminController.php
+- referenced-class: vendor/soho/ecom/src/Controller/OrderIssueEmailSettings.php
+- referenced-class: vendor/soho/ecom/src/Offers/Controller/Admin.php
+- referenced-class: vendor/soho/ecom/src/Controller/ThreeDSecure.php
+- referenced-class: vendor/soho/ecom/src/Returns/AdminController.php
+- referenced-class: vendor/soho/ecom/src/Returns/QueueAdminController.php
+- referenced-class: vendor/soho/ecom/src/Returns/StoriesAdminController.php
+- referenced-class: vendor/soho/ecom/src/Reasons/ReasonsAdminController.php
+- referenced-class: vendor/soho/ecom/src/Reasons/GroupsAdminController.php
+- referenced-class: vendor/soho/ecom/src/Controller/ShipmentsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Controller/OptionsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Controller/ExclusionsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Controller/CountryGroupsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Controller/HolidaysAdmin.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Controller/DuoSettingsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Controller/WincantonSettingsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Controller/ClientLogAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/StoreAdmin.php
+- referenced-class: vendor/soho/ecom/src/Supplier/Controller/HolidaysAdmin.php
+- referenced-class: vendor/soho/ecom/src/AdminBasket/Controller/Basket.php
+- referenced-class: vendor/soho/ecom/src/Controller/StockNotificationsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/StockNotificationSettingsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/TaxAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/TradeTiersAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/TradeTierSettingsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Model/Field/ManyToManyOpt.php
+- referenced-class: vendor/soho/ecom/src/Model/Field/DynamicCalculated.php
+- referenced-class: vendor/soho/ecom/src/Item/MembershipItem.php
+- referenced-class: vendor/soho/ecom/src/Model/MemberMarketProductItem.php
+- referenced-class: vendor/soho/ecom/src/Membership/RenewalBasket.php
+- referenced-class: vendor/soho/ecom/src/Adjustment/Helper.php
+- referenced-class: vendor/soho/ecom/src/Basket.php
+- referenced-class: vendor/soho/ecom/src/Basket/BasketMerger.php
+- referenced-class: vendor/d3r/ecom/src/Basket/Storage/BasketStorageInterface.php
+- referenced-class: vendor/d3r/ecom/src/Basket/Storage/DatabaseStorageMigrate.php
+- referenced-class: vendor/soho/ecom/src/Factory/OrderFactory.php
+- referenced-class: vendor/soho/ecom/src/Model/OrderSummary.php
+- referenced-class: vendor/soho/ecom/src/Mail/SupplierMailer.php
+- referenced-class: vendor/soho/ecom/src/Mail/InvoiceMailer.php
+- referenced-class: vendor/soho/ecom/src/Mail/JourneyMailer.php
+- referenced-class: vendor/soho/ecom/src/Mail/ServiceMailer.php
+- referenced-class: vendor/d3r/payment/src/Mailer/AdyenPayByLink.php
+- referenced-class: vendor/soho/ecom/src/Payment/Mailer/PayByLink.php
+- referenced-class: vendor/soho/ecom/src/Pricing/Advisor.php
+- referenced-class: vendor/soho/ecom/src/Pricing/Converter.php
+- referenced-class: vendor/soho/ecom/src/Item/Custom/Surcharge.php
+- referenced-class: vendor/d3r/ecom-admin-basket/src/Mediator/LegacyMediator.php
+- referenced-class: vendor/soho/ecom/src/AdminBasket/Mediators/MemberMarketProduct.php
+- referenced-class: vendor/soho/ecom/src/Item/DonationUA.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Handler.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Option/Gift/Wrap.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Option/Gift/Box.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Option/Trade.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Option/Takeaway.php
+- referenced-class: vendor/soho/ecom/src/Offers/Type/ProductDiscount.php
+- referenced-class: vendor/soho/ecom/src/Offers/Type/BasketDiscount.php
+- referenced-class: vendor/soho/ecom/src/Offers/Type/FreeProduct.php
+- referenced-class: vendor/soho/ecom/src/Offers/Type/Shipping.php
+- referenced-class: vendor/soho/ecom/src/Offers/Type/FreeProductSelection.php
+- referenced-class: vendor/soho/ecom/src/Offers/Distributor/Collection.php
+- referenced-class: vendor/soho/ecom/src/Personalisation/Helper.php
+- referenced-class: vendor/soho/ecom/src/Personalisation/Model/PersonalisationAddon.php
+- referenced-class: vendor/soho/ecom/src/Adjustment/Strategy/Add.php
+- referenced-class: vendor/soho/ecom/src/Adjustment/Strategy/Replace.php
+- referenced-class: vendor/soho/ecom/src/Adjustment/Strategy/Cancel.php
+- referenced-class: vendor/soho/ecom/src/Adjustment/Strategy/Discount.php
+- referenced-class: vendor/soho/ecom/src/Adjustment/Strategy/DiscountPercentage.php
+- referenced-class: vendor/d3r/checkout/src/OrderProcessor.php
+- referenced-class: vendor/soho/ecom/src/OrderProcessor.php
+- referenced-class: vendor/d3r/checkout/src/Fieldset/Order.php
+- referenced-class: vendor/soho/ecom/src/Checkout/Fieldset/Order.php
+- referenced-class: vendor/d3r/checkout/src/Fieldset/Customer.php
+- referenced-class: vendor/soho/ecom/src/Checkout/Fieldset/Customer.php
+- referenced-class: vendor/d3r/checkout/src/Fieldset/DeliveryAddress.php
+- referenced-class: vendor/soho/ecom/src/Checkout/Fieldset/DeliveryAddress.php
+- referenced-class: vendor/soho/ecom/src/Checkout/Fieldset/Invoice.php
+- referenced-class: vendor/soho/ecom/src/Checkout/Fieldset/Payment.php
+- referenced-class: vendor/soho/ecom/src/Checkout/Fieldset/Personal.php
+- referenced-class: vendor/soho/ecom/src/Action/CreatePayByLink.php
+- referenced-class: vendor/soho/ecom/src/Action/ExpirePayByLink.php
+- referenced-class: vendor/soho/ecom/src/Entity/RemoteShipment.php
+- referenced-class: vendor/d3r/checkout/src/Payment/MethodsInterface.php
+- referenced-class: vendor/soho/ecom/src/BasketEventHandler.php
+- referenced-class: vendor/soho/ecom/src/EventHandler.php
+- referenced-class: vendor/soho/ecom/src/Cookie/BasketCount.php
+- referenced-class: vendor/soho/ecom/src/Cookie/ReturningCustomer.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Client/Wincanton/SoapClient.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Client/Wincanton/AvailabilityOrder.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Client/Wincanton/CreateOrder.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Client/Mail/Mailer.php
+- referenced-class: vendor/d3r/metrics-collector/src/CollectorInterface.php
+- referenced-class: vendor/d3r/ecom-admin-basket/src/Item/Metadata.php
+- referenced-class: vendor/d3r/ecom-admin-basket/src/ItemFinder/Entity/Section.php
+- referenced-class: vendor/soho/ecom/src/Model/Filter/ActiveAdmin.php
+- referenced-class: vendor/soho/ecom/src/Helper.php
+- referenced-class: vendor/soho/ecom/src/Action/AbandonedBasketEmail.php
+- referenced-class: vendor/soho/ecom/src/Action/Accept.php
+- referenced-class: vendor/soho/ecom/src/Action/AddToBasket.php
+- referenced-class: vendor/soho/ecom/src/Action/Adjust.php
+- referenced-class: vendor/soho/ecom/src/Action/AutoRenewMembership.php
+- referenced-class: vendor/soho/ecom/src/Action/PayWithVoucher.php
+- referenced-class: vendor/soho/ecom/src/Action/Avalara.php
+- referenced-class: vendor/soho/ecom/src/Action/BusinessCentral.php
+- referenced-class: vendor/soho/ecom/src/Action/Cancel.php
+- referenced-class: vendor/soho/ecom/src/Action/Close.php
+- referenced-class: vendor/soho/ecom/src/Action/Edit.php
+- referenced-class: vendor/soho/ecom/src/Action/GenerateAmendedReceipt.php
+- referenced-class: vendor/soho/ecom/src/Action/GenerateVatReceipt.php
+- referenced-class: vendor/soho/ecom/src/Action/Invoice.php
+- referenced-class: vendor/soho/ecom/src/Action/InvoiceRaised.php
+- referenced-class: vendor/soho/ecom/src/Action/ViewInvoice.php
+- referenced-class: vendor/soho/ecom/src/Action/ManualPay.php
+- referenced-class: vendor/soho/ecom/src/Action/ManualRefund.php
+- referenced-class: vendor/soho/ecom/src/Action/Open.php
+- referenced-class: vendor/soho/ecom/src/Action/Refund.php
+- referenced-class: vendor/soho/ecom/src/Action/RefundToVoucher.php
+- referenced-class: vendor/soho/ecom/src/Action/ResendConfirmation.php
+- referenced-class: vendor/soho/ecom/src/Action/ResendInvoice.php
+- referenced-class: vendor/soho/ecom/src/Action/Sage.php
+- referenced-class: vendor/soho/ecom/src/Action/SendApplication.php
+- referenced-class: vendor/soho/ecom/src/Action/SkipStockCheck.php
+- referenced-class: vendor/soho/ecom/src/Action/UnSkipStockCheck.php
+- referenced-class: vendor/soho/ecom/src/Action/UnmarkVip.php
+- referenced-class: vendor/soho/ecom/src/Action/MarkVip.php
+- referenced-class: vendor/soho/ecom/src/Flag/AbandonedBasketEmail.php
+- referenced-class: vendor/soho/ecom/src/Flag/AutoRenewMembership.php
+- referenced-class: vendor/soho/ecom/src/Flag/AutoRenewedMembership.php
+- referenced-class: vendor/soho/ecom/src/Flag/Balanced.php
+- referenced-class: vendor/soho/ecom/src/Flag/Consolidated.php
+- referenced-class: vendor/soho/ecom/src/Flag/CpOrder.php
+- referenced-class: vendor/soho/ecom/src/Flag/CustomerLoggedIn.php
+- referenced-class: vendor/soho/ecom/src/Flag/InvoiceRaised.php
+- referenced-class: vendor/soho/ecom/src/Flag/Member.php
+- referenced-class: vendor/soho/ecom/src/Flag/MembershipPurchase.php
+- referenced-class: vendor/soho/ecom/src/Flag/MembershipApplicationSent.php
+- referenced-class: vendor/soho/ecom/src/Flag/MembershipApplicationFailed.php
+- referenced-class: vendor/soho/ecom/src/Flag/MtoTermsChecked.php
+- referenced-class: vendor/soho/ecom/src/Flag/DesignServiceTermsChecked.php
+- referenced-class: vendor/soho/ecom/src/Flag/SentToAvalara.php
+- referenced-class: vendor/soho/ecom/src/Flag/SentToBusinessCentral.php
+- referenced-class: vendor/soho/ecom/src/Flag/SentToSage.php
+- referenced-class: vendor/soho/ecom/src/Flag/SkipStockCheck.php
+- referenced-class: vendor/soho/ecom/src/Flag/Trade.php
+- referenced-class: vendor/soho/ecom/src/Flag/VatExempt.php
+- referenced-class: vendor/soho/ecom/src/Flag/Vip.php
+- referenced-class: vendor/soho/ecom/src/State/NewOrder.php
+- referenced-class: vendor/soho/ecom/src/State/Open.php
+- referenced-class: vendor/soho/ecom/src/State/Cancelled.php
+- referenced-class: vendor/soho/ecom/src/State/Closed.php
+- referenced-class: vendor/soho/ecom/src/State/InvoiceRaised.php
+- referenced-class: vendor/soho/ecom/src/State/Waiting.php
+- referenced-class: vendor/soho/ecom/src/State/Issue.php
+- referenced-class: vendor/soho/ecom/src/Mail/LogHandler.php
+- referenced-class: vendor/soho/ecom/src/Middleware/Cookies.php
+- model: vendor/soho/ecom/src/Returns/Model/ReturnSet.php
+- parent-model: vendor/d3r/returns/src/Model/ReturnSet.php
+- model-xml: vendor/soho/ecom/src/Returns/Model/ReturnSet.xml
+- referenced-class: vendor/d3r/returns/src/Order/ReturnEvent.php
+
+## Swatches
+
+- URL: https://dev.soho-home.local/cp/swatches
+- Documentation route key: https://dev.soho-home.local|cp|swatches|index|swatches
+- Draft doc: pages/004-cp-swatches-716721cf/README.md
+- Code analysis doc: .vscode/code-docs/cp-swatches.md
+- Page screenshots: pages/004-cp-swatches-716721cf/images/page-desktop.png
+- Field count: 39
+- Controller: App\Swatches\Controller (swatches)
+- Controller file: src/Swatches/Controller.php
+- Action method: indexAction
+
+### DOM Fields
+
+- 1. Keyword search (text)
+  - DOM name: `search`
+  - Screenshot: pages/004-cp-swatches-716721cf/images/field-001-keyword-search.png
+- 2. inline[1][swatch_uk] (checkbox)
+  - DOM name: `inline[1][swatch_uk]`
+- 3. inline[1][swatch_eu] (checkbox)
+  - DOM name: `inline[1][swatch_eu]`
+- 4. inline[1][swatch_us] (checkbox)
+  - DOM name: `inline[1][swatch_us]`
+- 5. inline[2][swatch_uk] (checkbox)
+  - DOM name: `inline[2][swatch_uk]`
+- 6. inline[2][swatch_eu] (checkbox)
+  - DOM name: `inline[2][swatch_eu]`
+- 7. inline[2][swatch_us] (checkbox)
+  - DOM name: `inline[2][swatch_us]`
+- 8. inline[3][swatch_uk] (checkbox)
+  - DOM name: `inline[3][swatch_uk]`
+- 9. inline[3][swatch_eu] (checkbox)
+  - DOM name: `inline[3][swatch_eu]`
+- 10. inline[3][swatch_us] (checkbox)
+  - DOM name: `inline[3][swatch_us]`
+- 11. inline[4][swatch_uk] (checkbox)
+  - DOM name: `inline[4][swatch_uk]`
+- 12. inline[4][swatch_eu] (checkbox)
+  - DOM name: `inline[4][swatch_eu]`
+- 13. inline[4][swatch_us] (checkbox)
+  - DOM name: `inline[4][swatch_us]`
+- 14. inline[5][swatch_uk] (checkbox)
+  - DOM name: `inline[5][swatch_uk]`
+- 15. inline[5][swatch_eu] (checkbox)
+  - DOM name: `inline[5][swatch_eu]`
+- 16. inline[5][swatch_us] (checkbox)
+  - DOM name: `inline[5][swatch_us]`
+- 17. inline[6][swatch_uk] (checkbox)
+  - DOM name: `inline[6][swatch_uk]`
+- 18. inline[6][swatch_eu] (checkbox)
+  - DOM name: `inline[6][swatch_eu]`
+- 19. inline[6][swatch_us] (checkbox)
+  - DOM name: `inline[6][swatch_us]`
+- 20. inline[7][swatch_uk] (checkbox)
+  - DOM name: `inline[7][swatch_uk]`
+- 21. inline[7][swatch_eu] (checkbox)
+  - DOM name: `inline[7][swatch_eu]`
+- 22. inline[7][swatch_us] (checkbox)
+  - DOM name: `inline[7][swatch_us]`
+- 23. inline[8][swatch_uk] (checkbox)
+  - DOM name: `inline[8][swatch_uk]`
+- 24. inline[8][swatch_eu] (checkbox)
+  - DOM name: `inline[8][swatch_eu]`
+- 25. inline[8][swatch_us] (checkbox)
+  - DOM name: `inline[8][swatch_us]`
+- 26. inline[9][swatch_uk] (checkbox)
+  - DOM name: `inline[9][swatch_uk]`
+- 27. inline[9][swatch_eu] (checkbox)
+  - DOM name: `inline[9][swatch_eu]`
+- 28. inline[9][swatch_us] (checkbox)
+  - DOM name: `inline[9][swatch_us]`
+- 29. inline[10][swatch_uk] (checkbox)
+  - DOM name: `inline[10][swatch_uk]`
+- 30. inline[10][swatch_eu] (checkbox)
+  - DOM name: `inline[10][swatch_eu]`
+- 31. inline[10][swatch_us] (checkbox)
+  - DOM name: `inline[10][swatch_us]`
+- 32. inline[11][swatch_uk] (checkbox)
+  - DOM name: `inline[11][swatch_uk]`
+- 33. inline[11][swatch_eu] (checkbox)
+  - DOM name: `inline[11][swatch_eu]`
+- 34. inline[11][swatch_us] (checkbox)
+  - DOM name: `inline[11][swatch_us]`
+- 35. inline[12][swatch_uk] (checkbox)
+  - DOM name: `inline[12][swatch_uk]`
+- 36. inline[12][swatch_eu] (checkbox)
+  - DOM name: `inline[12][swatch_eu]`
+- 37. inline[12][swatch_us] (checkbox)
+  - DOM name: `inline[12][swatch_us]`
+- 38. select (select)
+  - Screenshot: pages/004-cp-swatches-716721cf/images/field-038-select.png
+- 39. inline_action (submit)
+  - DOM name: `inline_action`
+
+### Source References
+
+- provider: src/Swatches/Provider.php
+- controller: src/Swatches/Controller.php
+- view: src/Swatches/views/index.twig
+
+## Redirects
+
+- URL: https://dev.soho-home.local/cp/redirects
+- Documentation route key: https://dev.soho-home.local|cp|redirects|index|redirects
+- Draft doc: pages/005-cp-redirects-7f08f116/README.md
+- Code analysis doc: .vscode/code-docs/cp-redirects.md
+- Page screenshots: pages/005-cp-redirects-7f08f116/images/page-desktop.png
+- Field count: 152
+- Controller: App\Redirects\AdminController (redirects)
+- Controller file: src/Redirects/AdminController.php
+- Action method: indexAction (inherited or unresolved)
+
+### DOM Fields
+
+- 1. Keyword search (text)
+  - DOM name: `search`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-001-keyword-search.png
+- 2. inline[144][redirect_from] (text)
+  - DOM name: `inline[144][redirect_from]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-002-inline-144-redirect-from.png
+- 3. inline[144][redirect_to] (text)
+  - DOM name: `inline[144][redirect_to]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-003-inline-144-redirect-to.png
+- 4. inline[144][redirect_method] (select)
+  - DOM name: `inline[144][redirect_method]`
+- 5. inline[144][redirect_strip_params] (checkbox)
+  - DOM name: `inline[144][redirect_strip_params]`
+- 6. inline[144][redirect_permanent] (checkbox)
+  - DOM name: `inline[144][redirect_permanent]`
+- 7. inline[152][redirect_from] (text)
+  - DOM name: `inline[152][redirect_from]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-007-inline-152-redirect-from.png
+- 8. inline[152][redirect_to] (text)
+  - DOM name: `inline[152][redirect_to]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-008-inline-152-redirect-to.png
+- 9. inline[152][redirect_method] (select)
+  - DOM name: `inline[152][redirect_method]`
+- 10. inline[152][redirect_strip_params] (checkbox)
+  - DOM name: `inline[152][redirect_strip_params]`
+- 11. inline[152][redirect_permanent] (checkbox)
+  - DOM name: `inline[152][redirect_permanent]`
+- 12. inline[153][redirect_from] (text)
+  - DOM name: `inline[153][redirect_from]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-012-inline-153-redirect-from.png
+- 13. inline[153][redirect_to] (text)
+  - DOM name: `inline[153][redirect_to]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-013-inline-153-redirect-to.png
+- 14. inline[153][redirect_method] (select)
+  - DOM name: `inline[153][redirect_method]`
+- 15. inline[153][redirect_strip_params] (checkbox)
+  - DOM name: `inline[153][redirect_strip_params]`
+- 16. inline[153][redirect_permanent] (checkbox)
+  - DOM name: `inline[153][redirect_permanent]`
+- 17. inline[154][redirect_from] (text)
+  - DOM name: `inline[154][redirect_from]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-017-inline-154-redirect-from.png
+- 18. inline[154][redirect_to] (text)
+  - DOM name: `inline[154][redirect_to]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-018-inline-154-redirect-to.png
+- 19. inline[154][redirect_method] (select)
+  - DOM name: `inline[154][redirect_method]`
+- 20. inline[154][redirect_strip_params] (checkbox)
+  - DOM name: `inline[154][redirect_strip_params]`
+- 21. inline[154][redirect_permanent] (checkbox)
+  - DOM name: `inline[154][redirect_permanent]`
+- 22. inline[155][redirect_from] (text)
+  - DOM name: `inline[155][redirect_from]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-022-inline-155-redirect-from.png
+- 23. inline[155][redirect_to] (text)
+  - DOM name: `inline[155][redirect_to]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-023-inline-155-redirect-to.png
+- 24. inline[155][redirect_method] (select)
+  - DOM name: `inline[155][redirect_method]`
+- 25. inline[155][redirect_strip_params] (checkbox)
+  - DOM name: `inline[155][redirect_strip_params]`
+- 26. inline[155][redirect_permanent] (checkbox)
+  - DOM name: `inline[155][redirect_permanent]`
+- 27. inline[158][redirect_from] (text)
+  - DOM name: `inline[158][redirect_from]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-027-inline-158-redirect-from.png
+- 28. inline[158][redirect_to] (text)
+  - DOM name: `inline[158][redirect_to]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-028-inline-158-redirect-to.png
+- 29. inline[158][redirect_method] (select)
+  - DOM name: `inline[158][redirect_method]`
+- 30. inline[158][redirect_strip_params] (checkbox)
+  - DOM name: `inline[158][redirect_strip_params]`
+- 31. inline[158][redirect_permanent] (checkbox)
+  - DOM name: `inline[158][redirect_permanent]`
+- 32. inline[159][redirect_from] (text)
+  - DOM name: `inline[159][redirect_from]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-032-inline-159-redirect-from.png
+- 33. inline[159][redirect_to] (text)
+  - DOM name: `inline[159][redirect_to]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-033-inline-159-redirect-to.png
+- 34. inline[159][redirect_method] (select)
+  - DOM name: `inline[159][redirect_method]`
+- 35. inline[159][redirect_strip_params] (checkbox)
+  - DOM name: `inline[159][redirect_strip_params]`
+- 36. inline[159][redirect_permanent] (checkbox)
+  - DOM name: `inline[159][redirect_permanent]`
+- 37. inline[160][redirect_from] (text)
+  - DOM name: `inline[160][redirect_from]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-037-inline-160-redirect-from.png
+- 38. inline[160][redirect_to] (text)
+  - DOM name: `inline[160][redirect_to]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-038-inline-160-redirect-to.png
+- 39. inline[160][redirect_method] (select)
+  - DOM name: `inline[160][redirect_method]`
+- 40. inline[160][redirect_strip_params] (checkbox)
+  - DOM name: `inline[160][redirect_strip_params]`
+- 41. inline[160][redirect_permanent] (checkbox)
+  - DOM name: `inline[160][redirect_permanent]`
+- 42. inline[161][redirect_from] (text)
+  - DOM name: `inline[161][redirect_from]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-042-inline-161-redirect-from.png
+- 43. inline[161][redirect_to] (text)
+  - DOM name: `inline[161][redirect_to]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-043-inline-161-redirect-to.png
+- 44. inline[161][redirect_method] (select)
+  - DOM name: `inline[161][redirect_method]`
+- 45. inline[161][redirect_strip_params] (checkbox)
+  - DOM name: `inline[161][redirect_strip_params]`
+- 46. inline[161][redirect_permanent] (checkbox)
+  - DOM name: `inline[161][redirect_permanent]`
+- 47. inline[162][redirect_from] (text)
+  - DOM name: `inline[162][redirect_from]`
+- 48. inline[162][redirect_to] (text)
+  - DOM name: `inline[162][redirect_to]`
+- 49. inline[162][redirect_method] (select)
+  - DOM name: `inline[162][redirect_method]`
+- 50. inline[162][redirect_strip_params] (checkbox)
+  - DOM name: `inline[162][redirect_strip_params]`
+- 51. inline[162][redirect_permanent] (checkbox)
+  - DOM name: `inline[162][redirect_permanent]`
+- 52. inline[163][redirect_from] (text)
+  - DOM name: `inline[163][redirect_from]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-052-inline-163-redirect-from.png
+- 53. inline[163][redirect_to] (text)
+  - DOM name: `inline[163][redirect_to]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-053-inline-163-redirect-to.png
+- 54. inline[163][redirect_method] (select)
+  - DOM name: `inline[163][redirect_method]`
+- 55. inline[163][redirect_strip_params] (checkbox)
+  - DOM name: `inline[163][redirect_strip_params]`
+- 56. inline[163][redirect_permanent] (checkbox)
+  - DOM name: `inline[163][redirect_permanent]`
+- 57. inline[165][redirect_from] (text)
+  - DOM name: `inline[165][redirect_from]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-057-inline-165-redirect-from.png
+- 58. inline[165][redirect_to] (text)
+  - DOM name: `inline[165][redirect_to]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-058-inline-165-redirect-to.png
+- 59. inline[165][redirect_method] (select)
+  - DOM name: `inline[165][redirect_method]`
+- 60. inline[165][redirect_strip_params] (checkbox)
+  - DOM name: `inline[165][redirect_strip_params]`
+- 61. inline[165][redirect_permanent] (checkbox)
+  - DOM name: `inline[165][redirect_permanent]`
+- 62. inline[166][redirect_from] (text)
+  - DOM name: `inline[166][redirect_from]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-062-inline-166-redirect-from.png
+- 63. inline[166][redirect_to] (text)
+  - DOM name: `inline[166][redirect_to]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-063-inline-166-redirect-to.png
+- 64. inline[166][redirect_method] (select)
+  - DOM name: `inline[166][redirect_method]`
+- 65. inline[166][redirect_strip_params] (checkbox)
+  - DOM name: `inline[166][redirect_strip_params]`
+- 66. inline[166][redirect_permanent] (checkbox)
+  - DOM name: `inline[166][redirect_permanent]`
+- 67. inline[167][redirect_from] (text)
+  - DOM name: `inline[167][redirect_from]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-067-inline-167-redirect-from.png
+- 68. inline[167][redirect_to] (text)
+  - DOM name: `inline[167][redirect_to]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-068-inline-167-redirect-to.png
+- 69. inline[167][redirect_method] (select)
+  - DOM name: `inline[167][redirect_method]`
+- 70. inline[167][redirect_strip_params] (checkbox)
+  - DOM name: `inline[167][redirect_strip_params]`
+- 71. inline[167][redirect_permanent] (checkbox)
+  - DOM name: `inline[167][redirect_permanent]`
+- 72. inline[168][redirect_from] (text)
+  - DOM name: `inline[168][redirect_from]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-072-inline-168-redirect-from.png
+- 73. inline[168][redirect_to] (text)
+  - DOM name: `inline[168][redirect_to]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-073-inline-168-redirect-to.png
+- 74. inline[168][redirect_method] (select)
+  - DOM name: `inline[168][redirect_method]`
+- 75. inline[168][redirect_strip_params] (checkbox)
+  - DOM name: `inline[168][redirect_strip_params]`
+- 76. inline[168][redirect_permanent] (checkbox)
+  - DOM name: `inline[168][redirect_permanent]`
+- 77. inline[169][redirect_from] (text)
+  - DOM name: `inline[169][redirect_from]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-077-inline-169-redirect-from.png
+- 78. inline[169][redirect_to] (text)
+  - DOM name: `inline[169][redirect_to]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-078-inline-169-redirect-to.png
+- 79. inline[169][redirect_method] (select)
+  - DOM name: `inline[169][redirect_method]`
+- 80. inline[169][redirect_strip_params] (checkbox)
+  - DOM name: `inline[169][redirect_strip_params]`
+- 81. inline[169][redirect_permanent] (checkbox)
+  - DOM name: `inline[169][redirect_permanent]`
+- 82. inline[171][redirect_from] (text)
+  - DOM name: `inline[171][redirect_from]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-082-inline-171-redirect-from.png
+- 83. inline[171][redirect_to] (text)
+  - DOM name: `inline[171][redirect_to]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-083-inline-171-redirect-to.png
+- 84. inline[171][redirect_method] (select)
+  - DOM name: `inline[171][redirect_method]`
+- 85. inline[171][redirect_strip_params] (checkbox)
+  - DOM name: `inline[171][redirect_strip_params]`
+- 86. inline[171][redirect_permanent] (checkbox)
+  - DOM name: `inline[171][redirect_permanent]`
+- 87. inline[172][redirect_from] (text)
+  - DOM name: `inline[172][redirect_from]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-087-inline-172-redirect-from.png
+- 88. inline[172][redirect_to] (text)
+  - DOM name: `inline[172][redirect_to]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-088-inline-172-redirect-to.png
+- 89. inline[172][redirect_method] (select)
+  - DOM name: `inline[172][redirect_method]`
+- 90. inline[172][redirect_strip_params] (checkbox)
+  - DOM name: `inline[172][redirect_strip_params]`
+- 91. inline[172][redirect_permanent] (checkbox)
+  - DOM name: `inline[172][redirect_permanent]`
+- 92. inline[173][redirect_from] (text)
+  - DOM name: `inline[173][redirect_from]`
+- 93. inline[173][redirect_to] (text)
+  - DOM name: `inline[173][redirect_to]`
+- 94. inline[173][redirect_method] (select)
+  - DOM name: `inline[173][redirect_method]`
+- 95. inline[173][redirect_strip_params] (checkbox)
+  - DOM name: `inline[173][redirect_strip_params]`
+- 96. inline[173][redirect_permanent] (checkbox)
+  - DOM name: `inline[173][redirect_permanent]`
+- 97. inline[174][redirect_from] (text)
+  - DOM name: `inline[174][redirect_from]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-097-inline-174-redirect-from.png
+- 98. inline[174][redirect_to] (text)
+  - DOM name: `inline[174][redirect_to]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-098-inline-174-redirect-to.png
+- 99. inline[174][redirect_method] (select)
+  - DOM name: `inline[174][redirect_method]`
+- 100. inline[174][redirect_strip_params] (checkbox)
+  - DOM name: `inline[174][redirect_strip_params]`
+- 101. inline[174][redirect_permanent] (checkbox)
+  - DOM name: `inline[174][redirect_permanent]`
+- 102. inline[176][redirect_from] (text)
+  - DOM name: `inline[176][redirect_from]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-102-inline-176-redirect-from.png
+- 103. inline[176][redirect_to] (text)
+  - DOM name: `inline[176][redirect_to]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-103-inline-176-redirect-to.png
+- 104. inline[176][redirect_method] (select)
+  - DOM name: `inline[176][redirect_method]`
+- 105. inline[176][redirect_strip_params] (checkbox)
+  - DOM name: `inline[176][redirect_strip_params]`
+- 106. inline[176][redirect_permanent] (checkbox)
+  - DOM name: `inline[176][redirect_permanent]`
+- 107. inline[177][redirect_from] (text)
+  - DOM name: `inline[177][redirect_from]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-107-inline-177-redirect-from.png
+- 108. inline[177][redirect_to] (text)
+  - DOM name: `inline[177][redirect_to]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-108-inline-177-redirect-to.png
+- 109. inline[177][redirect_method] (select)
+  - DOM name: `inline[177][redirect_method]`
+- 110. inline[177][redirect_strip_params] (checkbox)
+  - DOM name: `inline[177][redirect_strip_params]`
+- 111. inline[177][redirect_permanent] (checkbox)
+  - DOM name: `inline[177][redirect_permanent]`
+- 112. inline[178][redirect_from] (text)
+  - DOM name: `inline[178][redirect_from]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-112-inline-178-redirect-from.png
+- 113. inline[178][redirect_to] (text)
+  - DOM name: `inline[178][redirect_to]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-113-inline-178-redirect-to.png
+- 114. inline[178][redirect_method] (select)
+  - DOM name: `inline[178][redirect_method]`
+- 115. inline[178][redirect_strip_params] (checkbox)
+  - DOM name: `inline[178][redirect_strip_params]`
+- 116. inline[178][redirect_permanent] (checkbox)
+  - DOM name: `inline[178][redirect_permanent]`
+- 117. inline[180][redirect_from] (text)
+  - DOM name: `inline[180][redirect_from]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-117-inline-180-redirect-from.png
+- 118. inline[180][redirect_to] (text)
+  - DOM name: `inline[180][redirect_to]`
+  - Screenshot: pages/005-cp-redirects-7f08f116/images/field-118-inline-180-redirect-to.png
+- 119. inline[180][redirect_method] (select)
+  - DOM name: `inline[180][redirect_method]`
+- 120. inline[180][redirect_strip_params] (checkbox)
+  - DOM name: `inline[180][redirect_strip_params]`
+- 121. inline[180][redirect_permanent] (checkbox)
+  - DOM name: `inline[180][redirect_permanent]`
+- 122. inline[181][redirect_from] (text)
+  - DOM name: `inline[181][redirect_from]`
+- 123. inline[181][redirect_to] (text)
+  - DOM name: `inline[181][redirect_to]`
+- 124. inline[181][redirect_method] (select)
+  - DOM name: `inline[181][redirect_method]`
+- 125. inline[181][redirect_strip_params] (checkbox)
+  - DOM name: `inline[181][redirect_strip_params]`
+- 126. inline[181][redirect_permanent] (checkbox)
+  - DOM name: `inline[181][redirect_permanent]`
+- 127. inline[182][redirect_from] (text)
+  - DOM name: `inline[182][redirect_from]`
+- 128. inline[182][redirect_to] (text)
+  - DOM name: `inline[182][redirect_to]`
+- 129. inline[182][redirect_method] (select)
+  - DOM name: `inline[182][redirect_method]`
+- 130. inline[182][redirect_strip_params] (checkbox)
+  - DOM name: `inline[182][redirect_strip_params]`
+- 131. inline[182][redirect_permanent] (checkbox)
+  - DOM name: `inline[182][redirect_permanent]`
+- 132. inline[183][redirect_from] (text)
+  - DOM name: `inline[183][redirect_from]`
+- 133. inline[183][redirect_to] (text)
+  - DOM name: `inline[183][redirect_to]`
+- 134. inline[183][redirect_method] (select)
+  - DOM name: `inline[183][redirect_method]`
+- 135. inline[183][redirect_strip_params] (checkbox)
+  - DOM name: `inline[183][redirect_strip_params]`
+- 136. inline[183][redirect_permanent] (checkbox)
+  - DOM name: `inline[183][redirect_permanent]`
+- 137. inline[184][redirect_from] (text)
+  - DOM name: `inline[184][redirect_from]`
+- 138. inline[184][redirect_to] (text)
+  - DOM name: `inline[184][redirect_to]`
+- 139. inline[184][redirect_method] (select)
+  - DOM name: `inline[184][redirect_method]`
+- 140. inline[184][redirect_strip_params] (checkbox)
+  - DOM name: `inline[184][redirect_strip_params]`
+- 141. inline[184][redirect_permanent] (checkbox)
+  - DOM name: `inline[184][redirect_permanent]`
+- 142. inline[186][redirect_from] (text)
+  - DOM name: `inline[186][redirect_from]`
+- 143. inline[186][redirect_to] (text)
+  - DOM name: `inline[186][redirect_to]`
+- 144. inline[186][redirect_method] (select)
+  - DOM name: `inline[186][redirect_method]`
+- 145. inline[186][redirect_strip_params] (checkbox)
+  - DOM name: `inline[186][redirect_strip_params]`
+- 146. inline[186][redirect_permanent] (checkbox)
+  - DOM name: `inline[186][redirect_permanent]`
+- 147. inline[191][redirect_from] (text)
+  - DOM name: `inline[191][redirect_from]`
+- 148. inline[191][redirect_to] (text)
+  - DOM name: `inline[191][redirect_to]`
+- 149. inline[191][redirect_method] (select)
+  - DOM name: `inline[191][redirect_method]`
+- 150. inline[191][redirect_strip_params] (checkbox)
+  - DOM name: `inline[191][redirect_strip_params]`
+- 151. inline[191][redirect_permanent] (checkbox)
+  - DOM name: `inline[191][redirect_permanent]`
+- 152. inline_action (submit)
+  - DOM name: `inline_action`
+
+### Source References
+
+- provider: src/Redirects/Provider.php
+- controller: src/Redirects/AdminController.php

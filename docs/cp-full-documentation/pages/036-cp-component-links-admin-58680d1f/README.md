@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/component-links-admin](https://sohohome.com/cp/component-links-admin)
 
-Component Links covers the admin screen used to review and maintain component links.
+Component Links lets admins find and review existing component links.
 
 ![Component Links overview](images/page-desktop.png)
 
@@ -17,8 +17,7 @@ Component Links covers the admin screen used to review and maintain component li
 
 ## Using This Page
 
-1. Open Component Links from the CP navigation.
-2. Scan the fields in the table to find the component link you need.
+1. Scan the fields in the table to find the component link you need.
 
 ## What You Can Do
 
@@ -26,18 +25,7 @@ Component Links covers the admin screen used to review and maintain component li
 
 Review the visible fields to check what already exists.
 
-- Field: Component Sku
-- Field: Component Title
-- Field: Stockitem Sku
-- Field: Stockitem Title
-- Field: Stockitem Status
-- Field: Product Title
-- Field: Season
-- Field: Outer Carton Weight
-- Field: Outer Carton Width (cm)
-- Field: Outer Carton Height (cm)
-- Field: Outer Carton Depth (cm)
-- Field: Link Quantity
+- Visible fields include Component Sku, Component Title, Stockitem Sku, Stockitem Title, Stockitem Status, Product Title, Season, and Outer Carton Weight.
 
 Example rows:
 

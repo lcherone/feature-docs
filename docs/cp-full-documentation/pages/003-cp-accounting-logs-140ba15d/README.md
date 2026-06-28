@@ -12,7 +12,7 @@ Accounting Logs (Sage & Avalara) record Sage and Avalara accounting activity so 
 
 ## Related Pages
 
-- [Edit Accounting Logs (Sage & Avalara)](../004-cp-accounting-logs-edit-881987-e9d3b5ea/README.md): Open an existing accounting logs (sage & avalara) when you need to check the setup or make a change.
+- [Edit Accounting Logs (Sage & Avalara)](../004-cp-accounting-logs-edit-id-e9d3b5ea/README.md): Open an existing accounting logs (sage & avalara) when you need to check the setup or make a change.
 
 ## How It Works
 
@@ -20,8 +20,7 @@ Accounting Logs (Sage & Avalara) record Sage and Avalara accounting activity so 
 
 ## Using This Page
 
-1. Open Accounting Logs (Sage & Avalara) from the CP navigation.
-2. Search or filter until you find the accounting logs (sage & avalara) you need.
+1. Search or filter until you find the accounting logs (sage & avalara) you need.
 
 ## What You Can Do
 
@@ -29,20 +28,12 @@ Accounting Logs (Sage & Avalara) record Sage and Avalara accounting activity so 
 
 Search or filter the visible fields to find the accounting logs (sage & avalara) you need.
 
-- Field: Order Reference
-- Field: Message
-- Field: Error
-- Field: Automated Issue Status
-- Field: Manual Issue Status
-- Field: Resolved
-- Field: Date Resolved
-- Field: Level
-- Field: Created
+- Visible fields include Order Reference, Message, Error, Automated Issue Status, Manual Issue Status, Resolved, Date Resolved, and Level.
 
 Example rows:
 
 | Order Reference | Message | Error | Automated Issue Status | Manual Issue Status | Resolved |
 | --- | --- | --- | --- | --- | --- |
-| S26062600179IX | Process Order For Avalara |  |  |  | YES |
-| S2606260010CSG | Process Order For Avalara |  |  |  | YES |
-| S26062523379O0 | Process Order For Avalara |  |  |  | YES |
+| [hidden] | Process Order For Avalara |  |  |  | YES |
+| [hidden] | Process Order For Avalara |  |  |  | YES |
+| [hidden] | Process Order For Avalara |  |  |  | YES |

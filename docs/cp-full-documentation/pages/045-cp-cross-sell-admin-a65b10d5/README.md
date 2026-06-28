@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/cross-sell-admin](https://sohohome.com/cp/cross-sell-admin)
 
-Cross Sell covers the admin screen used to review and maintain cross sell.
+Extra/Custom settings for Soho.
 
 ![Cross Sell overview](images/page-desktop.png)
 
@@ -63,19 +63,11 @@ Choose the option that matches this years.
 
 #### Months
 
-![Months](images/field-004-months.png)
-
-*Months setting*
-
 Choose the option that matches this months.
 
 **Options:** …, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, and 1 more
 
 #### Days
-
-![Days](images/field-005-days.png)
-
-*Days setting*
 
 Choose the option that matches this days.
 
@@ -83,19 +75,11 @@ Choose the option that matches this days.
 
 #### Hours
 
-![Hours](images/field-006-hours.png)
-
-*Hours setting*
-
 Choose the option that matches this hours.
 
 **Options:** …, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, and 13 more
 
 #### Minutes
-
-![Minutes](images/field-007-minutes.png)
-
-*Minutes setting*
 
 Choose the option that matches this minutes.
 
@@ -103,15 +87,11 @@ Choose the option that matches this minutes.
 
 #### Seconds
 
-![Seconds](images/field-008-seconds.png)
-
-*Seconds setting*
-
 Choose the option that matches this seconds.
 
 **Options:** …, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, and 18 more
 
-## Available Actions
+## Page Sections
 
 - Basic Settings
 - Filtered SKUs

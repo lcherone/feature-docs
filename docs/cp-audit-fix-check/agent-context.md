@@ -1,0 +1,293 @@
+# Soho Home CP Feature Docs Agent Context
+
+Generated: 2026-06-28T01:43:24.160Z
+
+Use this file as the handoff for Codex to produce final operator documentation. Read the referenced controller, model, XML, and view files before finalising page purpose, field behaviour, validation, and side effects.
+
+## Brandfolder Queue Admin
+
+- URL: https://dev.soho-home.local/cp/brandfolder-queue-admin
+- Documentation route key: https://dev.soho-home.local|cp|brandfolder-queue-admin|index|brandfolder-queue-admin
+- Draft doc: pages/001-cp-brandfolder-queue-admin-b72d4f87/README.md
+- Page screenshots: pages/001-cp-brandfolder-queue-admin-b72d4f87/images/page-desktop.png
+- Field count: 0
+- Controller: unresolved
+
+## Gift Cards
+
+- URL: https://dev.soho-home.local/cp/gift-cards
+- Documentation route key: https://dev.soho-home.local|cp|gift-cards|index|gift-cards
+- Draft doc: pages/002-cp-gift-cards-8e566960/README.md
+- Page screenshots: pages/002-cp-gift-cards-8e566960/images/page-desktop.png
+- Field count: 1
+- Controller: unresolved
+
+### DOM Fields
+
+- 1. Keyword search (text)
+  - DOM name: `search`
+  - Screenshot: pages/002-cp-gift-cards-8e566960/images/field-001-keyword-search.png
+
+## Adjustment Summaries
+
+- URL: https://dev.soho-home.local/cp/adjustments-summary-admin
+- Documentation route key: https://dev.soho-home.local|cp|adjustments-summary-admin|index|adjustments-summary-admin
+- Draft doc: pages/003-cp-adjustments-summary-admin-6754dd0f/README.md
+- Code analysis doc: .vscode/code-docs/cp-adjustments-summary-admin.md
+- Page screenshots: pages/003-cp-adjustments-summary-admin-6754dd0f/images/page-desktop.png
+- Field count: 1
+- Controller: Soho\Ecom\Controller\AdjustmentSummaryAdmin (adjustments-summary-admin)
+- Controller file: vendor/soho/ecom/src/Controller/AdjustmentSummaryAdmin.php
+- Action method: indexAction (inherited or unresolved)
+- Model: Store_Adjustment_Summary => Soho\Ecom\Model\AdjustmentSummary
+- Model file: vendor/soho/ecom/src/Model/AdjustmentSummary.php
+- Model XML: vendor/soho/ecom/src/Model/AdjustmentSummary.xml
+- Model item prefix: summary
+
+### DOM Fields
+
+- 1. Keyword search (text)
+  - DOM name: `search`
+  - Screenshot: pages/003-cp-adjustments-summary-admin-6754dd0f/images/field-001-keyword-search.png
+
+### Source References
+
+- provider: vendor/soho/ecom/src/Provider.php
+- controller: vendor/soho/ecom/src/Controller/AdjustmentSummaryAdmin.php
+- referenced-class: vendor/soho/ecom/src/Model/DesignServiceSettings.php
+- referenced-class: vendor/soho/ecom/src/Mail/Log.php
+- referenced-class: vendor/soho/ecom/src/Model/InvoiceSettings.php
+- referenced-class: vendor/soho/ecom/src/Model/MemberMarketProduct.php
+- referenced-class: vendor/soho/ecom/src/Model/MtoSettings.php
+- referenced-class: vendor/soho/ecom/src/Offers/Model/Offer.php
+- referenced-class: vendor/soho/ecom/src/Reasons/Model/Reason.php
+- referenced-class: vendor/soho/ecom/src/Reasons/Model/Group.php
+- referenced-class: vendor/soho/ecom/src/Returns/Model/ReturnSet.php
+- referenced-class: vendor/soho/ecom/src/Returns/Model/Item.php
+- referenced-class: vendor/soho/ecom/src/Returns/Model/Story.php
+- referenced-class: vendor/soho/ecom/src/Returns/Model/Queue.php
+- referenced-class: vendor/soho/ecom/src/Returns/Model/QueueAspect.php
+- referenced-class: vendor/soho/ecom/src/Returns/Model/QueueItem.php
+- referenced-class: vendor/soho/ecom/src/Basket/Model/AddedItem.php
+- referenced-class: vendor/soho/ecom/src/Model/Adjustment.php
+- referenced-class: vendor/soho/ecom/src/Model/AdjustmentItem.php
+- referenced-class: vendor/soho/ecom/src/Model/AdjustmentGroup.php
+- referenced-class: vendor/soho/ecom/src/Model/AdjustmentSummary.php
+- referenced-class: vendor/soho/ecom/src/Model/AdjustmentSummaryTransaction.php
+- referenced-class: vendor/soho/ecom/src/Model/BasketPage.php
+- referenced-class: vendor/soho/ecom/src/Model/Card.php
+- referenced-class: vendor/soho/ecom/src/Model/CheckoutPage.php
+- referenced-class: vendor/soho/ecom/src/Model/Currency.php
+- referenced-class: vendor/soho/ecom/src/Model/Customer.php
+- referenced-class: vendor/soho/ecom/src/Model/CustomerGroup.php
+- referenced-class: vendor/soho/ecom/src/Model/CustomerGroupLink.php
+- referenced-class: vendor/soho/ecom/src/Model/CustomerSpendRecord.php
+- referenced-class: vendor/soho/ecom/src/Model/ExStaff.php
+- referenced-class: vendor/soho/ecom/src/Model/GiftMessage.php
+- referenced-class: vendor/soho/ecom/src/Model/LineItem.php
+- referenced-class: vendor/soho/ecom/src/Model/Order.php
+- referenced-class: vendor/soho/ecom/src/Model/InvoiceDetails.php
+- referenced-class: vendor/soho/ecom/src/Model/ThanksPage.php
+- referenced-class: vendor/soho/ecom/src/Model/Transaction.php
+- referenced-class: vendor/soho/ecom/src/Model/Shipment.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Model/CountryGroup.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Model/DuoSettings.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Model/Exclusion.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Model/Holiday.php
+- referenced-class: vendor/soho/ecom/src/Model/ShipmentLineItem.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Model/Option.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Model/WincantonSettings.php
+- referenced-class: vendor/soho/ecom/src/Supplier/Model/Holiday.php
+- referenced-class: vendor/soho/ecom/src/Item/StockAdjustment.php
+- referenced-class: vendor/soho/ecom/src/Model/StockNotification.php
+- referenced-class: vendor/soho/ecom/src/Model/StockNotificationAspect.php
+- referenced-class: vendor/soho/ecom/src/Model/StockNotificationSettings.php
+- referenced-class: vendor/soho/ecom/src/Model/TradeTier.php
+- referenced-class: vendor/soho/ecom/src/Model/TradeTierSettings.php
+- referenced-class: vendor/soho/ecom/src/Model/Note.php
+- referenced-class: vendor/soho/ecom/src/Model/EmptyShipmentsAspect.php
+- referenced-class: vendor/soho/ecom/src/Model/MissingShipmentsAspect.php
+- referenced-class: vendor/soho/ecom/src/Model/PendingShipmentsAspect.php
+- referenced-class: vendor/soho/ecom/src/Model/DelayedDispatchEmailSettings.php
+- referenced-class: vendor/soho/ecom/src/Model/OrderIssueEmailSettings.php
+- referenced-class: vendor/soho/ecom/src/Model/MtoServiceEmailSettings.php
+- referenced-class: vendor/soho/ecom/src/Model/GiftingSettings.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Model/ClientLog.php
+- referenced-class: vendor/soho/ecom/src/Controller/AdjustmentSummaryAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/Basket.php
+- referenced-class: vendor/d3r/ecom/src/Controller/BasketAdmin.php
+- referenced-class: vendor/soho/ecom/src/AdminBasket/Controller/Finder.php
+- referenced-class: vendor/soho/ecom/src/Controller/Checkout.php
+- referenced-class: vendor/d3r/ecom/src/Controller/CheckoutAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/CurrenciesAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/CustomerAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/CustomerGroupsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/DelayedDispatchEmailSettings.php
+- referenced-class: vendor/soho/ecom/src/Mail/LogControllerAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/EmptyShipmentsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/MissingShipmentsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/PendingShipmentsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/ExStaffAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/GiftingSettingsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/InvoiceSettingsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/LineItemAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/MemberMarketProductsControllerAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/DesignServiceSettingsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/MtoSettingsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/MtoServiceEmailSettingsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/NotesAdminController.php
+- referenced-class: vendor/soho/ecom/src/Controller/OrderIssueEmailSettings.php
+- referenced-class: vendor/soho/ecom/src/Offers/Controller/Admin.php
+- referenced-class: vendor/soho/ecom/src/Controller/ThreeDSecure.php
+- referenced-class: vendor/soho/ecom/src/Returns/AdminController.php
+- referenced-class: vendor/soho/ecom/src/Returns/QueueAdminController.php
+- referenced-class: vendor/soho/ecom/src/Returns/StoriesAdminController.php
+- referenced-class: vendor/soho/ecom/src/Reasons/ReasonsAdminController.php
+- referenced-class: vendor/soho/ecom/src/Reasons/GroupsAdminController.php
+- referenced-class: vendor/soho/ecom/src/Controller/ShipmentsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Controller/OptionsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Controller/ExclusionsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Controller/CountryGroupsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Controller/HolidaysAdmin.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Controller/DuoSettingsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Controller/WincantonSettingsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Controller/ClientLogAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/StoreAdmin.php
+- referenced-class: vendor/soho/ecom/src/Supplier/Controller/HolidaysAdmin.php
+- referenced-class: vendor/soho/ecom/src/AdminBasket/Controller/Basket.php
+- referenced-class: vendor/soho/ecom/src/Controller/StockNotificationsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/StockNotificationSettingsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/TaxAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/TradeTiersAdmin.php
+- referenced-class: vendor/soho/ecom/src/Controller/TradeTierSettingsAdmin.php
+- referenced-class: vendor/soho/ecom/src/Model/Field/ManyToManyOpt.php
+- referenced-class: vendor/soho/ecom/src/Model/Field/DynamicCalculated.php
+- referenced-class: vendor/soho/ecom/src/Item/MembershipItem.php
+- referenced-class: vendor/soho/ecom/src/Model/MemberMarketProductItem.php
+- referenced-class: vendor/soho/ecom/src/Membership/RenewalBasket.php
+- referenced-class: vendor/soho/ecom/src/Adjustment/Helper.php
+- referenced-class: vendor/soho/ecom/src/Basket.php
+- referenced-class: vendor/soho/ecom/src/Basket/BasketMerger.php
+- referenced-class: vendor/d3r/ecom/src/Basket/Storage/BasketStorageInterface.php
+- referenced-class: vendor/d3r/ecom/src/Basket/Storage/DatabaseStorageMigrate.php
+- referenced-class: vendor/soho/ecom/src/Factory/OrderFactory.php
+- referenced-class: vendor/soho/ecom/src/Model/OrderSummary.php
+- referenced-class: vendor/soho/ecom/src/Mail/SupplierMailer.php
+- referenced-class: vendor/soho/ecom/src/Mail/InvoiceMailer.php
+- referenced-class: vendor/soho/ecom/src/Mail/JourneyMailer.php
+- referenced-class: vendor/soho/ecom/src/Mail/ServiceMailer.php
+- referenced-class: vendor/d3r/payment/src/Mailer/AdyenPayByLink.php
+- referenced-class: vendor/soho/ecom/src/Payment/Mailer/PayByLink.php
+- referenced-class: vendor/soho/ecom/src/Pricing/Advisor.php
+- referenced-class: vendor/soho/ecom/src/Pricing/Converter.php
+- referenced-class: vendor/soho/ecom/src/Item/Custom/Surcharge.php
+- referenced-class: vendor/d3r/ecom-admin-basket/src/Mediator/LegacyMediator.php
+- referenced-class: vendor/soho/ecom/src/AdminBasket/Mediators/MemberMarketProduct.php
+- referenced-class: vendor/soho/ecom/src/Item/DonationUA.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Handler.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Option/Gift/Wrap.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Option/Gift/Box.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Option/Trade.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Option/Takeaway.php
+- referenced-class: vendor/soho/ecom/src/Offers/Type/ProductDiscount.php
+- referenced-class: vendor/soho/ecom/src/Offers/Type/BasketDiscount.php
+- referenced-class: vendor/soho/ecom/src/Offers/Type/FreeProduct.php
+- referenced-class: vendor/soho/ecom/src/Offers/Type/Shipping.php
+- referenced-class: vendor/soho/ecom/src/Offers/Type/FreeProductSelection.php
+- referenced-class: vendor/soho/ecom/src/Offers/Distributor/Collection.php
+- referenced-class: vendor/soho/ecom/src/Personalisation/Helper.php
+- referenced-class: vendor/soho/ecom/src/Personalisation/Model/PersonalisationAddon.php
+- referenced-class: vendor/soho/ecom/src/Adjustment/Strategy/Add.php
+- referenced-class: vendor/soho/ecom/src/Adjustment/Strategy/Replace.php
+- referenced-class: vendor/soho/ecom/src/Adjustment/Strategy/Cancel.php
+- referenced-class: vendor/soho/ecom/src/Adjustment/Strategy/Discount.php
+- referenced-class: vendor/soho/ecom/src/Adjustment/Strategy/DiscountPercentage.php
+- referenced-class: vendor/d3r/checkout/src/OrderProcessor.php
+- referenced-class: vendor/soho/ecom/src/OrderProcessor.php
+- referenced-class: vendor/d3r/checkout/src/Fieldset/Order.php
+- referenced-class: vendor/soho/ecom/src/Checkout/Fieldset/Order.php
+- referenced-class: vendor/d3r/checkout/src/Fieldset/Customer.php
+- referenced-class: vendor/soho/ecom/src/Checkout/Fieldset/Customer.php
+- referenced-class: vendor/d3r/checkout/src/Fieldset/DeliveryAddress.php
+- referenced-class: vendor/soho/ecom/src/Checkout/Fieldset/DeliveryAddress.php
+- referenced-class: vendor/soho/ecom/src/Checkout/Fieldset/Invoice.php
+- referenced-class: vendor/soho/ecom/src/Checkout/Fieldset/Payment.php
+- referenced-class: vendor/soho/ecom/src/Checkout/Fieldset/Personal.php
+- referenced-class: vendor/soho/ecom/src/Action/CreatePayByLink.php
+- referenced-class: vendor/soho/ecom/src/Action/ExpirePayByLink.php
+- referenced-class: vendor/soho/ecom/src/Entity/RemoteShipment.php
+- referenced-class: vendor/d3r/checkout/src/Payment/MethodsInterface.php
+- referenced-class: vendor/soho/ecom/src/BasketEventHandler.php
+- referenced-class: vendor/soho/ecom/src/EventHandler.php
+- referenced-class: vendor/soho/ecom/src/Cookie/BasketCount.php
+- referenced-class: vendor/soho/ecom/src/Cookie/ReturningCustomer.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Client/Wincanton/SoapClient.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Client/Wincanton/AvailabilityOrder.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Client/Wincanton/CreateOrder.php
+- referenced-class: vendor/soho/ecom/src/Shipping/Client/Mail/Mailer.php
+- referenced-class: vendor/d3r/metrics-collector/src/CollectorInterface.php
+- referenced-class: vendor/d3r/ecom-admin-basket/src/Item/Metadata.php
+- referenced-class: vendor/d3r/ecom-admin-basket/src/ItemFinder/Entity/Section.php
+- referenced-class: vendor/soho/ecom/src/Model/Filter/ActiveAdmin.php
+- referenced-class: vendor/soho/ecom/src/Helper.php
+- referenced-class: vendor/soho/ecom/src/Action/AbandonedBasketEmail.php
+- referenced-class: vendor/soho/ecom/src/Action/Accept.php
+- referenced-class: vendor/soho/ecom/src/Action/AddToBasket.php
+- referenced-class: vendor/soho/ecom/src/Action/Adjust.php
+- referenced-class: vendor/soho/ecom/src/Action/AutoRenewMembership.php
+- referenced-class: vendor/soho/ecom/src/Action/PayWithVoucher.php
+- referenced-class: vendor/soho/ecom/src/Action/Avalara.php
+- referenced-class: vendor/soho/ecom/src/Action/BusinessCentral.php
+- referenced-class: vendor/soho/ecom/src/Action/Cancel.php
+- referenced-class: vendor/soho/ecom/src/Action/Close.php
+- referenced-class: vendor/soho/ecom/src/Action/Edit.php
+- referenced-class: vendor/soho/ecom/src/Action/GenerateAmendedReceipt.php
+- referenced-class: vendor/soho/ecom/src/Action/GenerateVatReceipt.php
+- referenced-class: vendor/soho/ecom/src/Action/Invoice.php
+- referenced-class: vendor/soho/ecom/src/Action/InvoiceRaised.php
+- referenced-class: vendor/soho/ecom/src/Action/ViewInvoice.php
+- referenced-class: vendor/soho/ecom/src/Action/ManualPay.php
+- referenced-class: vendor/soho/ecom/src/Action/ManualRefund.php
+- referenced-class: vendor/soho/ecom/src/Action/Open.php
+- referenced-class: vendor/soho/ecom/src/Action/Refund.php
+- referenced-class: vendor/soho/ecom/src/Action/RefundToVoucher.php
+- referenced-class: vendor/soho/ecom/src/Action/ResendConfirmation.php
+- referenced-class: vendor/soho/ecom/src/Action/ResendInvoice.php
+- referenced-class: vendor/soho/ecom/src/Action/Sage.php
+- referenced-class: vendor/soho/ecom/src/Action/SendApplication.php
+- referenced-class: vendor/soho/ecom/src/Action/SkipStockCheck.php
+- referenced-class: vendor/soho/ecom/src/Action/UnSkipStockCheck.php
+- referenced-class: vendor/soho/ecom/src/Action/UnmarkVip.php
+- referenced-class: vendor/soho/ecom/src/Action/MarkVip.php
+- referenced-class: vendor/soho/ecom/src/Flag/AbandonedBasketEmail.php
+- referenced-class: vendor/soho/ecom/src/Flag/AutoRenewMembership.php
+- referenced-class: vendor/soho/ecom/src/Flag/AutoRenewedMembership.php
+- referenced-class: vendor/soho/ecom/src/Flag/Balanced.php
+- referenced-class: vendor/soho/ecom/src/Flag/Consolidated.php
+- referenced-class: vendor/soho/ecom/src/Flag/CpOrder.php
+- referenced-class: vendor/soho/ecom/src/Flag/CustomerLoggedIn.php
+- referenced-class: vendor/soho/ecom/src/Flag/InvoiceRaised.php
+- referenced-class: vendor/soho/ecom/src/Flag/Member.php
+- referenced-class: vendor/soho/ecom/src/Flag/MembershipPurchase.php
+- referenced-class: vendor/soho/ecom/src/Flag/MembershipApplicationSent.php
+- referenced-class: vendor/soho/ecom/src/Flag/MembershipApplicationFailed.php
+- referenced-class: vendor/soho/ecom/src/Flag/MtoTermsChecked.php
+- referenced-class: vendor/soho/ecom/src/Flag/DesignServiceTermsChecked.php
+- referenced-class: vendor/soho/ecom/src/Flag/SentToAvalara.php
+- referenced-class: vendor/soho/ecom/src/Flag/SentToBusinessCentral.php
+- referenced-class: vendor/soho/ecom/src/Flag/SentToSage.php
+- referenced-class: vendor/soho/ecom/src/Flag/SkipStockCheck.php
+- referenced-class: vendor/soho/ecom/src/Flag/Trade.php
+- referenced-class: vendor/soho/ecom/src/Flag/VatExempt.php
+- referenced-class: vendor/soho/ecom/src/Flag/Vip.php
+- referenced-class: vendor/soho/ecom/src/State/NewOrder.php
+- referenced-class: vendor/soho/ecom/src/State/Open.php
+- referenced-class: vendor/soho/ecom/src/State/Cancelled.php
+- referenced-class: vendor/soho/ecom/src/State/Closed.php
+- referenced-class: vendor/soho/ecom/src/State/InvoiceRaised.php
+- referenced-class: vendor/soho/ecom/src/State/Waiting.php
+- referenced-class: vendor/soho/ecom/src/State/Issue.php
+- referenced-class: vendor/soho/ecom/src/Mail/LogHandler.php
+- referenced-class: vendor/soho/ecom/src/Middleware/Cookies.php
+- model: vendor/soho/ecom/src/Model/AdjustmentSummary.php
+- model-xml: vendor/soho/ecom/src/Model/AdjustmentSummary.xml

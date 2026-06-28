@@ -19,7 +19,7 @@ Admin listing for product data that has failed to be applied from Business Centr
 1. Open the Failed Product Data screen.
 2. Use the visible fields to check the details.
 
-## Available Actions
+## Page Sections
 
 - Unresolved
 - All

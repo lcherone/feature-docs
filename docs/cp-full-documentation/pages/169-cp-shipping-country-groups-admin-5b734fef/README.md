@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/shipping-country-groups-admin](https://sohohome.com/cp/shipping-country-groups-admin)
 
-Shipping Country Groups covers the admin screen used to review and maintain shipping country groups.
+Custom Country Group for shipping options.
 
 ![Shipping Country Groups overview](images/page-desktop.png)
 
@@ -12,7 +12,7 @@ Shipping Country Groups covers the admin screen used to review and maintain ship
 
 ## Related Pages
 
-- [Edit Shipping Country Group](../170-cp-shipping-country-groups-admin-edit-1-c123e654/README.md): Open an existing shipping country group when you need to check the setup or make a change.
+- [Edit Shipping Country Group](../170-cp-shipping-country-groups-admin-edit-id-c123e654/README.md): Open an existing shipping country group when you need to check the setup or make a change.
 
 ## How It Works
 
@@ -21,8 +21,7 @@ Shipping Country Groups covers the admin screen used to review and maintain ship
 
 ## Using This Page
 
-1. Open Shipping Country Groups from the CP navigation.
-2. Search or filter until you find the shipping country group you need.
+1. Search or filter until you find the shipping country group you need.
 
 ## What You Can Do
 
@@ -30,13 +29,7 @@ Shipping Country Groups covers the admin screen used to review and maintain ship
 
 Search or filter the visible fields to find the shipping country group you need.
 
-- Field: Name
-- Field: Status
-- Field: Code
-- Field: Country
-- Field: States
-- Field: Postcode Prefixes
-- Field: Updated
+- Visible fields include Name, Status, Code, Country, States, Postcode Prefixes, and Updated.
 
 Example rows:
 

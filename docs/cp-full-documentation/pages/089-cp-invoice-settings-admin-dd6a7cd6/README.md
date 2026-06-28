@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/invoice-settings-admin](https://sohohome.com/cp/invoice-settings-admin)
 
-Invoice Settings covers the admin screen used to review and maintain invoice settings.
+Invoice settings data Stores invoicing address, company registration and bank transfer details per region (uk, eu, us) for use on invoices, VAT receipts and quotes.
 
 ![Invoice Settings overview](images/page-desktop.png)
 
@@ -116,7 +116,7 @@ Add the bank SWIFT code (optional).
 
 **Notes:** optional
 
-## Available Actions
+## Page Sections
 
 - UK
 - EU

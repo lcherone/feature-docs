@@ -12,7 +12,7 @@ Access Tokens store integration access and refresh tokens for services that need
 
 ## Related Pages
 
-- [Edit Access Token](../002-cp-access-tokens-edit-35373-f9f6d2ce/README.md): Open an existing access token when you need to check the setup or make a change.
+- [Edit Access Token](../002-cp-access-tokens-edit-id-f9f6d2ce/README.md): Open an existing access token when you need to check the setup or make a change.
 
 ## How It Works
 
@@ -22,8 +22,7 @@ Access Tokens store integration access and refresh tokens for services that need
 
 ## Using This Page
 
-1. Open Access Tokens from the CP navigation.
-2. Scan the fields in the table to find the access token you need.
+1. Scan the fields in the table to find the access token you need.
 
 ## What You Can Do
 
@@ -31,11 +30,7 @@ Access Tokens store integration access and refresh tokens for services that need
 
 Review the visible fields to check what already exists.
 
-- Field: Service
-- Field: Instance
-- Field: Token
-- Field: Refresh Token
-- Field: Expires
+- Visible fields include Service, Instance, Token, Refresh Token, and Expires.
 
 Example rows:
 

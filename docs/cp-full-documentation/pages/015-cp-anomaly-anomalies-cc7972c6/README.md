@@ -12,7 +12,7 @@ Anomalies list detected anomalies where recorded counts differ from the expected
 
 ## Related Pages
 
-- [View Anomaly](../016-cp-anomaly-anomalies-view-1049-b964294b/README.md): Open an existing anomaly when you need to check the full details.
+- [View Anomaly](../016-cp-anomaly-anomalies-view-id-b964294b/README.md): Open an existing anomaly when you need to check the full details.
 
 ## How It Works
 
@@ -20,8 +20,7 @@ Anomalies list detected anomalies where recorded counts differ from the expected
 
 ## Using This Page
 
-1. Open Anomalies from the CP navigation.
-2. Scan the fields in the table to find the anomaly you need.
+1. Scan the fields in the table to find the anomaly you need.
 
 ## What You Can Do
 
@@ -29,10 +28,7 @@ Anomalies list detected anomalies where recorded counts differ from the expected
 
 Review the visible fields to check what already exists.
 
-- Field: Detector
-- Field: Count
-- Field: Expected
-- Field: Date
+- Visible fields include Detector, Count, Expected, and Date.
 
 Example rows:
 

@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/delayed-dispatch-email-settings-admin](https://sohohome.com/cp/delayed-dispatch-email-settings-admin)
 
-Delayed Dispatch Email Settings covers the admin screen used to review and maintain delayed dispatch email settings.
+Delayed Dispatch Email Settings contains the fields an admin uses to maintain this delayed dispatch email setting.
 
 ![Delayed Dispatch Email Settings overview](images/page-desktop.png)
 
@@ -32,10 +32,6 @@ Use the fields on this screen to make the change, then save once the values are 
 
 #### Enabled
 
-![Enabled](images/field-001-enabled.png)
-
-*Enabled setting*
-
 Turn this on when enabled should apply. Leave it off when it should not.
 
 #### Days trigger (post purchase; business days only)
@@ -59,10 +55,6 @@ Add the subject.
 **Validation:** Required.
 
 #### Copy
-
-![Copy](images/field-004-copy.png)
-
-*Copy setting*
 
 Write the copy content.
 

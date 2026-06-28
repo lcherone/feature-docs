@@ -1,0 +1,110 @@
+{
+  "siteName": "Soho Home CP",
+  "generatedAt": "2026-06-28T01:08:15.182Z",
+  "runDir": "/Volumes/casey/shares/clients/soho-home/dev/releases/20231009091323/.vscode/feature-docs/docs/pii-redaction-smoke",
+  "pageCount": 2,
+  "crawl": {
+    "skippedDuplicateRoutes": 4,
+    "skippedDisallowedUrls": 0,
+    "skippedInaccessibleUrls": 0
+  },
+  "pages": [
+    {
+      "title": "store admin",
+      "indexTitle": "store admin",
+      "description": "Additional home specific store admin functionality",
+      "url": "https://dev.soho-home.local/cp/store-admin",
+      "publicUrl": "https://sohohome.com/cp/store-admin",
+      "routeKey": "https://dev.soho-home.local|cp|store-admin|index|store-admin",
+      "routeMetadata": null,
+      "slug": "001-cp-store-admin-998dd625",
+      "docFile": "pages/001-cp-store-admin-998dd625/README.md",
+      "codeDocFile": ".vscode/code-docs/cp-store-admin.md",
+      "relatedPages": [
+        {
+          "title": "View Store Show",
+          "docFile": "pages/002-cp-store-admin-show-id-03c4a77f/README.md",
+          "url": "https://dev.soho-home.local/cp/store-admin/show/:id",
+          "publicUrl": "https://sohohome.com/cp/store-admin/show/:id"
+        }
+      ],
+      "screenshots": [
+        "pages/001-cp-store-admin-998dd625/images/page-desktop.png"
+      ],
+      "fieldScreenshots": [
+        "pages/001-cp-store-admin-998dd625/images/field-001-keyword-search.png",
+        "pages/001-cp-store-admin-998dd625/images/field-002-select.png",
+        "pages/001-cp-store-admin-998dd625/images/field-003-select.png"
+      ],
+      "fieldCount": 3,
+      "codeContext": {
+        "route": {
+          "controllerAlias": "store-admin",
+          "action": "index",
+          "pattern": ""
+        },
+        "controller": {
+          "alias": "store-admin",
+          "className": "App\\Ecom\\StoreControllerAdmin",
+          "file": "src/Ecom/StoreControllerAdmin.php",
+          "actionMethod": "indexAction",
+          "hasActionMethod": true
+        },
+        "model": null,
+        "featureSummary": {
+          "description": "Additional home specific store admin functionality",
+          "notes": []
+        }
+      },
+      "technicalError": ""
+    },
+    {
+      "title": "Store Show",
+      "indexTitle": "View Store Show",
+      "description": "Additional home specific store admin functionality",
+      "url": "https://dev.soho-home.local/cp/store-admin/show/:id",
+      "publicUrl": "https://sohohome.com/cp/store-admin/show/:id",
+      "routeKey": "https://dev.soho-home.local|cp|store-admin|show|store-admin/show/:identifier",
+      "routeMetadata": null,
+      "slug": "002-cp-store-admin-show-id-03c4a77f",
+      "docFile": "pages/002-cp-store-admin-show-id-03c4a77f/README.md",
+      "codeDocFile": ".vscode/code-docs/cp-store-admin-show.md",
+      "relatedPages": [
+        {
+          "title": "store admin",
+          "docFile": "pages/001-cp-store-admin-998dd625/README.md",
+          "url": "https://dev.soho-home.local/cp/store-admin",
+          "publicUrl": "https://sohohome.com/cp/store-admin"
+        }
+      ],
+      "screenshots": [
+        "pages/002-cp-store-admin-show-id-03c4a77f/images/page-desktop.png"
+      ],
+      "fieldScreenshots": [
+        "pages/002-cp-store-admin-show-id-03c4a77f/images/field-001-select-retail-flag.png",
+        "pages/002-cp-store-admin-show-id-03c4a77f/images/field-002-search-for-admin.png"
+      ],
+      "fieldCount": 2,
+      "codeContext": {
+        "route": {
+          "controllerAlias": "store-admin",
+          "action": "show",
+          "pattern": ""
+        },
+        "controller": {
+          "alias": "store-admin",
+          "className": "App\\Ecom\\StoreControllerAdmin",
+          "file": "src/Ecom/StoreControllerAdmin.php",
+          "actionMethod": "showAction",
+          "hasActionMethod": false
+        },
+        "model": null,
+        "featureSummary": {
+          "description": "Additional home specific store admin functionality",
+          "notes": []
+        }
+      },
+      "technicalError": ""
+    }
+  ]
+}

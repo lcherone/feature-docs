@@ -1,10 +1,10 @@
 # Our Stores
 
-[Home](../../index.md) / Create Our Store
+[Home](../../index.md) / [Our Stores](../118-cp-our-stores-admin-11c8ca6d/README.md) / Create Our Store
 
 URL: [https://sohohome.com/cp/our-stores-admin/edit/new](https://sohohome.com/cp/our-stores-admin/edit/new)
 
-Controller for our stores section
+Use this screen when you need to create a new our store. It brings the fields together so the details can be checked and saved in one place.
 
 ![Our Stores overview](images/page-desktop.png)
 
@@ -100,6 +100,6 @@ Add the simplybook ID (optional).
 
 **Notes:** The ID of the store in Simplybook, used for interior design bookings.
 
-## Available Actions
+## Page Sections
 
 - Setup

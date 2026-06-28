@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/personalisation-admin](https://sohohome.com/cp/personalisation-admin)
 
-Personalisations covers the admin screen used to review and maintain personalisations.
+Personalisation
 
 ![Personalisations overview](images/page-desktop.png)
 
@@ -12,7 +12,7 @@ Personalisations covers the admin screen used to review and maintain personalisa
 
 ## Related Pages
 
-- [Edit Personalisation](../124-cp-personalisation-admin-edit-1-7a43e9d7/README.md): Open an existing personalisation when you need to check the setup or make a change.
+- [Edit Personalisation](../124-cp-personalisation-admin-edit-id-7a43e9d7/README.md): Open an existing personalisation when you need to check the setup or make a change.
 
 ## How It Works
 
@@ -22,8 +22,7 @@ Personalisations covers the admin screen used to review and maintain personalisa
 
 ## Using This Page
 
-1. Open Personalisations from the CP navigation.
-2. Scan the fields in the table to find the personalisation you need.
+1. Scan the fields in the table to find the personalisation you need.
 
 ## What You Can Do
 
@@ -31,10 +30,7 @@ Personalisations covers the admin screen used to review and maintain personalisa
 
 Review the visible fields to check what already exists.
 
-- Field: Title
-- Field: Colour Label
-- Field: Colour
-- Field: Warehouse Value
+- Visible fields include Title, Colour Label, Colour, and Warehouse Value.
 
 Example rows:
 
@@ -43,7 +39,3 @@ Example rows:
 | Antique Rose | Antique Rose | #C15041 | 12/1258 |
 | Clay | Clay | #A0522D | 1174 |
 | Dark Grey | Dark Grey | #A9A9A9 | 1041 |
-
-## Available Actions
-
-- Import csv

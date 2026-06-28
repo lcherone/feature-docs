@@ -12,7 +12,7 @@ Manage the Here to Help callouts
 
 ## Related Pages
 
-- [Edit Here To Help Callout](../084-cp-here-to-help-callouts-admin-edit-1-5a4a8dd2/README.md): Open an existing here to help callout when you need to check the setup or make a change.
+- [Edit Here To Help Callout](../084-cp-here-to-help-callouts-admin-edit-id-5a4a8dd2/README.md): Open an existing here to help callout when you need to check the setup or make a change.
 
 ## How It Works
 
@@ -20,8 +20,7 @@ Manage the Here to Help callouts
 
 ## Using This Page
 
-1. Open Here To Help Callouts from the CP navigation.
-2. Scan the fields in the table to find the here to help callout you need.
+1. Scan the fields in the table to find the here to help callout you need.
 
 ## What You Can Do
 
@@ -29,10 +28,7 @@ Manage the Here to Help callouts
 
 Review the visible fields to check what already exists.
 
-- Field: Title
-- Field: Status
-- Field: Created
-- Field: Updated
+- Visible fields include Title, Status, Created, and Updated.
 
 Example rows:
 

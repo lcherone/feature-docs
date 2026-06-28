@@ -1,6 +1,6 @@
 # Pre-Filtered Listings
 
-[Home](../../index.md) / Create Pre-Filtered Listing
+[Home](../../index.md) / [Pre-Filtered Listings](../141-cp-products-pre-filtered-listing-admin-ff16326d/README.md) / Create Pre-Filtered Listing
 
 URL: [https://sohohome.com/cp/products-pre-filtered-listing-admin/edit/new](https://sohohome.com/cp/products-pre-filtered-listing-admin/edit/new)
 
@@ -84,12 +84,8 @@ Choose the option that matches this category (optional).
 
 #### Intro (optional)
 
-![Intro optional](images/field-005-intro-optional.png)
-
-*Intro (optional) setting*
-
 Write the intro (optional) content.
 
-## Available Actions
+## Page Sections
 
 - Main

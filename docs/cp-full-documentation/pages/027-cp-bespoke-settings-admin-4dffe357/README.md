@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/bespoke-settings-admin](https://sohohome.com/cp/bespoke-settings-admin)
 
-Controller for bespoke settings
+Settings for bespoke shipping
 
 ![Bespoke Shipping Settings overview](images/page-desktop.png)
 
@@ -25,89 +25,8 @@ Controller for bespoke settings
 
 Use the fields on this screen to make the change, then save once the values are correct.
 
-## Key Settings
-
-### Bespoke Shipping Settings
-
-#### input
-
-![input](images/field-001-input.png)
-
-*input setting*
-
-Add the input.
-
-#### input
-
-![input](images/field-002-input.png)
-
-*input setting*
-
-Add the input.
-
-#### input
-
-![input](images/field-003-input.png)
-
-*input setting*
-
-Add the input.
-
-#### input
-
-![input](images/field-004-input.png)
-
-*input setting*
-
-Add the input.
-
-#### input
-
-![input](images/field-005-input.png)
-
-*input setting*
-
-Add the input.
-
-#### input
-
-![input](images/field-006-input.png)
-
-*input setting*
-
-Add the input.
-
-#### input
-
-![input](images/field-007-input.png)
-
-*input setting*
-
-Add the input.
-
-#### input
-
-![input](images/field-008-input.png)
-
-*input setting*
-
-Add the input.
-
-#### input
-
-Add the input.
-
-#### input
-
-Add the input.
-
-#### input
-
-Add the input.
-
-## Available Actions
+## Page Sections
 
 - UK
 - US
 - EU
-- Add new

@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/stock-notification-settings](https://sohohome.com/cp/stock-notification-settings)
 
-Stock Notification Settings covers the admin screen used to review and maintain stock notification settings.
+Stock notification settings
 
 ![Stock Notification Settings overview](images/page-desktop.png)
 
@@ -50,7 +50,7 @@ Add the notifications per product per run.
 
 **Validation:** Required.
 
-## Available Actions
+## Page Sections
 
 - General Settings
 - US Settings

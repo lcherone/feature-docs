@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/stockitems-attributes-admin](https://sohohome.com/cp/stockitems-attributes-admin)
 
-Provider
+SKU Attributes lets admins find and review existing SKU attributes.
 
 ![SKU Attributes overview](images/page-desktop.png)
 
@@ -12,7 +12,7 @@ Provider
 
 ## Related Pages
 
-- [Edit SKU Attribute](../192-cp-stockitems-attributes-admin-edit-3585-550bb43a/README.md): Open an existing SKU attribute when you need to check the setup or make a change.
+- [Edit SKU Attribute](../192-cp-stockitems-attributes-admin-edit-id-550bb43a/README.md): Open an existing SKU attribute when you need to check the setup or make a change.
 
 ## How It Works
 
@@ -20,8 +20,7 @@ Provider
 
 ## Using This Page
 
-1. Open SKU Attributes from the CP navigation.
-2. Search or filter until you find the SKU attribute you need.
+1. Search or filter until you find the SKU attribute you need.
 
 ## What You Can Do
 
@@ -29,18 +28,7 @@ Provider
 
 Search or filter the visible fields to find the SKU attribute you need.
 
-- Field: SKU
-- Field: Description
-- Field: SKU Status
-- Field: Product Status
-- Field: UK
-- Field: EU
-- Field: US
-- Field: Colour Group
-- Field: Colour
-- Field: Fabric
-- Field: Material
-- Field: Shape
+- Visible fields include SKU, Description, SKU Status, Product Status, UK, EU, US, and Colour Group.
 
 Example rows:
 

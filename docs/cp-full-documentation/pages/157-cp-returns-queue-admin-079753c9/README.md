@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/returns_queue-admin](https://sohohome.com/cp/returns_queue-admin)
 
-Returns Queue controller
+Returns Queue is used to review return records and follow their processing status.
 
 ![Returns Queue overview](images/page-desktop.png)
 
@@ -12,7 +12,7 @@ Returns Queue controller
 
 ## Related Pages
 
-- [View Returns Queue](../158-cp-returns-queue-admin-view-30479-6ea2ae48/README.md): Open an existing returns queue when you need to check the full details.
+- [View Returns Queue](../158-cp-returns-queue-admin-view-id-6ea2ae48/README.md): Open an existing returns queue when you need to check the full details.
 
 ## How It Works
 
@@ -21,8 +21,7 @@ Returns Queue controller
 
 ## Using This Page
 
-1. Open Returns Queue from the CP navigation.
-2. Search or filter until you find the returns queue you need.
+1. Search or filter until you find the returns queue you need.
 
 ## What You Can Do
 
@@ -30,38 +29,12 @@ Returns Queue controller
 
 Search or filter the visible fields to find the returns queue you need.
 
-- Field: Order
-- Field: Shipment
-- Field: Tracking
-- Field: Status
-- Field: Automation Reason
-- Field: Created
-- Field: Updated
+- Visible fields include Order, Shipment, Tracking, Status, Automation Reason, Created, and Updated.
 
 Example rows:
 
 | Order | Shipment | Tracking | Status | Automation Reason | Created |
 | --- | --- | --- | --- | --- | --- |
-| S2606012048W00 | S2606012048W00-1 |  | Not Registered | Order has Adjustments | 9:34am - 25 Jun 26 |
-| S2603311519OGY | S2603311519OGY-1 |  | Not Registered | Order has Adjustments | 9:04am - 25 Jun 26 |
-| S26060322134EG | S26060322134EG-1 |  | Not Registered | Line Item(s) are not returnable | 8:48am - 25 Jun 26 |
-
-## Key Settings
-
-The sections below highlight the settings people are most likely to change.
-
-### Returns Queue
-
-#### select
-
-![select](images/field-002-select.png)
-
-*select setting*
-
-Choose the option that matches this select.
-
-**Options:** Load saved view, Open Returns
-
-## Available Actions
-
-- Manage saved views
+| [hidden] | [hidden] |  | Not Registered | Order has Adjustments | 9:34am - 25 Jun 26 |
+| [hidden] | [hidden] |  | Not Registered | Order has Adjustments | 9:04am - 25 Jun 26 |
+| [hidden] | [hidden] |  | Not Registered | Line Item(s) are not returnable | 8:48am - 25 Jun 26 |

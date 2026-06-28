@@ -12,7 +12,7 @@ Webhook Logs record incoming AIS webhook activity so failed or processed request
 
 ## Related Pages
 
-- [View Webhook Log](../012-cp-ais-webhooks-logs-admin-view-31701-dacc22d3/README.md): Open an existing webhook log when you need to check the full details.
+- [View Webhook Log](../012-cp-ais-webhooks-logs-admin-view-id-dacc22d3/README.md): Open an existing webhook log when you need to check the full details.
 
 ## How It Works
 
@@ -20,8 +20,7 @@ Webhook Logs record incoming AIS webhook activity so failed or processed request
 
 ## Using This Page
 
-1. Open Webhook Logs from the CP navigation.
-2. Search or filter until you find the webhook log you need.
+1. Search or filter until you find the webhook log you need.
 
 ## What You Can Do
 
@@ -29,15 +28,7 @@ Webhook Logs record incoming AIS webhook activity so failed or processed request
 
 Search or filter the visible fields to find the webhook log you need.
 
-- Field: Endpoint
-- Field: Service
-- Field: Method
-- Field: Status Code
-- Field: Log Name
-- Field: Level
-- Field: Message
-- Field: Created
-- Field: Updated
+- Visible fields include Endpoint, Service, Method, Status Code, Log Name, Level, Message, and Created.
 
 Example rows:
 

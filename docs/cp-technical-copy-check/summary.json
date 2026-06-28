@@ -1,0 +1,280 @@
+{
+  "siteName": "Soho Home CP",
+  "generatedAt": "2026-06-28T01:55:06.229Z",
+  "runDir": "/Volumes/casey/shares/clients/soho-home/dev/releases/20231009091323/.vscode/feature-docs/docs/cp-technical-copy-check",
+  "pageCount": 5,
+  "crawl": {
+    "skippedDuplicateRoutes": 0,
+    "skippedDisallowedUrls": 0,
+    "skippedInaccessibleUrls": 0
+  },
+  "pages": [
+    {
+      "title": "Customers",
+      "indexTitle": "Customers",
+      "description": "Customers is used to find customer accounts and review the account, address, membership, basket, and order details available to admins.",
+      "url": "https://dev.soho-home.local/cp/customers",
+      "publicUrl": "https://sohohome.com/cp/customers",
+      "routeKey": "https://dev.soho-home.local|cp|customers|index|customers",
+      "routeMetadata": null,
+      "slug": "001-cp-customers-cbb2a4e5",
+      "docFile": "pages/001-cp-customers-cbb2a4e5/README.md",
+      "codeDocFile": ".vscode/code-docs/cp-customers.md",
+      "relatedPages": [],
+      "screenshots": [
+        "pages/001-cp-customers-cbb2a4e5/images/page-desktop.png"
+      ],
+      "fieldScreenshots": [
+        "pages/001-cp-customers-cbb2a4e5/images/field-001-keyword-search.png"
+      ],
+      "fieldCount": 1,
+      "codeContext": {
+        "route": {
+          "controllerAlias": "customers",
+          "action": "index",
+          "pattern": ""
+        },
+        "controller": {
+          "alias": "customers",
+          "className": "Soho\\Ecom\\Controller\\CustomerAdmin",
+          "file": "vendor/soho/ecom/src/Controller/CustomerAdmin.php",
+          "actionMethod": "indexAction",
+          "hasActionMethod": false
+        },
+        "model": {
+          "alias": "Store_Customer",
+          "className": "App\\Ecom\\Model\\Customer",
+          "file": "src/Ecom/Model/Customer.php",
+          "xmlFile": "src/Ecom/Model/Customer.xml",
+          "itemName": "",
+          "tableName": ""
+        },
+        "featureSummary": {
+          "description": "Customers is used to find customer accounts and review the account, address, membership, basket, and order details available to admins.",
+          "notes": [
+            "Sync a customer's details down from digital house.",
+            "Makes sure the transfer property is set appropriately.",
+            "The key fields are Wishlists, which explain what the record is for and how it can be used."
+          ]
+        }
+      },
+      "technicalError": ""
+    },
+    {
+      "title": "Image Asset Admin",
+      "indexTitle": "Image Asset Admin",
+      "description": "Image Asset Admin manages reusable image assets used across content and merchandising areas.",
+      "url": "https://dev.soho-home.local/cp/image-asset-admin",
+      "publicUrl": "https://sohohome.com/cp/image-asset-admin",
+      "routeKey": "https://dev.soho-home.local|cp|image-asset-admin|index|image-asset-admin",
+      "routeMetadata": null,
+      "slug": "002-cp-image-asset-admin-1c8e0118",
+      "docFile": "pages/002-cp-image-asset-admin-1c8e0118/README.md",
+      "codeDocFile": ".vscode/code-docs/cp-image-asset-admin.md",
+      "relatedPages": [],
+      "screenshots": [
+        "pages/002-cp-image-asset-admin-1c8e0118/images/page-desktop.png"
+      ],
+      "fieldScreenshots": [
+        "pages/002-cp-image-asset-admin-1c8e0118/images/field-001-keyword-search.png",
+        "pages/002-cp-image-asset-admin-1c8e0118/images/field-002-select.png"
+      ],
+      "fieldCount": 2,
+      "codeContext": {
+        "route": {
+          "controllerAlias": "image-asset-admin",
+          "action": "index",
+          "pattern": ""
+        },
+        "controller": {
+          "alias": "image-asset-admin",
+          "className": "Controller\\AdminController",
+          "file": "",
+          "actionMethod": "indexAction",
+          "hasActionMethod": false
+        },
+        "model": null,
+        "featureSummary": {
+          "description": "Image Asset Admin manages reusable image assets used across content and merchandising areas.",
+          "notes": []
+        }
+      },
+      "technicalError": ""
+    },
+    {
+      "title": "Returns",
+      "indexTitle": "Returns",
+      "description": "Returns is used to review return records and follow their processing status.",
+      "url": "https://dev.soho-home.local/cp/returns-admin",
+      "publicUrl": "https://sohohome.com/cp/returns-admin",
+      "routeKey": "https://dev.soho-home.local|cp|returns-admin|index|returns-admin",
+      "routeMetadata": null,
+      "slug": "003-cp-returns-admin-799f6596",
+      "docFile": "pages/003-cp-returns-admin-799f6596/README.md",
+      "codeDocFile": ".vscode/code-docs/cp-returns-admin.md",
+      "relatedPages": [],
+      "screenshots": [
+        "pages/003-cp-returns-admin-799f6596/images/page-desktop.png"
+      ],
+      "fieldScreenshots": [
+        "pages/003-cp-returns-admin-799f6596/images/field-001-keyword-search.png"
+      ],
+      "fieldCount": 1,
+      "codeContext": {
+        "route": {
+          "controllerAlias": "returns-admin",
+          "action": "index",
+          "pattern": ""
+        },
+        "controller": {
+          "alias": "returns-admin",
+          "className": "Soho\\Ecom\\Returns\\AdminController",
+          "file": "vendor/soho/ecom/src/Returns/AdminController.php",
+          "actionMethod": "indexAction",
+          "hasActionMethod": false
+        },
+        "model": {
+          "alias": "Returns_Return",
+          "className": "Soho\\Ecom\\Returns\\Model\\ReturnSet",
+          "file": "vendor/soho/ecom/src/Returns/Model/ReturnSet.php",
+          "xmlFile": "vendor/soho/ecom/src/Returns/Model/ReturnSet.xml",
+          "itemName": "return",
+          "tableName": "store_returns"
+        },
+        "featureSummary": {
+          "description": "Returns is used to review return records and follow their processing status.",
+          "notes": [
+            "Makes sure the transfer property is set appropriately.",
+            "The key fields are Return Queue and CP User, which explain what the record is for and how it can be used."
+          ]
+        }
+      },
+      "technicalError": ""
+    },
+    {
+      "title": "Swatches",
+      "indexTitle": "Swatches",
+      "description": "Swatches manages the swatch records used for fabric, finish, and material sample journeys.",
+      "url": "https://dev.soho-home.local/cp/swatches",
+      "publicUrl": "https://sohohome.com/cp/swatches",
+      "routeKey": "https://dev.soho-home.local|cp|swatches|index|swatches",
+      "routeMetadata": null,
+      "slug": "004-cp-swatches-716721cf",
+      "docFile": "pages/004-cp-swatches-716721cf/README.md",
+      "codeDocFile": ".vscode/code-docs/cp-swatches.md",
+      "relatedPages": [],
+      "screenshots": [
+        "pages/004-cp-swatches-716721cf/images/page-desktop.png"
+      ],
+      "fieldScreenshots": [
+        "pages/004-cp-swatches-716721cf/images/field-001-keyword-search.png",
+        "pages/004-cp-swatches-716721cf/images/field-038-select.png"
+      ],
+      "fieldCount": 39,
+      "codeContext": {
+        "route": {
+          "controllerAlias": "swatches",
+          "action": "index",
+          "pattern": ""
+        },
+        "controller": {
+          "alias": "swatches",
+          "className": "App\\Swatches\\Controller",
+          "file": "src/Swatches/Controller.php",
+          "actionMethod": "indexAction",
+          "hasActionMethod": true
+        },
+        "model": null,
+        "featureSummary": {
+          "description": "Swatches manages the swatch records used for fabric, finish, and material sample journeys.",
+          "notes": []
+        }
+      },
+      "technicalError": ""
+    },
+    {
+      "title": "Redirects",
+      "indexTitle": "Redirects",
+      "description": "Redirects manages URL redirects so old or changed links send visitors to the correct page.",
+      "url": "https://dev.soho-home.local/cp/redirects",
+      "publicUrl": "https://sohohome.com/cp/redirects",
+      "routeKey": "https://dev.soho-home.local|cp|redirects|index|redirects",
+      "routeMetadata": null,
+      "slug": "005-cp-redirects-7f08f116",
+      "docFile": "pages/005-cp-redirects-7f08f116/README.md",
+      "codeDocFile": ".vscode/code-docs/cp-redirects.md",
+      "relatedPages": [],
+      "screenshots": [
+        "pages/005-cp-redirects-7f08f116/images/page-desktop.png"
+      ],
+      "fieldScreenshots": [
+        "pages/005-cp-redirects-7f08f116/images/field-001-keyword-search.png",
+        "pages/005-cp-redirects-7f08f116/images/field-002-inline-144-redirect-from.png",
+        "pages/005-cp-redirects-7f08f116/images/field-003-inline-144-redirect-to.png",
+        "pages/005-cp-redirects-7f08f116/images/field-007-inline-152-redirect-from.png",
+        "pages/005-cp-redirects-7f08f116/images/field-008-inline-152-redirect-to.png",
+        "pages/005-cp-redirects-7f08f116/images/field-012-inline-153-redirect-from.png",
+        "pages/005-cp-redirects-7f08f116/images/field-013-inline-153-redirect-to.png",
+        "pages/005-cp-redirects-7f08f116/images/field-017-inline-154-redirect-from.png",
+        "pages/005-cp-redirects-7f08f116/images/field-018-inline-154-redirect-to.png",
+        "pages/005-cp-redirects-7f08f116/images/field-022-inline-155-redirect-from.png",
+        "pages/005-cp-redirects-7f08f116/images/field-023-inline-155-redirect-to.png",
+        "pages/005-cp-redirects-7f08f116/images/field-027-inline-158-redirect-from.png",
+        "pages/005-cp-redirects-7f08f116/images/field-028-inline-158-redirect-to.png",
+        "pages/005-cp-redirects-7f08f116/images/field-032-inline-159-redirect-from.png",
+        "pages/005-cp-redirects-7f08f116/images/field-033-inline-159-redirect-to.png",
+        "pages/005-cp-redirects-7f08f116/images/field-037-inline-160-redirect-from.png",
+        "pages/005-cp-redirects-7f08f116/images/field-038-inline-160-redirect-to.png",
+        "pages/005-cp-redirects-7f08f116/images/field-042-inline-161-redirect-from.png",
+        "pages/005-cp-redirects-7f08f116/images/field-043-inline-161-redirect-to.png",
+        "pages/005-cp-redirects-7f08f116/images/field-052-inline-163-redirect-from.png",
+        "pages/005-cp-redirects-7f08f116/images/field-053-inline-163-redirect-to.png",
+        "pages/005-cp-redirects-7f08f116/images/field-057-inline-165-redirect-from.png",
+        "pages/005-cp-redirects-7f08f116/images/field-058-inline-165-redirect-to.png",
+        "pages/005-cp-redirects-7f08f116/images/field-062-inline-166-redirect-from.png",
+        "pages/005-cp-redirects-7f08f116/images/field-063-inline-166-redirect-to.png",
+        "pages/005-cp-redirects-7f08f116/images/field-067-inline-167-redirect-from.png",
+        "pages/005-cp-redirects-7f08f116/images/field-068-inline-167-redirect-to.png",
+        "pages/005-cp-redirects-7f08f116/images/field-072-inline-168-redirect-from.png",
+        "pages/005-cp-redirects-7f08f116/images/field-073-inline-168-redirect-to.png",
+        "pages/005-cp-redirects-7f08f116/images/field-077-inline-169-redirect-from.png",
+        "pages/005-cp-redirects-7f08f116/images/field-078-inline-169-redirect-to.png",
+        "pages/005-cp-redirects-7f08f116/images/field-082-inline-171-redirect-from.png",
+        "pages/005-cp-redirects-7f08f116/images/field-083-inline-171-redirect-to.png",
+        "pages/005-cp-redirects-7f08f116/images/field-087-inline-172-redirect-from.png",
+        "pages/005-cp-redirects-7f08f116/images/field-088-inline-172-redirect-to.png",
+        "pages/005-cp-redirects-7f08f116/images/field-097-inline-174-redirect-from.png",
+        "pages/005-cp-redirects-7f08f116/images/field-098-inline-174-redirect-to.png",
+        "pages/005-cp-redirects-7f08f116/images/field-102-inline-176-redirect-from.png",
+        "pages/005-cp-redirects-7f08f116/images/field-103-inline-176-redirect-to.png",
+        "pages/005-cp-redirects-7f08f116/images/field-107-inline-177-redirect-from.png",
+        "pages/005-cp-redirects-7f08f116/images/field-108-inline-177-redirect-to.png",
+        "pages/005-cp-redirects-7f08f116/images/field-112-inline-178-redirect-from.png",
+        "pages/005-cp-redirects-7f08f116/images/field-113-inline-178-redirect-to.png",
+        "pages/005-cp-redirects-7f08f116/images/field-117-inline-180-redirect-from.png",
+        "pages/005-cp-redirects-7f08f116/images/field-118-inline-180-redirect-to.png"
+      ],
+      "fieldCount": 152,
+      "codeContext": {
+        "route": {
+          "controllerAlias": "redirects",
+          "action": "index",
+          "pattern": ""
+        },
+        "controller": {
+          "alias": "redirects",
+          "className": "App\\Redirects\\AdminController",
+          "file": "src/Redirects/AdminController.php",
+          "actionMethod": "indexAction",
+          "hasActionMethod": false
+        },
+        "model": null,
+        "featureSummary": {
+          "description": "Redirects manages URL redirects so old or changed links send visitors to the correct page.",
+          "notes": []
+        }
+      },
+      "technicalError": ""
+    }
+  ]
+}

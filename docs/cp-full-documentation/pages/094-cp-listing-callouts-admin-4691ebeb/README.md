@@ -1,6 +1,6 @@
 # Listing callouts
 
-[Home](../../index.md) / Listing callouts
+[Home](../../index.md) / Listing Callouts
 
 URL: [https://sohohome.com/cp/listing-callouts-admin](https://sohohome.com/cp/listing-callouts-admin)
 
@@ -12,7 +12,7 @@ Manage the listing callouts
 
 ## Related Pages
 
-- [Edit Listing callout](../095-cp-listing-callouts-admin-edit-96-f67ada6f/README.md): Open an existing listing callout when you need to check the setup or make a change.
+- [Edit Listing callout](../095-cp-listing-callouts-admin-edit-id-f67ada6f/README.md): Open an existing listing callout when you need to check the setup or make a change.
 
 ## How It Works
 
@@ -20,8 +20,7 @@ Manage the listing callouts
 
 ## Using This Page
 
-1. Open Listing callouts from the CP navigation.
-2. Search or filter until you find the listing callout you need.
+1. Search or filter until you find the listing callout you need.
 
 ## What You Can Do
 
@@ -29,14 +28,7 @@ Manage the listing callouts
 
 Search or filter the visible fields to find the listing callout you need.
 
-- Field: Scheduled Start
-- Field: Scheduled End
-- Field: Title
-- Field: UK
-- Field: EU
-- Field: US
-- Field: Status
-- Field: Included Personas
+- Visible fields include Scheduled Start, Scheduled End, Title, UK, EU, US, Status, and Included Personas.
 
 Example rows:
 

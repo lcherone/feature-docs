@@ -1,6 +1,6 @@
 # Script Locks
 
-[Home](../../index.md) / Create Script Lock
+[Home](../../index.md) / [Script Locks](../161-cp-script-lock-admin-2e4773a9/README.md) / Create Script Lock
 
 URL: [https://sohohome.com/cp/script-lock-admin/edit/new](https://sohohome.com/cp/script-lock-admin/edit/new)
 

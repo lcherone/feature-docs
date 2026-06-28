@@ -1,6 +1,6 @@
 # Categories
 
-[Home](../../index.md) / Create Category
+[Home](../../index.md) / [Categories](../032-cp-categories-admin-6a47a3af/README.md) / Create Category
 
 URL: [https://sohohome.com/cp/categories-admin/edit/new](https://sohohome.com/cp/categories-admin/edit/new)
 
@@ -60,27 +60,15 @@ Add the code (optional).
 
 #### Show Sale Products?
 
-![Show Sale Products?](images/field-003-show-sale-products.png)
-
-*Show Sale Products? setting*
-
 Turn this on when the answer should be yes. Leave it off when it should not apply.
 
 #### Include products from subcategories and collections
-
-![Include products from subcategories and collections](images/field-004-include-products-from-subcategories-and-collections.png)
-
-*Include products from subcategories and collections setting*
 
 Turn this on when include products from subcategories and collections should apply. Leave it off when it should not.
 
 **Notes:** Only applicable for T1 categories
 
 #### Show OOS Products?
-
-![Show OOS Products?](images/field-005-show-oos-products.png)
-
-*Show OOS Products? setting*
 
 Turn this on when the answer should be yes. Leave it off when it should not apply.
 
@@ -95,10 +83,6 @@ Add the url name (optional).
 **Notes:** optional
 
 #### Intro (optional)
-
-![Intro optional](images/field-007-intro-optional.png)
-
-*Intro (optional) setting*
 
 Write the intro (optional) content.
 
@@ -174,7 +158,7 @@ Choose the option that matches this PLP limit option (optional).
 
 **Notes:** Standard: default limits, Reduced: max 40 limit, 40/80 set as default limit
 
-## Available Actions
+## Page Sections
 
 - Setup
 - Upload Files

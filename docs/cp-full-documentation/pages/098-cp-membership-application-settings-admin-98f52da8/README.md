@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/membership-application-settings-admin](https://sohohome.com/cp/membership-application-settings-admin)
 
-Admin form controller for Membership Application Settings.
+Model to store config/settings for membership applications.
 
 ![Application Settings overview](images/page-desktop.png)
 
@@ -33,16 +33,8 @@ The sections below highlight the settings people are most likely to change.
 
 #### Terms - No Auto-renew
 
-![Terms - No Auto-renew](images/field-001-terms-no-auto-renew.png)
-
-*Terms - No Auto-renew setting*
-
 Write the terms - no auto-renew content.
 
 #### Terms - Auto-renew
-
-![Terms - Auto-renew](images/field-048-terms-auto-renew.png)
-
-*Terms - Auto-renew setting*
 
 Write the terms - auto-renew content.

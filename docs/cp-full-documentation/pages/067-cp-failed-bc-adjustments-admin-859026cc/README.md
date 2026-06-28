@@ -16,8 +16,7 @@ Failed Adjustments summarise order adjustments and related finance-system transf
 
 ## Using This Page
 
-1. Open Failed Adjustments from the CP navigation.
-2. Scan the fields in the table to find the failed adjustment you need.
+1. Scan the fields in the table to find the failed adjustment you need.
 
 ## What You Can Do
 
@@ -25,18 +24,7 @@ Failed Adjustments summarise order adjustments and related finance-system transf
 
 Review the visible fields to check what already exists.
 
-- Field: Locale
-- Field: Error
-- Field: Error Created
-- Field: Automated Status
-- Field: Manual Status
-- Field: Date Issue Resolved
-- Field: Order Reference
-- Field: Order Status
-- Field: Adjustment Suffix
-- Field: Adjustment Value
-- Field: Adjustment Reporting Value
-- Field: Adjustment Created
+- Visible fields include Locale, Error, Error Created, Automated Status, Manual Status, Date Issue Resolved, Order Reference, and Order Status.
 
 Example rows:
 
@@ -46,7 +34,7 @@ Example rows:
 | US | {"validation_error":"The total of all line items must match the total of all transactions" | 2:30am - 25 Jun 26 | Unresolved |  |  |
 | UK | {"validation_error":"The total of all line items must match the total of all transactions" | 2:30am - 25 Jun 26 | Unresolved |  |  |
 
-## Available Actions
+## Page Sections
 
 - Unresolved
 - All

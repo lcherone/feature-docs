@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/order-issue-email-settings-admin](https://sohohome.com/cp/order-issue-email-settings-admin)
 
-Order Issue Email Settings covers the admin screen used to review and maintain order issue email settings.
+Internal email notifications for order issues.
 
 ![Order Issue Email Settings overview](images/page-desktop.png)
 
@@ -42,10 +42,6 @@ Add the subject.
 
 #### Copy
 
-![Copy](images/field-002-copy.png)
-
-*Copy setting*
-
 Write the copy content.
 
 **Notes:** `{site}` and `{order_reference}` is available for dynamic copy replacement
@@ -65,7 +61,3 @@ Add the setting_emails[0][].
 *setting_emails[1][] setting*
 
 Add the setting_emails[1][].
-
-## Available Actions
-
-- Add new

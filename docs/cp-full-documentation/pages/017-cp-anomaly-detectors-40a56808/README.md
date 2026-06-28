@@ -12,7 +12,7 @@ Anomaly Detectors define the checks, schedule, thresholds, and alerts used to de
 
 ## Related Pages
 
-- [Edit Anomaly Detector](../018-cp-anomaly-detectors-edit-1-08de309b/README.md): Review what already exists, then open a row when a change is needed.
+- [Edit Anomaly Detector](../018-cp-anomaly-detectors-edit-id-08de309b/README.md): Review what already exists, then open a row when a change is needed.
 
 ## How It Works
 
@@ -20,8 +20,7 @@ Anomaly Detectors define the checks, schedule, thresholds, and alerts used to de
 
 ## Using This Page
 
-1. Open Anomaly Detectors from the CP navigation.
-2. Scan the fields in the table to find the anomaly detector you need.
+1. Scan the fields in the table to find the anomaly detector you need.
 
 ## What You Can Do
 
@@ -29,14 +28,7 @@ Anomaly Detectors define the checks, schedule, thresholds, and alerts used to de
 
 Review the visible fields to check what already exists.
 
-- Field: Subject
-- Field: Active
-- Field: Frequency
-- Field: Anomalous condition
-- Field: Last checked
-- Field: Has a problem
-- Field: Problem began
-- Field: Problem resolved
+- Visible fields include Subject, Active, Frequency, Anomalous condition, Last checked, Has a problem, Problem began, and Problem resolved.
 
 Example rows:
 

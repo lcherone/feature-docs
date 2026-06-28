@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/gifting-settings-admin](https://sohohome.com/cp/gifting-settings-admin)
 
-Gifting Settings covers the admin screen used to review and maintain gifting settings.
+Gifting Settings contains the fields an admin uses to maintain this gifting setting.
 
 ![Gifting Settings overview](images/page-desktop.png)
 

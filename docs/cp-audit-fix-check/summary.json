@@ -1,0 +1,129 @@
+{
+  "siteName": "Soho Home CP",
+  "generatedAt": "2026-06-28T01:43:24.160Z",
+  "runDir": "/Volumes/casey/shares/clients/soho-home/dev/releases/20231009091323/.vscode/feature-docs/docs/cp-audit-fix-check",
+  "pageCount": 3,
+  "crawl": {
+    "skippedDuplicateRoutes": 0,
+    "skippedDisallowedUrls": 0,
+    "skippedInaccessibleUrls": 0
+  },
+  "pages": [
+    {
+      "title": "Brandfolder Queue Admin",
+      "indexTitle": "Brandfolder Queue Admin",
+      "description": "Brandfolder Queue Admin provides the admin list and record actions for brandfolder queue admin.",
+      "url": "https://dev.soho-home.local/cp/brandfolder-queue-admin",
+      "publicUrl": "https://sohohome.com/cp/brandfolder-queue-admin",
+      "routeKey": "https://dev.soho-home.local|cp|brandfolder-queue-admin|index|brandfolder-queue-admin",
+      "routeMetadata": null,
+      "slug": "001-cp-brandfolder-queue-admin-b72d4f87",
+      "docFile": "pages/001-cp-brandfolder-queue-admin-b72d4f87/README.md",
+      "codeDocFile": "",
+      "relatedPages": [],
+      "screenshots": [
+        "pages/001-cp-brandfolder-queue-admin-b72d4f87/images/page-desktop.png"
+      ],
+      "fieldScreenshots": [],
+      "fieldCount": 0,
+      "codeContext": {
+        "route": {
+          "controllerAlias": "brandfolder-queue-admin",
+          "action": "index",
+          "pattern": ""
+        },
+        "controller": null,
+        "model": null,
+        "featureSummary": {
+          "description": "Brandfolder Queue Admin provides the admin list and record actions for brandfolder queue admin.",
+          "notes": []
+        }
+      },
+      "technicalError": ""
+    },
+    {
+      "title": "Gift Cards",
+      "indexTitle": "Gift Cards",
+      "description": "Gift Cards lets admins find and review existing gift cards.",
+      "url": "https://dev.soho-home.local/cp/gift-cards",
+      "publicUrl": "https://sohohome.com/cp/gift-cards",
+      "routeKey": "https://dev.soho-home.local|cp|gift-cards|index|gift-cards",
+      "routeMetadata": null,
+      "slug": "002-cp-gift-cards-8e566960",
+      "docFile": "pages/002-cp-gift-cards-8e566960/README.md",
+      "codeDocFile": "",
+      "relatedPages": [],
+      "screenshots": [
+        "pages/002-cp-gift-cards-8e566960/images/page-desktop.png"
+      ],
+      "fieldScreenshots": [
+        "pages/002-cp-gift-cards-8e566960/images/field-001-keyword-search.png"
+      ],
+      "fieldCount": 1,
+      "codeContext": {
+        "route": {
+          "controllerAlias": "gift-cards",
+          "action": "index",
+          "pattern": ""
+        },
+        "controller": null,
+        "model": null,
+        "featureSummary": {
+          "description": "Gift Cards provides the admin list and record actions for gift cards.",
+          "notes": []
+        }
+      },
+      "technicalError": ""
+    },
+    {
+      "title": "Adjustment Summaries",
+      "indexTitle": "Adjustment Summaries",
+      "description": "Adjustment Summaries summarise order adjustments and related finance-system transfer activity for review.",
+      "url": "https://dev.soho-home.local/cp/adjustments-summary-admin",
+      "publicUrl": "https://sohohome.com/cp/adjustments-summary-admin",
+      "routeKey": "https://dev.soho-home.local|cp|adjustments-summary-admin|index|adjustments-summary-admin",
+      "routeMetadata": null,
+      "slug": "003-cp-adjustments-summary-admin-6754dd0f",
+      "docFile": "pages/003-cp-adjustments-summary-admin-6754dd0f/README.md",
+      "codeDocFile": ".vscode/code-docs/cp-adjustments-summary-admin.md",
+      "relatedPages": [],
+      "screenshots": [
+        "pages/003-cp-adjustments-summary-admin-6754dd0f/images/page-desktop.png"
+      ],
+      "fieldScreenshots": [
+        "pages/003-cp-adjustments-summary-admin-6754dd0f/images/field-001-keyword-search.png"
+      ],
+      "fieldCount": 1,
+      "codeContext": {
+        "route": {
+          "controllerAlias": "adjustments-summary-admin",
+          "action": "index",
+          "pattern": ""
+        },
+        "controller": {
+          "alias": "adjustments-summary-admin",
+          "className": "Soho\\Ecom\\Controller\\AdjustmentSummaryAdmin",
+          "file": "vendor/soho/ecom/src/Controller/AdjustmentSummaryAdmin.php",
+          "actionMethod": "indexAction",
+          "hasActionMethod": false
+        },
+        "model": {
+          "alias": "Store_Adjustment_Summary",
+          "className": "Soho\\Ecom\\Model\\AdjustmentSummary",
+          "file": "vendor/soho/ecom/src/Model/AdjustmentSummary.php",
+          "xmlFile": "vendor/soho/ecom/src/Model/AdjustmentSummary.xml",
+          "itemName": "summary",
+          "tableName": "store_adjustments_summary"
+        },
+        "featureSummary": {
+          "description": "Adjustment Summaries summarise order adjustments and related finance-system transfer activity for review.",
+          "notes": [
+            "Makes sure the transfer property is set appropriately.",
+            "The key fields are Order, Sub order number, Status, Flags, and Overall Value, which explain what the record is for and how it can be used."
+          ]
+        }
+      },
+      "technicalError": ""
+    }
+  ]
+}

@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/customer-groups-admin](https://sohohome.com/cp/customer-groups-admin)
 
-Customer Groups covers the admin screen used to review and maintain customer groups.
+Customer Groups is used to find customer accounts and review the account, address, membership, basket, and order details available to admins.
 
 ![Customer Groups overview](images/page-desktop.png)
 
@@ -12,7 +12,7 @@ Customer Groups covers the admin screen used to review and maintain customer gro
 
 ## Related Pages
 
-- [Edit Customer Group](../051-cp-customer-groups-admin-edit-2-840aae89/README.md): Open an existing customer group when you need to check the setup or make a change.
+- [Edit Customer Group](../051-cp-customer-groups-admin-edit-id-840aae89/README.md): Open an existing customer group when you need to check the setup or make a change.
 
 ## How It Works
 
@@ -21,8 +21,7 @@ Customer Groups covers the admin screen used to review and maintain customer gro
 
 ## Using This Page
 
-1. Open Customer Groups from the CP navigation.
-2. Scan the fields in the table to find the customer group you need.
+1. Scan the fields in the table to find the customer group you need.
 
 ## What You Can Do
 
@@ -30,13 +29,4 @@ Customer Groups covers the admin screen used to review and maintain customer gro
 
 Review the visible fields to check what already exists.
 
-- Field: Name
-- Field: Slug
-
-Example rows:
-
-| Name | Slug |
-| --- | --- |
-| Soho House Staff Discount | staff |
-| Interior Designers Test | interior-designers-test |
-| Ned Staff | ned-staff |
+- Visible fields include Name and Slug.

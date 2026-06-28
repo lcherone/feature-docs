@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/our-stores-admin](https://sohohome.com/cp/our-stores-admin)
 
-Controller for our stores section
+Our Stores lets admins find and review existing our stores.
 
 ![Our Stores overview](images/page-desktop.png)
 
@@ -20,8 +20,7 @@ Controller for our stores section
 
 ## Using This Page
 
-1. Open Our Stores from the CP navigation.
-2. Scan the fields in the table to find the our store you need.
+1. Scan the fields in the table to find the our store you need.
 
 ## What You Can Do
 
@@ -29,10 +28,7 @@ Controller for our stores section
 
 Review the visible fields to check what already exists.
 
-- Field: Status
-- Field: Title
-- Field: Visibility
-- Field: Colour When Transparent
+- Visible fields include Status, Title, Visibility, and Colour When Transparent.
 
 Example rows:
 

@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/products-badges-admin](https://sohohome.com/cp/products-badges-admin)
 
-Product Badges covers the admin screen used to review and maintain product badges.
+Badge manages product badge types (new-in, new-season, sourcebook, etc.)
 
 ![Product Badges overview](images/page-desktop.png)
 
@@ -12,7 +12,7 @@ Product Badges covers the admin screen used to review and maintain product badge
 
 ## Related Pages
 
-- [Edit Product Badge](../138-cp-products-badges-admin-edit-1-7373ea4d/README.md): Open an existing product badge when you need to check the setup or make a change.
+- [Edit Product Badge](../138-cp-products-badges-admin-edit-id-7373ea4d/README.md): Open an existing product badge when you need to check the setup or make a change.
 
 ## How It Works
 
@@ -20,8 +20,7 @@ Product Badges covers the admin screen used to review and maintain product badge
 
 ## Using This Page
 
-1. Open Product Badges from the CP navigation.
-2. Scan the fields in the table to find the product badge you need.
+1. Scan the fields in the table to find the product badge you need.
 
 ## What You Can Do
 
@@ -29,11 +28,7 @@ Product Badges covers the admin screen used to review and maintain product badge
 
 Review the visible fields to check what already exists.
 
-- Field: Name
-- Field: Label Text
-- Field: Enabled
-- Field: Created
-- Field: Updated
+- Visible fields include Name, Label Text, Enabled, Created, and Updated.
 
 Example rows:
 

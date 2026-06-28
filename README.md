@@ -27,7 +27,7 @@ Edit `config.json`:
 - `baseUrl`: Site root, such as `https://dev.soho-home.local`.
 - `publicBaseUrl`: Public site root used for the client-facing URL printed under each page title.
 - `startUrls`: Entry pages to document.
-- `codeDocs`: Optional developer/agent code-analysis notes. By default Feature Docs writes these to `.vscode/code-docs`.
+- `codeDocs`: Optional developer/agent code-analysis notes. By default Feature Docs writes these to `.vscode/code-docs`. Existing code-doc files are reused when their referenced controller, model, XML, provider, and related source files have not changed.
 - `crawl.maxPages`: Safety limit for discovered pages.
 - `crawl.expandCrud`: When enabled, focused CP runs follow one representative create/edit link for the same CRUD feature when that link is visible to the configured admin user.
 - `crawl.clientVisibleCrudOnly`: Enabled for CP by default. This prevents D3R-backed runs from documenting D3R-only pages, skips inaccessible routes, and only discovers related CP action pages from links visible in the browser session.
@@ -63,6 +63,8 @@ npm run docs:sample
 For `/cp` runs, Feature Docs uses the same local-only signed auth middleware as Vision Loop. It toggles the hook in `src/Provider.php` for the run, sets a signed `vision_loop_auth` cookie in Playwright, and disables the hook again at shutdown.
 
 CP documentation is generated from a client-facing admin view, not a D3R view. Set `FEATURE_DOCS_ADMIN_EMAIL` to a non-D3R superuser/admin before running `npm run docs:cp`. In the default CP config, a D3R email fails early, hidden SiteTree routes are not seeded, routes that return login/access-denied pages are skipped, and create/edit/view child pages are only followed when the configured admin can see the link on the captured page.
+
+The default CP config excludes `/cp/styleguide-admin` because those component/demo pages are not client feature documentation.
 
 During a run, Feature Docs builds the source-code index once and reuses one Playwright browser context per viewport. That keeps large CP crawls faster while still opening a fresh page for each captured feature.
 

@@ -1,6 +1,6 @@
 # Product settings
 
-[Home](../../index.md) / Product settings
+[Home](../../index.md) / Product Settings
 
 URL: [https://sohohome.com/cp/product-settings-admin](https://sohohome.com/cp/product-settings-admin)
 
@@ -33,17 +33,9 @@ Use the fields on this screen to make the change, then save once the values are 
 
 #### Delivery
 
-![Delivery](images/field-001-delivery.png)
-
-*Delivery setting*
-
 Write the delivery content.
 
 #### Delivery (Reimagined)
-
-![Delivery Reimagined](images/field-002-delivery-reimagined.png)
-
-*Delivery (Reimagined) setting*
 
 Write the delivery (reimagined) content.
 
@@ -51,23 +43,15 @@ Write the delivery (reimagined) content.
 
 #### Returns (Reimagined)
 
-![Returns Reimagined](images/field-003-returns-reimagined.png)
-
-*Returns (Reimagined) setting*
-
 Write the returns (reimagined) content.
 
 **Notes:** Content just for the returns tab for Reimagined PDP
 
 #### Unshippable Country Popup
 
-![Unshippable Country Popup](images/field-004-unshippable-country-popup.png)
-
-*Unshippable Country Popup setting*
-
 Write the unshippable country popup content.
 
-## Available Actions
+## Page Sections
 
 - Delivery & Returns
 - Import

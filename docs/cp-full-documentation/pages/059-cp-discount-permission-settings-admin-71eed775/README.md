@@ -12,7 +12,7 @@ The listing shows the role-based limits that control custom discounts.
 
 ## Related Pages
 
-- [Edit Discount Permission Setting](../060-cp-discount-permission-settings-admin-edit-1-4014e007/README.md): Update the percentage or fixed amount limit for an existing role.
+- [Edit Discount Permission Setting](../060-cp-discount-permission-settings-admin-edit-id-4014e007/README.md): Update the percentage or fixed amount limit for an existing role.
 
 ## How It Works
 
@@ -20,8 +20,7 @@ The listing shows the role-based limits that control custom discounts.
 
 ## Using This Page
 
-1. Open the Discount Permission Settings page from the CP navigation or direct URL.
-2. Review the role, maximum percentage, and maximum fixed amount columns.
+1. Review the role, maximum percentage, and maximum fixed amount columns.
 
 ## What You Can Do
 
@@ -29,9 +28,7 @@ The listing shows the role-based limits that control custom discounts.
 
 Start here to see which admin roles already have custom discount limits set.
 
-- Field: Role
-- Field: Max Discount Percentage
-- Field: Max Discount Amount
+- Visible fields include Role, Max Discount Percentage, and Max Discount Amount.
 
 Example rows:
 

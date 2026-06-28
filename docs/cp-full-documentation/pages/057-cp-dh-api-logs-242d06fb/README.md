@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/dh-api-logs](https://sohohome.com/cp/dh-api-logs)
 
-DH API Log listing
+Digital House API Log
 
 ![Digital House Api Logs overview](images/page-desktop.png)
 
@@ -12,7 +12,7 @@ DH API Log listing
 
 ## Related Pages
 
-- [View Digital House Api Log](../058-cp-dh-api-logs-view-6116376-e481b763/README.md): Open an existing digital house api log when you need to check the full details.
+- [View Digital House Api Log](../058-cp-dh-api-logs-view-id-e481b763/README.md): Open an existing digital house api log when you need to check the full details.
 
 ## How It Works
 
@@ -22,8 +22,7 @@ DH API Log listing
 
 ## Using This Page
 
-1. Open Digital House Api Logs from the CP navigation.
-2. Search or filter until you find the digital house api log you need.
+1. Search or filter until you find the digital house api log you need.
 
 ## What You Can Do
 
@@ -31,10 +30,7 @@ DH API Log listing
 
 Search or filter the visible fields to find the digital house api log you need.
 
-- Field: Endpoint
-- Field: Method
-- Field: Level
-- Field: Created
+- Visible fields include Endpoint, Method, Level, and Created.
 
 Example rows:
 

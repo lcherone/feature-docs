@@ -12,8 +12,7 @@ Database Dump Profiles lets admins find and review existing database dump profil
 
 ## Using This Page
 
-1. Open Database Dump Profiles from the CP navigation.
-2. Scan the fields in the table to find the database dump profile you need.
+1. Scan the fields in the table to find the database dump profile you need.
 
 ## What You Can Do
 
@@ -21,10 +20,7 @@ Database Dump Profiles lets admins find and review existing database dump profil
 
 Review the visible fields to check what already exists.
 
-- Field: Name
-- Field: Config
-- Field: Created
-- Field: Updated
+- Visible fields include Name, Config, Created, and Updated.
 
 Example rows:
 

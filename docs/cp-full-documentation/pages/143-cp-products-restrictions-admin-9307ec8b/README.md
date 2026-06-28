@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/products-restrictions-admin](https://sohohome.com/cp/products-restrictions-admin)
 
-Product Restrictions covers the admin screen used to review and maintain product restrictions.
+Product Restriction Model Class
 
 ![Product Restrictions overview](images/page-desktop.png)
 
@@ -12,7 +12,7 @@ Product Restrictions covers the admin screen used to review and maintain product
 
 ## Related Pages
 
-- [Edit Product Restriction](../144-cp-products-restrictions-admin-edit-1-f63d5328/README.md): Open an existing product restriction when you need to check the setup or make a change.
+- [Edit Product Restriction](../144-cp-products-restrictions-admin-edit-id-f63d5328/README.md): Open an existing product restriction when you need to check the setup or make a change.
 
 ## How It Works
 
@@ -22,8 +22,7 @@ Product Restrictions covers the admin screen used to review and maintain product
 
 ## Using This Page
 
-1. Open Product Restrictions from the CP navigation.
-2. Scan the fields in the table to find the product restriction you need.
+1. Scan the fields in the table to find the product restriction you need.
 
 ## What You Can Do
 
@@ -31,9 +30,7 @@ Product Restrictions covers the admin screen used to review and maintain product
 
 Review the visible fields to check what already exists.
 
-- Field: Label
-- Field: Status
-- Field: Message
+- Visible fields include Label, Status, and Message.
 
 Example rows:
 
@@ -46,19 +43,3 @@ Example rows:
 ### Update settings
 
 Use the fields on this screen to make the change, then save once the values are correct.
-
-## Key Settings
-
-The sections below highlight the settings people are most likely to change.
-
-### listing-product_restriction-form
-
-#### Restriction Status
-
-![Restriction Status](images/field-001-inline-1-restriction-status.png)
-
-*Restriction Status setting*
-
-Set the Restriction Status value for each relevant row in this section.
-
-**Options:** Active, Inactive

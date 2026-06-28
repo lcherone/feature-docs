@@ -12,7 +12,7 @@ Manage the categories
 
 ## Related Pages
 
-- [Edit Category Content Group](../035-cp-categories-content-admin-edit-1-5447f328/README.md): Open an existing category content group when you need to check the setup or make a change.
+- [Edit Category Content Group](../035-cp-categories-content-admin-edit-id-5447f328/README.md): Open an existing category content group when you need to check the setup or make a change.
 
 ## How It Works
 
@@ -20,8 +20,7 @@ Manage the categories
 
 ## Using This Page
 
-1. Open Category Content Groups from the CP navigation.
-2. Scan the fields in the table to find the category content group you need.
+1. Scan the fields in the table to find the category content group you need.
 
 ## What You Can Do
 
@@ -29,10 +28,7 @@ Manage the categories
 
 Review the visible fields to check what already exists.
 
-- Field: Title
-- Field: Status
-- Field: Created
-- Field: Updated
+- Visible fields include Title, Status, Created, and Updated.
 
 Example rows:
 

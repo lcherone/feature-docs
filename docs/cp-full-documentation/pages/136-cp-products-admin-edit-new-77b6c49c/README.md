@@ -1,6 +1,6 @@
 # Products
 
-[Home](../../index.md) / Create Product
+[Home](../../index.md) / [Products](../135-cp-products-admin-27f8eb6b/README.md) / Create Product
 
 URL: [https://sohohome.com/cp/products-admin/edit/new](https://sohohome.com/cp/products-admin/edit/new)
 
@@ -84,15 +84,11 @@ Choose the option that matches this status.
 
 #### Is Module?
 
-![Is Module?](images/field-005-is-module.png)
-
-*Is Module? setting*
-
 Turn this on when the answer should be yes. Leave it off when it should not apply.
 
 #### Restriction UK (optional)
 
-![Restriction UK optional](images/field-007-restriction-uk-optional.png)
+![Restriction UK optional](images/field-006-restriction-uk-optional.png)
 
 *Restriction UK (optional) setting*
 
@@ -104,7 +100,7 @@ Choose the option that matches this restriction UK (optional).
 
 #### Restriction EU (optional)
 
-![Restriction EU optional](images/field-008-restriction-eu-optional.png)
+![Restriction EU optional](images/field-007-restriction-eu-optional.png)
 
 *Restriction EU (optional) setting*
 
@@ -116,7 +112,7 @@ Choose the option that matches this restriction EU (optional).
 
 #### Restriction US (optional)
 
-![Restriction US optional](images/field-009-restriction-us-optional.png)
+![Restriction US optional](images/field-008-restriction-us-optional.png)
 
 *Restriction US (optional) setting*
 
@@ -220,8 +216,7 @@ Turn this on when babington house should apply. Leave it off when it should not.
 
 Turn this on when soho house barcelona should apply. Leave it off when it should not.
 
-## Available Actions
+## Page Sections
 
 - Product: Setup
-- Add new
 - Upload Files

@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/returns_stories-admin](https://sohohome.com/cp/returns_stories-admin)
 
-Local version of the Stories Controller to enable filters.
+Return Stories is used to review return records and follow their processing status.
 
 ![Return Stories overview](images/page-desktop.png)
 
@@ -12,7 +12,7 @@ Local version of the Stories Controller to enable filters.
 
 ## Related Pages
 
-- [Edit Return Story](../160-cp-returns-stories-admin-edit-1-9076842a/README.md): Open an existing return story when you need to check the setup or make a change.
+- [Edit Return Story](../160-cp-returns-stories-admin-edit-id-9076842a/README.md): Open an existing return story when you need to check the setup or make a change.
 
 ## How It Works
 
@@ -21,8 +21,7 @@ Local version of the Stories Controller to enable filters.
 
 ## Using This Page
 
-1. Open Return Stories from the CP navigation.
-2. Scan the fields in the table to find the return story you need.
+1. Scan the fields in the table to find the return story you need.
 
 ## What You Can Do
 
@@ -30,11 +29,7 @@ Local version of the Stories Controller to enable filters.
 
 Review the visible fields to check what already exists.
 
-- Field: Label
-- Field: Default Action
-- Field: Default Reason
-- Field: Warehouse Mapping
-- Field: Status
+- Visible fields include Label, Default Action, Default Reason, Warehouse Mapping, and Status.
 
 Example rows:
 

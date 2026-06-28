@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/mto-service-email-settings-admin](https://sohohome.com/cp/mto-service-email-settings-admin)
 
-MTO Service Email Settings covers the admin screen used to review and maintain mto service email settings.
+Settings for MTO (Made-To-Order) Service Email notifications configures when and what content to send for mid-production updates
 
 ![MTO Service Email Settings overview](images/page-desktop.png)
 
@@ -26,7 +26,7 @@ MTO Service Email Settings covers the admin screen used to review and maintain m
 
 Use the fields on this screen to make the change, then save once the values are correct.
 
-## Available Actions
+## Page Sections
 
 - Default_fieldset
 - UK Settings

@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/reason-groups-admin](https://sohohome.com/cp/reason-groups-admin)
 
-Reason Groups covers the admin screen used to review and maintain reason groups.
+Reason Groups lets admins find and review existing reason groups.
 
 ![Reason Groups overview](images/page-desktop.png)
 
@@ -12,7 +12,7 @@ Reason Groups covers the admin screen used to review and maintain reason groups.
 
 ## Related Pages
 
-- [Edit Reason Group](../149-cp-reason-groups-admin-edit-1-cb4f1a10/README.md): Open an existing reason group when you need to check the setup or make a change.
+- [Edit Reason Group](../149-cp-reason-groups-admin-edit-id-cb4f1a10/README.md): Open an existing reason group when you need to check the setup or make a change.
 
 ## How It Works
 
@@ -21,8 +21,7 @@ Reason Groups covers the admin screen used to review and maintain reason groups.
 
 ## Using This Page
 
-1. Open Reason Groups from the CP navigation.
-2. Scan the fields in the table to find the reason group you need.
+1. Scan the fields in the table to find the reason group you need.
 
 ## What You Can Do
 
@@ -30,9 +29,7 @@ Reason Groups covers the admin screen used to review and maintain reason groups.
 
 Review the visible fields to check what already exists.
 
-- Field: Name
-- Field: Identifier
-- Field: Status
+- Visible fields include Name, Identifier, and Status.
 
 Example rows:
 

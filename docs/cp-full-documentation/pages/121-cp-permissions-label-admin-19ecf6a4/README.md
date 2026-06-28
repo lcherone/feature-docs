@@ -12,7 +12,7 @@ Implement custom template for permissions field
 
 ## Related Pages
 
-- [Edit Permission Label](../122-cp-permissions-label-admin-edit-18-780f40e1/README.md): Open an existing permission label when you need to check the setup or make a change.
+- [Edit Permission Label](../122-cp-permissions-label-admin-edit-id-780f40e1/README.md): Open an existing permission label when you need to check the setup or make a change.
 
 ## How It Works
 
@@ -20,8 +20,7 @@ Implement custom template for permissions field
 
 ## Using This Page
 
-1. Open Permission Labels from the CP navigation.
-2. Scan the fields in the table to find the permission label you need.
+1. Scan the fields in the table to find the permission label you need.
 
 ## What You Can Do
 
@@ -29,14 +28,7 @@ Implement custom template for permissions field
 
 Review the visible fields to check what already exists.
 
-- Field: Version
-- Field: Model
-- Field: Field
-- Field: Instance
-- Field: Text
-- Field: Language
-- Field: Created
-- Field: Updated
+- Visible fields include Version, Model, Field, Instance, Text, Language, Created, and Updated.
 
 Example rows:
 

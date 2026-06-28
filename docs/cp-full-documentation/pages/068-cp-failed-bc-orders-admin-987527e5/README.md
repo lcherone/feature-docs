@@ -19,7 +19,7 @@ Admin listing for orders that have failed to send to Business Central.
 1. Open the Failed Orders screen.
 2. Use the visible fields to check the details.
 
-## Available Actions
+## Page Sections
 
 - Unresolved
 - All

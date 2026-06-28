@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/mto-settings-admin](https://sohohome.com/cp/mto-settings-admin)
 
-MTO Settings covers the admin screen used to review and maintain mto settings.
+Custom Mto Settings page
 
 ![MTO Settings overview](images/page-desktop.png)
 
@@ -42,24 +42,12 @@ Add the terms header.
 
 #### Terms Copy
 
-![Terms Copy](images/field-002-terms-copy.png)
-
-*Terms Copy setting*
-
 Write the terms copy content.
 
 #### Terms Checkbox Copy
 
-![Terms Checkbox Copy](images/field-003-terms-checkbox-copy.png)
-
-*Terms Checkbox Copy setting*
-
 Write the terms checkbox copy content.
 
 #### POS Terms Checkbox Copy
-
-![POS Terms Checkbox Copy](images/field-004-pos-terms-checkbox-copy.png)
-
-*POS Terms Checkbox Copy setting*
 
 Write the POS terms checkbox copy content.

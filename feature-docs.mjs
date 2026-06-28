@@ -40,6 +40,20 @@ const crawlStats = {
   skippedDisallowedUrls: 0,
   skippedInaccessibleUrls: 0,
 };
+const REDACTED_VALUE = "[hidden]";
+const BASE_SENSITIVE_HEADER_PATTERN = /\b(token|refresh token|access token|secret|password|api key|bearer|authorization|auth header|session|cookie|email|e-mail|phone|telephone|mobile|address|postcode|post code|postal|zip|first name|last name|surname|full name|customer|member|membership|applicant|recipient|contact|billing|shipping|delivery|order(?: number| no| id| ref)?|store order|transaction|voucher|gift card|card number|pin)\b/i;
+const PRIVACY_ROUTE_PATTERN = /\/cp\/(?:customers?|customer-groups|membership|membership-applications|gift-cards|gifting|vouchers|store-admin|line-item-admin|returns|swatches-orders|failed-[a-z-]*(?:orders|adjustments)-admin|adjustments-summary-admin|reporting-payments-admin|basket|checkout|newsletter-signups|impressions|dh-api-logs|shipping-client-log|order|orders)\b/i;
+const ORDER_ROUTE_PATTERN = /\/cp\/(?:store-admin|line-item-admin|returns|swatches-orders|failed-[a-z-]*(?:orders|adjustments)-admin|adjustments-summary-admin|reporting-payments-admin|vouchers-(?:orders|dispatches)|order|orders)\b/i;
+const GIFT_ROUTE_PATTERN = /\/cp\/(?:gift-cards|gifting|vouchers)\b/i;
+const PRIVACY_ROUTE_HEADER_PATTERN = /\b(name|customer|member|membership|applicant|email|phone|telephone|mobile|address|postcode|post code|postal|zip|order|reference|number|id|items?|products?|sku|amount|total|subtotal|value|balance|price|payment|card|code|pin)\b/i;
+const EMAIL_VALUE_PATTERN = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/ig;
+const ORDER_VALUE_PATTERN = /\b(?:S|SWATCH)\d{6,}[A-Z0-9]*(?:-\d+)?\b/ig;
+const PHONE_VALUE_PATTERN = /\b(?:\+?\d[\d\s().-]{8,}\d)\b/g;
+const POSTCODE_VALUE_PATTERN = /\b[A-Z]{1,2}\d[A-Z\d]?\s*\d[A-Z]{2}\b/ig;
+const LONG_IDENTIFIER_PATTERN = /^\d{6,}$/;
+const GIFT_CODE_VALUE_PATTERN = /\b(?:GC|GIFT|VOUCHER)?[A-Z0-9]{10,}(?:-\d+)?\b/ig;
+const CURRENCY_VALUE_PATTERN = /(?:£|\$|€)\s?\d[\d,.]*(?:\.\d{2})?|\b\d[\d,]*\.\d{2}\b/g;
+const CODE_DOC_CACHE_VERSION = "3";
 
 main().catch((error) => {
   console.error(error);
@@ -311,7 +325,7 @@ async function capturePage(browser, url, pageNumber, contextCache) {
         extracted = await extractPageData(page);
         discoveredLinks = await extractLinks(page);
         await redactSensitivePageData(page);
-        fieldScreenshots = await captureFieldScreenshots(page, extracted.fields, imageDir);
+        fieldScreenshots = await captureFieldScreenshots(page, extracted.fields, imageDir, url);
       }
 
       const screenshotFile = path.join(imageDir, `page-${slug(viewport.name)}.png`);
@@ -474,53 +488,171 @@ async function closePage(page) {
 }
 
 async function redactSensitivePageData(page) {
-  await page.evaluate(() => {
+  await page.evaluate((privacy) => {
+    const redactedValue = privacy.redactedValue;
+    const baseSensitiveHeaderPattern = new RegExp(privacy.baseSensitiveHeaderPattern, "i");
+    const privacyRoutePattern = new RegExp(privacy.privacyRoutePattern, "i");
+    const orderRoutePattern = new RegExp(privacy.orderRoutePattern, "i");
+    const giftRoutePattern = new RegExp(privacy.giftRoutePattern, "i");
+    const privacyRouteHeaderPattern = new RegExp(privacy.privacyRouteHeaderPattern, "i");
+    const emailValuePattern = new RegExp(privacy.emailValuePattern, "ig");
+    const orderValuePattern = new RegExp(privacy.orderValuePattern, "ig");
+    const phoneValuePattern = new RegExp(privacy.phoneValuePattern, "g");
+    const postcodeValuePattern = new RegExp(privacy.postcodeValuePattern, "ig");
+    const longIdentifierPattern = new RegExp(privacy.longIdentifierPattern);
+    const giftCodeValuePattern = new RegExp(privacy.giftCodeValuePattern, "ig");
+    const currencyValuePattern = new RegExp(privacy.currencyValuePattern, "g");
     const normalise = (value) => String(value || "").replace(/\s+/g, " ").trim();
-    const sensitivePattern = /\b(token|refresh token|access token|secret|password|api key|bearer|authorization|auth header|session|cookie)\b/i;
-    const isSensitive = (value) => sensitivePattern.test(normalise(value));
+    const currentUrl = window.location.href;
+    const isPrivacyRoute = privacyRoutePattern.test(currentUrl);
+    const isOrderRoute = orderRoutePattern.test(currentUrl);
+    const isGiftRoute = giftRoutePattern.test(currentUrl);
+    const reset = (pattern) => {
+      pattern.lastIndex = 0;
+      return pattern;
+    };
+    const isSensitiveHeader = (value) => {
+      const text = normalise(value);
+
+      if (!text) {
+        return false;
+      }
+
+      return baseSensitiveHeaderPattern.test(text)
+        || isPrivacyRoute && privacyRouteHeaderPattern.test(text)
+        || isOrderRoute && /\b(items?|products?|sku|description|details?|amount|total|subtotal|value|balance|price|payment|card|code|id|reference|number)\b/i.test(text)
+        || isGiftRoute && /\b(value|balance|amount|price|card|voucher|code|pin|currency)\b/i.test(text);
+    };
+    const hasSensitiveValue = (value) => {
+      const text = normalise(value);
+
+      if (!text) {
+        return false;
+      }
+
+      return reset(emailValuePattern).test(text)
+        || reset(orderValuePattern).test(text)
+        || reset(phoneValuePattern).test(text)
+        || reset(postcodeValuePattern).test(text)
+        || isPrivacyRoute && longIdentifierPattern.test(text)
+        || isOrderRoute && reset(currencyValuePattern).test(text)
+        || isGiftRoute && (
+          reset(giftCodeValuePattern).test(text)
+          || reset(currencyValuePattern).test(text)
+          || /^\d+(?:\.\d+)?$/.test(text)
+        );
+    };
+    const shouldHideValue = (header, value) => isSensitiveHeader(header) || hasSensitiveValue(value);
+    const redactText = (value) => normalise(value)
+      .replace(reset(emailValuePattern), redactedValue)
+      .replace(reset(orderValuePattern), redactedValue)
+      .replace(reset(phoneValuePattern), redactedValue)
+      .replace(reset(postcodeValuePattern), redactedValue)
+      .replace(isGiftRoute ? reset(giftCodeValuePattern) : /$a/, redactedValue)
+      .replace(isOrderRoute || isGiftRoute ? reset(currencyValuePattern) : /$a/, redactedValue);
 
     document.querySelectorAll("table").forEach((table) => {
       const headers = Array.from(table.querySelectorAll("thead th, tr:first-child th")).map((cell) => normalise(cell.textContent));
-      const sensitiveIndexes = headers
-        .map((header, index) => isSensitive(header) ? index : -1)
-        .filter((index) => index >= 0);
-
-      if (!sensitiveIndexes.length) {
-        return;
-      }
-
       const rows = Array.from(table.querySelectorAll("tbody tr"));
       const fallbackRows = rows.length ? rows : Array.from(table.querySelectorAll("tr")).slice(headers.length ? 1 : 0);
 
       fallbackRows.forEach((row) => {
         const cells = Array.from(row.children).filter((cell) => /^(td|th)$/i.test(cell.tagName));
 
-        sensitiveIndexes.forEach((index) => {
-          if (cells[index]) {
-            cells[index].textContent = "[hidden]";
-            cells[index].removeAttribute("title");
+        cells.forEach((cell, index) => {
+          const header = headers[index] || "";
+          const text = normalise(cell.textContent);
+
+          if (shouldHideValue(header, text)) {
+            cell.textContent = redactedValue;
+            cell.removeAttribute("title");
+          } else {
+            const redactedText = redactText(text);
+
+            if (redactedText !== text) {
+              cell.textContent = redactedText;
+              cell.removeAttribute("title");
+            }
           }
         });
       });
     });
 
-    document.querySelectorAll("input, textarea").forEach((field) => {
+    document.querySelectorAll("input, textarea, select").forEach((field) => {
       const descriptor = [
         field.getAttribute("name"),
         field.getAttribute("id"),
         field.getAttribute("aria-label"),
+        field.getAttribute("placeholder"),
         field.closest("label")?.textContent,
       ].map(normalise).join(" ");
+      const value = field.tagName.toLowerCase() === "select"
+        ? normalise(field.selectedOptions?.[0]?.textContent || field.value)
+        : normalise(field.value || field.getAttribute("value"));
 
-      if (!isSensitive(descriptor)) {
+      if (!shouldHideValue(descriptor, value)) {
         return;
       }
 
-      field.value = "[hidden]";
-      field.setAttribute("value", "[hidden]");
+      if (field.tagName.toLowerCase() === "select") {
+        Array.from(field.selectedOptions || []).forEach((option) => {
+          option.textContent = redactedValue;
+        });
+      } else {
+        field.value = redactedValue;
+        field.setAttribute("value", redactedValue);
+      }
+
       field.removeAttribute("title");
     });
-  });
+
+    document.querySelectorAll("[title], [aria-label]").forEach((element) => {
+      ["title", "aria-label"].forEach((attribute) => {
+        const value = element.getAttribute(attribute);
+
+        if (value && hasSensitiveValue(value)) {
+          element.setAttribute(attribute, redactText(value));
+        }
+      });
+    });
+
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+      acceptNode(node) {
+        if (!node.parentElement || /^(script|style|noscript|textarea|option)$/i.test(node.parentElement.tagName)) {
+          return NodeFilter.FILTER_REJECT;
+        }
+
+        return hasSensitiveValue(node.nodeValue) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+      },
+    });
+    const nodes = [];
+
+    while (walker.nextNode()) {
+      nodes.push(walker.currentNode);
+    }
+
+    nodes.forEach((node) => {
+      node.nodeValue = redactText(node.nodeValue);
+    });
+  }, privacyRedactionConfig());
+}
+
+function privacyRedactionConfig() {
+  return {
+    redactedValue: REDACTED_VALUE,
+    baseSensitiveHeaderPattern: BASE_SENSITIVE_HEADER_PATTERN.source,
+    privacyRoutePattern: PRIVACY_ROUTE_PATTERN.source,
+    orderRoutePattern: ORDER_ROUTE_PATTERN.source,
+    giftRoutePattern: GIFT_ROUTE_PATTERN.source,
+    privacyRouteHeaderPattern: PRIVACY_ROUTE_HEADER_PATTERN.source,
+    emailValuePattern: EMAIL_VALUE_PATTERN.source,
+    orderValuePattern: ORDER_VALUE_PATTERN.source,
+    phoneValuePattern: PHONE_VALUE_PATTERN.source,
+    postcodeValuePattern: POSTCODE_VALUE_PATTERN.source,
+    longIdentifierPattern: LONG_IDENTIFIER_PATTERN.source,
+    giftCodeValuePattern: GIFT_CODE_VALUE_PATTERN.source,
+    currencyValuePattern: CURRENCY_VALUE_PATTERN.source,
+  };
 }
 
 function buildContextConfig(viewport) {
@@ -737,7 +869,10 @@ async function extractPageData(page) {
       const name = normalise(field.name || attr(field, "name"));
       const id = normalise(field.id);
       const placeholder = normalise(attr(field, "placeholder"));
+      const type = normalise(field.type || attr(field, "role") || field.tagName);
+      const formText = normalise(field.closest("form")?.innerText || "");
       const utilityValues = new Set([
+        "input",
         "jump to",
         "p",
         "rich text editor",
@@ -748,6 +883,22 @@ async function extractPageData(page) {
       ]);
 
       if (utilityValues.has(label) || utilityValues.has(name) || utilityValues.has(id)) {
+        return true;
+      }
+
+      if (/bulk actions?/.test(formText) || /^model_listing(?:\[|$)/i.test(field.name || label || id)) {
+        return true;
+      }
+
+      if ((label === "select" || name === "select" || id === "select") && field instanceof HTMLSelectElement) {
+        const options = Array.from(field.options).map((option) => normalise(text(option) || option.label || option.value));
+
+        if (options.includes("load saved view")) {
+          return true;
+        }
+      }
+
+      if ((label === "input" || name === "input" || id === "input") && (type === "checkbox" || type === "radio")) {
         return true;
       }
 
@@ -946,21 +1097,29 @@ async function extractLinks(page) {
   }).catch(() => []);
 }
 
-async function captureFieldScreenshots(page, fields, imageDir) {
+async function captureFieldScreenshots(page, fields, imageDir, url = "") {
   const maxScreenshots = Number(config.maxFieldScreenshotsPerPage || 80);
   const captured = [];
 
   for (const field of fields.slice(0, maxScreenshots)) {
-    const file = path.join(imageDir, `${field.uid}-${slug(field.label || field.name || "field")}.png`);
+    const file = path.join(imageDir, `${field.uid}-${privacySafeSlug(field.label || field.name || "field", url)}.png`);
 
     try {
       const locator = page.locator(field.screenshotSelector).first();
-      await captureFieldScreenshot(page, locator, file);
+      const dimensions = await captureFieldScreenshot(page, locator, file);
+
+      if (isTinyFieldScreenshot(dimensions)) {
+        rmSync(file, { force: true });
+        continue;
+      }
+
       captured.push({
         fieldUid: field.uid,
         fieldIndex: field.index,
         file,
         relativeFile: relativeTo(path.dirname(imageDir), file),
+        width: dimensions.width,
+        height: dimensions.height,
       });
     } catch (error) {
       captured.push({
@@ -974,22 +1133,32 @@ async function captureFieldScreenshots(page, fields, imageDir) {
   return captured;
 }
 
+function isTinyFieldScreenshot(dimensions = {}) {
+  return Number(dimensions.width || 0) < 120 || Number(dimensions.height || 0) < 48;
+}
+
 async function captureFieldScreenshot(page, locator, file) {
   const timeout = Number(config.fieldScreenshotTimeoutMs || 5000);
   const padding = Number(config.fieldScreenshotPaddingPx ?? 8);
 
   await locator.scrollIntoViewIfNeeded({ timeout });
 
-  if (padding <= 0) {
-    await locator.screenshot({ path: file, timeout });
-    return;
-  }
-
   const box = await locator.boundingBox({ timeout });
 
   if (!box || box.width <= 0 || box.height <= 0) {
     await locator.screenshot({ path: file, timeout });
-    return;
+    return {
+      width: 0,
+      height: 0,
+    };
+  }
+
+  if (padding <= 0) {
+    await locator.screenshot({ path: file, timeout });
+    return {
+      width: Math.ceil(box.width),
+      height: Math.ceil(box.height),
+    };
   }
 
   const viewport = page.viewportSize();
@@ -1006,6 +1175,11 @@ async function captureFieldScreenshot(page, locator, file) {
   }
 
   await page.screenshot({ path: file, clip });
+
+  return {
+    width: clip.width,
+    height: clip.height,
+  };
 }
 
 function analysePage(url, extracted, technicalError, codeContext, routeMetadata = null) {
@@ -1013,7 +1187,13 @@ function analysePage(url, extracted, technicalError, codeContext, routeMetadata 
   const routeTitle = routeMetadata?.title || "";
   const extractedTitle = isNoisyCpTitle(extracted.title) ? "" : extracted.title;
   const headingTitle = isNoisyCpTitle(extracted.headings[0]?.text) ? "" : extracted.headings[0]?.text;
-  const title = routeTitle || controllerTitle || headingTitle || extractedTitle || titleFromUrl(url);
+  const title = safeDocumentationTitle(url, [
+    routeTitle,
+    controllerTitle,
+    headingTitle,
+    extractedTitle,
+    titleFromUrl(url),
+  ], codeContext);
   const modelName = codeContext.model?.alias || codeContext.model?.className || "";
   const codeFeatureSummary = buildCodeFeatureSummary(title, codeContext);
   codeContext.featureSummary = codeFeatureSummary;
@@ -1055,6 +1235,33 @@ function analysePage(url, extracted, technicalError, codeContext, routeMetadata 
       "Codex should read the referenced controller, model, XML, and view files before treating this draft as final operator documentation.",
     ],
   }, extracted);
+}
+
+function safeDocumentationTitle(url, candidates, codeContext = {}) {
+  for (const candidate of candidates) {
+    const title = markdownText(candidate);
+
+    if (title && !hasSensitiveDocumentationValue(title, url)) {
+      return title;
+    }
+  }
+
+  return routeFallbackTitle(url, codeContext);
+}
+
+function routeFallbackTitle(url, codeContext = {}) {
+  const route = codeContext.route || {};
+  const controllerAlias = route.controllerAlias || "";
+  const action = normaliseActionName(route.action);
+  const routeName = controllerAlias
+    ? titleCaseWords(controllerAlias.replace(/-admin$/i, "").replace(/[-_]+/g, " "))
+    : titleCaseWords(redactDocumentationPath(new URL(url).pathname).split("/").filter(Boolean).pop() || "Page");
+
+  if (action && action !== "index") {
+    return `${routeName} ${actionTitle(action)}`;
+  }
+
+  return routeName;
 }
 
 function normaliseAnalysis(analysis, extracted) {
@@ -1192,7 +1399,7 @@ function inferWorkflows(title, url, extracted) {
     workflows.push({
       title: `Review ${humanFeatureName}`,
       body: listingWorkflowBody(humanRecordName, hasSearch, hasEdit, hasView),
-      items: primaryTableColumns(extracted).map((column) => `Field: ${column}`),
+      items: listingFieldSummaryItems(extracted),
     });
   }
 
@@ -1263,7 +1470,7 @@ function inferFeatureSpecificWorkflows(title, url, extracted) {
     workflows.push({
       title: "Review role limits",
       body: "Start here to see which admin roles already have custom discount limits set.",
-      items: primaryTableColumns(extracted).map((column) => `Field: ${column}`),
+      items: listingFieldSummaryItems(extracted),
     });
   }
 
@@ -1327,7 +1534,6 @@ function inferHowToUse(title, url, extracted) {
     const actionStep = listingHowToUseActionStep(humanRecordName, hasCreate, hasEdit, hasView);
 
     return [
-      `Open ${title} from the CP navigation.`,
       hasSearch ? `Search or filter until you find the ${humanRecordName} you need.` : `Scan the fields in the table to find the ${humanRecordName} you need.`,
       actionStep,
     ].filter(Boolean);
@@ -1390,7 +1596,6 @@ function inferFeatureSpecificHowToUse(title, url, extracted) {
           : "";
 
     return [
-      `Open the ${title} page from the CP navigation or direct URL.`,
       "Review the role, maximum percentage, and maximum fixed amount columns.",
       actionStep,
     ].filter(Boolean);
@@ -1578,6 +1783,14 @@ function primaryTableColumns(extracted) {
     .slice(0, 12);
 }
 
+function listingFieldSummaryItems(extracted) {
+  const fields = primaryTableColumns(extracted).slice(0, 8);
+
+  return fields.length
+    ? [`Visible fields include ${humanList(fields)}.`]
+    : [];
+}
+
 function selectPrimaryActions(buttons) {
   const seen = new Set();
 
@@ -1596,6 +1809,27 @@ function selectPrimaryActions(buttons) {
 
       return true;
     });
+}
+
+function clientPageSections(actions) {
+  return actions
+    .map((action) => markdownText(action))
+    .filter(Boolean)
+    .filter((action) => !isLowValuePageSection(action));
+}
+
+function isLowValuePageSection(text) {
+  const normalised = normaliseHumanLabel(text);
+  const ignored = new Set([
+    "add new",
+    "create new",
+    "export csv",
+    "import csv",
+    "manage saved views",
+    "perform",
+  ]);
+
+  return ignored.has(normalised);
 }
 
 function isCommonActionText(text) {
@@ -1921,6 +2155,30 @@ function inferDomainCodeDescription(title, codeContext) {
       : `${title} records incoming AIS webhook activity so failed or processed requests can be reviewed later.`;
   }
 
+  if (/customers?\b|cp\/customers/i.test(identity)) {
+    return `${title} is used to find customer accounts and review the account, address, membership, basket, and order details available to admins.`;
+  }
+
+  if (/image-asset-admin|image asset/i.test(identity)) {
+    return `${title} manages reusable image assets used across content and merchandising areas.`;
+  }
+
+  if (/returns(?:-|_|$)|returns-admin|returns queue/i.test(identity)) {
+    return `${title} is used to review return records and follow their processing status.`;
+  }
+
+  if (/swatches?/i.test(identity)) {
+    return `${title} manages the swatch records used for fabric, finish, and material sample journeys.`;
+  }
+
+  if (/redirects?/i.test(identity)) {
+    return `${title} manages URL redirects so old or changed links send visitors to the correct page.`;
+  }
+
+  if (/design-service/i.test(identity)) {
+    return `${title} controls the admin-managed settings and content used by the Design Service journey.`;
+  }
+
   return "";
 }
 
@@ -1976,7 +2234,6 @@ function inferDocblockDescription(title, codeContext) {
   const summaries = [
     codeContext.controller?.docSummary,
     codeContext.model?.docSummary,
-    ...referenceDocSummaries(codeContext.references || []),
   ].map(markdownText).filter(Boolean);
   const summary = summaries.find((item) => !isThinCodeSummary(item));
 
@@ -1999,7 +2256,10 @@ function isThinCodeSummary(summary) {
   const text = markdownText(summary);
 
   return /^(provider for this package|model|controller|admin controller)\.?$/i.test(text)
-    || /\b(dependency provider|provider for|controller class|controller admin)\b/i.test(text)
+    || /^(provider|[a-z ]+ model|[a-z ]+ admin|update [a-z ]+|[a-z ]+ listing)\.?$/i.test(text)
+    || /\b(dependency provider|provider for|provider\b|controller class|controller admin)\b/i.test(text)
+    || /\bbase models? and controllers?\b/i.test(text)
+    || /\bcontroller\b/i.test(text) && !/\b(manages|manage|lists|list|records|controls|shows|provides|allows|summarises|summarizes|contains|stores|tracks|creates|updates)\b/i.test(text)
     || /\badmin controller\b/i.test(text) && !/\b(manages|manage|lists|list|records|controls|shows|provides|allows|summarises|summarizes)\b/i.test(text)
     || /^controller for\b/i.test(text)
     || /^products admin controller\.?$/i.test(text)
@@ -2368,7 +2628,7 @@ function selectHumanFieldDocs(pageDoc) {
     return dedupeRepeatedFieldDocs(pageDoc, pageDoc.analysis.fieldDocs.filter((fieldDoc) => {
       const field = pageDoc.extracted.fields.find((item) => item.index === fieldDoc.index);
 
-      return field && !isUtilityField(field, fieldDoc);
+      return field && !isUtilityField(field, fieldDoc, pageDoc);
     }));
   }
 
@@ -2404,7 +2664,7 @@ function dedupeRepeatedFieldDocs(pageDoc, fieldDocs) {
 }
 
 function isFeatureField(pageDoc, field, fieldDoc) {
-  if (isUtilityField(field, fieldDoc)) {
+  if (isUtilityField(field, fieldDoc, pageDoc)) {
     return false;
   }
 
@@ -2423,10 +2683,13 @@ function isFeatureField(pageDoc, field, fieldDoc) {
   return Boolean(field.name && !/^q$|search/i.test(field.name));
 }
 
-function isUtilityField(field, fieldDoc) {
+function isUtilityField(field, fieldDoc, pageDoc = null) {
   const label = normaliseHumanLabel(fieldDoc.label || field.label || field.name);
   const name = normaliseHumanLabel(field.name);
+  const form = normaliseHumanLabel(field.form);
+  const type = String(field.type || field.tag || "").toLowerCase();
   const utilityLabels = new Set([
+    "input",
     "p",
     "search",
     "jump to",
@@ -2445,7 +2708,19 @@ function isUtilityField(field, fieldDoc) {
     return true;
   }
 
-  return ["button", "submit", "reset", "search"].includes(String(field.type || "").toLowerCase())
+  if ((label === "select" || name === "select") && isSavedViewSelect(field)) {
+    return true;
+  }
+
+  if (/bulk actions?/.test(form) || /^model_listing(?:\[|$)/i.test(String(field.name || field.label || ""))) {
+    return true;
+  }
+
+  if ((pageDoc?.extracted?.tables || []).length && repeatedFieldKey(field.name)) {
+    return true;
+  }
+
+  return ["button", "submit", "reset", "search"].includes(type)
     || field.name === "search"
     || field.name === "q";
 }
@@ -2457,6 +2732,12 @@ function isPaginationSelect(field) {
     .filter((label) => label !== "..." && label !== "…");
 
   return labels.length > 0 && labels.every((label) => /^\d+$/.test(label));
+}
+
+function isSavedViewSelect(field) {
+  return (field.options || [])
+    .map((option) => normaliseHumanLabel(option.label))
+    .some((label) => label === "load saved view");
 }
 
 function normaliseHumanLabel(value) {
@@ -2527,8 +2808,12 @@ function groupFieldDocsByForm(pageDoc, fieldDocs) {
   return [...groups.values()];
 }
 
-function shouldInlineFieldScreenshot(index, groupSize) {
+function shouldInlineFieldScreenshot(index, groupSize, shot = null) {
   const maxInline = Number(config.humanDocs?.maxInlineFieldScreenshots || 8);
+
+  if (shot && isTinyFieldScreenshot(shot)) {
+    return false;
+  }
 
   return groupSize <= maxInline || index < maxInline;
 }
@@ -2559,8 +2844,8 @@ function formatOptions(options) {
   return visibleLabels.join(", ");
 }
 
-function listingExampleTable(extracted) {
-  const table = (extracted.tables || []).find((item) => item.headers?.length && item.rows?.length);
+function listingExampleTable(pageDoc) {
+  const table = (pageDoc.extracted.tables || []).find((item) => item.headers?.length && item.rows?.length);
 
   if (!table) {
     return null;
@@ -2579,11 +2864,15 @@ function listingExampleTable(extracted) {
   }
 
   const rows = (table.rows || [])
-    .map((row) => columns.map((column) => maskListingExampleCell(column.header, row[column.index] || "")))
+    .map((row) => columns.map((column) => maskListingExampleCell(column.header, row[column.index] || "", pageDoc.url)))
     .filter((row) => row.some(Boolean))
     .slice(0, 3);
 
   if (!rows.length) {
+    return null;
+  }
+
+  if (isMostlyRedactedTable(rows)) {
     return null;
   }
 
@@ -2593,22 +2882,114 @@ function listingExampleTable(extracted) {
   };
 }
 
-function maskListingExampleCell(header, value) {
+function isMostlyRedactedTable(rows) {
+  const cells = rows.flat().map(markdownText).filter(Boolean);
+
+  if (!cells.length) {
+    return true;
+  }
+
+  const redacted = cells.filter((cell) => cell === REDACTED_VALUE).length;
+
+  return redacted / cells.length >= 0.45;
+}
+
+function maskListingExampleCell(header, value, url = "") {
   const text = markdownText(value);
 
   if (!text) {
     return "";
   }
 
-  if (isSensitiveListingHeader(header)) {
-    return "[hidden]";
+  if (shouldRedactDocumentationValue(header, text, url)) {
+    return REDACTED_VALUE;
+  }
+
+  return redactDocumentationText(text, url);
+}
+
+function shouldRedactDocumentationValue(header, value, url = "") {
+  const text = markdownText(value);
+
+  if (!text) {
+    return false;
+  }
+
+  return isSensitiveDocumentationHeader(header, url)
+    || hasSensitiveDocumentationValue(text, url);
+}
+
+function isSensitiveDocumentationHeader(header, url = "") {
+  const text = markdownText(header);
+
+  if (!text) {
+    return false;
+  }
+
+  return BASE_SENSITIVE_HEADER_PATTERN.test(text)
+    || isPrivacyRoute(url) && PRIVACY_ROUTE_HEADER_PATTERN.test(text)
+    || isOrderRoute(url) && /\b(items?|products?|sku|description|details?|amount|total|subtotal|value|balance|price|payment|card|code|id|reference|number)\b/i.test(text)
+    || isGiftRoute(url) && /\b(value|balance|amount|price|card|voucher|code|pin|currency)\b/i.test(text);
+}
+
+function hasSensitiveDocumentationValue(value, url = "") {
+  const text = markdownText(value);
+
+  if (!text) {
+    return false;
+  }
+
+  return regexTest(EMAIL_VALUE_PATTERN, text)
+    || regexTest(ORDER_VALUE_PATTERN, text)
+    || regexTest(PHONE_VALUE_PATTERN, text)
+    || regexTest(POSTCODE_VALUE_PATTERN, text)
+    || isPrivacyRoute(url) && LONG_IDENTIFIER_PATTERN.test(text)
+    || isOrderRoute(url) && regexTest(CURRENCY_VALUE_PATTERN, text)
+    || isGiftRoute(url) && (
+      regexTest(GIFT_CODE_VALUE_PATTERN, text)
+      || regexTest(CURRENCY_VALUE_PATTERN, text)
+      || /^\d+(?:\.\d+)?$/.test(text)
+    );
+}
+
+function redactDocumentationText(value, url = "") {
+  let text = markdownText(value)
+    .replace(resetRegex(EMAIL_VALUE_PATTERN), REDACTED_VALUE)
+    .replace(resetRegex(ORDER_VALUE_PATTERN), REDACTED_VALUE)
+    .replace(resetRegex(PHONE_VALUE_PATTERN), REDACTED_VALUE)
+    .replace(resetRegex(POSTCODE_VALUE_PATTERN), REDACTED_VALUE);
+
+  if (isGiftRoute(url)) {
+    text = text.replace(resetRegex(GIFT_CODE_VALUE_PATTERN), REDACTED_VALUE);
+  }
+
+  if (isOrderRoute(url) || isGiftRoute(url)) {
+    text = text.replace(resetRegex(CURRENCY_VALUE_PATTERN), REDACTED_VALUE);
   }
 
   return text;
 }
 
-function isSensitiveListingHeader(header) {
-  return /\b(token|refresh token|access token|secret|password|api key|bearer|authorization|auth header|session|cookie)\b/i.test(markdownText(header));
+function regexTest(pattern, value) {
+  pattern.lastIndex = 0;
+  return pattern.test(value);
+}
+
+function resetRegex(pattern) {
+  pattern.lastIndex = 0;
+  return pattern;
+}
+
+function isPrivacyRoute(url = "") {
+  return PRIVACY_ROUTE_PATTERN.test(String(url || ""));
+}
+
+function isOrderRoute(url = "") {
+  return ORDER_ROUTE_PATTERN.test(String(url || ""));
+}
+
+function isGiftRoute(url = "") {
+  return GIFT_ROUTE_PATTERN.test(String(url || ""));
 }
 
 function shouldShowListingExample(workflow) {
@@ -2639,7 +3020,7 @@ function writePageMarkdown(pageDoc) {
 
   lines.push(`# ${markdownText(pageDoc.title)}`);
   lines.push("");
-  lines.push(`[Home](../../index.md) / ${markdownText(featurePageIndexTitle(pageDoc))}`);
+  lines.push(pageBreadcrumb(pageDoc));
   lines.push("");
   lines.push(`URL: ${markdownUrl(publicPageUrl(pageDoc.url))}`);
   lines.push("");
@@ -2674,7 +3055,7 @@ function writePageMarkdown(pageDoc) {
   if (config.humanDocs?.includePageDetails) {
     lines.push("## Page Details");
     lines.push("");
-    lines.push(`- URL: ${pageDoc.url}`);
+    lines.push(`- URL: ${documentationDisplayUrl(pageDoc.url)}`);
     lines.push(`- Generated: ${runStartedAt.toISOString()}`);
     lines.push("");
   }
@@ -2703,7 +3084,7 @@ function writePageMarkdown(pageDoc) {
         });
       }
 
-      const exampleTable = shouldShowListingExample(workflow) ? listingExampleTable(pageDoc.extracted) : null;
+      const exampleTable = shouldShowListingExample(workflow) ? listingExampleTable(pageDoc) : null;
 
       if (exampleTable) {
         lines.push("");
@@ -2733,32 +3114,32 @@ function writePageMarkdown(pageDoc) {
         const field = fieldsByIndex.get(fieldDoc.index) || {};
         const shot = fieldScreensByIndex.get(fieldDoc.index);
         const modelField = modelFieldForDomField(pageDoc, fieldDoc.index);
-        const label = displayFieldLabel(fieldDoc, field);
+        const label = privacySafeDisplayText(displayFieldLabel(fieldDoc, field), pageDoc.url);
         lines.push(`#### ${markdownText(label)}`);
         lines.push("");
 
-        if (shot?.relativeFile && shouldInlineFieldScreenshot(index, group.fields.length)) {
+        if (shot?.relativeFile && shouldInlineFieldScreenshot(index, group.fields.length, shot)) {
           lines.push(`![${markdownAlt(label)}](${shot.relativeFile})`);
           lines.push("");
           lines.push(`*${markdownText(label)} setting*`);
           lines.push("");
         }
 
-        lines.push(markdownText(fieldDoc.howToUse));
+        lines.push(privacySafeMarkdownText(fieldDoc.howToUse, pageDoc.url));
 
         if (shouldShowEffect(fieldDoc.effects)) {
           lines.push("");
-          lines.push(`**Effect:** ${markdownText(fieldDoc.effects)}`);
+          lines.push(`**Effect:** ${privacySafeMarkdownText(fieldDoc.effects, pageDoc.url)}`);
         }
 
         if (shouldShowValidation(fieldDoc.validation)) {
           lines.push("");
-          lines.push(`**Validation:** ${markdownText(fieldDoc.validation)}`);
+          lines.push(`**Validation:** ${privacySafeMarkdownText(fieldDoc.validation, pageDoc.url)}`);
         }
 
         if (field.options?.length) {
           lines.push("");
-          lines.push(`**Options:** ${formatOptions(field.options)}`);
+          lines.push(`**Options:** ${privacySafeMarkdownText(formatOptions(field.options), pageDoc.url)}`);
         }
 
         if (config.humanDocs?.includeFieldTechnicalDetails && modelField?.dbname) {
@@ -2771,7 +3152,7 @@ function writePageMarkdown(pageDoc) {
 
         if (fieldDoc.notes) {
           lines.push("");
-          lines.push(`**Notes:** ${markdownText(fieldDoc.notes)}`);
+          lines.push(`**Notes:** ${privacySafeMarkdownText(fieldDoc.notes, pageDoc.url)}`);
         }
 
         lines.push("");
@@ -2779,10 +3160,12 @@ function writePageMarkdown(pageDoc) {
     }
   }
 
-  if (pageDoc.analysis.primaryActions.length) {
-    lines.push("## Available Actions");
+  const pageSections = clientPageSections(pageDoc.analysis.primaryActions);
+
+  if (pageSections.length) {
+    lines.push("## Page Sections");
     lines.push("");
-    pageDoc.analysis.primaryActions.forEach((action) => {
+    pageSections.forEach((action) => {
       lines.push(`- ${markdownText(action)}`);
     });
     lines.push("");
@@ -2837,13 +3220,13 @@ function writePageMarkdown(pageDoc) {
     lines.push("| --- | --- |");
     pageDoc.analysis.fieldDocs.forEach((fieldDoc) => {
       const field = fieldsByIndex.get(fieldDoc.index) || {};
-      const label = displayFieldLabel(fieldDoc, field);
+      const label = privacySafeDisplayText(displayFieldLabel(fieldDoc, field), pageDoc.url);
       const notes = [
         field.required ? "Required" : "",
         field.helpText || "",
       ].filter(Boolean).join("; ");
 
-      lines.push(`| ${markdownTableText(label)} | ${markdownTableText(notes)} |`);
+      lines.push(`| ${markdownTableText(label)} | ${markdownTableText(privacySafeMarkdownText(notes, pageDoc.url))} |`);
     });
     lines.push("");
   }
@@ -2878,6 +3261,30 @@ function writePageMarkdown(pageDoc) {
   }
 
   writeFileSync(pageDoc.docFile, `${lines.join("\n").trim()}\n`);
+}
+
+function pageBreadcrumb(pageDoc) {
+  const home = "[Home](../../index.md)";
+  const currentTitle = breadcrumbLabel(featurePageIndexTitle(pageDoc));
+  const parentPage = parentListingPage(pageDoc);
+
+  if (!parentPage) {
+    return `${home} / ${currentTitle}`;
+  }
+
+  return `${home} / [${breadcrumbLabel(featurePageIndexTitle(parentPage))}](${relativeTo(pageDoc.pageDir, parentPage.docFile)}) / ${currentTitle}`;
+}
+
+function breadcrumbLabel(value) {
+  return titleCaseWords(markdownText(value));
+}
+
+function parentListingPage(pageDoc) {
+  if (relatedPageWeight(pageDoc) === 0) {
+    return null;
+  }
+
+  return (pageDoc.relatedPages || []).find((relatedPage) => relatedPageWeight(relatedPage) === 0) || null;
 }
 
 function writeIndex(pages) {
@@ -3031,10 +3438,18 @@ function writeCodeDocs(pages) {
   mkdirSync(codeDocsRoot, { recursive: true });
 
   const usedFiles = new Set();
+  let reusedCount = 0;
+  let writtenCount = 0;
   const docs = pagesWithContext.map((pageDoc) => {
     const file = uniqueCodeDocFile(pageDoc, usedFiles);
     pageDoc.codeDocFile = file;
-    writeCodeDocFile(pageDoc, file);
+    const result = writeCodeDocFile(pageDoc, file);
+
+    if (result.reused) {
+      reusedCount += 1;
+    } else {
+      writtenCount += 1;
+    }
 
     return {
       pageDoc,
@@ -3044,6 +3459,7 @@ function writeCodeDocs(pages) {
   });
 
   writeCodeDocsIndex(docs);
+  console.log(`Code docs: ${writtenCount} written, ${reusedCount} reused`);
 }
 
 function hasCodeDocContext(pageDoc) {
@@ -3127,15 +3543,23 @@ function writeCodeDocFile(pageDoc, file) {
   const fields = codeDocFieldSummaries(pageDoc);
   const behaviours = codeDocBehaviourSummaries(pageDoc);
   const references = codeDocReferences(pageDoc);
+  const fingerprint = codeDocSourceFingerprint(pageDoc, references);
+
+  if (existingCodeDocFingerprint(file) === fingerprint) {
+    return { reused: true };
+  }
+
   const lines = [];
 
   lines.push(`# ${markdownText(title)} Code Notes`);
+  lines.push(`<!-- feature-docs:cache-version ${CODE_DOC_CACHE_VERSION} -->`);
+  lines.push(`<!-- feature-docs:source-fingerprint ${fingerprint} -->`);
   lines.push("");
   lines.push("Use this as orientation before changing the feature. Verify the behaviour against the source files listed below.");
   lines.push("");
   lines.push(`- Feature URL: ${markdownUrl(publicPageUrl(pageDoc.url))}`);
-  lines.push(`- Captured URL: ${markdownUrl(pageDoc.url)}`);
-  lines.push(`- Generated feature docs: [${markdownText(relativeTo(repoRoot, pageDoc.docFile))}](${relativeTo(path.dirname(file), pageDoc.docFile)})`);
+  lines.push(`- Captured URL: ${markdownUrl(documentationDisplayUrl(pageDoc.url))}`);
+  lines.push("- Generated feature docs: see the current Feature Docs run summary for the matching page.");
 
   if (context.route?.controllerAlias) {
     lines.push(`- Route: \`${markdownCode(context.route.controllerAlias)}\`${context.route.action ? ` / \`${markdownCode(context.route.action)}\`` : ""}`);
@@ -3192,6 +3616,53 @@ function writeCodeDocFile(pageDoc, file) {
   lines.push("- If the feature behaviour changes, regenerate Feature Docs so this reference stays useful.");
 
   writeFileSync(file, `${lines.join("\n").trim()}\n`);
+
+  return { reused: false };
+}
+
+function existingCodeDocFingerprint(file) {
+  if (!existsSync(file)) {
+    return "";
+  }
+
+  const content = readFileSync(file, "utf8");
+  const version = content.match(/<!--\s*feature-docs:cache-version\s+([^-\s]+)\s*-->/)?.[1] || "";
+  const fingerprint = content.match(/<!--\s*feature-docs:source-fingerprint\s+([^-\s]+)\s*-->/)?.[1] || "";
+
+  return version === CODE_DOC_CACHE_VERSION ? fingerprint : "";
+}
+
+function codeDocSourceFingerprint(pageDoc, references) {
+  const hash = createHash("sha256");
+  const context = pageDoc.codeContext || {};
+
+  hash.update(CODE_DOC_CACHE_VERSION);
+  hash.update(JSON.stringify({
+    title: featurePageIndexTitle(pageDoc),
+    route: {
+      controllerAlias: context.route?.controllerAlias || "",
+      action: context.route?.action || "",
+      pattern: context.route?.routePattern?.pattern || "",
+    },
+    controller: context.controller?.className || "",
+    model: context.model?.className || "",
+  }));
+
+  references
+    .map((reference) => reference.file)
+    .filter(Boolean)
+    .sort()
+    .forEach((file) => {
+      hash.update(relativeTo(repoRoot, file));
+
+      if (existsSync(file)) {
+        hash.update(createHash("sha256").update(readFileSync(file)).digest("hex"));
+      } else {
+        hash.update("missing");
+      }
+    });
+
+  return hash.digest("hex");
 }
 
 function writeCodeDocsIndex(docs) {
@@ -3266,7 +3737,7 @@ function codeDocFieldSummaries(pageDoc) {
     .map((fieldDoc) => {
       const field = fieldsByIndex.get(fieldDoc.index) || {};
       const modelField = modelFieldForDomField(pageDoc, fieldDoc.index);
-      const label = displayFieldLabel(fieldDoc, field);
+      const label = privacySafeDisplayText(displayFieldLabel(fieldDoc, field), pageDoc.url);
       const summary = inferFeatureSettingSummary(pageDoc.title, label, fieldDoc)
         || cleanFeatureSummaryText(fieldDoc.notes)
         || cleanFeatureSummaryText(fieldDoc.howToUse)
@@ -3646,7 +4117,7 @@ function featurePageIndexTitle(pageDoc) {
     return `Edit ${itemName}`;
   }
 
-  if (/\/view\/[^/]+\/?$/i.test(pathname)) {
+  if (/\/(?:show|view)\/[^/]+\/?$/i.test(pathname)) {
     return `View ${itemName}`;
   }
 
@@ -3712,7 +4183,7 @@ function writeAgentContext(pages) {
   for (const pageDoc of pages) {
     lines.push(`## ${markdownText(pageDoc.title)}`);
     lines.push("");
-    lines.push(`- URL: ${pageDoc.url}`);
+    lines.push(`- URL: ${documentationDisplayUrl(pageDoc.url)}`);
     lines.push(`- Documentation route key: ${pageDoc.routeKey}`);
     lines.push(`- Draft doc: ${relativeTo(runDir, pageDoc.docFile)}`);
     if (pageDoc.codeDocFile) {
@@ -3748,7 +4219,7 @@ function writeAgentContext(pages) {
       for (const field of pageDoc.extracted.fields) {
         const match = pageDoc.codeContext?.fieldMatches?.find((item) => item.fieldIndex === field.index);
         const modelField = match?.modelField;
-        lines.push(`- ${field.index}. ${markdownText(field.label || field.name || "Unnamed field")} (${markdownText(field.type || field.tag)})`);
+        lines.push(`- ${field.index}. ${privacySafeMarkdownText(field.label || field.name || "Unnamed field", pageDoc.url)} (${markdownText(field.type || field.tag)})`);
 
         if (field.name) {
           lines.push(`  - DOM name: \`${markdownCode(field.name)}\``);
@@ -3796,7 +4267,7 @@ function writeSummary(pages) {
       title: pageDoc.title,
       indexTitle: featurePageIndexTitle(pageDoc),
       description: collectionPageDescription(pageDoc),
-      url: pageDoc.url,
+      url: documentationDisplayUrl(pageDoc.url),
       publicUrl: publicPageUrl(pageDoc.url),
       routeKey: pageDoc.routeKey,
       routeMetadata: pageDoc.routeMetadata || null,
@@ -3806,7 +4277,7 @@ function writeSummary(pages) {
       relatedPages: (pageDoc.relatedPages || []).map((relatedPage) => ({
         title: featurePageIndexTitle(relatedPage),
         docFile: relativeTo(runDir, relatedPage.docFile),
-        url: relatedPage.url,
+        url: documentationDisplayUrl(relatedPage.url),
         publicUrl: publicPageUrl(relatedPage.url),
       })),
       screenshots: pageDoc.screenshots.map((screenshot) => relativeTo(runDir, screenshot.file)),
@@ -4937,7 +5408,7 @@ function isSafeDocumentationActionName(value) {
 function pageSlugForUrl(url, pageNumber) {
   const fileUrl = /^file:\/\//i.test(url);
   const parsed = fileUrl ? null : new URL(url);
-  const source = fileUrl ? path.basename(new URL(url).pathname) : `${parsed.pathname}-${parsed.search}`;
+  const source = fileUrl ? path.basename(new URL(url).pathname) : `${redactDocumentationPath(parsed.pathname)}-${redactDocumentationSearch(parsed)}`;
   const readable = slug(source.replace(/[?=&]+/g, "-")) || "page";
   const hash = createHash("sha1").update(url).digest("hex").slice(0, 8);
 
@@ -5332,7 +5803,7 @@ function titleFromUrl(url) {
   const parsed = new URL(url);
   const finalPart = parsed.pathname.split("/").filter(Boolean).pop();
 
-  return finalPart ? finalPart.replace(/[-_]+/g, " ") : parsed.hostname;
+  return finalPart ? titleCaseWords(finalPart.replace(/[-_]+/g, " ")) : parsed.hostname;
 }
 
 function slug(value) {
@@ -5342,6 +5813,24 @@ function slug(value) {
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "")
     .slice(0, 80);
+}
+
+function privacySafeSlug(value, url = "") {
+  const text = shouldRedactDocumentationValue("", value, url)
+    ? REDACTED_VALUE
+    : redactDocumentationText(value, url);
+
+  return slug(text) || "field";
+}
+
+function privacySafeDisplayText(value, url = "") {
+  return shouldRedactDocumentationValue("", value, url)
+    ? "Sensitive value"
+    : redactDocumentationText(value, url);
+}
+
+function privacySafeMarkdownText(value, url = "") {
+  return markdownText(redactDocumentationText(value, url));
 }
 
 function markdownText(value) {
@@ -5375,21 +5864,43 @@ function markdownTableText(value) {
 function publicPageUrl(url) {
   const publicBaseUrl = config.publicBaseUrl || config.humanDocs?.publicBaseUrl;
 
-  if (!publicBaseUrl) {
-    return url;
-  }
+  return documentationDisplayUrl(url, publicBaseUrl);
+}
+
+function documentationDisplayUrl(url, baseUrl = "") {
+  const sourceText = String(url || "");
 
   try {
-    const source = new URL(url);
-    const target = new URL(publicBaseUrl);
-    target.pathname = source.pathname;
-    target.search = source.search;
-    target.hash = source.hash;
+    const source = new URL(sourceText);
+    const target = baseUrl ? new URL(baseUrl) : source;
+    const origin = `${target.protocol}//${target.host}`;
 
-    return target.toString();
+    return `${origin}${redactDocumentationPath(source.pathname)}${redactDocumentationSearch(source)}${source.hash}`;
   } catch {
-    return url;
+    return redactDocumentationPath(sourceText);
   }
+}
+
+function redactDocumentationPath(pathname) {
+  return String(pathname || "")
+    .replace(/\/(edit|show|view)\/(?!new(?:\/|$))[^/?#]+/gi, "/$1/:id");
+}
+
+function redactDocumentationSearch(url) {
+  const params = new URLSearchParams(url.search || "");
+
+  for (const [key, value] of params.entries()) {
+    if (isSensitiveDocumentationHeader(key, url.href)
+      || hasSensitiveDocumentationValue(value, url.href)
+      || LONG_IDENTIFIER_PATTERN.test(markdownText(value))
+    ) {
+      params.set(key, REDACTED_VALUE);
+    }
+  }
+
+  const query = params.toString();
+
+  return query ? `?${query}` : "";
 }
 
 function formatTimestamp(date) {

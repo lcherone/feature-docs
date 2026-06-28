@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/products-messages-admin](https://sohohome.com/cp/products-messages-admin)
 
-Product Messages covers the admin screen used to review and maintain product messages.
+Product Message Model Class
 
 ![Product Messages overview](images/page-desktop.png)
 
@@ -12,7 +12,7 @@ Product Messages covers the admin screen used to review and maintain product mes
 
 ## Related Pages
 
-- [Edit Product Message](../140-cp-products-messages-admin-edit-10-1417df6e/README.md): Open an existing product message when you need to check the setup or make a change.
+- [Edit Product Message](../140-cp-products-messages-admin-edit-id-1417df6e/README.md): Open an existing product message when you need to check the setup or make a change.
 
 ## How It Works
 
@@ -22,8 +22,7 @@ Product Messages covers the admin screen used to review and maintain product mes
 
 ## Using This Page
 
-1. Open Product Messages from the CP navigation.
-2. Scan the fields in the table to find the product message you need.
+1. Scan the fields in the table to find the product message you need.
 
 ## What You Can Do
 
@@ -31,9 +30,7 @@ Product Messages covers the admin screen used to review and maintain product mes
 
 Review the visible fields to check what already exists.
 
-- Field: Label
-- Field: Status
-- Field: Message
+- Visible fields include Label, Status, and Message.
 
 Example rows:
 

@@ -35,6 +35,7 @@
       "^/cp"
     ],
     "excludePatterns": [
+      "^/cp/styleguide-admin(?:/|$)",
       "logout",
       "delete",
       "remove",

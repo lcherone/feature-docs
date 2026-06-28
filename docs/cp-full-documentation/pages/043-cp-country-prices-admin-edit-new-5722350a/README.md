@@ -1,6 +1,6 @@
 # Country Price Lists
 
-[Home](../../index.md) / Create Country Price List
+[Home](../../index.md) / [Country Price Lists](../042-cp-country-prices-admin-aadcbf66/README.md) / Create Country Price List
 
 URL: [https://sohohome.com/cp/country-prices-admin/edit/new](https://sohohome.com/cp/country-prices-admin/edit/new)
 
@@ -13,7 +13,7 @@ Manage the country pricing
 ## Related Pages
 
 - [Country Price Lists](../042-cp-country-prices-admin-aadcbf66/README.md): Search or filter the visible fields to find the country price list you need.
-- [View Country Price List](../044-cp-country-prices-admin-view-1-9fca00b5/README.md): Open an existing country price list when you need to check the full details.
+- [View Country Price List](../044-cp-country-prices-admin-view-id-9fca00b5/README.md): Open an existing country price list when you need to check the full details.
 
 ## How It Works
 

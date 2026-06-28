@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/shipping-exclusions-admin](https://sohohome.com/cp/shipping-exclusions-admin)
 
-Shipping Exclusions covers the admin screen used to review and maintain shipping exclusions.
+Dates that don't count as working days
 
 ![Shipping Exclusions overview](images/page-desktop.png)
 

@@ -12,12 +12,11 @@ Manage Notice bar settings
 
 ## Related Pages
 
-- [Edit Benefit Bar Setting](../114-cp-notice-admin-edit-91-6d322765/README.md): Open an existing benefit bar setting when you need to check the setup or make a change.
+- [Edit Benefit Bar Setting](../114-cp-notice-admin-edit-id-6d322765/README.md): Open an existing benefit bar setting when you need to check the setup or make a change.
 
 ## Using This Page
 
-1. Open Benefit Bar Settings from the CP navigation.
-2. Search or filter until you find the benefit bar setting you need.
+1. Search or filter until you find the benefit bar setting you need.
 
 ## What You Can Do
 
@@ -25,18 +24,7 @@ Manage Notice bar settings
 
 Search or filter the visible fields to find the benefit bar setting you need.
 
-- Field: UK
-- Field: EU
-- Field: US
-- Field: Message
-- Field: Link
-- Field: Message Type
-- Field: Status
-- Field: Active From
-- Field: Active To
-- Field: Trade Customer Inclusions
-- Field: Trade Customer Exclusions
-- Field: Excluded Type
+- Visible fields include UK, EU, US, Message, Link, Message Type, Status, and Active From.
 
 Example rows:
 
@@ -46,7 +34,7 @@ Example rows:
 |  | No | No | Yes | Enjoy free shipping for a limited time | /new?immediate=yes |
 |  | No | No | No | New collection: be the first to shop with exclusive early access | /home-event |
 
-## Available Actions
+## Page Sections
 
 - Default
 - Membership

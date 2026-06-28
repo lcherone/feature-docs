@@ -13,7 +13,7 @@ Manage the country pricing
 ## Related Pages
 
 - [Create Country Price List](../043-cp-country-prices-admin-edit-new-5722350a/README.md): Use Create new when this country price list does not already exist. Complete the fields that describe it, then save.
-- [View Country Price List](../044-cp-country-prices-admin-view-1-9fca00b5/README.md): Open an existing country price list when you need to check the full details.
+- [View Country Price List](../044-cp-country-prices-admin-view-id-9fca00b5/README.md): Open an existing country price list when you need to check the full details.
 
 ## How It Works
 
@@ -21,8 +21,7 @@ Manage the country pricing
 
 ## Using This Page
 
-1. Open Country Price Lists from the CP navigation.
-2. Search or filter until you find the country price list you need.
+1. Search or filter until you find the country price list you need.
 
 ## What You Can Do
 
@@ -30,12 +29,7 @@ Manage the country pricing
 
 Search or filter the visible fields to find the country price list you need.
 
-- Field: Country
-- Field: SKU
-- Field: Type
-- Field: Price
-- Field: Created
-- Field: Updated
+- Visible fields include Country, SKU, Type, Price, Created, and Updated.
 
 Example rows:
 

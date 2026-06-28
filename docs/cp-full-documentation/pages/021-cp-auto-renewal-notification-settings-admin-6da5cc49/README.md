@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/auto-renewal-notification-settings-admin](https://sohohome.com/cp/auto-renewal-notification-settings-admin)
 
-Auto Renewal Notification Settings covers the admin screen used to review and maintain auto renewal notification settings.
+Auto Renewal Notification Settings.
 
 ![Auto Renewal Notification Settings overview](images/page-desktop.png)
 
@@ -33,10 +33,6 @@ Use the fields on this screen to make the change, then save once the values are 
 
 #### Upcoming Renewal Notification Enabled
 
-![Upcoming Renewal Notification Enabled](images/field-001-upcoming-renewal-notification-enabled.png)
-
-*Upcoming Renewal Notification Enabled setting*
-
 Turn this on when upcoming renewal notification enabled should apply. Leave it off when it should not.
 
 #### Upcoming Renewal Notification Subject
@@ -51,15 +47,11 @@ Add the upcoming renewal notification subject.
 
 #### Upcoming Renewal Notification Copy
 
-![Upcoming Renewal Notification Copy](images/field-003-upcoming-renewal-notification-copy.png)
-
-*Upcoming Renewal Notification Copy setting*
-
 Write the upcoming renewal notification copy content.
 
 **Notes:** `{site}`
 
-## Available Actions
+## Page Sections
 
 - Upcoming Renewal
 - Failed Renewal Payment

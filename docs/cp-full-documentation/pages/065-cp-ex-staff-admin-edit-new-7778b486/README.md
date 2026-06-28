@@ -1,6 +1,6 @@
 # Ex-Staff
 
-[Home](../../index.md) / Create Ex-Staff
+[Home](../../index.md) / [Ex-Staff](../064-cp-ex-staff-admin-0b7db221/README.md) / Create Ex-Staff
 
 URL: [https://sohohome.com/cp/ex-staff-admin/edit/new](https://sohohome.com/cp/ex-staff-admin/edit/new)
 

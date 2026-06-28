@@ -20,8 +20,7 @@ Manage the categories
 
 ## Using This Page
 
-1. Open Categories from the CP navigation.
-2. Scan the fields in the table to find the category you need.
+1. Scan the fields in the table to find the category you need.
 
 ## What You Can Do
 
@@ -29,42 +28,21 @@ Manage the categories
 
 Review the visible fields to check what already exists.
 
-- Field: Title
-- Field: Code
-- Field: Status
-- Field: Type
-- Field: Image Order
+- Visible fields include Title, Code, Status, Type, and Image Order.
 
 Example rows:
 
 | Title | Code | Status | Type | Image Order |
 | --- | --- | --- | --- | --- |
-|  | 20% off all seating |  | select… Active Members Only Hidden Inactive Archived | Mass Sale |
-|  | Furniture |  | select… Active Members Only Hidden Inactive Archived | Category |
-|  | Bathroom |  | select… Active Members Only Hidden Inactive Archived | Category |
+|  | 20% off all seating |  | select… Active Members Only Hidden Inactive Archived | [hidden] |
+|  | Furniture |  | select… Active Members Only Hidden Inactive Archived | [hidden] |
+|  | Bathroom |  | select… Active Members Only Hidden Inactive Archived | [hidden] |
 
 ### Update settings
 
 Use the fields on this screen to make the change, then save once the values are correct.
 
-## Key Settings
-
-The sections below highlight the settings people are most likely to change.
-
-### listing-product_category-form
-
-#### Category Status
-
-![Category Status](images/field-001-inline-97-category-status.png)
-
-*Category Status setting*
-
-Set the Category Status value for each relevant row in this section.
-
-**Options:** Active, Members Only, Hidden, Inactive, Archived
-
-## Available Actions
+## Page Sections
 
 - Online
 - Archived
-- Import csv

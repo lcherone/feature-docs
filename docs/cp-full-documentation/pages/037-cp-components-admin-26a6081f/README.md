@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/components-admin](https://sohohome.com/cp/components-admin)
 
-Components covers the admin screen used to review and maintain components.
+A component SKU for a product. This is invisible to the customer
 
 ![Components overview](images/page-desktop.png)
 
@@ -12,7 +12,7 @@ Components covers the admin screen used to review and maintain components.
 
 ## Related Pages
 
-- [Edit Component](../038-cp-components-admin-edit-1-829a8cde/README.md): Open an existing component when you need to check the setup or make a change.
+- [Edit Component](../038-cp-components-admin-edit-id-829a8cde/README.md): Open an existing component when you need to check the setup or make a change.
 
 ## How It Works
 
@@ -22,8 +22,7 @@ Components covers the admin screen used to review and maintain components.
 
 ## Using This Page
 
-1. Open Components from the CP navigation.
-2. Search or filter until you find the component you need.
+1. Search or filter until you find the component you need.
 
 ## What You Can Do
 
@@ -31,12 +30,7 @@ Components covers the admin screen used to review and maintain components.
 
 Search or filter the visible fields to find the component you need.
 
-- Field: Title
-- Field: SKU
-- Field: Cost Price (GBP)
-- Field: Cost Price (EUR)
-- Field: Cost Price (USD)
-- Field: Links
+- Visible fields include Title, SKU, Cost Price (GBP), Cost Price (EUR), Cost Price (USD), and Links.
 
 Example rows:
 

@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/product-price-list-admin](https://sohohome.com/cp/product-price-list-admin)
 
-Price Lists covers the admin screen used to review and maintain price lists.
+PriceList
 
 ![Price Lists overview](images/page-desktop.png)
 
@@ -12,7 +12,7 @@ Price Lists covers the admin screen used to review and maintain price lists.
 
 ## Related Pages
 
-- [View Price List](../132-cp-product-price-list-admin-view-100224-fa33320f/README.md): Open an existing price list when you need to check the full details.
+- [View Price List](../132-cp-product-price-list-admin-view-id-fa33320f/README.md): Open an existing price list when you need to check the full details.
 
 ## How It Works
 
@@ -22,8 +22,7 @@ Price Lists covers the admin screen used to review and maintain price lists.
 
 ## Using This Page
 
-1. Open Price Lists from the CP navigation.
-2. Search or filter until you find the price list you need.
+1. Search or filter until you find the price list you need.
 
 ## What You Can Do
 
@@ -31,18 +30,7 @@ Price Lists covers the admin screen used to review and maintain price lists.
 
 Search or filter the visible fields to find the price list you need.
 
-- Field: Line Number
-- Field: Code
-- Field: SKU
-- Field: Type
-- Field: Price
-- Field: Includes Tax
-- Field: Start Date
-- Field: End Date
-- Field: Status
-- Field: Created
-- Field: Updated
-- Field: Updated By
+- Visible fields include Line Number, Code, SKU, Type, Price, Includes Tax, Start Date, and End Date.
 
 Example rows:
 

@@ -1,6 +1,6 @@
 # Soho Home CP Feature Docs Agent Context
 
-Generated: 2026-06-28T00:21:36.560Z
+Generated: 2026-06-28T02:05:57.543Z
 
 Use this file as the handoff for Codex to produce final operator documentation. Read the referenced controller, model, XML, and view files before finalising page purpose, field behaviour, validation, and side effects.
 
@@ -23,7 +23,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 ### DOM Fields
 
 - 1. select (select)
-  - Screenshot: pages/001-cp-access-tokens-c852f881/images/field-001-select.png
 
 ### Source References
 
@@ -42,11 +41,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Access Tokens
 
-- URL: https://dev.soho-home.local/cp/access-tokens/edit/35373
+- URL: https://dev.soho-home.local/cp/access-tokens/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|access-tokens|edit|access-tokens/edit/:identifier
-- Draft doc: pages/002-cp-access-tokens-edit-35373-f9f6d2ce/README.md
+- Draft doc: pages/002-cp-access-tokens-edit-id-f9f6d2ce/README.md
 - Code analysis doc: .vscode/code-docs/cp-access-tokens-edit-existing.md
-- Page screenshots: pages/002-cp-access-tokens-edit-35373-f9f6d2ce/images/page-desktop.png
+- Page screenshots: pages/002-cp-access-tokens-edit-id-f9f6d2ce/images/page-desktop.png
 - Field count: 5
 - Controller: D3R\OAuth\Controller\Admin\Tokens (access-tokens)
 - Controller file: vendor/d3r/oauth/src/Controller/Admin/Tokens.php
@@ -61,23 +60,23 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 1. Service (text)
   - DOM name: `token_service`
   - Model field: Service / `service` / Text
-  - Screenshot: pages/002-cp-access-tokens-edit-35373-f9f6d2ce/images/field-001-service.png
+  - Screenshot: pages/002-cp-access-tokens-edit-id-f9f6d2ce/images/field-001-service.png
 - 2. Instance (text)
   - DOM name: `token_instance`
   - Model field: Instance / `instance` / Text
-  - Screenshot: pages/002-cp-access-tokens-edit-35373-f9f6d2ce/images/field-002-instance.png
+  - Screenshot: pages/002-cp-access-tokens-edit-id-f9f6d2ce/images/field-002-instance.png
 - 3. Token (text)
   - DOM name: `token_token`
   - Model field: Token / `token` / Text
-  - Screenshot: pages/002-cp-access-tokens-edit-35373-f9f6d2ce/images/field-003-token.png
+  - Screenshot: pages/002-cp-access-tokens-edit-id-f9f6d2ce/images/field-003-token.png
 - 4. Refresh Token optional (text)
   - DOM name: `token_refresh_token`
   - Model field: Refresh Token / `refresh_token` / Text
-  - Screenshot: pages/002-cp-access-tokens-edit-35373-f9f6d2ce/images/field-004-refresh-token-optional.png
+  - Screenshot: pages/002-cp-access-tokens-edit-id-f9f6d2ce/images/field-004-refresh-token-optional.png
 - 5. Expires optional (datetime-local)
   - DOM name: `token_expires`
   - Model field: Expires / `expires` / DateTime
-  - Screenshot: pages/002-cp-access-tokens-edit-35373-f9f6d2ce/images/field-005-expires-optional.png
+  - Screenshot: pages/002-cp-access-tokens-edit-id-f9f6d2ce/images/field-005-expires-optional.png
 
 ### Source References
 
@@ -148,11 +147,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Accounting Logs (Sage & Avalara)
 
-- URL: https://dev.soho-home.local/cp/accounting-logs/edit/881987
+- URL: https://dev.soho-home.local/cp/accounting-logs/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|accounting-logs|edit|accounting-logs/edit/:identifier
-- Draft doc: pages/004-cp-accounting-logs-edit-881987-e9d3b5ea/README.md
+- Draft doc: pages/004-cp-accounting-logs-edit-id-e9d3b5ea/README.md
 - Code analysis doc: .vscode/code-docs/cp-accounting-logs-edit-existing.md
-- Page screenshots: pages/004-cp-accounting-logs-edit-881987-e9d3b5ea/images/page-desktop.png
+- Page screenshots: pages/004-cp-accounting-logs-edit-id-e9d3b5ea/images/page-desktop.png
 - Field count: 1
 - Controller: Soho\Accounting\Logger\AdminController (accounting-logs)
 - Controller file: vendor/soho/accounting/src/Logger/AdminController.php
@@ -167,7 +166,7 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 1. Manual Issue Status (select)
   - DOM name: `log_manual_status`
   - Model field: Manual Issue Status / `manual_status` / Select
-  - Screenshot: pages/004-cp-accounting-logs-edit-881987-e9d3b5ea/images/field-001-manual-issue-status.png
+  - Screenshot: pages/004-cp-accounting-logs-edit-id-e9d3b5ea/images/field-001-manual-issue-status.png
 
 ### Source References
 
@@ -465,11 +464,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Adjustments
 
-- URL: https://dev.soho-home.local/cp/adjustments-summary-admin/edit/91213
+- URL: https://dev.soho-home.local/cp/adjustments-summary-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|adjustments-summary-admin|edit|adjustments-summary-admin/edit/:identifier
-- Draft doc: pages/006-cp-adjustments-summary-admin-edit-91213-5ab58d27/README.md
+- Draft doc: pages/006-cp-adjustments-summary-admin-edit-id-5ab58d27/README.md
 - Code analysis doc: .vscode/code-docs/cp-adjustments-summary-admin-edit-existing.md
-- Page screenshots: pages/006-cp-adjustments-summary-admin-edit-91213-5ab58d27/images/page-desktop.png
+- Page screenshots: pages/006-cp-adjustments-summary-admin-edit-id-5ab58d27/images/page-desktop.png
 - Field count: 1
 - Controller: Soho\Ecom\Controller\AdjustmentSummaryAdmin (adjustments-summary-admin)
 - Controller file: vendor/soho/ecom/src/Controller/AdjustmentSummaryAdmin.php
@@ -484,7 +483,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 1. Transaction mismatch? (checkbox)
   - DOM name: `summary_transaction_mismatch`
   - Model field: Transaction mismatch? / `transaction_mismatch` / Checkbox
-  - Screenshot: pages/006-cp-adjustments-summary-admin-edit-91213-5ab58d27/images/field-001-transaction-mismatch.png
 
 ### Source References
 
@@ -816,11 +814,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Outbound API Logs
 
-- URL: https://dev.soho-home.local/cp/ais-client-outbound-logs/edit/715174
+- URL: https://dev.soho-home.local/cp/ais-client-outbound-logs/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|ais-client-outbound-logs|edit|ais-client-outbound-logs/edit/:identifier
-- Draft doc: pages/008-cp-ais-client-outbound-logs-edit-715174-2dd14f8c/README.md
+- Draft doc: pages/008-cp-ais-client-outbound-logs-edit-id-2dd14f8c/README.md
 - Code analysis doc: .vscode/code-docs/cp-ais-client-outbound-logs-edit-existing.md
-- Page screenshots: pages/008-cp-ais-client-outbound-logs-edit-715174-2dd14f8c/images/page-desktop.png
+- Page screenshots: pages/008-cp-ais-client-outbound-logs-edit-id-2dd14f8c/images/page-desktop.png
 - Field count: 1
 - Controller: D3R\AISClient\Logger\OutboundControllerAdmin (ais-client-outbound-logs)
 - Controller file: vendor/d3r/ais-client/src/Logger/OutboundControllerAdmin.php
@@ -834,7 +832,7 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. Manual Issue Status (select)
   - DOM name: `log_manual_status`
-  - Screenshot: pages/008-cp-ais-client-outbound-logs-edit-715174-2dd14f8c/images/field-001-manual-issue-status.png
+  - Screenshot: pages/008-cp-ais-client-outbound-logs-edit-id-2dd14f8c/images/field-001-manual-issue-status.png
 
 ### Source References
 
@@ -1002,13 +1000,10 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. Disable Outbound BC Sync (checkbox)
   - DOM name: `s_disable_outbound_bc_sync`
-  - Screenshot: pages/010-cp-ais-client-settings-1989fca0/images/field-001-disable-outbound-bc-sync.png
 - 2. Disable Inbound Pricing BC Sync (checkbox)
   - DOM name: `s_disable_inbound_pricing_bc_sync`
-  - Screenshot: pages/010-cp-ais-client-settings-1989fca0/images/field-002-disable-inbound-pricing-bc-sync.png
 - 3. Disable Inbound Product BC Sync (checkbox)
   - DOM name: `s_disable_inbound_product_bc_sync`
-  - Screenshot: pages/010-cp-ais-client-settings-1989fca0/images/field-003-disable-inbound-product-bc-sync.png
 
 ### Source References
 
@@ -1107,11 +1102,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Webhook Logs
 
-- URL: https://dev.soho-home.local/cp/ais-webhooks-logs-admin/view/31701
+- URL: https://dev.soho-home.local/cp/ais-webhooks-logs-admin/view/:id
 - Documentation route key: https://dev.soho-home.local|cp|ais-webhooks-logs-admin|view|ais-webhooks-logs-admin/view/:identifier
-- Draft doc: pages/012-cp-ais-webhooks-logs-admin-view-31701-dacc22d3/README.md
+- Draft doc: pages/012-cp-ais-webhooks-logs-admin-view-id-dacc22d3/README.md
 - Code analysis doc: .vscode/code-docs/cp-ais-webhooks-logs-admin-view-view.md
-- Page screenshots: pages/012-cp-ais-webhooks-logs-admin-view-31701-dacc22d3/images/page-desktop.png
+- Page screenshots: pages/012-cp-ais-webhooks-logs-admin-view-id-dacc22d3/images/page-desktop.png
 - Field count: 0
 - Controller: D3R\AISWebhooks\Logger\Controllers\LogControllerAdmin (ais-webhooks-logs-admin)
 - Controller file: vendor/d3r/ais-webhooks/src/Logger/Controllers/LogControllerAdmin.php
@@ -1165,11 +1160,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Webhook Tokens
 
-- URL: https://dev.soho-home.local/cp/ais-webhooks-tokens-admin/edit/1
+- URL: https://dev.soho-home.local/cp/ais-webhooks-tokens-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|ais-webhooks-tokens-admin|edit|ais-webhooks-tokens-admin/edit/:identifier
-- Draft doc: pages/014-cp-ais-webhooks-tokens-admin-edit-1-17da0623/README.md
+- Draft doc: pages/014-cp-ais-webhooks-tokens-admin-edit-id-17da0623/README.md
 - Code analysis doc: .vscode/code-docs/cp-ais-webhooks-tokens-admin-edit-existing.md
-- Page screenshots: pages/014-cp-ais-webhooks-tokens-admin-edit-1-17da0623/images/page-desktop.png
+- Page screenshots: pages/014-cp-ais-webhooks-tokens-admin-edit-id-17da0623/images/page-desktop.png
 - Field count: 10
 - Controller: D3R\AISWebhooks\Controllers\TokenControllerAdmin (ais-webhooks-tokens-admin)
 - Controller file: vendor/d3r/ais-webhooks/src/Controllers/TokenControllerAdmin.php
@@ -1184,43 +1179,37 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 1. Name optional (text)
   - DOM name: `token_name`
   - Model field: Name / `name` / Text
-  - Screenshot: pages/014-cp-ais-webhooks-tokens-admin-edit-1-17da0623/images/field-001-name-optional.png
+  - Screenshot: pages/014-cp-ais-webhooks-tokens-admin-edit-id-17da0623/images/field-001-name-optional.png
 - 2. Environment (select)
   - DOM name: `token_environment`
   - Model field: Environment / `environment` / Select
-  - Screenshot: pages/014-cp-ais-webhooks-tokens-admin-edit-1-17da0623/images/field-002-environment.png
+  - Screenshot: pages/014-cp-ais-webhooks-tokens-admin-edit-id-17da0623/images/field-002-environment.png
 - 3. Status (select)
   - DOM name: `token_status`
   - Model field: Status / `status` / Select
-  - Screenshot: pages/014-cp-ais-webhooks-tokens-admin-edit-1-17da0623/images/field-003-status.png
+  - Screenshot: pages/014-cp-ais-webhooks-tokens-admin-edit-id-17da0623/images/field-003-status.png
 - 4. Token optional (text)
   - DOM name: `token_token`
   - Model field: Token / `token` / Text
-  - Screenshot: pages/014-cp-ais-webhooks-tokens-admin-edit-1-17da0623/images/field-004-token-optional.png
+  - Screenshot: pages/014-cp-ais-webhooks-tokens-admin-edit-id-17da0623/images/field-004-token-optional.png
 - 5. ais.costprice (checkbox)
   - DOM name: `token_services[]`
   - Model field: Services / `` / SelectMultipleCallback
-  - Screenshot: pages/014-cp-ais-webhooks-tokens-admin-edit-1-17da0623/images/field-005-ais-costprice.png
 - 6. ais.costpricebatch (checkbox)
   - DOM name: `token_services[]`
   - Model field: Services / `` / SelectMultipleCallback
-  - Screenshot: pages/014-cp-ais-webhooks-tokens-admin-edit-1-17da0623/images/field-006-ais-costpricebatch.png
 - 7. ais.pricelist (checkbox)
   - DOM name: `token_services[]`
   - Model field: Services / `` / SelectMultipleCallback
-  - Screenshot: pages/014-cp-ais-webhooks-tokens-admin-edit-1-17da0623/images/field-007-ais-pricelist.png
 - 8. ais.pricelistbatch (checkbox)
   - DOM name: `token_services[]`
   - Model field: Services / `` / SelectMultipleCallback
-  - Screenshot: pages/014-cp-ais-webhooks-tokens-admin-edit-1-17da0623/images/field-008-ais-pricelistbatch.png
 - 9. ais.product (checkbox)
   - DOM name: `token_services[]`
   - Model field: Services / `` / SelectMultipleCallback
-  - Screenshot: pages/014-cp-ais-webhooks-tokens-admin-edit-1-17da0623/images/field-009-ais-product.png
 - 10. ais.productbatch (checkbox)
   - DOM name: `token_services[]`
   - Model field: Services / `` / SelectMultipleCallback
-  - Screenshot: pages/014-cp-ais-webhooks-tokens-admin-edit-1-17da0623/images/field-010-ais-productbatch.png
 
 ### Source References
 
@@ -1250,7 +1239,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 ### DOM Fields
 
 - 1. select (select)
-  - Screenshot: pages/015-cp-anomaly-anomalies-cc7972c6/images/field-001-select.png
 
 ### Source References
 
@@ -1266,11 +1254,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Anomalies
 
-- URL: https://dev.soho-home.local/cp/anomaly-anomalies/view/1049
+- URL: https://dev.soho-home.local/cp/anomaly-anomalies/view/:id
 - Documentation route key: https://dev.soho-home.local|cp|anomaly-anomalies|view|anomaly-anomalies/view/:identifier
-- Draft doc: pages/016-cp-anomaly-anomalies-view-1049-b964294b/README.md
+- Draft doc: pages/016-cp-anomaly-anomalies-view-id-b964294b/README.md
 - Code analysis doc: .vscode/code-docs/cp-anomaly-anomalies-view-view.md
-- Page screenshots: pages/016-cp-anomaly-anomalies-view-1049-b964294b/images/page-desktop.png
+- Page screenshots: pages/016-cp-anomaly-anomalies-view-id-b964294b/images/page-desktop.png
 - Field count: 0
 - Controller: D3R\AnomalyDetection\Controller\AnomalyAdmin (anomaly-anomalies)
 - Controller file: vendor/d3r/anomaly-detection/src/Controller/AnomalyAdmin.php
@@ -1323,11 +1311,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Anomaly Detectors
 
-- URL: https://dev.soho-home.local/cp/anomaly-detectors/edit/1
+- URL: https://dev.soho-home.local/cp/anomaly-detectors/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|anomaly-detectors|edit|anomaly-detectors/edit/:identifier
-- Draft doc: pages/018-cp-anomaly-detectors-edit-1-08de309b/README.md
+- Draft doc: pages/018-cp-anomaly-detectors-edit-id-08de309b/README.md
 - Code analysis doc: .vscode/code-docs/cp-anomaly-detectors-edit-existing.md
-- Page screenshots: pages/018-cp-anomaly-detectors-edit-1-08de309b/images/page-desktop.png
+- Page screenshots: pages/018-cp-anomaly-detectors-edit-id-08de309b/images/page-desktop.png
 - Field count: 18
 - Controller: D3R\AnomalyDetection\Controller\DetectorAdmin (anomaly-detectors)
 - Controller file: vendor/d3r/anomaly-detection/src/Controller/DetectorAdmin.php
@@ -1342,72 +1330,59 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 1. Subject (select)
   - DOM name: `detector_subject`
   - Model field: Subject / `subject` / SelectCallback
-  - Screenshot: pages/018-cp-anomaly-detectors-edit-1-08de309b/images/field-001-subject.png
+  - Screenshot: pages/018-cp-anomaly-detectors-edit-id-08de309b/images/field-001-subject.png
 - 2. Active (checkbox)
   - DOM name: `detector_active`
   - Model field: Active / `active` / Checkbox
-  - Screenshot: pages/018-cp-anomaly-detectors-edit-1-08de309b/images/field-002-active.png
 - 3. Hourly (radio)
   - DOM name: `detector_frequency`
   - Model field: Frequency / `frequency` / SelectRadio
-  - Screenshot: pages/018-cp-anomaly-detectors-edit-1-08de309b/images/field-003-hourly.png
 - 4. Daily (radio)
   - DOM name: `detector_frequency`
   - Model field: Frequency / `frequency` / SelectRadio
-  - Screenshot: pages/018-cp-anomaly-detectors-edit-1-08de309b/images/field-004-daily.png
 - 5. Low values (radio)
   - DOM name: `detector_condition`
   - Model field: Anomalous condition / `condition` / SelectRadio
-  - Screenshot: pages/018-cp-anomaly-detectors-edit-1-08de309b/images/field-005-low-values.png
 - 6. High values (radio)
   - DOM name: `detector_condition`
   - Model field: Anomalous condition / `condition` / SelectRadio
-  - Screenshot: pages/018-cp-anomaly-detectors-edit-1-08de309b/images/field-006-high-values.png
 - 7. All anomalous values (radio)
   - DOM name: `detector_condition`
   - Model field: Anomalous condition / `condition` / SelectRadio
-  - Screenshot: pages/018-cp-anomaly-detectors-edit-1-08de309b/images/field-007-all-anomalous-values.png
 - 8. Yesterday (radio)
   - DOM name: `detector_offset`
   - Model field: Offset / `offset` / SelectRadio
-  - Screenshot: pages/018-cp-anomaly-detectors-edit-1-08de309b/images/field-008-yesterday.png
 - 9. Last week (radio)
   - DOM name: `detector_offset`
   - Model field: Offset / `offset` / SelectRadio
-  - Screenshot: pages/018-cp-anomaly-detectors-edit-1-08de309b/images/field-009-last-week.png
 - 10. Last month (radio)
   - DOM name: `detector_offset`
   - Model field: Offset / `offset` / SelectRadio
-  - Screenshot: pages/018-cp-anomaly-detectors-edit-1-08de309b/images/field-010-last-month.png
 - 11. 30 days (radio)
   - DOM name: `detector_window`
   - Model field: Window / `window` / SelectRadio
-  - Screenshot: pages/018-cp-anomaly-detectors-edit-1-08de309b/images/field-011-30-days.png
 - 12. 90 days (radio)
   - DOM name: `detector_window`
   - Model field: Window / `window` / SelectRadio
-  - Screenshot: pages/018-cp-anomaly-detectors-edit-1-08de309b/images/field-012-90-days.png
 - 13. 180 days (radio)
   - DOM name: `detector_window`
   - Model field: Window / `window` / SelectRadio
-  - Screenshot: pages/018-cp-anomaly-detectors-edit-1-08de309b/images/field-013-180-days.png
 - 14. detector_emails[] (text)
   - DOM name: `detector_emails[]`
   - Model field: Alert emails / `emails` / DynamicList
-  - Screenshot: pages/018-cp-anomaly-detectors-edit-1-08de309b/images/field-014-detector-emails.png
+  - Screenshot: pages/018-cp-anomaly-detectors-edit-id-08de309b/images/field-014-detector-emails.png
 - 15. detector_emails[] (text)
   - DOM name: `detector_emails[]`
   - Model field: Alert emails / `emails` / DynamicList
-  - Screenshot: pages/018-cp-anomaly-detectors-edit-1-08de309b/images/field-015-detector-emails.png
+  - Screenshot: pages/018-cp-anomaly-detectors-edit-id-08de309b/images/field-015-detector-emails.png
 - 16. detector_emails[] (text)
   - DOM name: `detector_emails[]`
   - Model field: Alert emails / `emails` / DynamicList
-  - Screenshot: pages/018-cp-anomaly-detectors-edit-1-08de309b/images/field-016-detector-emails.png
+  - Screenshot: pages/018-cp-anomaly-detectors-edit-id-08de309b/images/field-016-detector-emails.png
 - 17. Has a problem (checkbox)
   - Model field: Has a problem / `problem` / Checkbox
-  - Screenshot: pages/018-cp-anomaly-detectors-edit-1-08de309b/images/field-017-has-a-problem.png
 - 18. select (select)
-  - Screenshot: pages/018-cp-anomaly-detectors-edit-1-08de309b/images/field-018-select.png
+  - Screenshot: pages/018-cp-anomaly-detectors-edit-id-08de309b/images/field-018-select.png
 
 ### Source References
 
@@ -1498,11 +1473,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Attribute Labels
 
-- URL: https://dev.soho-home.local/cp/attribute-labels-admin/edit/1
+- URL: https://dev.soho-home.local/cp/attribute-labels-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|attribute-labels-admin|edit|attribute-labels-admin/edit/:identifier
-- Draft doc: pages/020-cp-attribute-labels-admin-edit-1-a43265f5/README.md
+- Draft doc: pages/020-cp-attribute-labels-admin-edit-id-a43265f5/README.md
 - Code analysis doc: .vscode/code-docs/cp-attribute-labels-admin-edit-existing.md
-- Page screenshots: pages/020-cp-attribute-labels-admin-edit-1-a43265f5/images/page-desktop.png
+- Page screenshots: pages/020-cp-attribute-labels-admin-edit-id-a43265f5/images/page-desktop.png
 - Field count: 4
 - Controller: Soho\Products\Base\AttributeLabelsControllerAdmin (attribute-labels-admin)
 - Controller file: vendor/soho/products/src/AttributeLabelsControllerAdmin.php
@@ -1516,17 +1491,17 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. Title (text)
   - DOM name: `label_title`
-  - Screenshot: pages/020-cp-attribute-labels-admin-edit-1-a43265f5/images/field-001-title.png
+  - Screenshot: pages/020-cp-attribute-labels-admin-edit-id-a43265f5/images/field-001-title.png
 - 2. Type (select)
   - DOM name: `label_type`
-  - Screenshot: pages/020-cp-attribute-labels-admin-edit-1-a43265f5/images/field-002-type.png
+  - Screenshot: pages/020-cp-attribute-labels-admin-edit-id-a43265f5/images/field-002-type.png
 - 3. Position (number)
   - DOM name: `label_position`
-  - Screenshot: pages/020-cp-attribute-labels-admin-edit-1-a43265f5/images/field-003-position.png
+  - Screenshot: pages/020-cp-attribute-labels-admin-edit-id-a43265f5/images/field-003-position.png
 - 4. Url Name optional (text)
   - DOM name: `label_urlname`
   - Model field: Url Name / `urlname` / UrlName
-  - Screenshot: pages/020-cp-attribute-labels-admin-edit-1-a43265f5/images/field-004-url-name-optional.png
+  - Screenshot: pages/020-cp-attribute-labels-admin-edit-id-a43265f5/images/field-004-url-name-optional.png
 
 ### Source References
 
@@ -1601,7 +1576,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 1. Upcoming Renewal Notification Enabled (checkbox)
   - DOM name: `setting_upcoming_enabled`
   - Model field: Upcoming Renewal Notification Enabled / `upcoming_enabled` / Checkbox
-  - Screenshot: pages/021-cp-auto-renewal-notification-settings-admin-6da5cc49/images/field-001-upcoming-renewal-notification-enabled.png
 - 2. Upcoming Renewal Notification Subject (text)
   - DOM name: `setting_upcoming_subject`
   - Model field: Upcoming Renewal Notification Subject / `upcoming_subject` / Text
@@ -1609,7 +1583,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 3. Upcoming Renewal Notification Copy (textarea)
   - DOM name: `setting_upcoming_copy`
   - Model field: Upcoming Renewal Notification Copy / `upcoming_copy` / RichText
-  - Screenshot: pages/021-cp-auto-renewal-notification-settings-admin-6da5cc49/images/field-003-upcoming-renewal-notification-copy.png
 
 ### Source References
 
@@ -1693,11 +1666,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Auto Renewal Summaries
 
-- URL: https://dev.soho-home.local/cp/auto-renewal-summary-admin/view/1901
+- URL: https://dev.soho-home.local/cp/auto-renewal-summary-admin/view/:id
 - Documentation route key: https://dev.soho-home.local|cp|auto-renewal-summary-admin|view|auto-renewal-summary-admin/view/:identifier
-- Draft doc: pages/023-cp-auto-renewal-summary-admin-view-1901-6650a104/README.md
+- Draft doc: pages/023-cp-auto-renewal-summary-admin-view-id-6650a104/README.md
 - Code analysis doc: .vscode/code-docs/cp-auto-renewal-summary-admin-view-view.md
-- Page screenshots: pages/023-cp-auto-renewal-summary-admin-view-1901-6650a104/images/page-desktop.png
+- Page screenshots: pages/023-cp-auto-renewal-summary-admin-view-id-6650a104/images/page-desktop.png
 - Field count: 1
 - Controller: Soho\Account\AutoRenewalSummaryControllerAdmin (auto-renewal-summary-admin)
 - Controller file: vendor/soho/accounts/src/AutoRenewalSummaryControllerAdmin.php
@@ -1711,7 +1684,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. Dry Run? (checkbox)
   - Model field: Dry Run? / `dry_run` / Checkbox
-  - Screenshot: pages/023-cp-auto-renewal-summary-admin-view-1901-6650a104/images/field-001-dry-run.png
 
 ### Source References
 
@@ -1756,10 +1728,10 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Basket - Added Items
 
-- URL: https://dev.soho-home.local/cp/basket-added-items-admin/view/1
+- URL: https://dev.soho-home.local/cp/basket-added-items-admin/view/:id
 - Documentation route key: https://dev.soho-home.local|cp|basket-added-items-admin|view|basket-added-items-admin/view/:identifier
-- Draft doc: pages/025-cp-basket-added-items-admin-view-1-c41a1c99/README.md
-- Page screenshots: pages/025-cp-basket-added-items-admin-view-1-c41a1c99/images/page-desktop.png
+- Draft doc: pages/025-cp-basket-added-items-admin-view-id-c41a1c99/README.md
+- Page screenshots: pages/025-cp-basket-added-items-admin-view-id-c41a1c99/images/page-desktop.png
 - Field count: 0
 - Controller: unresolved
 
@@ -1900,7 +1872,7 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - Draft doc: pages/027-cp-bespoke-settings-admin-4dffe357/README.md
 - Code analysis doc: .vscode/code-docs/cp-bespoke-settings-admin.md
 - Page screenshots: pages/027-cp-bespoke-settings-admin-4dffe357/images/page-desktop.png
-- Field count: 11
+- Field count: 0
 - Controller: App\Ecom\Shipping\BespokeSettingsAdminController (bespoke-settings-admin)
 - Controller file: src/Ecom/Shipping/BespokeSettingsAdminController.php
 - Action method: indexAction (inherited or unresolved)
@@ -1908,31 +1880,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - Model file: src/Ecom/Shipping/Model/BespokeSettings.php
 - Model XML: src/Ecom/Shipping/Model/BespokeSettings.xml
 - Model item prefix: setting
-
-### DOM Fields
-
-- 1. input (text)
-  - Screenshot: pages/027-cp-bespoke-settings-admin-4dffe357/images/field-001-input.png
-- 2. input (text)
-  - Screenshot: pages/027-cp-bespoke-settings-admin-4dffe357/images/field-002-input.png
-- 3. input (text)
-  - Screenshot: pages/027-cp-bespoke-settings-admin-4dffe357/images/field-003-input.png
-- 4. input (text)
-  - Screenshot: pages/027-cp-bespoke-settings-admin-4dffe357/images/field-004-input.png
-- 5. input (text)
-  - Screenshot: pages/027-cp-bespoke-settings-admin-4dffe357/images/field-005-input.png
-- 6. input (text)
-  - Screenshot: pages/027-cp-bespoke-settings-admin-4dffe357/images/field-006-input.png
-- 7. input (text)
-  - Screenshot: pages/027-cp-bespoke-settings-admin-4dffe357/images/field-007-input.png
-- 8. input (text)
-  - Screenshot: pages/027-cp-bespoke-settings-admin-4dffe357/images/field-008-input.png
-- 9. input (text)
-  - Screenshot: pages/027-cp-bespoke-settings-admin-4dffe357/images/field-009-input.png
-- 10. input (text)
-  - Screenshot: pages/027-cp-bespoke-settings-admin-4dffe357/images/field-010-input.png
-- 11. input (text)
-  - Screenshot: pages/027-cp-bespoke-settings-admin-4dffe357/images/field-011-input.png
 
 ### Source References
 
@@ -2050,62 +1997,15 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - Documentation route key: https://dev.soho-home.local|cp|brandfolder-queue-admin|index|brandfolder-queue-admin
 - Draft doc: pages/028-cp-brandfolder-queue-admin-b72d4f87/README.md
 - Page screenshots: pages/028-cp-brandfolder-queue-admin-b72d4f87/images/page-desktop.png
-- Field count: 16
+- Field count: 0
 - Controller: unresolved
-
-### DOM Fields
-
-- 1. input (checkbox)
-  - Screenshot: pages/028-cp-brandfolder-queue-admin-b72d4f87/images/field-001-input.png
-- 2. input (checkbox)
-  - Screenshot: pages/028-cp-brandfolder-queue-admin-b72d4f87/images/field-002-input.png
-- 3. model_listing[33406] (checkbox)
-  - DOM name: `model_listing[33406]`
-  - Screenshot: pages/028-cp-brandfolder-queue-admin-b72d4f87/images/field-003-model-listing-33406.png
-- 4. model_listing[33405] (checkbox)
-  - DOM name: `model_listing[33405]`
-  - Screenshot: pages/028-cp-brandfolder-queue-admin-b72d4f87/images/field-004-model-listing-33405.png
-- 5. model_listing[33404] (checkbox)
-  - DOM name: `model_listing[33404]`
-  - Screenshot: pages/028-cp-brandfolder-queue-admin-b72d4f87/images/field-005-model-listing-33404.png
-- 6. model_listing[33403] (checkbox)
-  - DOM name: `model_listing[33403]`
-  - Screenshot: pages/028-cp-brandfolder-queue-admin-b72d4f87/images/field-006-model-listing-33403.png
-- 7. model_listing[33402] (checkbox)
-  - DOM name: `model_listing[33402]`
-  - Screenshot: pages/028-cp-brandfolder-queue-admin-b72d4f87/images/field-007-model-listing-33402.png
-- 8. model_listing[33401] (checkbox)
-  - DOM name: `model_listing[33401]`
-  - Screenshot: pages/028-cp-brandfolder-queue-admin-b72d4f87/images/field-008-model-listing-33401.png
-- 9. model_listing[33400] (checkbox)
-  - DOM name: `model_listing[33400]`
-  - Screenshot: pages/028-cp-brandfolder-queue-admin-b72d4f87/images/field-009-model-listing-33400.png
-- 10. model_listing[33399] (checkbox)
-  - DOM name: `model_listing[33399]`
-  - Screenshot: pages/028-cp-brandfolder-queue-admin-b72d4f87/images/field-010-model-listing-33399.png
-- 11. model_listing[33398] (checkbox)
-  - DOM name: `model_listing[33398]`
-  - Screenshot: pages/028-cp-brandfolder-queue-admin-b72d4f87/images/field-011-model-listing-33398.png
-- 12. model_listing[33397] (checkbox)
-  - DOM name: `model_listing[33397]`
-  - Screenshot: pages/028-cp-brandfolder-queue-admin-b72d4f87/images/field-012-model-listing-33397.png
-- 13. model_listing[33396] (checkbox)
-  - DOM name: `model_listing[33396]`
-  - Screenshot: pages/028-cp-brandfolder-queue-admin-b72d4f87/images/field-013-model-listing-33396.png
-- 14. model_listing[33395] (checkbox)
-  - DOM name: `model_listing[33395]`
-  - Screenshot: pages/028-cp-brandfolder-queue-admin-b72d4f87/images/field-014-model-listing-33395.png
-- 15. select (select)
-  - Screenshot: pages/028-cp-brandfolder-queue-admin-b72d4f87/images/field-015-select.png
-- 16. select (select)
-  - Screenshot: pages/028-cp-brandfolder-queue-admin-b72d4f87/images/field-016-select.png
 
 ## BrandFolder Import Queue
 
-- URL: https://dev.soho-home.local/cp/brandfolder-queue-admin/edit/33406
+- URL: https://dev.soho-home.local/cp/brandfolder-queue-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|brandfolder-queue-admin|edit|brandfolder-queue-admin/edit/:identifier
-- Draft doc: pages/029-cp-brandfolder-queue-admin-edit-33406-40b49745/README.md
-- Page screenshots: pages/029-cp-brandfolder-queue-admin-edit-33406-40b49745/images/page-desktop.png
+- Draft doc: pages/029-cp-brandfolder-queue-admin-edit-id-40b49745/README.md
+- Page screenshots: pages/029-cp-brandfolder-queue-admin-edit-id-40b49745/images/page-desktop.png
 - Field count: 0
 - Controller: unresolved
 
@@ -2136,11 +2036,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Conversion API
 
-- URL: https://dev.soho-home.local/cp/capi/view/2809963
+- URL: https://dev.soho-home.local/cp/capi/view/:id
 - Documentation route key: https://dev.soho-home.local|cp|capi|view|capi/view/:identifier
-- Draft doc: pages/031-cp-capi-view-2809963-52097ec6/README.md
+- Draft doc: pages/031-cp-capi-view-id-52097ec6/README.md
 - Code analysis doc: .vscode/code-docs/cp-capi-view-view.md
-- Page screenshots: pages/031-cp-capi-view-2809963-52097ec6/images/page-desktop.png
+- Page screenshots: pages/031-cp-capi-view-id-52097ec6/images/page-desktop.png
 - Field count: 1
 - Controller: D3R\Tracking\Capi\Controller (capi)
 - Controller file: vendor/d3r/tracking/src/Capi/Controller.php
@@ -2154,7 +2054,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. Sent (checkbox)
   - Model field: Sent / `sent` / Checkbox
-  - Screenshot: pages/031-cp-capi-view-2809963-52097ec6/images/field-001-sent.png
 
 ### Source References
 
@@ -2215,7 +2114,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/032-cp-categories-admin-6a47a3af/images/field-010-inline-67-category-status.png
 - 11. inline[80][category_status] (select)
   - DOM name: `inline[80][category_status]`
-  - Screenshot: pages/032-cp-categories-admin-6a47a3af/images/field-011-inline-80-category-status.png
 - 12. inline[129][category_status] (select)
   - DOM name: `inline[129][category_status]`
   - Screenshot: pages/032-cp-categories-admin-6a47a3af/images/field-012-inline-129-category-status.png
@@ -2223,7 +2121,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/032-cp-categories-admin-6a47a3af/images/field-013-select.png
 - 14. inline_action (submit)
   - DOM name: `inline_action`
-  - Screenshot: pages/032-cp-categories-admin-6a47a3af/images/field-014-inline-action.png
 
 ### Source References
 
@@ -2313,15 +2210,12 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/033-cp-categories-admin-edit-new-641fc46e/images/field-002-code-optional.png
 - 3. Show Sale Products? (checkbox)
   - DOM name: `category_show_sale_products`
-  - Screenshot: pages/033-cp-categories-admin-edit-new-641fc46e/images/field-003-show-sale-products.png
 - 4. Include products from subcategories and collections (checkbox)
   - DOM name: `category_include_child_products`
   - Model field: Include products from subcategories and collections / `include_child_products` / Checkbox
-  - Screenshot: pages/033-cp-categories-admin-edit-new-641fc46e/images/field-004-include-products-from-subcategories-and-collections.png
 - 5. Show OOS Products? (checkbox)
   - DOM name: `category_show_oos_products`
   - Model field: Show OOS Products? / `show_oos_products` / Checkbox
-  - Screenshot: pages/033-cp-categories-admin-edit-new-641fc46e/images/field-005-show-oos-products.png
 - 6. Url Name optional (text)
   - DOM name: `category_urlname`
   - Model field: Url Name / `urlname` / UrlName
@@ -2329,7 +2223,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 7. Intro optional (textarea)
   - DOM name: `category_intro`
   - Model field: Intro / `intro` / RichText
-  - Screenshot: pages/033-cp-categories-admin-edit-new-641fc46e/images/field-007-intro-optional.png
 - 8. Status (select)
   - DOM name: `category_status`
   - Model field: Status / `` / Select
@@ -2509,11 +2402,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Category Content Groups
 
-- URL: https://dev.soho-home.local/cp/categories-content-admin/edit/1
+- URL: https://dev.soho-home.local/cp/categories-content-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|categories-content-admin|edit|categories-content-admin/edit/:identifier
-- Draft doc: pages/035-cp-categories-content-admin-edit-1-5447f328/README.md
+- Draft doc: pages/035-cp-categories-content-admin-edit-id-5447f328/README.md
 - Code analysis doc: .vscode/code-docs/cp-categories-content-admin-edit-existing.md
-- Page screenshots: pages/035-cp-categories-content-admin-edit-1-5447f328/images/page-desktop.png
+- Page screenshots: pages/035-cp-categories-content-admin-edit-id-5447f328/images/page-desktop.png
 - Field count: 2
 - Controller: App\Products\CategoriesContentControllerAdmin (categories-content-admin)
 - Controller file: src/Products/CategoriesContentControllerAdmin.php
@@ -2528,11 +2421,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 1. Title (text)
   - DOM name: `contentgroup_title`
   - Model field: Title / `title` / Text
-  - Screenshot: pages/035-cp-categories-content-admin-edit-1-5447f328/images/field-001-title.png
+  - Screenshot: pages/035-cp-categories-content-admin-edit-id-5447f328/images/field-001-title.png
 - 2. Status optional (select)
   - DOM name: `contentgroup_status`
   - Model field: Status / `status` / Select
-  - Screenshot: pages/035-cp-categories-content-admin-edit-1-5447f328/images/field-002-status-optional.png
+  - Screenshot: pages/035-cp-categories-content-admin-edit-id-5447f328/images/field-002-status-optional.png
 
 ### Source References
 
@@ -2732,11 +2625,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Components
 
-- URL: https://dev.soho-home.local/cp/components-admin/edit/1
+- URL: https://dev.soho-home.local/cp/components-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|components-admin|edit|components-admin/edit/:identifier
-- Draft doc: pages/038-cp-components-admin-edit-1-829a8cde/README.md
+- Draft doc: pages/038-cp-components-admin-edit-id-829a8cde/README.md
 - Code analysis doc: .vscode/code-docs/cp-components-admin-edit-existing.md
-- Page screenshots: pages/038-cp-components-admin-edit-1-829a8cde/images/page-desktop.png
+- Page screenshots: pages/038-cp-components-admin-edit-id-829a8cde/images/page-desktop.png
 - Field count: 0
 - Controller: Soho\Products\Base\ComponentsControllerAdmin (components-admin)
 - Controller file: vendor/soho/products/src/ComponentsControllerAdmin.php
@@ -2809,10 +2702,8 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. Yes (radio)
   - DOM name: `settings_master_switch`
-  - Screenshot: pages/039-cp-cookies-settings-admin-00b8f1b2/images/field-001-yes.png
 - 2. No (radio)
   - DOM name: `settings_master_switch`
-  - Screenshot: pages/039-cp-cookies-settings-admin-00b8f1b2/images/field-002-no.png
 
 ## Countries
 
@@ -2837,117 +2728,80 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-001-keyword-search.png
 - 2. inline[1][country_locale] (select)
   - DOM name: `inline[1][country_locale]`
-  - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-002-inline-1-country-locale.png
 - 3. inline[1][country_currency] (select)
   - DOM name: `inline[1][country_currency]`
-  - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-003-inline-1-country-currency.png
 - 4. inline[1][country_global_e] (checkbox)
   - DOM name: `inline[1][country_global_e]`
-  - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-004-inline-1-country-global-e.png
 - 5. inline[54][country_locale] (select)
   - DOM name: `inline[54][country_locale]`
-  - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-005-inline-54-country-locale.png
 - 6. inline[54][country_currency] (select)
   - DOM name: `inline[54][country_currency]`
-  - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-006-inline-54-country-currency.png
 - 7. inline[54][country_global_e] (checkbox)
   - DOM name: `inline[54][country_global_e]`
-  - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-007-inline-54-country-global-e.png
 - 8. inline[55][country_locale] (select)
   - DOM name: `inline[55][country_locale]`
-  - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-008-inline-55-country-locale.png
 - 9. inline[55][country_currency] (select)
   - DOM name: `inline[55][country_currency]`
-  - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-009-inline-55-country-currency.png
 - 10. inline[55][country_global_e] (checkbox)
   - DOM name: `inline[55][country_global_e]`
-  - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-010-inline-55-country-global-e.png
 - 11. inline[4][country_locale] (select)
   - DOM name: `inline[4][country_locale]`
-  - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-011-inline-4-country-locale.png
 - 12. inline[4][country_currency] (select)
   - DOM name: `inline[4][country_currency]`
-  - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-012-inline-4-country-currency.png
 - 13. inline[4][country_global_e] (checkbox)
   - DOM name: `inline[4][country_global_e]`
-  - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-013-inline-4-country-global-e.png
 - 14. inline[5][country_locale] (select)
   - DOM name: `inline[5][country_locale]`
-  - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-014-inline-5-country-locale.png
 - 15. inline[5][country_currency] (select)
   - DOM name: `inline[5][country_currency]`
-  - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-015-inline-5-country-currency.png
 - 16. inline[5][country_global_e] (checkbox)
   - DOM name: `inline[5][country_global_e]`
-  - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-016-inline-5-country-global-e.png
 - 17. inline[6][country_locale] (select)
   - DOM name: `inline[6][country_locale]`
-  - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-017-inline-6-country-locale.png
 - 18. inline[6][country_currency] (select)
   - DOM name: `inline[6][country_currency]`
-  - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-018-inline-6-country-currency.png
 - 19. inline[6][country_global_e] (checkbox)
   - DOM name: `inline[6][country_global_e]`
-  - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-019-inline-6-country-global-e.png
 - 20. inline[7][country_locale] (select)
   - DOM name: `inline[7][country_locale]`
-  - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-020-inline-7-country-locale.png
 - 21. inline[7][country_currency] (select)
   - DOM name: `inline[7][country_currency]`
-  - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-021-inline-7-country-currency.png
 - 22. inline[7][country_global_e] (checkbox)
   - DOM name: `inline[7][country_global_e]`
-  - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-022-inline-7-country-global-e.png
 - 23. inline[8][country_locale] (select)
   - DOM name: `inline[8][country_locale]`
-  - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-023-inline-8-country-locale.png
 - 24. inline[8][country_currency] (select)
   - DOM name: `inline[8][country_currency]`
-  - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-024-inline-8-country-currency.png
 - 25. inline[8][country_global_e] (checkbox)
   - DOM name: `inline[8][country_global_e]`
-  - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-025-inline-8-country-global-e.png
 - 26. inline[9][country_locale] (select)
   - DOM name: `inline[9][country_locale]`
-  - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-026-inline-9-country-locale.png
 - 27. inline[9][country_currency] (select)
   - DOM name: `inline[9][country_currency]`
-  - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-027-inline-9-country-currency.png
 - 28. inline[9][country_global_e] (checkbox)
   - DOM name: `inline[9][country_global_e]`
-  - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-028-inline-9-country-global-e.png
 - 29. inline[10][country_locale] (select)
   - DOM name: `inline[10][country_locale]`
-  - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-029-inline-10-country-locale.png
 - 30. inline[10][country_currency] (select)
   - DOM name: `inline[10][country_currency]`
-  - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-030-inline-10-country-currency.png
 - 31. inline[10][country_global_e] (checkbox)
   - DOM name: `inline[10][country_global_e]`
-  - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-031-inline-10-country-global-e.png
 - 32. inline[65][country_locale] (select)
   - DOM name: `inline[65][country_locale]`
-  - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-032-inline-65-country-locale.png
 - 33. inline[65][country_currency] (select)
   - DOM name: `inline[65][country_currency]`
-  - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-033-inline-65-country-currency.png
 - 34. inline[65][country_global_e] (checkbox)
   - DOM name: `inline[65][country_global_e]`
-  - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-034-inline-65-country-global-e.png
 - 35. inline[12][country_locale] (select)
   - DOM name: `inline[12][country_locale]`
-  - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-035-inline-12-country-locale.png
 - 36. inline[12][country_currency] (select)
   - DOM name: `inline[12][country_currency]`
-  - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-036-inline-12-country-currency.png
 - 37. inline[12][country_global_e] (checkbox)
   - DOM name: `inline[12][country_global_e]`
-  - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-037-inline-12-country-global-e.png
 - 38. select (select)
   - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-038-select.png
 - 39. inline_action (submit)
   - DOM name: `inline_action`
-  - Screenshot: pages/040-cp-countries-admin-b7d02bfb/images/field-039-inline-action.png
 
 ### Source References
 
@@ -2966,11 +2820,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Countries
 
-- URL: https://dev.soho-home.local/cp/countries-admin/edit/1
+- URL: https://dev.soho-home.local/cp/countries-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|countries-admin|edit|countries-admin/edit/:identifier
-- Draft doc: pages/041-cp-countries-admin-edit-1-e82a6189/README.md
+- Draft doc: pages/041-cp-countries-admin-edit-id-e82a6189/README.md
 - Code analysis doc: .vscode/code-docs/cp-countries-admin-edit-existing.md
-- Page screenshots: pages/041-cp-countries-admin-edit-1-e82a6189/images/page-desktop.png
+- Page screenshots: pages/041-cp-countries-admin-edit-id-e82a6189/images/page-desktop.png
 - Field count: 6
 - Controller: App\Locale\CountriesControllerAdmin (countries-admin)
 - Controller file: src/Locale/CountriesControllerAdmin.php
@@ -2984,22 +2838,20 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. Label (text)
   - DOM name: `country_label`
-  - Screenshot: pages/041-cp-countries-admin-edit-1-e82a6189/images/field-001-label.png
+  - Screenshot: pages/041-cp-countries-admin-edit-id-e82a6189/images/field-001-label.png
 - 2. Status optional (select)
   - DOM name: `country_status`
-  - Screenshot: pages/041-cp-countries-admin-edit-1-e82a6189/images/field-002-status-optional.png
+  - Screenshot: pages/041-cp-countries-admin-edit-id-e82a6189/images/field-002-status-optional.png
 - 3. Code (text)
   - DOM name: `country_code`
-  - Screenshot: pages/041-cp-countries-admin-edit-1-e82a6189/images/field-003-code.png
+  - Screenshot: pages/041-cp-countries-admin-edit-id-e82a6189/images/field-003-code.png
 - 4. Locale (select)
   - DOM name: `country_locale`
-  - Screenshot: pages/041-cp-countries-admin-edit-1-e82a6189/images/field-004-locale.png
+  - Screenshot: pages/041-cp-countries-admin-edit-id-e82a6189/images/field-004-locale.png
 - 5. Add as Alternate Sitemap URL? (checkbox)
   - DOM name: `country_sitemap_alternate_url`
-  - Screenshot: pages/041-cp-countries-admin-edit-1-e82a6189/images/field-005-add-as-alternate-sitemap-url.png
 - 6. Generate Google Feed? (checkbox)
   - DOM name: `country_generate_google_feed`
-  - Screenshot: pages/041-cp-countries-admin-edit-1-e82a6189/images/field-006-generate-google-feed.png
 
 ### Source References
 
@@ -3198,11 +3050,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Country Price Lists
 
-- URL: https://dev.soho-home.local/cp/country-prices-admin/view/1
+- URL: https://dev.soho-home.local/cp/country-prices-admin/view/:id
 - Documentation route key: https://dev.soho-home.local|cp|country-prices-admin|view|country-prices-admin/view/:identifier
-- Draft doc: pages/044-cp-country-prices-admin-view-1-9fca00b5/README.md
+- Draft doc: pages/044-cp-country-prices-admin-view-id-9fca00b5/README.md
 - Code analysis doc: .vscode/code-docs/cp-country-prices-admin-view-view.md
-- Page screenshots: pages/044-cp-country-prices-admin-view-1-9fca00b5/images/page-desktop.png
+- Page screenshots: pages/044-cp-country-prices-admin-view-id-9fca00b5/images/page-desktop.png
 - Field count: 0
 - Controller: App\Products\CountryPricesControllerAdmin (country-prices-admin)
 - Controller file: src/Products/CountryPricesControllerAdmin.php
@@ -3302,19 +3154,14 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/045-cp-cross-sell-admin-a65b10d5/images/field-003-years.png
 - 4. Months (select)
   - DOM name: `xsell_setting_search_cutoff[m]`
-  - Screenshot: pages/045-cp-cross-sell-admin-a65b10d5/images/field-004-months.png
 - 5. Days (select)
   - DOM name: `xsell_setting_search_cutoff[d]`
-  - Screenshot: pages/045-cp-cross-sell-admin-a65b10d5/images/field-005-days.png
 - 6. Hours (select)
   - DOM name: `xsell_setting_search_cutoff[h]`
-  - Screenshot: pages/045-cp-cross-sell-admin-a65b10d5/images/field-006-hours.png
 - 7. Minutes (select)
   - DOM name: `xsell_setting_search_cutoff[i]`
-  - Screenshot: pages/045-cp-cross-sell-admin-a65b10d5/images/field-007-minutes.png
 - 8. Seconds (select)
   - DOM name: `xsell_setting_search_cutoff[s]`
-  - Screenshot: pages/045-cp-cross-sell-admin-a65b10d5/images/field-008-seconds.png
 
 ### Source References
 
@@ -3356,7 +3203,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-004-inline-1-source-value.png
 - 5. inline[1][source_status] (select)
   - DOM name: `inline[1][source_status]`
-  - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-005-inline-1-source-status.png
 - 6. inline[2][source_scope] (select)
   - DOM name: `inline[2][source_scope]`
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-006-inline-2-source-scope.png
@@ -3368,7 +3214,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-008-inline-2-source-value.png
 - 9. inline[2][source_status] (select)
   - DOM name: `inline[2][source_status]`
-  - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-009-inline-2-source-status.png
 - 10. inline[3][source_scope] (select)
   - DOM name: `inline[3][source_scope]`
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-010-inline-3-source-scope.png
@@ -3380,7 +3225,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-012-inline-3-source-value.png
 - 13. inline[3][source_status] (select)
   - DOM name: `inline[3][source_status]`
-  - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-013-inline-3-source-status.png
 - 14. inline[4][source_scope] (select)
   - DOM name: `inline[4][source_scope]`
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-014-inline-4-source-scope.png
@@ -3392,7 +3236,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-016-inline-4-source-value.png
 - 17. inline[4][source_status] (select)
   - DOM name: `inline[4][source_status]`
-  - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-017-inline-4-source-status.png
 - 18. inline[5][source_scope] (select)
   - DOM name: `inline[5][source_scope]`
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-018-inline-5-source-scope.png
@@ -3404,7 +3247,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-020-inline-5-source-value.png
 - 21. inline[5][source_status] (select)
   - DOM name: `inline[5][source_status]`
-  - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-021-inline-5-source-status.png
 - 22. inline[6][source_scope] (select)
   - DOM name: `inline[6][source_scope]`
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-022-inline-6-source-scope.png
@@ -3416,7 +3258,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-024-inline-6-source-value.png
 - 25. inline[6][source_status] (select)
   - DOM name: `inline[6][source_status]`
-  - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-025-inline-6-source-status.png
 - 26. inline[7][source_scope] (select)
   - DOM name: `inline[7][source_scope]`
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-026-inline-7-source-scope.png
@@ -3428,7 +3269,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-028-inline-7-source-value.png
 - 29. inline[7][source_status] (select)
   - DOM name: `inline[7][source_status]`
-  - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-029-inline-7-source-status.png
 - 30. inline[8][source_scope] (select)
   - DOM name: `inline[8][source_scope]`
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-030-inline-8-source-scope.png
@@ -3440,19 +3280,14 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-032-inline-8-source-value.png
 - 33. inline[8][source_status] (select)
   - DOM name: `inline[8][source_status]`
-  - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-033-inline-8-source-status.png
 - 34. inline[9][source_scope] (select)
   - DOM name: `inline[9][source_scope]`
-  - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-034-inline-9-source-scope.png
 - 35. inline[9][source_directive] (select)
   - DOM name: `inline[9][source_directive]`
-  - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-035-inline-9-source-directive.png
 - 36. inline[9][source_value] (text)
   - DOM name: `inline[9][source_value]`
-  - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-036-inline-9-source-value.png
 - 37. inline[9][source_status] (select)
   - DOM name: `inline[9][source_status]`
-  - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-037-inline-9-source-status.png
 - 38. inline[10][source_scope] (select)
   - DOM name: `inline[10][source_scope]`
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-038-inline-10-source-scope.png
@@ -3464,7 +3299,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-040-inline-10-source-value.png
 - 41. inline[10][source_status] (select)
   - DOM name: `inline[10][source_status]`
-  - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-041-inline-10-source-status.png
 - 42. inline[11][source_scope] (select)
   - DOM name: `inline[11][source_scope]`
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-042-inline-11-source-scope.png
@@ -3476,7 +3310,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-044-inline-11-source-value.png
 - 45. inline[11][source_status] (select)
   - DOM name: `inline[11][source_status]`
-  - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-045-inline-11-source-status.png
 - 46. inline[12][source_scope] (select)
   - DOM name: `inline[12][source_scope]`
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-046-inline-12-source-scope.png
@@ -3488,7 +3321,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-048-inline-12-source-value.png
 - 49. inline[12][source_status] (select)
   - DOM name: `inline[12][source_status]`
-  - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-049-inline-12-source-status.png
 - 50. inline[13][source_scope] (select)
   - DOM name: `inline[13][source_scope]`
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-050-inline-13-source-scope.png
@@ -3500,7 +3332,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-052-inline-13-source-value.png
 - 53. inline[13][source_status] (select)
   - DOM name: `inline[13][source_status]`
-  - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-053-inline-13-source-status.png
 - 54. inline[14][source_scope] (select)
   - DOM name: `inline[14][source_scope]`
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-054-inline-14-source-scope.png
@@ -3512,7 +3343,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-056-inline-14-source-value.png
 - 57. inline[14][source_status] (select)
   - DOM name: `inline[14][source_status]`
-  - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-057-inline-14-source-status.png
 - 58. inline[15][source_scope] (select)
   - DOM name: `inline[15][source_scope]`
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-058-inline-15-source-scope.png
@@ -3524,7 +3354,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-060-inline-15-source-value.png
 - 61. inline[15][source_status] (select)
   - DOM name: `inline[15][source_status]`
-  - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-061-inline-15-source-status.png
 - 62. inline[16][source_scope] (select)
   - DOM name: `inline[16][source_scope]`
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-062-inline-16-source-scope.png
@@ -3536,19 +3365,14 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-064-inline-16-source-value.png
 - 65. inline[16][source_status] (select)
   - DOM name: `inline[16][source_status]`
-  - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-065-inline-16-source-status.png
 - 66. inline[18][source_scope] (select)
   - DOM name: `inline[18][source_scope]`
-  - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-066-inline-18-source-scope.png
 - 67. inline[18][source_directive] (select)
   - DOM name: `inline[18][source_directive]`
-  - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-067-inline-18-source-directive.png
 - 68. inline[18][source_value] (text)
   - DOM name: `inline[18][source_value]`
-  - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-068-inline-18-source-value.png
 - 69. inline[18][source_status] (select)
   - DOM name: `inline[18][source_status]`
-  - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-069-inline-18-source-status.png
 - 70. inline[19][source_scope] (select)
   - DOM name: `inline[19][source_scope]`
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-070-inline-19-source-scope.png
@@ -3560,7 +3384,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-072-inline-19-source-value.png
 - 73. inline[19][source_status] (select)
   - DOM name: `inline[19][source_status]`
-  - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-073-inline-19-source-status.png
 - 74. inline[20][source_scope] (select)
   - DOM name: `inline[20][source_scope]`
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-074-inline-20-source-scope.png
@@ -3572,7 +3395,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-076-inline-20-source-value.png
 - 77. inline[20][source_status] (select)
   - DOM name: `inline[20][source_status]`
-  - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-077-inline-20-source-status.png
 - 78. inline[21][source_scope] (select)
   - DOM name: `inline[21][source_scope]`
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-078-inline-21-source-scope.png
@@ -3584,7 +3406,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-080-inline-21-source-value.png
 - 81. inline[21][source_status] (select)
   - DOM name: `inline[21][source_status]`
-  - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-081-inline-21-source-status.png
 - 82. inline[22][source_scope] (select)
   - DOM name: `inline[22][source_scope]`
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-082-inline-22-source-scope.png
@@ -3596,7 +3417,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-084-inline-22-source-value.png
 - 85. inline[22][source_status] (select)
   - DOM name: `inline[22][source_status]`
-  - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-085-inline-22-source-status.png
 - 86. inline[23][source_scope] (select)
   - DOM name: `inline[23][source_scope]`
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-086-inline-23-source-scope.png
@@ -3608,7 +3428,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-088-inline-23-source-value.png
 - 89. inline[23][source_status] (select)
   - DOM name: `inline[23][source_status]`
-  - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-089-inline-23-source-status.png
 - 90. inline[24][source_scope] (select)
   - DOM name: `inline[24][source_scope]`
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-090-inline-24-source-scope.png
@@ -3620,7 +3439,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-092-inline-24-source-value.png
 - 93. inline[24][source_status] (select)
   - DOM name: `inline[24][source_status]`
-  - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-093-inline-24-source-status.png
 - 94. inline[25][source_scope] (select)
   - DOM name: `inline[25][source_scope]`
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-094-inline-25-source-scope.png
@@ -3632,7 +3450,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-096-inline-25-source-value.png
 - 97. inline[25][source_status] (select)
   - DOM name: `inline[25][source_status]`
-  - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-097-inline-25-source-status.png
 - 98. inline[26][source_scope] (select)
   - DOM name: `inline[26][source_scope]`
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-098-inline-26-source-scope.png
@@ -3644,7 +3461,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-100-inline-26-source-value.png
 - 101. inline[26][source_status] (select)
   - DOM name: `inline[26][source_status]`
-  - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-101-inline-26-source-status.png
 - 102. inline[27][source_scope] (select)
   - DOM name: `inline[27][source_scope]`
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-102-inline-27-source-scope.png
@@ -3656,7 +3472,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-104-inline-27-source-value.png
 - 105. inline[27][source_status] (select)
   - DOM name: `inline[27][source_status]`
-  - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-105-inline-27-source-status.png
 - 106. inline[28][source_scope] (select)
   - DOM name: `inline[28][source_scope]`
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-106-inline-28-source-scope.png
@@ -3668,7 +3483,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-108-inline-28-source-value.png
 - 109. inline[28][source_status] (select)
   - DOM name: `inline[28][source_status]`
-  - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-109-inline-28-source-status.png
 - 110. inline[29][source_scope] (select)
   - DOM name: `inline[29][source_scope]`
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-110-inline-29-source-scope.png
@@ -3680,7 +3494,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-112-inline-29-source-value.png
 - 113. inline[29][source_status] (select)
   - DOM name: `inline[29][source_status]`
-  - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-113-inline-29-source-status.png
 - 114. inline[30][source_scope] (select)
   - DOM name: `inline[30][source_scope]`
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-114-inline-30-source-scope.png
@@ -3692,7 +3505,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-116-inline-30-source-value.png
 - 117. inline[30][source_status] (select)
   - DOM name: `inline[30][source_status]`
-  - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-117-inline-30-source-status.png
 - 118. inline[31][source_scope] (select)
   - DOM name: `inline[31][source_scope]`
   - Screenshot: pages/046-cp-csp-admin-afdcfabe/images/field-118-inline-31-source-scope.png
@@ -3717,11 +3529,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Content Security Policy
 
-- URL: https://dev.soho-home.local/cp/csp-admin/edit/1
+- URL: https://dev.soho-home.local/cp/csp-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|csp-admin|edit|csp-admin/edit/:identifier
-- Draft doc: pages/047-cp-csp-admin-edit-1-8773e0c7/README.md
+- Draft doc: pages/047-cp-csp-admin-edit-id-8773e0c7/README.md
 - Code analysis doc: .vscode/code-docs/cp-csp-admin-edit-existing.md
-- Page screenshots: pages/047-cp-csp-admin-edit-1-8773e0c7/images/page-desktop.png
+- Page screenshots: pages/047-cp-csp-admin-edit-id-8773e0c7/images/page-desktop.png
 - Field count: 12
 - Controller: D3R\WebSecurity\Controller\CspAdmin (csp-admin)
 - Controller file: vendor/d3r/web-security/src/Controller/CspAdmin.php
@@ -3736,51 +3548,44 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 1. Scope (select)
   - DOM name: `source_scope`
   - Model field: Scope / `scope` / SelectCallback
-  - Screenshot: pages/047-cp-csp-admin-edit-1-8773e0c7/images/field-001-scope.png
+  - Screenshot: pages/047-cp-csp-admin-edit-id-8773e0c7/images/field-001-scope.png
 - 2. Directive (select)
   - DOM name: `source_directive`
   - Model field: Directive / `directive` / Select
-  - Screenshot: pages/047-cp-csp-admin-edit-1-8773e0c7/images/field-002-directive.png
+  - Screenshot: pages/047-cp-csp-admin-edit-id-8773e0c7/images/field-002-directive.png
 - 3. Source URL Value optional (text)
   - DOM name: `source_value`
   - Model field: Source URL Value / `value` / Text
-  - Screenshot: pages/047-cp-csp-admin-edit-1-8773e0c7/images/field-003-source-url-value-optional.png
+  - Screenshot: pages/047-cp-csp-admin-edit-id-8773e0c7/images/field-003-source-url-value-optional.png
 - 4. HTTPS Sources Only (checkbox)
   - DOM name: `source_allow_https`
   - Model field: HTTPS Sources Only / `allow_https` / Checkbox
-  - Screenshot: pages/047-cp-csp-admin-edit-1-8773e0c7/images/field-004-https-sources-only.png
 - 5. Self Allowed (checkbox)
   - DOM name: `source_allow_self`
   - Model field: Self Allowed / `allow_self` / Checkbox
-  - Screenshot: pages/047-cp-csp-admin-edit-1-8773e0c7/images/field-005-self-allowed.png
 - 6. Data Allowed (checkbox)
   - DOM name: `source_allow_data`
   - Model field: Data Allowed / `allow_data` / Checkbox
-  - Screenshot: pages/047-cp-csp-admin-edit-1-8773e0c7/images/field-006-data-allowed.png
 - 7. Blob Allowed (checkbox)
   - DOM name: `source_allow_blob`
   - Model field: Blob Allowed / `allow_blob` / Checkbox
-  - Screenshot: pages/047-cp-csp-admin-edit-1-8773e0c7/images/field-007-blob-allowed.png
 - 8. Media Stream Allowed (checkbox)
   - DOM name: `source_allow_media_stream`
   - Model field: Media Stream Allowed / `allow_media_stream` / Checkbox
-  - Screenshot: pages/047-cp-csp-admin-edit-1-8773e0c7/images/field-008-media-stream-allowed.png
 - 9. Unsafe Eval Allowed (checkbox)
   - DOM name: `source_allow_unsafe_eval`
   - Model field: Unsafe Eval Allowed / `allow_unsafe_eval` / Checkbox
-  - Screenshot: pages/047-cp-csp-admin-edit-1-8773e0c7/images/field-009-unsafe-eval-allowed.png
 - 10. Unsafe Inline Allowed (checkbox)
   - DOM name: `source_allow_unsafe_inline`
   - Model field: Unsafe Inline Allowed / `allow_unsafe_inline` / Checkbox
-  - Screenshot: pages/047-cp-csp-admin-edit-1-8773e0c7/images/field-010-unsafe-inline-allowed.png
 - 11. Status optional (select)
   - DOM name: `source_status`
   - Model field: Status / `status` / Select
-  - Screenshot: pages/047-cp-csp-admin-edit-1-8773e0c7/images/field-011-status-optional.png
+  - Screenshot: pages/047-cp-csp-admin-edit-id-8773e0c7/images/field-011-status-optional.png
 - 12. Note optional (text)
   - DOM name: `source_note`
   - Model field: Note / `note` / Text
-  - Screenshot: pages/047-cp-csp-admin-edit-1-8773e0c7/images/field-012-note-optional.png
+  - Screenshot: pages/047-cp-csp-admin-edit-id-8773e0c7/images/field-012-note-optional.png
 
 ### Source References
 
@@ -3812,37 +3617,26 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/048-cp-currencies-admin-f7b395f4/images/field-001-keyword-search.png
 - 2. inline[1][currency_status] (select)
   - DOM name: `inline[1][currency_status]`
-  - Screenshot: pages/048-cp-currencies-admin-f7b395f4/images/field-002-inline-1-currency-status.png
 - 3. inline[2][currency_status] (select)
   - DOM name: `inline[2][currency_status]`
-  - Screenshot: pages/048-cp-currencies-admin-f7b395f4/images/field-003-inline-2-currency-status.png
 - 4. inline[3][currency_status] (select)
   - DOM name: `inline[3][currency_status]`
-  - Screenshot: pages/048-cp-currencies-admin-f7b395f4/images/field-004-inline-3-currency-status.png
 - 5. inline[4][currency_status] (select)
   - DOM name: `inline[4][currency_status]`
-  - Screenshot: pages/048-cp-currencies-admin-f7b395f4/images/field-005-inline-4-currency-status.png
 - 6. inline[5][currency_status] (select)
   - DOM name: `inline[5][currency_status]`
-  - Screenshot: pages/048-cp-currencies-admin-f7b395f4/images/field-006-inline-5-currency-status.png
 - 7. inline[6][currency_status] (select)
   - DOM name: `inline[6][currency_status]`
-  - Screenshot: pages/048-cp-currencies-admin-f7b395f4/images/field-007-inline-6-currency-status.png
 - 8. inline[7][currency_status] (select)
   - DOM name: `inline[7][currency_status]`
-  - Screenshot: pages/048-cp-currencies-admin-f7b395f4/images/field-008-inline-7-currency-status.png
 - 9. inline[8][currency_status] (select)
   - DOM name: `inline[8][currency_status]`
-  - Screenshot: pages/048-cp-currencies-admin-f7b395f4/images/field-009-inline-8-currency-status.png
 - 10. inline[9][currency_status] (select)
   - DOM name: `inline[9][currency_status]`
-  - Screenshot: pages/048-cp-currencies-admin-f7b395f4/images/field-010-inline-9-currency-status.png
 - 11. inline[10][currency_status] (select)
   - DOM name: `inline[10][currency_status]`
-  - Screenshot: pages/048-cp-currencies-admin-f7b395f4/images/field-011-inline-10-currency-status.png
 - 12. inline_action (submit)
   - DOM name: `inline_action`
-  - Screenshot: pages/048-cp-currencies-admin-f7b395f4/images/field-012-inline-action.png
 
 ### Source References
 
@@ -4089,11 +3883,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Currencies
 
-- URL: https://dev.soho-home.local/cp/currencies-admin/edit/1
+- URL: https://dev.soho-home.local/cp/currencies-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|currencies-admin|edit|currencies-admin/edit/:identifier
-- Draft doc: pages/049-cp-currencies-admin-edit-1-6b3b306f/README.md
+- Draft doc: pages/049-cp-currencies-admin-edit-id-6b3b306f/README.md
 - Code analysis doc: .vscode/code-docs/cp-currencies-admin-edit-existing.md
-- Page screenshots: pages/049-cp-currencies-admin-edit-1-6b3b306f/images/page-desktop.png
+- Page screenshots: pages/049-cp-currencies-admin-edit-id-6b3b306f/images/page-desktop.png
 - Field count: 4
 - Controller: Soho\Ecom\Controller\CurrenciesAdmin (currencies-admin)
 - Controller file: vendor/soho/ecom/src/Controller/CurrenciesAdmin.php
@@ -4108,15 +3902,15 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 1. Currency Code (text)
   - DOM name: `currency_currency_code`
   - Model field: Currency Code / `currency_code` / Text
-  - Screenshot: pages/049-cp-currencies-admin-edit-1-6b3b306f/images/field-001-currency-code.png
+  - Screenshot: pages/049-cp-currencies-admin-edit-id-6b3b306f/images/field-001-currency-code.png
 - 2. currency_base_currency_code_autocomplete (text)
-  - Screenshot: pages/049-cp-currencies-admin-edit-1-6b3b306f/images/field-002-currency-base-currency-code-autocomplete.png
+  - Screenshot: pages/049-cp-currencies-admin-edit-id-6b3b306f/images/field-002-currency-base-currency-code-autocomplete.png
 - 3. Status (select)
   - DOM name: `currency_status`
   - Model field: Status / `status` / Select
-  - Screenshot: pages/049-cp-currencies-admin-edit-1-6b3b306f/images/field-003-status.png
+  - Screenshot: pages/049-cp-currencies-admin-edit-id-6b3b306f/images/field-003-status.png
 - 4. currency_default_country_autocomplete (text)
-  - Screenshot: pages/049-cp-currencies-admin-edit-1-6b3b306f/images/field-004-currency-default-country-autocomplete.png
+  - Screenshot: pages/049-cp-currencies-admin-edit-id-6b3b306f/images/field-004-currency-default-country-autocomplete.png
 
 ### Source References
 
@@ -4380,7 +4174,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 ### DOM Fields
 
 - 1. select (select)
-  - Screenshot: pages/050-cp-customer-groups-admin-79adba40/images/field-001-select.png
 
 ### Source References
 
@@ -4626,11 +4419,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Customer Groups
 
-- URL: https://dev.soho-home.local/cp/customer-groups-admin/edit/2
+- URL: https://dev.soho-home.local/cp/customer-groups-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|customer-groups-admin|edit|customer-groups-admin/edit/:identifier
-- Draft doc: pages/051-cp-customer-groups-admin-edit-2-840aae89/README.md
+- Draft doc: pages/051-cp-customer-groups-admin-edit-id-840aae89/README.md
 - Code analysis doc: .vscode/code-docs/cp-customer-groups-admin-edit-existing.md
-- Page screenshots: pages/051-cp-customer-groups-admin-edit-2-840aae89/images/page-desktop.png
+- Page screenshots: pages/051-cp-customer-groups-admin-edit-id-840aae89/images/page-desktop.png
 - Field count: 3
 - Controller: Soho\Ecom\Controller\CustomerGroupsAdmin (customer-groups-admin)
 - Controller file: vendor/soho/ecom/src/Controller/CustomerGroupsAdmin.php
@@ -4645,15 +4438,15 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 1. Name (text)
   - DOM name: `group_name`
   - Model field: Name / `name` / Text
-  - Screenshot: pages/051-cp-customer-groups-admin-edit-2-840aae89/images/field-001-name.png
+  - Screenshot: pages/051-cp-customer-groups-admin-edit-id-840aae89/images/field-001-name.png
 - 2. group_email_patterns[] (text)
   - DOM name: `group_email_patterns[]`
   - Model field: Auto-assign customers with email address containing / `email_patterns` / DynamicList
-  - Screenshot: pages/051-cp-customer-groups-admin-edit-2-840aae89/images/field-002-group-email-patterns.png
+  - Screenshot: pages/051-cp-customer-groups-admin-edit-id-840aae89/images/field-002-group-email-patterns.png
 - 3. group_new_order_notification_emails[] (text)
   - DOM name: `group_new_order_notification_emails[]`
   - Model field: New Order Notification Emails / `new_order_notification_emails` / DynamicList
-  - Screenshot: pages/051-cp-customer-groups-admin-edit-2-840aae89/images/field-003-group-new-order-notification-emails.png
+  - Screenshot: pages/051-cp-customer-groups-admin-edit-id-840aae89/images/field-003-group-new-order-notification-emails.png
 
 ### Source References
 
@@ -5166,11 +4959,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Customers
 
-- URL: https://dev.soho-home.local/cp/customers/edit/1
+- URL: https://dev.soho-home.local/cp/customers/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|customers|edit|customers/edit/:identifier
-- Draft doc: pages/053-cp-customers-edit-1-601e81ba/README.md
+- Draft doc: pages/053-cp-customers-edit-id-601e81ba/README.md
 - Code analysis doc: .vscode/code-docs/cp-customers-edit-existing.md
-- Page screenshots: pages/053-cp-customers-edit-1-601e81ba/images/page-desktop.png
+- Page screenshots: pages/053-cp-customers-edit-id-601e81ba/images/page-desktop.png
 - Field count: 18
 - Controller: Soho\Ecom\Controller\CustomerAdmin (customers)
 - Controller file: vendor/soho/ecom/src/Controller/CustomerAdmin.php
@@ -5184,57 +4977,48 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. Email address (email)
   - DOM name: `customer_email`
-  - Screenshot: pages/053-cp-customers-edit-1-601e81ba/images/field-001-email-address.png
+  - Screenshot: pages/053-cp-customers-edit-id-601e81ba/images/field-001-email-address.png
 - 2. First name (text)
   - DOM name: `customer_firstname`
-  - Screenshot: pages/053-cp-customers-edit-1-601e81ba/images/field-002-first-name.png
+  - Screenshot: pages/053-cp-customers-edit-id-601e81ba/images/field-002-first-name.png
 - 3. Last name (text)
   - DOM name: `customer_lastname`
-  - Screenshot: pages/053-cp-customers-edit-1-601e81ba/images/field-003-last-name.png
-- 4. 07400 123456 (tel)
+  - Screenshot: pages/053-cp-customers-edit-id-601e81ba/images/field-003-last-name.png
+- 4. [hidden] (tel)
   - DOM name: `customer_telephone_input`
-  - Screenshot: pages/053-cp-customers-edit-1-601e81ba/images/field-004-07400-123456.png
+  - Screenshot: pages/053-cp-customers-edit-id-601e81ba/images/field-004-hidden.png
 - 5. Password optional (password)
   - DOM name: `customer_password`
-  - Screenshot: pages/053-cp-customers-edit-1-601e81ba/images/field-005-password-optional.png
+  - Screenshot: pages/053-cp-customers-edit-id-601e81ba/images/field-005-password-optional.png
 - 6. Confirm Password optional (password)
   - DOM name: `customer_password_confirm`
-  - Screenshot: pages/053-cp-customers-edit-1-601e81ba/images/field-006-confirm-password-optional.png
+  - Screenshot: pages/053-cp-customers-edit-id-601e81ba/images/field-006-confirm-password-optional.png
 - 7. Confirmed (checkbox)
   - DOM name: `customer_confirmed`
-  - Screenshot: pages/053-cp-customers-edit-1-601e81ba/images/field-007-confirmed.png
 - 8. Is an account? (checkbox)
-  - Screenshot: pages/053-cp-customers-edit-1-601e81ba/images/field-008-is-an-account.png
 - 9. Optin (checkbox)
   - DOM name: `customer_optin`
-  - Screenshot: pages/053-cp-customers-edit-1-601e81ba/images/field-009-optin.png
 - 10. General opt-in (checkbox)
   - DOM name: `customer_optin_general`
-  - Screenshot: pages/053-cp-customers-edit-1-601e81ba/images/field-010-general-opt-in.png
 - 11. Offers opt-in (checkbox)
   - DOM name: `customer_optin_offers`
-  - Screenshot: pages/053-cp-customers-edit-1-601e81ba/images/field-011-offers-opt-in.png
 - 12. Affiliates opt-in (checkbox)
   - DOM name: `customer_optin_affiliates`
-  - Screenshot: pages/053-cp-customers-edit-1-601e81ba/images/field-012-affiliates-opt-in.png
 - 13. Date of birth optional (date)
   - DOM name: `customer_dob`
-  - Screenshot: pages/053-cp-customers-edit-1-601e81ba/images/field-013-date-of-birth-optional.png
+  - Screenshot: pages/053-cp-customers-edit-id-601e81ba/images/field-013-date-of-birth-optional.png
 - 14. Gender optional (select)
   - DOM name: `customer_gender`
-  - Screenshot: pages/053-cp-customers-edit-1-601e81ba/images/field-014-gender-optional.png
+  - Screenshot: pages/053-cp-customers-edit-id-601e81ba/images/field-014-gender-optional.png
 - 15. Renewal Email Sent (checkbox)
   - DOM name: `customer_renewal_email_sent`
-  - Screenshot: pages/053-cp-customers-edit-1-601e81ba/images/field-015-renewal-email-sent.png
 - 16. Prevent Membership Renewal (checkbox)
   - DOM name: `customer_prevent_membership_renewal`
-  - Screenshot: pages/053-cp-customers-edit-1-601e81ba/images/field-016-prevent-membership-renewal.png
 - 17. Resale certificate reviewed (checkbox)
   - DOM name: `customer_resale_certificate_reviewed`
-  - Screenshot: pages/053-cp-customers-edit-1-601e81ba/images/field-017-resale-certificate-reviewed.png
 - 18. VAT identification number (VATIN) optional (text)
   - DOM name: `customer_vatin`
-  - Screenshot: pages/053-cp-customers-edit-1-601e81ba/images/field-018-vat-identification-number-vatin-optional.png
+  - Screenshot: pages/053-cp-customers-edit-id-601e81ba/images/field-018-vat-identification-number-vatin-optional.png
 
 ### Source References
 
@@ -5511,7 +5295,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 1. Enabled (checkbox)
   - DOM name: `setting_enabled_uk`
   - Model field: Enabled / `enabled_uk` / Checkbox
-  - Screenshot: pages/055-cp-delayed-dispatch-email-settings-admin-3af7e343/images/field-001-enabled.png
 - 2. Days trigger (post purchase; business days only) (number)
   - DOM name: `setting_days_trigger_uk`
   - Model field: Days trigger (post purchase; business days only) / `days_trigger_uk` / Int
@@ -5523,7 +5306,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 4. Copy (textarea)
   - DOM name: `setting_copy_uk`
   - Model field: Copy / `copy_uk` / RichText
-  - Screenshot: pages/055-cp-delayed-dispatch-email-settings-admin-3af7e343/images/field-004-copy.png
 
 ### Source References
 
@@ -5792,11 +5574,9 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 2. Terms Copy (textarea)
   - DOM name: `design_service_setting_checkout_terms_body`
   - Model field: Terms Copy / `checkout_terms_body` / RichText
-  - Screenshot: pages/056-cp-design-service-settings-admin-a125ea54/images/field-002-terms-copy.png
 - 3. Terms Checkbox Copy (textarea)
   - DOM name: `design_service_setting_checkout_terms_checkbox_copy`
   - Model field: Terms Checkbox Copy / `checkout_terms_checkbox_copy` / RichText
-  - Screenshot: pages/056-cp-design-service-settings-admin-a125ea54/images/field-003-terms-checkbox-copy.png
 
 ### Source References
 
@@ -6099,11 +5879,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Digital House Api Logs
 
-- URL: https://dev.soho-home.local/cp/dh-api-logs/view/6116376
+- URL: https://dev.soho-home.local/cp/dh-api-logs/view/:id
 - Documentation route key: https://dev.soho-home.local|cp|dh-api-logs|view|dh-api-logs/view/:identifier
-- Draft doc: pages/058-cp-dh-api-logs-view-6116376-e481b763/README.md
+- Draft doc: pages/058-cp-dh-api-logs-view-id-e481b763/README.md
 - Code analysis doc: .vscode/code-docs/cp-dh-api-logs-view-view.md
-- Page screenshots: pages/058-cp-dh-api-logs-view-6116376-e481b763/images/page-desktop.png
+- Page screenshots: pages/058-cp-dh-api-logs-view-id-e481b763/images/page-desktop.png
 - Field count: 0
 - Controller: Soho\Account\DigitalHouse\Logger\ControllerAdmin (dh-api-logs)
 - Controller file: vendor/soho/accounts/src/DigitalHouse/Logger/ControllerAdmin.php
@@ -6171,11 +5951,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Discount Permission Settings
 
-- URL: https://dev.soho-home.local/cp/discount-permission-settings-admin/edit/1
+- URL: https://dev.soho-home.local/cp/discount-permission-settings-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|discount-permission-settings-admin|edit|discount-permission-settings-admin/edit/:identifier
-- Draft doc: pages/060-cp-discount-permission-settings-admin-edit-1-4014e007/README.md
+- Draft doc: pages/060-cp-discount-permission-settings-admin-edit-id-4014e007/README.md
 - Code analysis doc: .vscode/code-docs/cp-discount-permission-settings-admin-edit-existing.md
-- Page screenshots: pages/060-cp-discount-permission-settings-admin-edit-1-4014e007/images/page-desktop.png
+- Page screenshots: pages/060-cp-discount-permission-settings-admin-edit-id-4014e007/images/page-desktop.png
 - Field count: 3
 - Controller: Soho\Ecom\CustomDiscount\Controller\PermissionSettingsAdminController (discount-permission-settings-admin)
 - Controller file: vendor/soho/ecom/src/CustomDiscount/Controller/PermissionSettingsAdminController.php
@@ -6190,15 +5970,15 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 1. Role (select)
   - DOM name: `discount_permission_settings_role`
   - Model field: Role / `role` / SelectCallback
-  - Screenshot: pages/060-cp-discount-permission-settings-admin-edit-1-4014e007/images/field-001-role.png
+  - Screenshot: pages/060-cp-discount-permission-settings-admin-edit-id-4014e007/images/field-001-role.png
 - 2. Max Discount Percentage (number)
   - DOM name: `discount_permission_settings_max_discount_percentage`
   - Model field: Max Discount Percentage / `max_discount_percentage` / Percentage
-  - Screenshot: pages/060-cp-discount-permission-settings-admin-edit-1-4014e007/images/field-002-max-discount-percentage.png
+  - Screenshot: pages/060-cp-discount-permission-settings-admin-edit-id-4014e007/images/field-002-max-discount-percentage.png
 - 3. Max Discount Amount optional (number)
   - DOM name: `discount_permission_settings_max_discount_amount`
   - Model field: Max Discount Amount / `max_discount_amount` / Currency
-  - Screenshot: pages/060-cp-discount-permission-settings-admin-edit-1-4014e007/images/field-003-max-discount-amount-optional.png
+  - Screenshot: pages/060-cp-discount-permission-settings-admin-edit-id-4014e007/images/field-003-max-discount-amount-optional.png
 
 ### Source References
 
@@ -6229,7 +6009,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - DOM name: `search`
   - Screenshot: pages/061-cp-email-log-admin-2dd4dfdd/images/field-001-keyword-search.png
 - 2. select (select)
-  - Screenshot: pages/061-cp-email-log-admin-2dd4dfdd/images/field-002-select.png
 
 ### Source References
 
@@ -6476,11 +6255,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Email Logs
 
-- URL: https://dev.soho-home.local/cp/email-log-admin/view/48430
+- URL: https://dev.soho-home.local/cp/email-log-admin/view/:id
 - Documentation route key: https://dev.soho-home.local|cp|email-log-admin|view|email-log-admin/view/:identifier
-- Draft doc: pages/062-cp-email-log-admin-view-48430-ed23cf72/README.md
+- Draft doc: pages/062-cp-email-log-admin-view-id-ed23cf72/README.md
 - Code analysis doc: .vscode/code-docs/cp-email-log-admin-view-view.md
-- Page screenshots: pages/062-cp-email-log-admin-view-48430-ed23cf72/images/page-desktop.png
+- Page screenshots: pages/062-cp-email-log-admin-view-id-ed23cf72/images/page-desktop.png
 - Field count: 0
 - Controller: Soho\Ecom\Mail\LogControllerAdmin (email-log-admin)
 - Controller file: vendor/soho/ecom/src/Mail/LogControllerAdmin.php
@@ -7529,7 +7308,7 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - Draft doc: pages/066-cp-failed-avarala-orders-admin-6b79e3af/README.md
 - Code analysis doc: .vscode/code-docs/cp-failed-avarala-orders-admin.md
 - Page screenshots: pages/066-cp-failed-avarala-orders-admin-6b79e3af/images/page-desktop.png
-- Field count: 2
+- Field count: 1
 - Controller: Soho\Accounting\Logger\FailedAvaralaOrdersAdminController (failed-avarala-orders-admin)
 - Controller file: vendor/soho/accounting/src/Logger/FailedAvaralaOrdersAdminController.php
 - Action method: indexAction (inherited or unresolved)
@@ -7542,8 +7321,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. select (select)
   - Screenshot: pages/066-cp-failed-avarala-orders-admin-6b79e3af/images/field-001-select.png
-- 2. select (select)
-  - Screenshot: pages/066-cp-failed-avarala-orders-admin-6b79e3af/images/field-002-select.png
 
 ### Source References
 
@@ -8056,99 +7833,68 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/075-cp-flipflop-admin-9b16c8a5/images/field-001-keyword-search.png
 - 2. inline[76][trial_enabled] (checkbox)
   - DOM name: `inline[76][trial_enabled]`
-  - Screenshot: pages/075-cp-flipflop-admin-9b16c8a5/images/field-002-inline-76-trial-enabled.png
 - 3. inline[75][trial_enabled] (checkbox)
   - DOM name: `inline[75][trial_enabled]`
-  - Screenshot: pages/075-cp-flipflop-admin-9b16c8a5/images/field-003-inline-75-trial-enabled.png
 - 4. inline[74][trial_enabled] (checkbox)
   - DOM name: `inline[74][trial_enabled]`
-  - Screenshot: pages/075-cp-flipflop-admin-9b16c8a5/images/field-004-inline-74-trial-enabled.png
 - 5. inline[73][trial_enabled] (checkbox)
   - DOM name: `inline[73][trial_enabled]`
-  - Screenshot: pages/075-cp-flipflop-admin-9b16c8a5/images/field-005-inline-73-trial-enabled.png
 - 6. inline[72][trial_enabled] (checkbox)
   - DOM name: `inline[72][trial_enabled]`
-  - Screenshot: pages/075-cp-flipflop-admin-9b16c8a5/images/field-006-inline-72-trial-enabled.png
 - 7. inline[71][trial_enabled] (checkbox)
   - DOM name: `inline[71][trial_enabled]`
-  - Screenshot: pages/075-cp-flipflop-admin-9b16c8a5/images/field-007-inline-71-trial-enabled.png
 - 8. inline[70][trial_enabled] (checkbox)
   - DOM name: `inline[70][trial_enabled]`
-  - Screenshot: pages/075-cp-flipflop-admin-9b16c8a5/images/field-008-inline-70-trial-enabled.png
 - 9. inline[69][trial_enabled] (checkbox)
   - DOM name: `inline[69][trial_enabled]`
-  - Screenshot: pages/075-cp-flipflop-admin-9b16c8a5/images/field-009-inline-69-trial-enabled.png
 - 10. inline[67][trial_enabled] (checkbox)
   - DOM name: `inline[67][trial_enabled]`
-  - Screenshot: pages/075-cp-flipflop-admin-9b16c8a5/images/field-010-inline-67-trial-enabled.png
 - 11. inline[68][trial_enabled] (checkbox)
   - DOM name: `inline[68][trial_enabled]`
-  - Screenshot: pages/075-cp-flipflop-admin-9b16c8a5/images/field-011-inline-68-trial-enabled.png
 - 12. inline[66][trial_enabled] (checkbox)
   - DOM name: `inline[66][trial_enabled]`
-  - Screenshot: pages/075-cp-flipflop-admin-9b16c8a5/images/field-012-inline-66-trial-enabled.png
 - 13. inline[65][trial_enabled] (checkbox)
   - DOM name: `inline[65][trial_enabled]`
-  - Screenshot: pages/075-cp-flipflop-admin-9b16c8a5/images/field-013-inline-65-trial-enabled.png
 - 14. inline[64][trial_enabled] (checkbox)
   - DOM name: `inline[64][trial_enabled]`
-  - Screenshot: pages/075-cp-flipflop-admin-9b16c8a5/images/field-014-inline-64-trial-enabled.png
 - 15. inline[63][trial_enabled] (checkbox)
   - DOM name: `inline[63][trial_enabled]`
-  - Screenshot: pages/075-cp-flipflop-admin-9b16c8a5/images/field-015-inline-63-trial-enabled.png
 - 16. inline[62][trial_enabled] (checkbox)
   - DOM name: `inline[62][trial_enabled]`
-  - Screenshot: pages/075-cp-flipflop-admin-9b16c8a5/images/field-016-inline-62-trial-enabled.png
 - 17. inline[61][trial_enabled] (checkbox)
   - DOM name: `inline[61][trial_enabled]`
-  - Screenshot: pages/075-cp-flipflop-admin-9b16c8a5/images/field-017-inline-61-trial-enabled.png
 - 18. inline[60][trial_enabled] (checkbox)
   - DOM name: `inline[60][trial_enabled]`
-  - Screenshot: pages/075-cp-flipflop-admin-9b16c8a5/images/field-018-inline-60-trial-enabled.png
 - 19. inline[59][trial_enabled] (checkbox)
   - DOM name: `inline[59][trial_enabled]`
-  - Screenshot: pages/075-cp-flipflop-admin-9b16c8a5/images/field-019-inline-59-trial-enabled.png
 - 20. inline[58][trial_enabled] (checkbox)
   - DOM name: `inline[58][trial_enabled]`
-  - Screenshot: pages/075-cp-flipflop-admin-9b16c8a5/images/field-020-inline-58-trial-enabled.png
 - 21. inline[56][trial_enabled] (checkbox)
   - DOM name: `inline[56][trial_enabled]`
-  - Screenshot: pages/075-cp-flipflop-admin-9b16c8a5/images/field-021-inline-56-trial-enabled.png
 - 22. inline[55][trial_enabled] (checkbox)
   - DOM name: `inline[55][trial_enabled]`
-  - Screenshot: pages/075-cp-flipflop-admin-9b16c8a5/images/field-022-inline-55-trial-enabled.png
 - 23. inline[54][trial_enabled] (checkbox)
   - DOM name: `inline[54][trial_enabled]`
-  - Screenshot: pages/075-cp-flipflop-admin-9b16c8a5/images/field-023-inline-54-trial-enabled.png
 - 24. inline[53][trial_enabled] (checkbox)
   - DOM name: `inline[53][trial_enabled]`
-  - Screenshot: pages/075-cp-flipflop-admin-9b16c8a5/images/field-024-inline-53-trial-enabled.png
 - 25. inline[51][trial_enabled] (checkbox)
   - DOM name: `inline[51][trial_enabled]`
-  - Screenshot: pages/075-cp-flipflop-admin-9b16c8a5/images/field-025-inline-51-trial-enabled.png
 - 26. inline[52][trial_enabled] (checkbox)
   - DOM name: `inline[52][trial_enabled]`
-  - Screenshot: pages/075-cp-flipflop-admin-9b16c8a5/images/field-026-inline-52-trial-enabled.png
 - 27. inline[50][trial_enabled] (checkbox)
   - DOM name: `inline[50][trial_enabled]`
-  - Screenshot: pages/075-cp-flipflop-admin-9b16c8a5/images/field-027-inline-50-trial-enabled.png
 - 28. inline[49][trial_enabled] (checkbox)
   - DOM name: `inline[49][trial_enabled]`
-  - Screenshot: pages/075-cp-flipflop-admin-9b16c8a5/images/field-028-inline-49-trial-enabled.png
 - 29. inline[48][trial_enabled] (checkbox)
   - DOM name: `inline[48][trial_enabled]`
-  - Screenshot: pages/075-cp-flipflop-admin-9b16c8a5/images/field-029-inline-48-trial-enabled.png
 - 30. inline[47][trial_enabled] (checkbox)
   - DOM name: `inline[47][trial_enabled]`
-  - Screenshot: pages/075-cp-flipflop-admin-9b16c8a5/images/field-030-inline-47-trial-enabled.png
 - 31. inline[46][trial_enabled] (checkbox)
   - DOM name: `inline[46][trial_enabled]`
-  - Screenshot: pages/075-cp-flipflop-admin-9b16c8a5/images/field-031-inline-46-trial-enabled.png
 - 32. select (select)
   - Screenshot: pages/075-cp-flipflop-admin-9b16c8a5/images/field-032-select.png
 - 33. inline_action (submit)
   - DOM name: `inline_action`
-  - Screenshot: pages/075-cp-flipflop-admin-9b16c8a5/images/field-033-inline-action.png
 
 ### Source References
 
@@ -8205,11 +7951,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Feature Flips
 
-- URL: https://dev.soho-home.local/cp/flipflop-admin/edit/76
+- URL: https://dev.soho-home.local/cp/flipflop-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|flipflop-admin|edit|flipflop-admin/edit/:identifier
-- Draft doc: pages/076-cp-flipflop-admin-edit-76-0d5ea9f5/README.md
+- Draft doc: pages/076-cp-flipflop-admin-edit-id-0d5ea9f5/README.md
 - Code analysis doc: .vscode/code-docs/cp-flipflop-admin-edit-existing.md
-- Page screenshots: pages/076-cp-flipflop-admin-edit-76-0d5ea9f5/images/page-desktop.png
+- Page screenshots: pages/076-cp-flipflop-admin-edit-id-0d5ea9f5/images/page-desktop.png
 - Field count: 6
 - Controller: App\Flipflop\Controller\AdminController (flipflop-admin)
 - Controller file: src/Flipflop/Controller/AdminController.php
@@ -8223,22 +7969,20 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. Description optional (text)
   - DOM name: `trial_description`
-  - Screenshot: pages/076-cp-flipflop-admin-edit-76-0d5ea9f5/images/field-001-description-optional.png
+  - Screenshot: pages/076-cp-flipflop-admin-edit-id-0d5ea9f5/images/field-001-description-optional.png
 - 2. Enabled (checkbox)
   - DOM name: `trial_enabled`
-  - Screenshot: pages/076-cp-flipflop-admin-edit-76-0d5ea9f5/images/field-002-enabled.png
 - 3. Allow override (checkbox)
   - DOM name: `trial_allow_override`
-  - Screenshot: pages/076-cp-flipflop-admin-edit-76-0d5ea9f5/images/field-003-allow-override.png
 - 4. Participation (range)
   - DOM name: `trial_participation`
-  - Screenshot: pages/076-cp-flipflop-admin-edit-76-0d5ea9f5/images/field-004-participation.png
+  - Screenshot: pages/076-cp-flipflop-admin-edit-id-0d5ea9f5/images/field-004-participation.png
 - 5. Weight (range)
   - DOM name: `trial_weight`
-  - Screenshot: pages/076-cp-flipflop-admin-edit-76-0d5ea9f5/images/field-005-weight.png
+  - Screenshot: pages/076-cp-flipflop-admin-edit-id-0d5ea9f5/images/field-005-weight.png
 - 6. Experiment ID optional (text)
   - DOM name: `trial_ga_id`
-  - Screenshot: pages/076-cp-flipflop-admin-edit-76-0d5ea9f5/images/field-006-experiment-id-optional.png
+  - Screenshot: pages/076-cp-flipflop-admin-edit-id-0d5ea9f5/images/field-006-experiment-id-optional.png
 
 ### Source References
 
@@ -8313,79 +8057,54 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. inline[1][cta_uk] (checkbox)
   - DOM name: `inline[1][cta_uk]`
-  - Screenshot: pages/077-cp-footer-ctas-admin-139ebcf0/images/field-001-inline-1-cta-uk.png
 - 2. inline[1][cta_eu] (checkbox)
   - DOM name: `inline[1][cta_eu]`
-  - Screenshot: pages/077-cp-footer-ctas-admin-139ebcf0/images/field-002-inline-1-cta-eu.png
 - 3. inline[1][cta_us] (checkbox)
   - DOM name: `inline[1][cta_us]`
-  - Screenshot: pages/077-cp-footer-ctas-admin-139ebcf0/images/field-003-inline-1-cta-us.png
 - 4. inline[2][cta_uk] (checkbox)
   - DOM name: `inline[2][cta_uk]`
-  - Screenshot: pages/077-cp-footer-ctas-admin-139ebcf0/images/field-004-inline-2-cta-uk.png
 - 5. inline[2][cta_eu] (checkbox)
   - DOM name: `inline[2][cta_eu]`
-  - Screenshot: pages/077-cp-footer-ctas-admin-139ebcf0/images/field-005-inline-2-cta-eu.png
 - 6. inline[2][cta_us] (checkbox)
   - DOM name: `inline[2][cta_us]`
-  - Screenshot: pages/077-cp-footer-ctas-admin-139ebcf0/images/field-006-inline-2-cta-us.png
 - 7. inline[7][cta_uk] (checkbox)
   - DOM name: `inline[7][cta_uk]`
-  - Screenshot: pages/077-cp-footer-ctas-admin-139ebcf0/images/field-007-inline-7-cta-uk.png
 - 8. inline[7][cta_eu] (checkbox)
   - DOM name: `inline[7][cta_eu]`
-  - Screenshot: pages/077-cp-footer-ctas-admin-139ebcf0/images/field-008-inline-7-cta-eu.png
 - 9. inline[7][cta_us] (checkbox)
   - DOM name: `inline[7][cta_us]`
-  - Screenshot: pages/077-cp-footer-ctas-admin-139ebcf0/images/field-009-inline-7-cta-us.png
 - 10. inline[6][cta_uk] (checkbox)
   - DOM name: `inline[6][cta_uk]`
-  - Screenshot: pages/077-cp-footer-ctas-admin-139ebcf0/images/field-010-inline-6-cta-uk.png
 - 11. inline[6][cta_eu] (checkbox)
   - DOM name: `inline[6][cta_eu]`
-  - Screenshot: pages/077-cp-footer-ctas-admin-139ebcf0/images/field-011-inline-6-cta-eu.png
 - 12. inline[6][cta_us] (checkbox)
   - DOM name: `inline[6][cta_us]`
-  - Screenshot: pages/077-cp-footer-ctas-admin-139ebcf0/images/field-012-inline-6-cta-us.png
 - 13. inline[8][cta_uk] (checkbox)
   - DOM name: `inline[8][cta_uk]`
-  - Screenshot: pages/077-cp-footer-ctas-admin-139ebcf0/images/field-013-inline-8-cta-uk.png
 - 14. inline[8][cta_eu] (checkbox)
   - DOM name: `inline[8][cta_eu]`
-  - Screenshot: pages/077-cp-footer-ctas-admin-139ebcf0/images/field-014-inline-8-cta-eu.png
 - 15. inline[8][cta_us] (checkbox)
   - DOM name: `inline[8][cta_us]`
-  - Screenshot: pages/077-cp-footer-ctas-admin-139ebcf0/images/field-015-inline-8-cta-us.png
 - 16. inline[3][cta_uk] (checkbox)
   - DOM name: `inline[3][cta_uk]`
-  - Screenshot: pages/077-cp-footer-ctas-admin-139ebcf0/images/field-016-inline-3-cta-uk.png
 - 17. inline[3][cta_eu] (checkbox)
   - DOM name: `inline[3][cta_eu]`
-  - Screenshot: pages/077-cp-footer-ctas-admin-139ebcf0/images/field-017-inline-3-cta-eu.png
 - 18. inline[3][cta_us] (checkbox)
   - DOM name: `inline[3][cta_us]`
-  - Screenshot: pages/077-cp-footer-ctas-admin-139ebcf0/images/field-018-inline-3-cta-us.png
 - 19. inline[5][cta_uk] (checkbox)
   - DOM name: `inline[5][cta_uk]`
-  - Screenshot: pages/077-cp-footer-ctas-admin-139ebcf0/images/field-019-inline-5-cta-uk.png
 - 20. inline[5][cta_eu] (checkbox)
   - DOM name: `inline[5][cta_eu]`
-  - Screenshot: pages/077-cp-footer-ctas-admin-139ebcf0/images/field-020-inline-5-cta-eu.png
 - 21. inline[5][cta_us] (checkbox)
   - DOM name: `inline[5][cta_us]`
-  - Screenshot: pages/077-cp-footer-ctas-admin-139ebcf0/images/field-021-inline-5-cta-us.png
 - 22. inline[4][cta_uk] (checkbox)
   - DOM name: `inline[4][cta_uk]`
-  - Screenshot: pages/077-cp-footer-ctas-admin-139ebcf0/images/field-022-inline-4-cta-uk.png
 - 23. inline[4][cta_eu] (checkbox)
   - DOM name: `inline[4][cta_eu]`
-  - Screenshot: pages/077-cp-footer-ctas-admin-139ebcf0/images/field-023-inline-4-cta-eu.png
 - 24. inline[4][cta_us] (checkbox)
   - DOM name: `inline[4][cta_us]`
-  - Screenshot: pages/077-cp-footer-ctas-admin-139ebcf0/images/field-024-inline-4-cta-us.png
 - 25. inline_action (submit)
   - DOM name: `inline_action`
-  - Screenshot: pages/077-cp-footer-ctas-admin-139ebcf0/images/field-025-inline-action.png
 
 ### Source References
 
@@ -8401,11 +8120,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Footer CTAs
 
-- URL: https://dev.soho-home.local/cp/footer-ctas-admin/edit/1
+- URL: https://dev.soho-home.local/cp/footer-ctas-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|footer-ctas-admin|edit|footer-ctas-admin/edit/:identifier
-- Draft doc: pages/078-cp-footer-ctas-admin-edit-1-08610242/README.md
+- Draft doc: pages/078-cp-footer-ctas-admin-edit-id-08610242/README.md
 - Code analysis doc: .vscode/code-docs/cp-footer-ctas-admin-edit-existing.md
-- Page screenshots: pages/078-cp-footer-ctas-admin-edit-1-08610242/images/page-desktop.png
+- Page screenshots: pages/078-cp-footer-ctas-admin-edit-id-08610242/images/page-desktop.png
 - Field count: 15
 - Controller: App\Frame\FooterCtasAdminController (footer-ctas-admin)
 - Controller file: src/Frame/FooterCtasAdminController.php
@@ -8419,58 +8138,47 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. UK (checkbox)
   - DOM name: `cta_uk`
-  - Screenshot: pages/078-cp-footer-ctas-admin-edit-1-08610242/images/field-001-uk.png
 - 2. EU (checkbox)
   - DOM name: `cta_eu`
-  - Screenshot: pages/078-cp-footer-ctas-admin-edit-1-08610242/images/field-002-eu.png
 - 3. US (checkbox)
   - DOM name: `cta_us`
-  - Screenshot: pages/078-cp-footer-ctas-admin-edit-1-08610242/images/field-003-us.png
 - 4. Title (text)
   - DOM name: `cta_title`
   - Model field: Title / `title` / Text
-  - Screenshot: pages/078-cp-footer-ctas-admin-edit-1-08610242/images/field-004-title.png
+  - Screenshot: pages/078-cp-footer-ctas-admin-edit-id-08610242/images/field-004-title.png
 - 5. unidentified (checkbox)
   - DOM name: `cta_persona[]`
   - Model field: Persona / `persona` / SelectMultipleCallback
-  - Screenshot: pages/078-cp-footer-ctas-admin-edit-1-08610242/images/field-005-unidentified.png
 - 6. non-member (checkbox)
   - DOM name: `cta_persona[]`
   - Model field: Persona / `persona` / SelectMultipleCallback
-  - Screenshot: pages/078-cp-footer-ctas-admin-edit-1-08610242/images/field-006-non-member.png
 - 7. friends (checkbox)
   - DOM name: `cta_persona[]`
   - Model field: Persona / `persona` / SelectMultipleCallback
-  - Screenshot: pages/078-cp-footer-ctas-admin-edit-1-08610242/images/field-007-friends.png
 - 8. member (checkbox)
   - DOM name: `cta_persona[]`
   - Model field: Persona / `persona` / SelectMultipleCallback
-  - Screenshot: pages/078-cp-footer-ctas-admin-edit-1-08610242/images/field-008-member.png
 - 9. staff (checkbox)
   - DOM name: `cta_persona[]`
   - Model field: Persona / `persona` / SelectMultipleCallback
-  - Screenshot: pages/078-cp-footer-ctas-admin-edit-1-08610242/images/field-009-staff.png
 - 10. trade (checkbox)
   - DOM name: `cta_persona[]`
   - Model field: Persona / `persona` / SelectMultipleCallback
-  - Screenshot: pages/078-cp-footer-ctas-admin-edit-1-08610242/images/field-010-trade.png
 - 11. Copy (textarea)
   - DOM name: `cta_copy`
   - Model field: Copy / `copy` / TextArea
-  - Screenshot: pages/078-cp-footer-ctas-admin-edit-1-08610242/images/field-011-copy.png
+  - Screenshot: pages/078-cp-footer-ctas-admin-edit-id-08610242/images/field-011-copy.png
 - 12. Link (text)
   - DOM name: `cta_cta[link]`
-  - Screenshot: pages/078-cp-footer-ctas-admin-edit-1-08610242/images/field-012-link.png
+  - Screenshot: pages/078-cp-footer-ctas-admin-edit-id-08610242/images/field-012-link.png
 - 13. Label (text)
   - DOM name: `cta_cta[label]`
-  - Screenshot: pages/078-cp-footer-ctas-admin-edit-1-08610242/images/field-013-label.png
+  - Screenshot: pages/078-cp-footer-ctas-admin-edit-id-08610242/images/field-013-label.png
 - 14. Open in new tab (checkbox)
   - DOM name: `cta_cta[target]`
-  - Screenshot: pages/078-cp-footer-ctas-admin-edit-1-08610242/images/field-014-open-in-new-tab.png
 - 15. Is Sourcebook? (checkbox)
   - DOM name: `cta_is_sourcebook`
   - Model field: Is Sourcebook? / `is_sourcebook` / Checkbox
-  - Screenshot: pages/078-cp-footer-ctas-admin-edit-1-08610242/images/field-015-is-sourcebook.png
 
 ### Source References
 
@@ -8490,7 +8198,7 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - Documentation route key: https://dev.soho-home.local|cp|gift-cards|index|gift-cards
 - Draft doc: pages/079-cp-gift-cards-8e566960/README.md
 - Page screenshots: pages/079-cp-gift-cards-8e566960/images/page-desktop.png
-- Field count: 2
+- Field count: 1
 - Controller: unresolved
 
 ### DOM Fields
@@ -8498,15 +8206,13 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 1. Keyword search (text)
   - DOM name: `search`
   - Screenshot: pages/079-cp-gift-cards-8e566960/images/field-001-keyword-search.png
-- 2. select (select)
-  - Screenshot: pages/079-cp-gift-cards-8e566960/images/field-002-select.png
 
 ## Gift Cards
 
-- URL: https://dev.soho-home.local/cp/gift-cards/edit/98785
+- URL: https://dev.soho-home.local/cp/gift-cards/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|gift-cards|edit|gift-cards/edit/:identifier
-- Draft doc: pages/080-cp-gift-cards-edit-98785-6e9644b1/README.md
-- Page screenshots: pages/080-cp-gift-cards-edit-98785-6e9644b1/images/page-desktop.png
+- Draft doc: pages/080-cp-gift-cards-edit-id-6e9644b1/README.md
+- Page screenshots: pages/080-cp-gift-cards-edit-id-6e9644b1/images/page-desktop.png
 - Field count: 1
 - Controller: unresolved
 
@@ -8514,7 +8220,7 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. Expires optional (date)
   - DOM name: `voucher_expires`
-  - Screenshot: pages/080-cp-gift-cards-edit-98785-6e9644b1/images/field-001-expires-optional.png
+  - Screenshot: pages/080-cp-gift-cards-edit-id-6e9644b1/images/field-001-expires-optional.png
 
 ## Gifting Settings
 
@@ -8920,11 +8626,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Here To Help Callouts
 
-- URL: https://dev.soho-home.local/cp/here-to-help-callouts-admin/edit/1
+- URL: https://dev.soho-home.local/cp/here-to-help-callouts-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|here-to-help-callouts-admin|edit|here-to-help-callouts-admin/edit/:identifier
-- Draft doc: pages/084-cp-here-to-help-callouts-admin-edit-1-5a4a8dd2/README.md
+- Draft doc: pages/084-cp-here-to-help-callouts-admin-edit-id-5a4a8dd2/README.md
 - Code analysis doc: .vscode/code-docs/cp-here-to-help-callouts-admin-edit-existing.md
-- Page screenshots: pages/084-cp-here-to-help-callouts-admin-edit-1-5a4a8dd2/images/page-desktop.png
+- Page screenshots: pages/084-cp-here-to-help-callouts-admin-edit-id-5a4a8dd2/images/page-desktop.png
 - Field count: 3
 - Controller: App\Editor\HereToHelpCalloutsControllerAdmin (here-to-help-callouts-admin)
 - Controller file: src/Editor/HereToHelpCalloutsControllerAdmin.php
@@ -8939,15 +8645,15 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 1. Title (text)
   - DOM name: `callout_title`
   - Model field: Title / `title` / Text
-  - Screenshot: pages/084-cp-here-to-help-callouts-admin-edit-1-5a4a8dd2/images/field-001-title.png
+  - Screenshot: pages/084-cp-here-to-help-callouts-admin-edit-id-5a4a8dd2/images/field-001-title.png
 - 2. Status (select)
   - DOM name: `callout_status`
   - Model field: Status / `` / Select
-  - Screenshot: pages/084-cp-here-to-help-callouts-admin-edit-1-5a4a8dd2/images/field-002-status.png
+  - Screenshot: pages/084-cp-here-to-help-callouts-admin-edit-id-5a4a8dd2/images/field-002-status.png
 - 3. Link (text)
   - DOM name: `callout_url`
   - Model field: Link / `url` / SiteLink
-  - Screenshot: pages/084-cp-here-to-help-callouts-admin-edit-1-5a4a8dd2/images/field-003-link.png
+  - Screenshot: pages/084-cp-here-to-help-callouts-admin-edit-id-5a4a8dd2/images/field-003-link.png
 
 ### Source References
 
@@ -9000,55 +8706,38 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. inline[69][hero_uk] (checkbox)
   - DOM name: `inline[69][hero_uk]`
-  - Screenshot: pages/085-cp-homepage-v2-6ffaa244/images/field-001-inline-69-hero-uk.png
 - 2. inline[69][hero_eu] (checkbox)
   - DOM name: `inline[69][hero_eu]`
-  - Screenshot: pages/085-cp-homepage-v2-6ffaa244/images/field-002-inline-69-hero-eu.png
 - 3. inline[69][hero_us] (checkbox)
   - DOM name: `inline[69][hero_us]`
-  - Screenshot: pages/085-cp-homepage-v2-6ffaa244/images/field-003-inline-69-hero-us.png
 - 4. inline[69][hero_status] (select)
   - DOM name: `inline[69][hero_status]`
-  - Screenshot: pages/085-cp-homepage-v2-6ffaa244/images/field-004-inline-69-hero-status.png
 - 5. inline[57][hero_uk] (checkbox)
   - DOM name: `inline[57][hero_uk]`
-  - Screenshot: pages/085-cp-homepage-v2-6ffaa244/images/field-005-inline-57-hero-uk.png
 - 6. inline[57][hero_eu] (checkbox)
   - DOM name: `inline[57][hero_eu]`
-  - Screenshot: pages/085-cp-homepage-v2-6ffaa244/images/field-006-inline-57-hero-eu.png
 - 7. inline[57][hero_us] (checkbox)
   - DOM name: `inline[57][hero_us]`
-  - Screenshot: pages/085-cp-homepage-v2-6ffaa244/images/field-007-inline-57-hero-us.png
 - 8. inline[57][hero_status] (select)
   - DOM name: `inline[57][hero_status]`
-  - Screenshot: pages/085-cp-homepage-v2-6ffaa244/images/field-008-inline-57-hero-status.png
 - 9. inline[63][hero_uk] (checkbox)
   - DOM name: `inline[63][hero_uk]`
-  - Screenshot: pages/085-cp-homepage-v2-6ffaa244/images/field-009-inline-63-hero-uk.png
 - 10. inline[63][hero_eu] (checkbox)
   - DOM name: `inline[63][hero_eu]`
-  - Screenshot: pages/085-cp-homepage-v2-6ffaa244/images/field-010-inline-63-hero-eu.png
 - 11. inline[63][hero_us] (checkbox)
   - DOM name: `inline[63][hero_us]`
-  - Screenshot: pages/085-cp-homepage-v2-6ffaa244/images/field-011-inline-63-hero-us.png
 - 12. inline[63][hero_status] (select)
   - DOM name: `inline[63][hero_status]`
-  - Screenshot: pages/085-cp-homepage-v2-6ffaa244/images/field-012-inline-63-hero-status.png
 - 13. inline[66][hero_uk] (checkbox)
   - DOM name: `inline[66][hero_uk]`
-  - Screenshot: pages/085-cp-homepage-v2-6ffaa244/images/field-013-inline-66-hero-uk.png
 - 14. inline[66][hero_eu] (checkbox)
   - DOM name: `inline[66][hero_eu]`
-  - Screenshot: pages/085-cp-homepage-v2-6ffaa244/images/field-014-inline-66-hero-eu.png
 - 15. inline[66][hero_us] (checkbox)
   - DOM name: `inline[66][hero_us]`
-  - Screenshot: pages/085-cp-homepage-v2-6ffaa244/images/field-015-inline-66-hero-us.png
 - 16. inline[66][hero_status] (select)
   - DOM name: `inline[66][hero_status]`
-  - Screenshot: pages/085-cp-homepage-v2-6ffaa244/images/field-016-inline-66-hero-status.png
 - 17. hero_inline_action (submit)
   - DOM name: `hero_inline_action`
-  - Screenshot: pages/085-cp-homepage-v2-6ffaa244/images/field-017-hero-inline-action.png
 
 ### Source References
 
@@ -9112,11 +8801,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Impressions
 
-- URL: https://dev.soho-home.local/cp/impressions-admin/view/15957216
+- URL: https://dev.soho-home.local/cp/impressions-admin/view/:id
 - Documentation route key: https://dev.soho-home.local|cp|impressions-admin|view|impressions-admin/view/:identifier
-- Draft doc: pages/088-cp-impressions-admin-view-15957216-4c414603/README.md
+- Draft doc: pages/088-cp-impressions-admin-view-id-4c414603/README.md
 - Code analysis doc: .vscode/code-docs/cp-impressions-admin-view-view.md
-- Page screenshots: pages/088-cp-impressions-admin-view-15957216-4c414603/images/page-desktop.png
+- Page screenshots: pages/088-cp-impressions-admin-view-id-4c414603/images/page-desktop.png
 - Field count: 0
 - Controller: D3R\Impressions\ControllerAdmin (impressions-admin)
 - Controller file: vendor/d3r/impressions/src/ControllerAdmin.php
@@ -9442,7 +9131,7 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - Draft doc: pages/090-cp-line-item-admin-d675b4fa/README.md
 - Code analysis doc: .vscode/code-docs/cp-line-item-admin.md
 - Page screenshots: pages/090-cp-line-item-admin-d675b4fa/images/page-desktop.png
-- Field count: 2
+- Field count: 1
 - Controller: Soho\Ecom\Controller\LineItemAdmin (line-item-admin)
 - Controller file: vendor/soho/ecom/src/Controller/LineItemAdmin.php
 - Action method: indexAction (inherited or unresolved)
@@ -9455,8 +9144,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. select (select)
   - Screenshot: pages/090-cp-line-item-admin-d675b4fa/images/field-001-select.png
-- 2. select (select)
-  - Screenshot: pages/090-cp-line-item-admin-d675b4fa/images/field-002-select.png
 
 ### Source References
 
@@ -9700,11 +9387,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Line Items
 
-- URL: https://dev.soho-home.local/cp/line-item-admin/edit/12552502
+- URL: https://dev.soho-home.local/cp/line-item-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|line-item-admin|edit|line-item-admin/edit/:identifier
-- Draft doc: pages/091-cp-line-item-admin-edit-12552502-cd33cb65/README.md
+- Draft doc: pages/091-cp-line-item-admin-edit-id-cd33cb65/README.md
 - Code analysis doc: .vscode/code-docs/cp-line-item-admin-edit-existing.md
-- Page screenshots: pages/091-cp-line-item-admin-edit-12552502-cd33cb65/images/page-desktop.png
+- Page screenshots: pages/091-cp-line-item-admin-edit-id-cd33cb65/images/page-desktop.png
 - Field count: 0
 - Controller: Soho\Ecom\Controller\LineItemAdmin (line-item-admin)
 - Controller file: vendor/soho/ecom/src/Controller/LineItemAdmin.php
@@ -10058,13 +9745,10 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/092-cp-links-admin-029534c6/images/field-028-inline-9-link-url.png
 - 29. inline[10][link_name] (text)
   - DOM name: `inline[10][link_name]`
-  - Screenshot: pages/092-cp-links-admin-029534c6/images/field-029-inline-10-link-name.png
 - 30. inline[10][link_urlname] (text)
   - DOM name: `inline[10][link_urlname]`
-  - Screenshot: pages/092-cp-links-admin-029534c6/images/field-030-inline-10-link-urlname.png
 - 31. inline[10][link_url] (text)
   - DOM name: `inline[10][link_url]`
-  - Screenshot: pages/092-cp-links-admin-029534c6/images/field-031-inline-10-link-url.png
 - 32. inline[11][link_name] (text)
   - DOM name: `inline[11][link_name]`
   - Screenshot: pages/092-cp-links-admin-029534c6/images/field-032-inline-11-link-name.png
@@ -10087,7 +9771,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/092-cp-links-admin-029534c6/images/field-038-select.png
 - 39. inline_action (submit)
   - DOM name: `inline_action`
-  - Screenshot: pages/092-cp-links-admin-029534c6/images/field-039-inline-action.png
 
 ### Source References
 
@@ -10101,11 +9784,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Links
 
-- URL: https://dev.soho-home.local/cp/links-admin/edit/1
+- URL: https://dev.soho-home.local/cp/links-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|links-admin|edit|links-admin/edit/:identifier
-- Draft doc: pages/093-cp-links-admin-edit-1-6368353b/README.md
+- Draft doc: pages/093-cp-links-admin-edit-id-6368353b/README.md
 - Code analysis doc: .vscode/code-docs/cp-links-admin-edit-existing.md
-- Page screenshots: pages/093-cp-links-admin-edit-1-6368353b/images/page-desktop.png
+- Page screenshots: pages/093-cp-links-admin-edit-id-6368353b/images/page-desktop.png
 - Field count: 3
 - Controller: App\Links\AdminController (links-admin)
 - Controller file: src/Links/AdminController.php
@@ -10120,15 +9803,15 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 1. Name (text)
   - DOM name: `link_name`
   - Model field: Name / `` / Text
-  - Screenshot: pages/093-cp-links-admin-edit-1-6368353b/images/field-001-name.png
+  - Screenshot: pages/093-cp-links-admin-edit-id-6368353b/images/field-001-name.png
 - 2. From optional (text)
   - DOM name: `link_urlname`
   - Model field: From / `urlname` / UrlName
-  - Screenshot: pages/093-cp-links-admin-edit-1-6368353b/images/field-002-from-optional.png
+  - Screenshot: pages/093-cp-links-admin-edit-id-6368353b/images/field-002-from-optional.png
 - 3. Url (text)
   - DOM name: `link_url`
   - Model field: Url / `url` / Text
-  - Screenshot: pages/093-cp-links-admin-edit-1-6368353b/images/field-003-url.png
+  - Screenshot: pages/093-cp-links-admin-edit-id-6368353b/images/field-003-url.png
 
 ### Source References
 
@@ -10226,11 +9909,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Listing callouts
 
-- URL: https://dev.soho-home.local/cp/listing-callouts-admin/edit/96
+- URL: https://dev.soho-home.local/cp/listing-callouts-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|listing-callouts-admin|edit|listing-callouts-admin/edit/:identifier
-- Draft doc: pages/095-cp-listing-callouts-admin-edit-96-f67ada6f/README.md
+- Draft doc: pages/095-cp-listing-callouts-admin-edit-id-f67ada6f/README.md
 - Code analysis doc: .vscode/code-docs/cp-listing-callouts-admin-edit-existing.md
-- Page screenshots: pages/095-cp-listing-callouts-admin-edit-96-f67ada6f/images/page-desktop.png
+- Page screenshots: pages/095-cp-listing-callouts-admin-edit-id-f67ada6f/images/page-desktop.png
 - Field count: 9
 - Controller: App\Products\ListingCalloutsControllerAdmin (listing-callouts-admin)
 - Controller file: src/Products/ListingCalloutsControllerAdmin.php
@@ -10244,38 +9927,35 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. Scheduled Start optional (datetime-local)
   - DOM name: `callout_scheduled_start`
-  - Screenshot: pages/095-cp-listing-callouts-admin-edit-96-f67ada6f/images/field-001-scheduled-start-optional.png
+  - Screenshot: pages/095-cp-listing-callouts-admin-edit-id-f67ada6f/images/field-001-scheduled-start-optional.png
 - 2. Scheduled End optional (datetime-local)
   - DOM name: `callout_scheduled_end`
-  - Screenshot: pages/095-cp-listing-callouts-admin-edit-96-f67ada6f/images/field-002-scheduled-end-optional.png
+  - Screenshot: pages/095-cp-listing-callouts-admin-edit-id-f67ada6f/images/field-002-scheduled-end-optional.png
 - 3. Title (text)
   - DOM name: `callout_title`
   - Model field: Title / `title` / Text
-  - Screenshot: pages/095-cp-listing-callouts-admin-edit-96-f67ada6f/images/field-003-title.png
+  - Screenshot: pages/095-cp-listing-callouts-admin-edit-id-f67ada6f/images/field-003-title.png
 - 4. Intro optional (textarea)
   - DOM name: `callout_intro`
   - Model field: Intro / `intro` / TextArea
-  - Screenshot: pages/095-cp-listing-callouts-admin-edit-96-f67ada6f/images/field-004-intro-optional.png
+  - Screenshot: pages/095-cp-listing-callouts-admin-edit-id-f67ada6f/images/field-004-intro-optional.png
 - 5. UK (checkbox)
   - DOM name: `callout_uk`
   - Model field: UK / `uk` / Checkbox
-  - Screenshot: pages/095-cp-listing-callouts-admin-edit-96-f67ada6f/images/field-005-uk.png
 - 6. EU (checkbox)
   - DOM name: `callout_eu`
   - Model field: EU / `eu` / Checkbox
-  - Screenshot: pages/095-cp-listing-callouts-admin-edit-96-f67ada6f/images/field-006-eu.png
 - 7. US (checkbox)
   - DOM name: `callout_us`
   - Model field: US / `us` / Checkbox
-  - Screenshot: pages/095-cp-listing-callouts-admin-edit-96-f67ada6f/images/field-007-us.png
 - 8. Status (select)
   - DOM name: `callout_status`
   - Model field: Status / `` / Select
-  - Screenshot: pages/095-cp-listing-callouts-admin-edit-96-f67ada6f/images/field-008-status.png
+  - Screenshot: pages/095-cp-listing-callouts-admin-edit-id-f67ada6f/images/field-008-status.png
 - 9. Link optional (text)
   - DOM name: `callout_url`
   - Model field: Link / `url` / SiteLink
-  - Screenshot: pages/095-cp-listing-callouts-admin-edit-96-f67ada6f/images/field-009-link-optional.png
+  - Screenshot: pages/095-cp-listing-callouts-admin-edit-id-f67ada6f/images/field-009-link-optional.png
 
 ### Source References
 
@@ -10605,12 +10285,12 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Member Market Product Skus
 
-- URL: https://dev.soho-home.local/cp/member-market-products-admin/edit/1
+- URL: https://dev.soho-home.local/cp/member-market-products-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|member-market-products-admin|edit|member-market-products-admin/edit/:identifier
-- Draft doc: pages/097-cp-member-market-products-admin-edit-1-4232c8a4/README.md
+- Draft doc: pages/097-cp-member-market-products-admin-edit-id-4232c8a4/README.md
 - Code analysis doc: .vscode/code-docs/cp-member-market-products-admin-edit-existing.md
-- Page screenshots: pages/097-cp-member-market-products-admin-edit-1-4232c8a4/images/page-desktop.png
-- Field count: 4
+- Page screenshots: pages/097-cp-member-market-products-admin-edit-id-4232c8a4/images/page-desktop.png
+- Field count: 3
 - Controller: Soho\Ecom\Controller\MemberMarketProductsControllerAdmin (member-market-products-admin)
 - Controller file: vendor/soho/ecom/src/Controller/MemberMarketProductsControllerAdmin.php
 - Action method: editAction (inherited or unresolved)
@@ -10624,17 +10304,15 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 1. SKU (text)
   - DOM name: `member_market_product_sku`
   - Model field: SKU / `sku` / Text
-  - Screenshot: pages/097-cp-member-market-products-admin-edit-1-4232c8a4/images/field-001-sku.png
+  - Screenshot: pages/097-cp-member-market-products-admin-edit-id-4232c8a4/images/field-001-sku.png
 - 2. Status (select)
   - DOM name: `member_market_product_status`
   - Model field: Status / `status` / Select
-  - Screenshot: pages/097-cp-member-market-products-admin-edit-1-4232c8a4/images/field-002-status.png
+  - Screenshot: pages/097-cp-member-market-products-admin-edit-id-4232c8a4/images/field-002-status.png
 - 3. Commission % (number)
   - DOM name: `member_market_product_commission_percentage`
   - Model field: Commission % / `commission_percentage` / Int
-  - Screenshot: pages/097-cp-member-market-products-admin-edit-1-4232c8a4/images/field-003-commission.png
-- 4. input (text)
-  - Screenshot: pages/097-cp-member-market-products-admin-edit-1-4232c8a4/images/field-004-input.png
+  - Screenshot: pages/097-cp-member-market-products-admin-edit-id-4232c8a4/images/field-003-commission.png
 
 ### Source References
 
@@ -10899,103 +10577,55 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 1. Terms - No Auto-renew (textarea)
   - DOM name: `settings_terms`
   - Model field: Terms - No Auto-renew / `terms` / RichText
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-001-terms-no-auto-renew.png
 - 2. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-002-h4.png
 - 3. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-003-h4.png
 - 4. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-004-h4.png
 - 5. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-005-h4.png
 - 6. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-006-h4.png
 - 7. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-007-h4.png
 - 8. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-008-h4.png
 - 9. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-009-h4.png
 - 10. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-010-h4.png
 - 11. h3 (h3)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-011-h3.png
 - 12. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-012-h4.png
 - 13. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-013-h4.png
 - 14. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-014-h4.png
 - 15. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-015-h4.png
 - 16. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-016-h4.png
 - 17. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-017-h4.png
 - 18. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-018-h4.png
 - 19. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-019-h4.png
 - 20. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-020-h4.png
 - 21. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-021-h4.png
 - 22. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-022-h4.png
 - 23. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-023-h4.png
 - 24. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-024-h4.png
 - 25. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-025-h4.png
 - 26. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-026-h4.png
 - 27. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-027-h4.png
 - 28. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-028-h4.png
 - 29. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-029-h4.png
 - 30. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-030-h4.png
 - 31. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-031-h4.png
 - 32. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-032-h4.png
 - 33. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-033-h4.png
 - 34. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-034-h4.png
 - 35. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-035-h4.png
 - 36. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-036-h4.png
 - 37. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-037-h4.png
 - 38. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-038-h4.png
 - 39. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-039-h4.png
 - 40. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-040-h4.png
 - 41. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-041-h4.png
 - 42. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-042-h4.png
 - 43. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-043-h4.png
 - 44. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-044-h4.png
 - 45. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-045-h4.png
 - 46. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-046-h4.png
 - 47. h4 (h4)
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-047-h4.png
 - 48. Terms - Auto-renew (textarea)
   - DOM name: `settings_terms_auto_renew`
   - Model field: Terms - Auto-renew / `terms_auto_renew` / RichText
-  - Screenshot: pages/098-cp-membership-application-settings-admin-98f52da8/images/field-048-terms-auto-renew.png
 
 ### Source References
 
@@ -11013,7 +10643,7 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - Draft doc: pages/099-cp-membership-applications-272e919f/README.md
 - Code analysis doc: .vscode/code-docs/cp-membership-applications.md
 - Page screenshots: pages/099-cp-membership-applications-272e919f/images/page-desktop.png
-- Field count: 2
+- Field count: 1
 - Controller: Soho\Account\ApplicationsControllerAdmin (membership-applications)
 - Controller file: vendor/soho/accounts/src/ApplicationsControllerAdmin.php
 - Action method: indexAction (inherited or unresolved)
@@ -11027,8 +10657,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 1. Keyword search (text)
   - DOM name: `search`
   - Screenshot: pages/099-cp-membership-applications-272e919f/images/field-001-keyword-search.png
-- 2. select (select)
-  - Screenshot: pages/099-cp-membership-applications-272e919f/images/field-002-select.png
 
 ### Source References
 
@@ -11064,11 +10692,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Membership Applications
 
-- URL: https://dev.soho-home.local/cp/membership-applications/view/51831
+- URL: https://dev.soho-home.local/cp/membership-applications/view/:id
 - Documentation route key: https://dev.soho-home.local|cp|membership-applications|view|membership-applications/view/:identifier
-- Draft doc: pages/100-cp-membership-applications-view-51831-a37c6faf/README.md
+- Draft doc: pages/100-cp-membership-applications-view-id-a37c6faf/README.md
 - Code analysis doc: .vscode/code-docs/cp-membership-applications-view-view.md
-- Page screenshots: pages/100-cp-membership-applications-view-51831-a37c6faf/images/page-desktop.png
+- Page screenshots: pages/100-cp-membership-applications-view-id-a37c6faf/images/page-desktop.png
 - Field count: 6
 - Controller: Soho\Account\ApplicationsControllerAdmin (membership-applications)
 - Controller file: vendor/soho/accounts/src/ApplicationsControllerAdmin.php
@@ -11082,23 +10710,18 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. Use Address (checkbox)
   - Model field: Use Address / `use_delivery_address` / Checkbox
-  - Screenshot: pages/100-cp-membership-applications-view-51831-a37c6faf/images/field-001-use-address.png
 - 2. Date of birth optional (date)
   - DOM name: `application_dob`
   - Model field: Date of birth / `dob` / DateOfBirth
-  - Screenshot: pages/100-cp-membership-applications-view-51831-a37c6faf/images/field-002-date-of-birth-optional.png
+  - Screenshot: pages/100-cp-membership-applications-view-id-a37c6faf/images/field-002-date-of-birth-optional.png
 - 3. Terms (checkbox)
   - Model field: Terms / `terms` / Checkbox
-  - Screenshot: pages/100-cp-membership-applications-view-51831-a37c6faf/images/field-003-terms.png
 - 4. Is Renewal (checkbox)
   - Model field: Is Renewal / `renewal` / Checkbox
-  - Screenshot: pages/100-cp-membership-applications-view-51831-a37c6faf/images/field-004-is-renewal.png
 - 5. Is Gifted (checkbox)
   - Model field: Is Gifted / `gifted` / Checkbox
-  - Screenshot: pages/100-cp-membership-applications-view-51831-a37c6faf/images/field-005-is-gifted.png
 - 6. Automatically Renew Membership? (checkbox)
   - Model field: Automatically Renew Membership? / `auto_renew` / Checkbox
-  - Screenshot: pages/100-cp-membership-applications-view-51831-a37c6faf/images/field-006-automatically-renew-membership.png
 
 ### Source References
 
@@ -11671,14 +11294,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/103-cp-mto-settings-admin-1ecee96e/images/field-001-terms-header.png
 - 2. Terms Copy (textarea)
   - DOM name: `mto_setting_terms_body`
-  - Screenshot: pages/103-cp-mto-settings-admin-1ecee96e/images/field-002-terms-copy.png
 - 3. Terms Checkbox Copy (textarea)
   - DOM name: `mto_setting_terms_checkbox_copy`
-  - Screenshot: pages/103-cp-mto-settings-admin-1ecee96e/images/field-003-terms-checkbox-copy.png
 - 4. POS Terms Checkbox Copy (textarea)
   - DOM name: `mto_setting_pos_terms_checkbox_copy`
   - Model field: POS Terms Checkbox Copy / `pos_terms_checkbox_copy` / RichText
-  - Screenshot: pages/103-cp-mto-settings-admin-1ecee96e/images/field-004-pos-terms-checkbox-copy.png
 
 ### Source References
 
@@ -11947,117 +11567,80 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-001-keyword-search.png
 - 2. inline[2][nav_callout_uk] (checkbox)
   - DOM name: `inline[2][nav_callout_uk]`
-  - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-002-inline-2-nav-callout-uk.png
 - 3. inline[2][nav_callout_eu] (checkbox)
   - DOM name: `inline[2][nav_callout_eu]`
-  - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-003-inline-2-nav-callout-eu.png
 - 4. inline[2][nav_callout_us] (checkbox)
   - DOM name: `inline[2][nav_callout_us]`
-  - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-004-inline-2-nav-callout-us.png
 - 5. inline[3][nav_callout_uk] (checkbox)
   - DOM name: `inline[3][nav_callout_uk]`
-  - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-005-inline-3-nav-callout-uk.png
 - 6. inline[3][nav_callout_eu] (checkbox)
   - DOM name: `inline[3][nav_callout_eu]`
-  - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-006-inline-3-nav-callout-eu.png
 - 7. inline[3][nav_callout_us] (checkbox)
   - DOM name: `inline[3][nav_callout_us]`
-  - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-007-inline-3-nav-callout-us.png
 - 8. inline[5][nav_callout_uk] (checkbox)
   - DOM name: `inline[5][nav_callout_uk]`
-  - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-008-inline-5-nav-callout-uk.png
 - 9. inline[5][nav_callout_eu] (checkbox)
   - DOM name: `inline[5][nav_callout_eu]`
-  - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-009-inline-5-nav-callout-eu.png
 - 10. inline[5][nav_callout_us] (checkbox)
   - DOM name: `inline[5][nav_callout_us]`
-  - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-010-inline-5-nav-callout-us.png
 - 11. inline[6][nav_callout_uk] (checkbox)
   - DOM name: `inline[6][nav_callout_uk]`
-  - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-011-inline-6-nav-callout-uk.png
 - 12. inline[6][nav_callout_eu] (checkbox)
   - DOM name: `inline[6][nav_callout_eu]`
-  - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-012-inline-6-nav-callout-eu.png
 - 13. inline[6][nav_callout_us] (checkbox)
   - DOM name: `inline[6][nav_callout_us]`
-  - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-013-inline-6-nav-callout-us.png
 - 14. inline[7][nav_callout_uk] (checkbox)
   - DOM name: `inline[7][nav_callout_uk]`
-  - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-014-inline-7-nav-callout-uk.png
 - 15. inline[7][nav_callout_eu] (checkbox)
   - DOM name: `inline[7][nav_callout_eu]`
-  - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-015-inline-7-nav-callout-eu.png
 - 16. inline[7][nav_callout_us] (checkbox)
   - DOM name: `inline[7][nav_callout_us]`
-  - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-016-inline-7-nav-callout-us.png
 - 17. inline[8][nav_callout_uk] (checkbox)
   - DOM name: `inline[8][nav_callout_uk]`
-  - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-017-inline-8-nav-callout-uk.png
 - 18. inline[8][nav_callout_eu] (checkbox)
   - DOM name: `inline[8][nav_callout_eu]`
-  - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-018-inline-8-nav-callout-eu.png
 - 19. inline[8][nav_callout_us] (checkbox)
   - DOM name: `inline[8][nav_callout_us]`
-  - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-019-inline-8-nav-callout-us.png
 - 20. inline[11][nav_callout_uk] (checkbox)
   - DOM name: `inline[11][nav_callout_uk]`
-  - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-020-inline-11-nav-callout-uk.png
 - 21. inline[11][nav_callout_eu] (checkbox)
   - DOM name: `inline[11][nav_callout_eu]`
-  - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-021-inline-11-nav-callout-eu.png
 - 22. inline[11][nav_callout_us] (checkbox)
   - DOM name: `inline[11][nav_callout_us]`
-  - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-022-inline-11-nav-callout-us.png
 - 23. inline[13][nav_callout_uk] (checkbox)
   - DOM name: `inline[13][nav_callout_uk]`
-  - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-023-inline-13-nav-callout-uk.png
 - 24. inline[13][nav_callout_eu] (checkbox)
   - DOM name: `inline[13][nav_callout_eu]`
-  - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-024-inline-13-nav-callout-eu.png
 - 25. inline[13][nav_callout_us] (checkbox)
   - DOM name: `inline[13][nav_callout_us]`
-  - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-025-inline-13-nav-callout-us.png
 - 26. inline[14][nav_callout_uk] (checkbox)
   - DOM name: `inline[14][nav_callout_uk]`
-  - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-026-inline-14-nav-callout-uk.png
 - 27. inline[14][nav_callout_eu] (checkbox)
   - DOM name: `inline[14][nav_callout_eu]`
-  - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-027-inline-14-nav-callout-eu.png
 - 28. inline[14][nav_callout_us] (checkbox)
   - DOM name: `inline[14][nav_callout_us]`
-  - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-028-inline-14-nav-callout-us.png
 - 29. inline[16][nav_callout_uk] (checkbox)
   - DOM name: `inline[16][nav_callout_uk]`
-  - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-029-inline-16-nav-callout-uk.png
 - 30. inline[16][nav_callout_eu] (checkbox)
   - DOM name: `inline[16][nav_callout_eu]`
-  - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-030-inline-16-nav-callout-eu.png
 - 31. inline[16][nav_callout_us] (checkbox)
   - DOM name: `inline[16][nav_callout_us]`
-  - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-031-inline-16-nav-callout-us.png
 - 32. inline[17][nav_callout_uk] (checkbox)
   - DOM name: `inline[17][nav_callout_uk]`
-  - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-032-inline-17-nav-callout-uk.png
 - 33. inline[17][nav_callout_eu] (checkbox)
   - DOM name: `inline[17][nav_callout_eu]`
-  - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-033-inline-17-nav-callout-eu.png
 - 34. inline[17][nav_callout_us] (checkbox)
   - DOM name: `inline[17][nav_callout_us]`
-  - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-034-inline-17-nav-callout-us.png
 - 35. inline[18][nav_callout_uk] (checkbox)
   - DOM name: `inline[18][nav_callout_uk]`
-  - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-035-inline-18-nav-callout-uk.png
 - 36. inline[18][nav_callout_eu] (checkbox)
   - DOM name: `inline[18][nav_callout_eu]`
-  - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-036-inline-18-nav-callout-eu.png
 - 37. inline[18][nav_callout_us] (checkbox)
   - DOM name: `inline[18][nav_callout_us]`
-  - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-037-inline-18-nav-callout-us.png
 - 38. select (select)
   - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-038-select.png
 - 39. inline_action (submit)
   - DOM name: `inline_action`
-  - Screenshot: pages/104-cp-nav-callouts-admin-6e8b22a3/images/field-039-inline-action.png
 
 ### Source References
 
@@ -12066,11 +11649,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Nav Callouts
 
-- URL: https://dev.soho-home.local/cp/nav-callouts-admin/edit/2
+- URL: https://dev.soho-home.local/cp/nav-callouts-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|nav-callouts-admin|edit|nav-callouts-admin/edit/:identifier
-- Draft doc: pages/105-cp-nav-callouts-admin-edit-2-a40a10d3/README.md
+- Draft doc: pages/105-cp-nav-callouts-admin-edit-id-a40a10d3/README.md
 - Code analysis doc: .vscode/code-docs/cp-nav-callouts-admin-edit-existing.md
-- Page screenshots: pages/105-cp-nav-callouts-admin-edit-2-a40a10d3/images/page-desktop.png
+- Page screenshots: pages/105-cp-nav-callouts-admin-edit-id-a40a10d3/images/page-desktop.png
 - Field count: 6
 - Controller: App\Navigation\NavCalloutsControllerAdmin (nav-callouts-admin)
 - Controller file: src/Navigation/NavCalloutsControllerAdmin.php
@@ -12084,22 +11667,19 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. Title (text)
   - DOM name: `nav_callout_title`
-  - Screenshot: pages/105-cp-nav-callouts-admin-edit-2-a40a10d3/images/field-001-title.png
+  - Screenshot: pages/105-cp-nav-callouts-admin-edit-id-a40a10d3/images/field-001-title.png
 - 2. URL (text)
   - DOM name: `nav_callout_url`
-  - Screenshot: pages/105-cp-nav-callouts-admin-edit-2-a40a10d3/images/field-002-url.png
+  - Screenshot: pages/105-cp-nav-callouts-admin-edit-id-a40a10d3/images/field-002-url.png
 - 3. Link text optional (text)
   - DOM name: `nav_callout_link_text`
-  - Screenshot: pages/105-cp-nav-callouts-admin-edit-2-a40a10d3/images/field-003-link-text-optional.png
+  - Screenshot: pages/105-cp-nav-callouts-admin-edit-id-a40a10d3/images/field-003-link-text-optional.png
 - 4. UK (checkbox)
   - DOM name: `nav_callout_uk`
-  - Screenshot: pages/105-cp-nav-callouts-admin-edit-2-a40a10d3/images/field-004-uk.png
 - 5. EU (checkbox)
   - DOM name: `nav_callout_eu`
-  - Screenshot: pages/105-cp-nav-callouts-admin-edit-2-a40a10d3/images/field-005-eu.png
 - 6. US (checkbox)
   - DOM name: `nav_callout_us`
-  - Screenshot: pages/105-cp-nav-callouts-admin-edit-2-a40a10d3/images/field-006-us.png
 
 ### Source References
 
@@ -12119,160 +11699,111 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. inline[1][navigation_item_targeted_content] (checkbox)
   - DOM name: `inline[1][navigation_item_targeted_content]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-001-inline-1-navigation-item-targeted-content.png
 - 2. inline[1][navigation_item_uk] (checkbox)
   - DOM name: `inline[1][navigation_item_uk]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-002-inline-1-navigation-item-uk.png
 - 3. inline[1][navigation_item_eu] (checkbox)
   - DOM name: `inline[1][navigation_item_eu]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-003-inline-1-navigation-item-eu.png
 - 4. inline[1][navigation_item_us] (checkbox)
   - DOM name: `inline[1][navigation_item_us]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-004-inline-1-navigation-item-us.png
 - 5. inline[2][navigation_item_targeted_content] (checkbox)
   - DOM name: `inline[2][navigation_item_targeted_content]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-005-inline-2-navigation-item-targeted-content.png
 - 6. inline[2][navigation_item_uk] (checkbox)
   - DOM name: `inline[2][navigation_item_uk]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-006-inline-2-navigation-item-uk.png
 - 7. inline[2][navigation_item_eu] (checkbox)
   - DOM name: `inline[2][navigation_item_eu]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-007-inline-2-navigation-item-eu.png
 - 8. inline[2][navigation_item_us] (checkbox)
   - DOM name: `inline[2][navigation_item_us]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-008-inline-2-navigation-item-us.png
 - 9. inline[10][navigation_item_targeted_content] (checkbox)
   - DOM name: `inline[10][navigation_item_targeted_content]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-009-inline-10-navigation-item-targeted-content.png
 - 10. inline[10][navigation_item_uk] (checkbox)
   - DOM name: `inline[10][navigation_item_uk]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-010-inline-10-navigation-item-uk.png
 - 11. inline[10][navigation_item_eu] (checkbox)
   - DOM name: `inline[10][navigation_item_eu]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-011-inline-10-navigation-item-eu.png
 - 12. inline[10][navigation_item_us] (checkbox)
   - DOM name: `inline[10][navigation_item_us]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-012-inline-10-navigation-item-us.png
 - 13. inline[4][navigation_item_targeted_content] (checkbox)
   - DOM name: `inline[4][navigation_item_targeted_content]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-013-inline-4-navigation-item-targeted-content.png
 - 14. inline[4][navigation_item_uk] (checkbox)
   - DOM name: `inline[4][navigation_item_uk]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-014-inline-4-navigation-item-uk.png
 - 15. inline[4][navigation_item_eu] (checkbox)
   - DOM name: `inline[4][navigation_item_eu]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-015-inline-4-navigation-item-eu.png
 - 16. inline[4][navigation_item_us] (checkbox)
   - DOM name: `inline[4][navigation_item_us]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-016-inline-4-navigation-item-us.png
 - 17. inline[3][navigation_item_targeted_content] (checkbox)
   - DOM name: `inline[3][navigation_item_targeted_content]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-017-inline-3-navigation-item-targeted-content.png
 - 18. inline[3][navigation_item_uk] (checkbox)
   - DOM name: `inline[3][navigation_item_uk]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-018-inline-3-navigation-item-uk.png
 - 19. inline[3][navigation_item_eu] (checkbox)
   - DOM name: `inline[3][navigation_item_eu]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-019-inline-3-navigation-item-eu.png
 - 20. inline[3][navigation_item_us] (checkbox)
   - DOM name: `inline[3][navigation_item_us]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-020-inline-3-navigation-item-us.png
 - 21. inline[7][navigation_item_targeted_content] (checkbox)
   - DOM name: `inline[7][navigation_item_targeted_content]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-021-inline-7-navigation-item-targeted-content.png
 - 22. inline[7][navigation_item_uk] (checkbox)
   - DOM name: `inline[7][navigation_item_uk]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-022-inline-7-navigation-item-uk.png
 - 23. inline[7][navigation_item_eu] (checkbox)
   - DOM name: `inline[7][navigation_item_eu]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-023-inline-7-navigation-item-eu.png
 - 24. inline[7][navigation_item_us] (checkbox)
   - DOM name: `inline[7][navigation_item_us]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-024-inline-7-navigation-item-us.png
 - 25. inline[14][navigation_item_targeted_content] (checkbox)
   - DOM name: `inline[14][navigation_item_targeted_content]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-025-inline-14-navigation-item-targeted-content.png
 - 26. inline[14][navigation_item_uk] (checkbox)
   - DOM name: `inline[14][navigation_item_uk]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-026-inline-14-navigation-item-uk.png
 - 27. inline[14][navigation_item_eu] (checkbox)
   - DOM name: `inline[14][navigation_item_eu]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-027-inline-14-navigation-item-eu.png
 - 28. inline[14][navigation_item_us] (checkbox)
   - DOM name: `inline[14][navigation_item_us]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-028-inline-14-navigation-item-us.png
 - 29. inline[5][navigation_item_targeted_content] (checkbox)
   - DOM name: `inline[5][navigation_item_targeted_content]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-029-inline-5-navigation-item-targeted-content.png
 - 30. inline[5][navigation_item_uk] (checkbox)
   - DOM name: `inline[5][navigation_item_uk]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-030-inline-5-navigation-item-uk.png
 - 31. inline[5][navigation_item_eu] (checkbox)
   - DOM name: `inline[5][navigation_item_eu]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-031-inline-5-navigation-item-eu.png
 - 32. inline[5][navigation_item_us] (checkbox)
   - DOM name: `inline[5][navigation_item_us]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-032-inline-5-navigation-item-us.png
 - 33. inline[29][navigation_item_targeted_content] (checkbox)
   - DOM name: `inline[29][navigation_item_targeted_content]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-033-inline-29-navigation-item-targeted-content.png
 - 34. inline[29][navigation_item_uk] (checkbox)
   - DOM name: `inline[29][navigation_item_uk]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-034-inline-29-navigation-item-uk.png
 - 35. inline[29][navigation_item_eu] (checkbox)
   - DOM name: `inline[29][navigation_item_eu]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-035-inline-29-navigation-item-eu.png
 - 36. inline[29][navigation_item_us] (checkbox)
   - DOM name: `inline[29][navigation_item_us]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-036-inline-29-navigation-item-us.png
 - 37. inline[26][navigation_item_targeted_content] (checkbox)
   - DOM name: `inline[26][navigation_item_targeted_content]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-037-inline-26-navigation-item-targeted-content.png
 - 38. inline[26][navigation_item_uk] (checkbox)
   - DOM name: `inline[26][navigation_item_uk]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-038-inline-26-navigation-item-uk.png
 - 39. inline[26][navigation_item_eu] (checkbox)
   - DOM name: `inline[26][navigation_item_eu]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-039-inline-26-navigation-item-eu.png
 - 40. inline[26][navigation_item_us] (checkbox)
   - DOM name: `inline[26][navigation_item_us]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-040-inline-26-navigation-item-us.png
 - 41. inline[8][navigation_item_targeted_content] (checkbox)
   - DOM name: `inline[8][navigation_item_targeted_content]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-041-inline-8-navigation-item-targeted-content.png
 - 42. inline[8][navigation_item_uk] (checkbox)
   - DOM name: `inline[8][navigation_item_uk]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-042-inline-8-navigation-item-uk.png
 - 43. inline[8][navigation_item_eu] (checkbox)
   - DOM name: `inline[8][navigation_item_eu]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-043-inline-8-navigation-item-eu.png
 - 44. inline[8][navigation_item_us] (checkbox)
   - DOM name: `inline[8][navigation_item_us]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-044-inline-8-navigation-item-us.png
 - 45. inline[15][navigation_item_targeted_content] (checkbox)
   - DOM name: `inline[15][navigation_item_targeted_content]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-045-inline-15-navigation-item-targeted-content.png
 - 46. inline[15][navigation_item_uk] (checkbox)
   - DOM name: `inline[15][navigation_item_uk]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-046-inline-15-navigation-item-uk.png
 - 47. inline[15][navigation_item_eu] (checkbox)
   - DOM name: `inline[15][navigation_item_eu]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-047-inline-15-navigation-item-eu.png
 - 48. inline[15][navigation_item_us] (checkbox)
   - DOM name: `inline[15][navigation_item_us]`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-048-inline-15-navigation-item-us.png
 - 49. select (select)
   - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-049-select.png
 - 50. inline_action (submit)
   - DOM name: `inline_action`
-  - Screenshot: pages/106-cp-navigation-admin-v1-878808f3/images/field-050-inline-action.png
 
 ## Navigation
 
-- URL: https://dev.soho-home.local/cp/navigation-admin-v1/edit/1
+- URL: https://dev.soho-home.local/cp/navigation-admin-v1/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|navigation-admin-v1|edit|navigation-admin-v1/edit/:identifier
-- Draft doc: pages/107-cp-navigation-admin-v1-edit-1-844cb381/README.md
-- Page screenshots: pages/107-cp-navigation-admin-v1-edit-1-844cb381/images/page-desktop.png
+- Draft doc: pages/107-cp-navigation-admin-v1-edit-id-844cb381/README.md
+- Page screenshots: pages/107-cp-navigation-admin-v1-edit-id-844cb381/images/page-desktop.png
 - Field count: 8
 - Controller: unresolved
 
@@ -12280,28 +11811,23 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. Targeted Content (checkbox)
   - DOM name: `navigation_item_targeted_content`
-  - Screenshot: pages/107-cp-navigation-admin-v1-edit-1-844cb381/images/field-001-targeted-content.png
 - 2. UK (checkbox)
   - DOM name: `navigation_item_uk`
-  - Screenshot: pages/107-cp-navigation-admin-v1-edit-1-844cb381/images/field-002-uk.png
 - 3. EU (checkbox)
   - DOM name: `navigation_item_eu`
-  - Screenshot: pages/107-cp-navigation-admin-v1-edit-1-844cb381/images/field-003-eu.png
 - 4. US (checkbox)
   - DOM name: `navigation_item_us`
-  - Screenshot: pages/107-cp-navigation-admin-v1-edit-1-844cb381/images/field-004-us.png
 - 5. Enable Mega Menu (checkbox)
   - DOM name: `navigation_item_enable_mega_menu`
-  - Screenshot: pages/107-cp-navigation-admin-v1-edit-1-844cb381/images/field-005-enable-mega-menu.png
 - 6. Title (text)
   - DOM name: `navigation_item_title`
-  - Screenshot: pages/107-cp-navigation-admin-v1-edit-1-844cb381/images/field-006-title.png
+  - Screenshot: pages/107-cp-navigation-admin-v1-edit-id-844cb381/images/field-006-title.png
 - 7. URL (text)
   - DOM name: `navigation_item_url`
-  - Screenshot: pages/107-cp-navigation-admin-v1-edit-1-844cb381/images/field-007-url.png
+  - Screenshot: pages/107-cp-navigation-admin-v1-edit-id-844cb381/images/field-007-url.png
 - 8. Mobile Link Label (text)
   - DOM name: `navigation_item_mobile_link_label`
-  - Screenshot: pages/107-cp-navigation-admin-v1-edit-1-844cb381/images/field-008-mobile-link-label.png
+  - Screenshot: pages/107-cp-navigation-admin-v1-edit-id-844cb381/images/field-008-mobile-link-label.png
 
 ## Navigation (v2)
 
@@ -12316,160 +11842,111 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. inline[30][navigation_item_targeted_content] (checkbox)
   - DOM name: `inline[30][navigation_item_targeted_content]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-001-inline-30-navigation-item-targeted-content.png
 - 2. inline[30][navigation_item_uk] (checkbox)
   - DOM name: `inline[30][navigation_item_uk]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-002-inline-30-navigation-item-uk.png
 - 3. inline[30][navigation_item_eu] (checkbox)
   - DOM name: `inline[30][navigation_item_eu]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-003-inline-30-navigation-item-eu.png
 - 4. inline[30][navigation_item_us] (checkbox)
   - DOM name: `inline[30][navigation_item_us]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-004-inline-30-navigation-item-us.png
 - 5. inline[33][navigation_item_targeted_content] (checkbox)
   - DOM name: `inline[33][navigation_item_targeted_content]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-005-inline-33-navigation-item-targeted-content.png
 - 6. inline[33][navigation_item_uk] (checkbox)
   - DOM name: `inline[33][navigation_item_uk]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-006-inline-33-navigation-item-uk.png
 - 7. inline[33][navigation_item_eu] (checkbox)
   - DOM name: `inline[33][navigation_item_eu]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-007-inline-33-navigation-item-eu.png
 - 8. inline[33][navigation_item_us] (checkbox)
   - DOM name: `inline[33][navigation_item_us]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-008-inline-33-navigation-item-us.png
 - 9. inline[35][navigation_item_targeted_content] (checkbox)
   - DOM name: `inline[35][navigation_item_targeted_content]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-009-inline-35-navigation-item-targeted-content.png
 - 10. inline[35][navigation_item_uk] (checkbox)
   - DOM name: `inline[35][navigation_item_uk]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-010-inline-35-navigation-item-uk.png
 - 11. inline[35][navigation_item_eu] (checkbox)
   - DOM name: `inline[35][navigation_item_eu]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-011-inline-35-navigation-item-eu.png
 - 12. inline[35][navigation_item_us] (checkbox)
   - DOM name: `inline[35][navigation_item_us]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-012-inline-35-navigation-item-us.png
 - 13. inline[36][navigation_item_targeted_content] (checkbox)
   - DOM name: `inline[36][navigation_item_targeted_content]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-013-inline-36-navigation-item-targeted-content.png
 - 14. inline[36][navigation_item_uk] (checkbox)
   - DOM name: `inline[36][navigation_item_uk]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-014-inline-36-navigation-item-uk.png
 - 15. inline[36][navigation_item_eu] (checkbox)
   - DOM name: `inline[36][navigation_item_eu]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-015-inline-36-navigation-item-eu.png
 - 16. inline[36][navigation_item_us] (checkbox)
   - DOM name: `inline[36][navigation_item_us]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-016-inline-36-navigation-item-us.png
 - 17. inline[37][navigation_item_targeted_content] (checkbox)
   - DOM name: `inline[37][navigation_item_targeted_content]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-017-inline-37-navigation-item-targeted-content.png
 - 18. inline[37][navigation_item_uk] (checkbox)
   - DOM name: `inline[37][navigation_item_uk]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-018-inline-37-navigation-item-uk.png
 - 19. inline[37][navigation_item_eu] (checkbox)
   - DOM name: `inline[37][navigation_item_eu]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-019-inline-37-navigation-item-eu.png
 - 20. inline[37][navigation_item_us] (checkbox)
   - DOM name: `inline[37][navigation_item_us]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-020-inline-37-navigation-item-us.png
 - 21. inline[38][navigation_item_targeted_content] (checkbox)
   - DOM name: `inline[38][navigation_item_targeted_content]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-021-inline-38-navigation-item-targeted-content.png
 - 22. inline[38][navigation_item_uk] (checkbox)
   - DOM name: `inline[38][navigation_item_uk]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-022-inline-38-navigation-item-uk.png
 - 23. inline[38][navigation_item_eu] (checkbox)
   - DOM name: `inline[38][navigation_item_eu]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-023-inline-38-navigation-item-eu.png
 - 24. inline[38][navigation_item_us] (checkbox)
   - DOM name: `inline[38][navigation_item_us]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-024-inline-38-navigation-item-us.png
 - 25. inline[34][navigation_item_targeted_content] (checkbox)
   - DOM name: `inline[34][navigation_item_targeted_content]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-025-inline-34-navigation-item-targeted-content.png
 - 26. inline[34][navigation_item_uk] (checkbox)
   - DOM name: `inline[34][navigation_item_uk]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-026-inline-34-navigation-item-uk.png
 - 27. inline[34][navigation_item_eu] (checkbox)
   - DOM name: `inline[34][navigation_item_eu]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-027-inline-34-navigation-item-eu.png
 - 28. inline[34][navigation_item_us] (checkbox)
   - DOM name: `inline[34][navigation_item_us]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-028-inline-34-navigation-item-us.png
 - 29. inline[39][navigation_item_targeted_content] (checkbox)
   - DOM name: `inline[39][navigation_item_targeted_content]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-029-inline-39-navigation-item-targeted-content.png
 - 30. inline[39][navigation_item_uk] (checkbox)
   - DOM name: `inline[39][navigation_item_uk]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-030-inline-39-navigation-item-uk.png
 - 31. inline[39][navigation_item_eu] (checkbox)
   - DOM name: `inline[39][navigation_item_eu]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-031-inline-39-navigation-item-eu.png
 - 32. inline[39][navigation_item_us] (checkbox)
   - DOM name: `inline[39][navigation_item_us]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-032-inline-39-navigation-item-us.png
 - 33. inline[40][navigation_item_targeted_content] (checkbox)
   - DOM name: `inline[40][navigation_item_targeted_content]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-033-inline-40-navigation-item-targeted-content.png
 - 34. inline[40][navigation_item_uk] (checkbox)
   - DOM name: `inline[40][navigation_item_uk]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-034-inline-40-navigation-item-uk.png
 - 35. inline[40][navigation_item_eu] (checkbox)
   - DOM name: `inline[40][navigation_item_eu]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-035-inline-40-navigation-item-eu.png
 - 36. inline[40][navigation_item_us] (checkbox)
   - DOM name: `inline[40][navigation_item_us]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-036-inline-40-navigation-item-us.png
 - 37. inline[41][navigation_item_targeted_content] (checkbox)
   - DOM name: `inline[41][navigation_item_targeted_content]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-037-inline-41-navigation-item-targeted-content.png
 - 38. inline[41][navigation_item_uk] (checkbox)
   - DOM name: `inline[41][navigation_item_uk]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-038-inline-41-navigation-item-uk.png
 - 39. inline[41][navigation_item_eu] (checkbox)
   - DOM name: `inline[41][navigation_item_eu]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-039-inline-41-navigation-item-eu.png
 - 40. inline[41][navigation_item_us] (checkbox)
   - DOM name: `inline[41][navigation_item_us]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-040-inline-41-navigation-item-us.png
 - 41. inline[42][navigation_item_targeted_content] (checkbox)
   - DOM name: `inline[42][navigation_item_targeted_content]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-041-inline-42-navigation-item-targeted-content.png
 - 42. inline[42][navigation_item_uk] (checkbox)
   - DOM name: `inline[42][navigation_item_uk]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-042-inline-42-navigation-item-uk.png
 - 43. inline[42][navigation_item_eu] (checkbox)
   - DOM name: `inline[42][navigation_item_eu]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-043-inline-42-navigation-item-eu.png
 - 44. inline[42][navigation_item_us] (checkbox)
   - DOM name: `inline[42][navigation_item_us]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-044-inline-42-navigation-item-us.png
 - 45. inline[44][navigation_item_targeted_content] (checkbox)
   - DOM name: `inline[44][navigation_item_targeted_content]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-045-inline-44-navigation-item-targeted-content.png
 - 46. inline[44][navigation_item_uk] (checkbox)
   - DOM name: `inline[44][navigation_item_uk]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-046-inline-44-navigation-item-uk.png
 - 47. inline[44][navigation_item_eu] (checkbox)
   - DOM name: `inline[44][navigation_item_eu]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-047-inline-44-navigation-item-eu.png
 - 48. inline[44][navigation_item_us] (checkbox)
   - DOM name: `inline[44][navigation_item_us]`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-048-inline-44-navigation-item-us.png
 - 49. select (select)
   - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-049-select.png
 - 50. inline_action (submit)
   - DOM name: `inline_action`
-  - Screenshot: pages/108-cp-navigation-admin-v2-43d56cd4/images/field-050-inline-action.png
 
 ## Navigation (v2)
 
-- URL: https://dev.soho-home.local/cp/navigation-admin-v2/edit/30
+- URL: https://dev.soho-home.local/cp/navigation-admin-v2/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|navigation-admin-v2|edit|navigation-admin-v2/edit/:identifier
-- Draft doc: pages/109-cp-navigation-admin-v2-edit-30-e0fadfdc/README.md
-- Page screenshots: pages/109-cp-navigation-admin-v2-edit-30-e0fadfdc/images/page-desktop.png
+- Draft doc: pages/109-cp-navigation-admin-v2-edit-id-e0fadfdc/README.md
+- Page screenshots: pages/109-cp-navigation-admin-v2-edit-id-e0fadfdc/images/page-desktop.png
 - Field count: 8
 - Controller: unresolved
 
@@ -12477,28 +11954,23 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. Targeted Content (checkbox)
   - DOM name: `navigation_item_targeted_content`
-  - Screenshot: pages/109-cp-navigation-admin-v2-edit-30-e0fadfdc/images/field-001-targeted-content.png
 - 2. UK (checkbox)
   - DOM name: `navigation_item_uk`
-  - Screenshot: pages/109-cp-navigation-admin-v2-edit-30-e0fadfdc/images/field-002-uk.png
 - 3. EU (checkbox)
   - DOM name: `navigation_item_eu`
-  - Screenshot: pages/109-cp-navigation-admin-v2-edit-30-e0fadfdc/images/field-003-eu.png
 - 4. US (checkbox)
   - DOM name: `navigation_item_us`
-  - Screenshot: pages/109-cp-navigation-admin-v2-edit-30-e0fadfdc/images/field-004-us.png
 - 5. Enable Mega Menu (checkbox)
   - DOM name: `navigation_item_enable_mega_menu`
-  - Screenshot: pages/109-cp-navigation-admin-v2-edit-30-e0fadfdc/images/field-005-enable-mega-menu.png
 - 6. Title (text)
   - DOM name: `navigation_item_title`
-  - Screenshot: pages/109-cp-navigation-admin-v2-edit-30-e0fadfdc/images/field-006-title.png
+  - Screenshot: pages/109-cp-navigation-admin-v2-edit-id-e0fadfdc/images/field-006-title.png
 - 7. URL (text)
   - DOM name: `navigation_item_url`
-  - Screenshot: pages/109-cp-navigation-admin-v2-edit-30-e0fadfdc/images/field-007-url.png
+  - Screenshot: pages/109-cp-navigation-admin-v2-edit-id-e0fadfdc/images/field-007-url.png
 - 8. Mobile Link Label (text)
   - DOM name: `navigation_item_mobile_link_label`
-  - Screenshot: pages/109-cp-navigation-admin-v2-edit-30-e0fadfdc/images/field-008-mobile-link-label.png
+  - Screenshot: pages/109-cp-navigation-admin-v2-edit-id-e0fadfdc/images/field-008-mobile-link-label.png
 
 ## Newsletter Popup
 
@@ -12525,11 +11997,9 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 2. Description optional (textarea)
   - DOM name: `popup_description`
   - Model field: Description / `description` / RichText
-  - Screenshot: pages/110-cp-newsletter-popup-admin-22d99e77/images/field-002-description-optional.png
 - 3. Terms and Conditions optional (textarea)
   - DOM name: `popup_terms`
   - Model field: Terms and Conditions / `terms` / RichText
-  - Screenshot: pages/110-cp-newsletter-popup-admin-22d99e77/images/field-003-terms-and-conditions-optional.png
 
 ### Source References
 
@@ -12575,11 +12045,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Newsletter Signups
 
-- URL: https://dev.soho-home.local/cp/newsletter-signups-admin/edit/491028
+- URL: https://dev.soho-home.local/cp/newsletter-signups-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|newsletter-signups-admin|edit|newsletter-signups-admin/edit/:identifier
-- Draft doc: pages/112-cp-newsletter-signups-admin-edit-491028-c2ef3bd2/README.md
+- Draft doc: pages/112-cp-newsletter-signups-admin-edit-id-c2ef3bd2/README.md
 - Code analysis doc: .vscode/code-docs/cp-newsletter-signups-admin-edit-existing.md
-- Page screenshots: pages/112-cp-newsletter-signups-admin-edit-491028-c2ef3bd2/images/page-desktop.png
+- Page screenshots: pages/112-cp-newsletter-signups-admin-edit-id-c2ef3bd2/images/page-desktop.png
 - Field count: 0
 - Controller: Soho\Content\Newsletter\SignupsControllerAdmin (newsletter-signups-admin)
 - Controller file: vendor/soho/content/src/Newsletter/SignupsControllerAdmin.php
@@ -12640,11 +12110,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Benefit Bar Settings
 
-- URL: https://dev.soho-home.local/cp/notice-admin/edit/91
+- URL: https://dev.soho-home.local/cp/notice-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|notice-admin|edit|notice-admin/edit/:identifier
-- Draft doc: pages/114-cp-notice-admin-edit-91-6d322765/README.md
+- Draft doc: pages/114-cp-notice-admin-edit-id-6d322765/README.md
 - Code analysis doc: .vscode/code-docs/cp-notice-admin-edit-existing.md
-- Page screenshots: pages/114-cp-notice-admin-edit-91-6d322765/images/page-desktop.png
+- Page screenshots: pages/114-cp-notice-admin-edit-id-6d322765/images/page-desktop.png
 - Field count: 27
 - Controller: Soho\Content\Notice\NoticeControllerAdmin (notice-admin)
 - Controller file: vendor/soho/content/src/Notice/NoticeControllerAdmin.php
@@ -12658,85 +12128,66 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. UK (checkbox)
   - DOM name: `notice_uk`
-  - Screenshot: pages/114-cp-notice-admin-edit-91-6d322765/images/field-001-uk.png
 - 2. EU (checkbox)
   - DOM name: `notice_eu`
-  - Screenshot: pages/114-cp-notice-admin-edit-91-6d322765/images/field-002-eu.png
 - 3. US (checkbox)
   - DOM name: `notice_us`
-  - Screenshot: pages/114-cp-notice-admin-edit-91-6d322765/images/field-003-us.png
 - 4. Message optional (text)
   - DOM name: `notice_message`
-  - Screenshot: pages/114-cp-notice-admin-edit-91-6d322765/images/field-004-message-optional.png
+  - Screenshot: pages/114-cp-notice-admin-edit-id-6d322765/images/field-004-message-optional.png
 - 5. Link optional (text)
   - DOM name: `notice_link`
-  - Screenshot: pages/114-cp-notice-admin-edit-91-6d322765/images/field-005-link-optional.png
+  - Screenshot: pages/114-cp-notice-admin-edit-id-6d322765/images/field-005-link-optional.png
 - 6. GTM Label optional (text)
   - DOM name: `notice_gtm_label`
-  - Screenshot: pages/114-cp-notice-admin-edit-91-6d322765/images/field-006-gtm-label-optional.png
+  - Screenshot: pages/114-cp-notice-admin-edit-id-6d322765/images/field-006-gtm-label-optional.png
 - 7. Open in new tab? (checkbox)
   - DOM name: `notice_open_in_new_tab`
-  - Screenshot: pages/114-cp-notice-admin-edit-91-6d322765/images/field-007-open-in-new-tab.png
 - 8. Message Type (select)
   - DOM name: `notice_type`
-  - Screenshot: pages/114-cp-notice-admin-edit-91-6d322765/images/field-008-message-type.png
+  - Screenshot: pages/114-cp-notice-admin-edit-id-6d322765/images/field-008-message-type.png
 - 9. Status (select)
   - DOM name: `notice_status`
-  - Screenshot: pages/114-cp-notice-admin-edit-91-6d322765/images/field-009-status.png
+  - Screenshot: pages/114-cp-notice-admin-edit-id-6d322765/images/field-009-status.png
 - 10. Active From optional (datetime-local)
   - DOM name: `notice_active_from`
-  - Screenshot: pages/114-cp-notice-admin-edit-91-6d322765/images/field-010-active-from-optional.png
+  - Screenshot: pages/114-cp-notice-admin-edit-id-6d322765/images/field-010-active-from-optional.png
 - 11. Active To optional (datetime-local)
   - DOM name: `notice_active_to`
-  - Screenshot: pages/114-cp-notice-admin-edit-91-6d322765/images/field-011-active-to-optional.png
+  - Screenshot: pages/114-cp-notice-admin-edit-id-6d322765/images/field-011-active-to-optional.png
 - 12. Non-trade (checkbox)
   - DOM name: `notice_trade_customer_inclusions[]`
-  - Screenshot: pages/114-cp-notice-admin-edit-91-6d322765/images/field-012-non-trade.png
 - 13. Trade (checkbox)
   - DOM name: `notice_trade_customer_inclusions[]`
-  - Screenshot: pages/114-cp-notice-admin-edit-91-6d322765/images/field-013-trade.png
 - 14. Trade Member (checkbox)
   - DOM name: `notice_trade_customer_inclusions[]`
-  - Screenshot: pages/114-cp-notice-admin-edit-91-6d322765/images/field-014-trade-member.png
 - 15. Non-trade (checkbox)
   - DOM name: `notice_trade_customer_exclusions[]`
-  - Screenshot: pages/114-cp-notice-admin-edit-91-6d322765/images/field-015-non-trade.png
 - 16. Trade (checkbox)
   - DOM name: `notice_trade_customer_exclusions[]`
-  - Screenshot: pages/114-cp-notice-admin-edit-91-6d322765/images/field-016-trade.png
 - 17. Trade Member (checkbox)
   - DOM name: `notice_trade_customer_exclusions[]`
-  - Screenshot: pages/114-cp-notice-admin-edit-91-6d322765/images/field-017-trade-member.png
 - 18. Excluded Type optional (select)
   - DOM name: `notice_member_excluded_type`
-  - Screenshot: pages/114-cp-notice-admin-edit-91-6d322765/images/field-018-excluded-type-optional.png
+  - Screenshot: pages/114-cp-notice-admin-edit-id-6d322765/images/field-018-excluded-type-optional.png
 - 19. Not Logged In (checkbox)
   - DOM name: `notice_member_level_excluded[]`
-  - Screenshot: pages/114-cp-notice-admin-edit-91-6d322765/images/field-019-not-logged-in.png
 - 20. No Membership (checkbox)
   - DOM name: `notice_member_level_excluded[]`
-  - Screenshot: pages/114-cp-notice-admin-edit-91-6d322765/images/field-020-no-membership.png
 - 21. Every (checkbox)
   - DOM name: `notice_member_level_excluded[]`
-  - Screenshot: pages/114-cp-notice-admin-edit-91-6d322765/images/field-021-every.png
 - 22. Every Plus (checkbox)
   - DOM name: `notice_member_level_excluded[]`
-  - Screenshot: pages/114-cp-notice-admin-edit-91-6d322765/images/field-022-every-plus.png
 - 23. Local (checkbox)
   - DOM name: `notice_member_level_excluded[]`
-  - Screenshot: pages/114-cp-notice-admin-edit-91-6d322765/images/field-023-local.png
 - 24. Local for Soho House (checkbox)
   - DOM name: `notice_member_level_excluded[]`
-  - Screenshot: pages/114-cp-notice-admin-edit-91-6d322765/images/field-024-local-for-soho-house.png
 - 25. Friends (checkbox)
   - DOM name: `notice_member_level_excluded[]`
-  - Screenshot: pages/114-cp-notice-admin-edit-91-6d322765/images/field-025-friends.png
 - 26. Soho Home+ (checkbox)
   - DOM name: `notice_member_level_excluded[]`
-  - Screenshot: pages/114-cp-notice-admin-edit-91-6d322765/images/field-026-soho-home.png
 - 27. Paywall: Mismatched Member Level Text optional (textarea)
   - DOM name: `notice_paywall_member_text`
-  - Screenshot: pages/114-cp-notice-admin-edit-91-6d322765/images/field-027-paywall-mismatched-member-level-text-optional.png
 
 ### Source References
 
@@ -12773,45 +12224,32 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/115-cp-offers-admin-90a65ebe/images/field-001-keyword-search.png
 - 2. inline[528][offer_status] (select)
   - DOM name: `inline[528][offer_status]`
-  - Screenshot: pages/115-cp-offers-admin-90a65ebe/images/field-002-inline-528-offer-status.png
 - 3. inline[529][offer_status] (select)
   - DOM name: `inline[529][offer_status]`
-  - Screenshot: pages/115-cp-offers-admin-90a65ebe/images/field-003-inline-529-offer-status.png
 - 4. inline[530][offer_status] (select)
   - DOM name: `inline[530][offer_status]`
-  - Screenshot: pages/115-cp-offers-admin-90a65ebe/images/field-004-inline-530-offer-status.png
 - 5. inline[531][offer_status] (select)
   - DOM name: `inline[531][offer_status]`
-  - Screenshot: pages/115-cp-offers-admin-90a65ebe/images/field-005-inline-531-offer-status.png
 - 6. inline[532][offer_status] (select)
   - DOM name: `inline[532][offer_status]`
-  - Screenshot: pages/115-cp-offers-admin-90a65ebe/images/field-006-inline-532-offer-status.png
 - 7. inline[533][offer_status] (select)
   - DOM name: `inline[533][offer_status]`
-  - Screenshot: pages/115-cp-offers-admin-90a65ebe/images/field-007-inline-533-offer-status.png
 - 8. inline[534][offer_status] (select)
   - DOM name: `inline[534][offer_status]`
-  - Screenshot: pages/115-cp-offers-admin-90a65ebe/images/field-008-inline-534-offer-status.png
 - 9. inline[535][offer_status] (select)
   - DOM name: `inline[535][offer_status]`
-  - Screenshot: pages/115-cp-offers-admin-90a65ebe/images/field-009-inline-535-offer-status.png
 - 10. inline[536][offer_status] (select)
   - DOM name: `inline[536][offer_status]`
-  - Screenshot: pages/115-cp-offers-admin-90a65ebe/images/field-010-inline-536-offer-status.png
 - 11. inline[537][offer_status] (select)
   - DOM name: `inline[537][offer_status]`
-  - Screenshot: pages/115-cp-offers-admin-90a65ebe/images/field-011-inline-537-offer-status.png
 - 12. inline[538][offer_status] (select)
   - DOM name: `inline[538][offer_status]`
-  - Screenshot: pages/115-cp-offers-admin-90a65ebe/images/field-012-inline-538-offer-status.png
 - 13. inline[539][offer_status] (select)
   - DOM name: `inline[539][offer_status]`
-  - Screenshot: pages/115-cp-offers-admin-90a65ebe/images/field-013-inline-539-offer-status.png
 - 14. select (select)
   - Screenshot: pages/115-cp-offers-admin-90a65ebe/images/field-014-select.png
 - 15. inline_action (submit)
   - DOM name: `inline_action`
-  - Screenshot: pages/115-cp-offers-admin-90a65ebe/images/field-015-inline-action.png
 
 ### Source References
 
@@ -13059,11 +12497,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Offers
 
-- URL: https://dev.soho-home.local/cp/offers-admin/edit/528
+- URL: https://dev.soho-home.local/cp/offers-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|offers-admin|edit|offers-admin/edit/:identifier
-- Draft doc: pages/116-cp-offers-admin-edit-528-1b43ebef/README.md
+- Draft doc: pages/116-cp-offers-admin-edit-id-1b43ebef/README.md
 - Code analysis doc: .vscode/code-docs/cp-offers-admin-edit-existing.md
-- Page screenshots: pages/116-cp-offers-admin-edit-528-1b43ebef/images/page-desktop.png
+- Page screenshots: pages/116-cp-offers-admin-edit-id-1b43ebef/images/page-desktop.png
 - Field count: 7
 - Controller: Soho\Ecom\Offers\Controller\Admin (offers-admin)
 - Controller file: vendor/soho/ecom/src/Offers/Controller/Admin.php
@@ -13077,25 +12515,25 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. Name (text)
   - DOM name: `offer_name`
-  - Screenshot: pages/116-cp-offers-admin-edit-528-1b43ebef/images/field-001-name.png
+  - Screenshot: pages/116-cp-offers-admin-edit-id-1b43ebef/images/field-001-name.png
 - 2. SKU (text)
   - DOM name: `offer_sku`
-  - Screenshot: pages/116-cp-offers-admin-edit-528-1b43ebef/images/field-002-sku.png
+  - Screenshot: pages/116-cp-offers-admin-edit-id-1b43ebef/images/field-002-sku.png
 - 3. Code optional (text)
   - DOM name: `offer_code`
-  - Screenshot: pages/116-cp-offers-admin-edit-528-1b43ebef/images/field-003-code-optional.png
+  - Screenshot: pages/116-cp-offers-admin-edit-id-1b43ebef/images/field-003-code-optional.png
 - 4. Maximum uses optional (number)
   - DOM name: `offer_max_uses`
-  - Screenshot: pages/116-cp-offers-admin-edit-528-1b43ebef/images/field-004-maximum-uses-optional.png
+  - Screenshot: pages/116-cp-offers-admin-edit-id-1b43ebef/images/field-004-maximum-uses-optional.png
 - 5. Start Date (datetime-local)
   - DOM name: `offer_start_date`
-  - Screenshot: pages/116-cp-offers-admin-edit-528-1b43ebef/images/field-005-start-date.png
+  - Screenshot: pages/116-cp-offers-admin-edit-id-1b43ebef/images/field-005-start-date.png
 - 6. Offer Expires (select)
   - DOM name: `offer_offer_expires`
-  - Screenshot: pages/116-cp-offers-admin-edit-528-1b43ebef/images/field-006-offer-expires.png
+  - Screenshot: pages/116-cp-offers-admin-edit-id-1b43ebef/images/field-006-offer-expires.png
 - 7. Expiry Date optional (datetime-local)
   - DOM name: `offer_expiry_date`
-  - Screenshot: pages/116-cp-offers-admin-edit-528-1b43ebef/images/field-007-expiry-date-optional.png
+  - Screenshot: pages/116-cp-offers-admin-edit-id-1b43ebef/images/field-007-expiry-date-optional.png
 
 ### Source References
 
@@ -13366,7 +12804,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 2. Copy (textarea)
   - DOM name: `setting_copy`
   - Model field: Copy / `copy` / RichText
-  - Screenshot: pages/117-cp-order-issue-email-settings-admin-0849dd7f/images/field-002-copy.png
 - 3. setting_emails[0][] (text)
   - DOM name: `setting_emails[0][]`
   - Screenshot: pages/117-cp-order-issue-email-settings-admin-0849dd7f/images/field-003-setting-emails-0.png
@@ -13635,7 +13072,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 ### DOM Fields
 
 - 1. select (select)
-  - Screenshot: pages/118-cp-our-stores-admin-11c8ca6d/images/field-001-select.png
 
 ### Source References
 
@@ -14076,11 +13512,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Permission Labels
 
-- URL: https://dev.soho-home.local/cp/permissions-label-admin/edit/18
+- URL: https://dev.soho-home.local/cp/permissions-label-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|permissions-label-admin|edit|permissions-label-admin/edit/:identifier
-- Draft doc: pages/122-cp-permissions-label-admin-edit-18-780f40e1/README.md
+- Draft doc: pages/122-cp-permissions-label-admin-edit-id-780f40e1/README.md
 - Code analysis doc: .vscode/code-docs/cp-permissions-label-admin-edit-existing.md
-- Page screenshots: pages/122-cp-permissions-label-admin-edit-18-780f40e1/images/page-desktop.png
+- Page screenshots: pages/122-cp-permissions-label-admin-edit-id-780f40e1/images/page-desktop.png
 - Field count: 4
 - Controller: D3R\Permissions\Controller\LabelAdmin (permissions-label-admin)
 - Controller file: vendor/d3r/permissions/src/Controller/LabelAdmin.php
@@ -14094,17 +13530,16 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. Text optional (textarea)
   - DOM name: `label_text`
-  - Screenshot: pages/122-cp-permissions-label-admin-edit-18-780f40e1/images/field-001-text-optional.png
 - 2. Yes Label optional (text)
   - DOM name: `label_text_2`
-  - Screenshot: pages/122-cp-permissions-label-admin-edit-18-780f40e1/images/field-002-yes-label-optional.png
+  - Screenshot: pages/122-cp-permissions-label-admin-edit-id-780f40e1/images/field-002-yes-label-optional.png
 - 3. No Label optional (text)
   - DOM name: `label_text_3`
-  - Screenshot: pages/122-cp-permissions-label-admin-edit-18-780f40e1/images/field-003-no-label-optional.png
+  - Screenshot: pages/122-cp-permissions-label-admin-edit-id-780f40e1/images/field-003-no-label-optional.png
 - 4. Language (select)
   - DOM name: `label_language`
   - Model field: Language / `language` / SelectCallback
-  - Screenshot: pages/122-cp-permissions-label-admin-edit-18-780f40e1/images/field-004-language.png
+  - Screenshot: pages/122-cp-permissions-label-admin-edit-id-780f40e1/images/field-004-language.png
 
 ### Source References
 
@@ -14139,7 +13574,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 ### DOM Fields
 
 - 1. select (select)
-  - Screenshot: pages/123-cp-personalisation-admin-219a882c/images/field-001-select.png
 
 ### Source References
 
@@ -14193,11 +13627,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Personalisations
 
-- URL: https://dev.soho-home.local/cp/personalisation-admin/edit/1
+- URL: https://dev.soho-home.local/cp/personalisation-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|personalisation-admin|edit|personalisation-admin/edit/:identifier
-- Draft doc: pages/124-cp-personalisation-admin-edit-1-7a43e9d7/README.md
+- Draft doc: pages/124-cp-personalisation-admin-edit-id-7a43e9d7/README.md
 - Code analysis doc: .vscode/code-docs/cp-personalisation-admin-edit-existing.md
-- Page screenshots: pages/124-cp-personalisation-admin-edit-1-7a43e9d7/images/page-desktop.png
+- Page screenshots: pages/124-cp-personalisation-admin-edit-id-7a43e9d7/images/page-desktop.png
 - Field count: 3
 - Controller: Soho\Products\Base\PersonalisationControllerAdmin (personalisation-admin)
 - Controller file: vendor/soho/products/src/PersonalisationControllerAdmin.php
@@ -14212,15 +13646,15 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 1. Title (text)
   - DOM name: `personalisation_title`
   - Model field: Title / `title` / Text
-  - Screenshot: pages/124-cp-personalisation-admin-edit-1-7a43e9d7/images/field-001-title.png
+  - Screenshot: pages/124-cp-personalisation-admin-edit-id-7a43e9d7/images/field-001-title.png
 - 2. Colour Label (text)
   - DOM name: `personalisation_colour_label`
   - Model field: Colour Label / `colour_label` / Text
-  - Screenshot: pages/124-cp-personalisation-admin-edit-1-7a43e9d7/images/field-002-colour-label.png
+  - Screenshot: pages/124-cp-personalisation-admin-edit-id-7a43e9d7/images/field-002-colour-label.png
 - 3. Warehouse Value (text)
   - DOM name: `personalisation_warehouse_value`
   - Model field: Warehouse Value / `warehouse_value` / Text
-  - Screenshot: pages/124-cp-personalisation-admin-edit-1-7a43e9d7/images/field-003-warehouse-value.png
+  - Screenshot: pages/124-cp-personalisation-admin-edit-id-7a43e9d7/images/field-003-warehouse-value.png
 
 ### Source References
 
@@ -14317,11 +13751,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Stores
 
-- URL: https://dev.soho-home.local/cp/pos-store-admin/edit/1
+- URL: https://dev.soho-home.local/cp/pos-store-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|pos-store-admin|edit|pos-store-admin/edit/:identifier
-- Draft doc: pages/126-cp-pos-store-admin-edit-1-204da51b/README.md
+- Draft doc: pages/126-cp-pos-store-admin-edit-id-204da51b/README.md
 - Code analysis doc: .vscode/code-docs/cp-pos-store-admin-edit-existing.md
-- Page screenshots: pages/126-cp-pos-store-admin-edit-1-204da51b/images/page-desktop.png
+- Page screenshots: pages/126-cp-pos-store-admin-edit-id-204da51b/images/page-desktop.png
 - Field count: 12
 - Controller: D3R\Pos\Controller\StoreAdmin (pos-store-admin)
 - Controller file: vendor/d3r/pos/src/Controller/StoreAdmin.php
@@ -14335,40 +13769,32 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. Name (text)
   - DOM name: `store_name`
-  - Screenshot: pages/126-cp-pos-store-admin-edit-1-204da51b/images/field-001-name.png
+  - Screenshot: pages/126-cp-pos-store-admin-edit-id-204da51b/images/field-001-name.png
 - 2. Returns Policy (textarea)
   - DOM name: `store_returns_policy`
-  - Screenshot: pages/126-cp-pos-store-admin-edit-1-204da51b/images/field-002-returns-policy.png
 - 3. Business Number (text)
   - DOM name: `store_business_number`
-  - Screenshot: pages/126-cp-pos-store-admin-edit-1-204da51b/images/field-003-business-number.png
+  - Screenshot: pages/126-cp-pos-store-admin-edit-id-204da51b/images/field-003-business-number.png
 - 4. Terminal (checkbox)
   - DOM name: `store_payment_options[]`
-  - Screenshot: pages/126-cp-pos-store-admin-edit-1-204da51b/images/field-004-terminal.png
 - 5. Gift Cards (checkbox)
   - DOM name: `store_payment_options[]`
-  - Screenshot: pages/126-cp-pos-store-admin-edit-1-204da51b/images/field-005-gift-cards.png
 - 6. Cash (checkbox)
   - DOM name: `store_payment_options[]`
-  - Screenshot: pages/126-cp-pos-store-admin-edit-1-204da51b/images/field-006-cash.png
 - 7. Room Charge (checkbox)
   - DOM name: `store_payment_options[]`
-  - Screenshot: pages/126-cp-pos-store-admin-edit-1-204da51b/images/field-007-room-charge.png
 - 8. PayByLink (checkbox)
   - DOM name: `store_payment_options[]`
-  - Screenshot: pages/126-cp-pos-store-admin-edit-1-204da51b/images/field-008-paybylink.png
 - 9. Store Reference optional (select)
   - DOM name: `store_store_reference`
-  - Screenshot: pages/126-cp-pos-store-admin-edit-1-204da51b/images/field-009-store-reference-optional.png
+  - Screenshot: pages/126-cp-pos-store-admin-edit-id-204da51b/images/field-009-store-reference-optional.png
 - 10. Adyen Store Identifier (text)
   - DOM name: `store_adyen_store`
-  - Screenshot: pages/126-cp-pos-store-admin-edit-1-204da51b/images/field-010-adyen-store-identifier.png
+  - Screenshot: pages/126-cp-pos-store-admin-edit-id-204da51b/images/field-010-adyen-store-identifier.png
 - 11. Has Takeaway? (checkbox)
   - DOM name: `store_has_takeaway`
-  - Screenshot: pages/126-cp-pos-store-admin-edit-1-204da51b/images/field-011-has-takeaway.png
 - 12. Is Outlet (checkbox)
   - DOM name: `store_is_outlet`
-  - Screenshot: pages/126-cp-pos-store-admin-edit-1-204da51b/images/field-012-is-outlet.png
 
 ### Source References
 
@@ -14413,7 +13839,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - DOM name: `search`
   - Screenshot: pages/127-cp-product-filters-admin-9d7642a0/images/field-001-keyword-search.png
 - 2. select (select)
-  - Screenshot: pages/127-cp-product-filters-admin-9d7642a0/images/field-002-select.png
 
 ### Source References
 
@@ -14429,11 +13854,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Filters
 
-- URL: https://dev.soho-home.local/cp/product-filters-admin/edit/1
+- URL: https://dev.soho-home.local/cp/product-filters-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|product-filters-admin|edit|product-filters-admin/edit/:identifier
-- Draft doc: pages/128-cp-product-filters-admin-edit-1-00904b24/README.md
+- Draft doc: pages/128-cp-product-filters-admin-edit-id-00904b24/README.md
 - Code analysis doc: .vscode/code-docs/cp-product-filters-admin-edit-existing.md
-- Page screenshots: pages/128-cp-product-filters-admin-edit-1-00904b24/images/page-desktop.png
+- Page screenshots: pages/128-cp-product-filters-admin-edit-id-00904b24/images/page-desktop.png
 - Field count: 2
 - Controller: Soho\Products\Base\Filterable\ProductFiltersAdminController (product-filters-admin)
 - Controller file: vendor/soho/products/src/Filterable/ProductFiltersAdminController.php
@@ -14447,10 +13872,10 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. Title (text)
   - DOM name: `filter_title`
-  - Screenshot: pages/128-cp-product-filters-admin-edit-1-00904b24/images/field-001-title.png
+  - Screenshot: pages/128-cp-product-filters-admin-edit-id-00904b24/images/field-001-title.png
 - 2. Unit Format optional (text)
   - DOM name: `filter_unit_format`
-  - Screenshot: pages/128-cp-product-filters-admin-edit-1-00904b24/images/field-002-unit-format-optional.png
+  - Screenshot: pages/128-cp-product-filters-admin-edit-id-00904b24/images/field-002-unit-format-optional.png
 
 ### Source References
 
@@ -14490,78 +13915,64 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/129-cp-product-groups-admin-f8f3e5c3/images/field-002-inline-1-group-title.png
 - 3. inline[1][group_status] (select)
   - DOM name: `inline[1][group_status]`
-  - Screenshot: pages/129-cp-product-groups-admin-f8f3e5c3/images/field-003-inline-1-group-status.png
 - 4. inline[2][group_title] (text)
   - DOM name: `inline[2][group_title]`
   - Screenshot: pages/129-cp-product-groups-admin-f8f3e5c3/images/field-004-inline-2-group-title.png
 - 5. inline[2][group_status] (select)
   - DOM name: `inline[2][group_status]`
-  - Screenshot: pages/129-cp-product-groups-admin-f8f3e5c3/images/field-005-inline-2-group-status.png
 - 6. inline[3][group_title] (text)
   - DOM name: `inline[3][group_title]`
   - Screenshot: pages/129-cp-product-groups-admin-f8f3e5c3/images/field-006-inline-3-group-title.png
 - 7. inline[3][group_status] (select)
   - DOM name: `inline[3][group_status]`
-  - Screenshot: pages/129-cp-product-groups-admin-f8f3e5c3/images/field-007-inline-3-group-status.png
 - 8. inline[4][group_title] (text)
   - DOM name: `inline[4][group_title]`
   - Screenshot: pages/129-cp-product-groups-admin-f8f3e5c3/images/field-008-inline-4-group-title.png
 - 9. inline[4][group_status] (select)
   - DOM name: `inline[4][group_status]`
-  - Screenshot: pages/129-cp-product-groups-admin-f8f3e5c3/images/field-009-inline-4-group-status.png
 - 10. inline[5][group_title] (text)
   - DOM name: `inline[5][group_title]`
   - Screenshot: pages/129-cp-product-groups-admin-f8f3e5c3/images/field-010-inline-5-group-title.png
 - 11. inline[5][group_status] (select)
   - DOM name: `inline[5][group_status]`
-  - Screenshot: pages/129-cp-product-groups-admin-f8f3e5c3/images/field-011-inline-5-group-status.png
 - 12. inline[6][group_title] (text)
   - DOM name: `inline[6][group_title]`
   - Screenshot: pages/129-cp-product-groups-admin-f8f3e5c3/images/field-012-inline-6-group-title.png
 - 13. inline[6][group_status] (select)
   - DOM name: `inline[6][group_status]`
-  - Screenshot: pages/129-cp-product-groups-admin-f8f3e5c3/images/field-013-inline-6-group-status.png
 - 14. inline[7][group_title] (text)
   - DOM name: `inline[7][group_title]`
   - Screenshot: pages/129-cp-product-groups-admin-f8f3e5c3/images/field-014-inline-7-group-title.png
 - 15. inline[7][group_status] (select)
   - DOM name: `inline[7][group_status]`
-  - Screenshot: pages/129-cp-product-groups-admin-f8f3e5c3/images/field-015-inline-7-group-status.png
 - 16. inline[8][group_title] (text)
   - DOM name: `inline[8][group_title]`
   - Screenshot: pages/129-cp-product-groups-admin-f8f3e5c3/images/field-016-inline-8-group-title.png
 - 17. inline[8][group_status] (select)
   - DOM name: `inline[8][group_status]`
-  - Screenshot: pages/129-cp-product-groups-admin-f8f3e5c3/images/field-017-inline-8-group-status.png
 - 18. inline[9][group_title] (text)
   - DOM name: `inline[9][group_title]`
-  - Screenshot: pages/129-cp-product-groups-admin-f8f3e5c3/images/field-018-inline-9-group-title.png
 - 19. inline[9][group_status] (select)
   - DOM name: `inline[9][group_status]`
-  - Screenshot: pages/129-cp-product-groups-admin-f8f3e5c3/images/field-019-inline-9-group-status.png
 - 20. inline[10][group_title] (text)
   - DOM name: `inline[10][group_title]`
   - Screenshot: pages/129-cp-product-groups-admin-f8f3e5c3/images/field-020-inline-10-group-title.png
 - 21. inline[10][group_status] (select)
   - DOM name: `inline[10][group_status]`
-  - Screenshot: pages/129-cp-product-groups-admin-f8f3e5c3/images/field-021-inline-10-group-status.png
 - 22. inline[11][group_title] (text)
   - DOM name: `inline[11][group_title]`
   - Screenshot: pages/129-cp-product-groups-admin-f8f3e5c3/images/field-022-inline-11-group-title.png
 - 23. inline[11][group_status] (select)
   - DOM name: `inline[11][group_status]`
-  - Screenshot: pages/129-cp-product-groups-admin-f8f3e5c3/images/field-023-inline-11-group-status.png
 - 24. inline[12][group_title] (text)
   - DOM name: `inline[12][group_title]`
   - Screenshot: pages/129-cp-product-groups-admin-f8f3e5c3/images/field-024-inline-12-group-title.png
 - 25. inline[12][group_status] (select)
   - DOM name: `inline[12][group_status]`
-  - Screenshot: pages/129-cp-product-groups-admin-f8f3e5c3/images/field-025-inline-12-group-status.png
 - 26. select (select)
   - Screenshot: pages/129-cp-product-groups-admin-f8f3e5c3/images/field-026-select.png
 - 27. inline_action (submit)
   - DOM name: `inline_action`
-  - Screenshot: pages/129-cp-product-groups-admin-f8f3e5c3/images/field-027-inline-action.png
 
 ### Source References
 
@@ -14617,11 +14028,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Groups
 
-- URL: https://dev.soho-home.local/cp/product-groups-admin/edit/1
+- URL: https://dev.soho-home.local/cp/product-groups-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|product-groups-admin|edit|product-groups-admin/edit/:identifier
-- Draft doc: pages/130-cp-product-groups-admin-edit-1-8a8e887d/README.md
+- Draft doc: pages/130-cp-product-groups-admin-edit-id-8a8e887d/README.md
 - Code analysis doc: .vscode/code-docs/cp-product-groups-admin-edit-existing.md
-- Page screenshots: pages/130-cp-product-groups-admin-edit-1-8a8e887d/images/page-desktop.png
+- Page screenshots: pages/130-cp-product-groups-admin-edit-id-8a8e887d/images/page-desktop.png
 - Field count: 6
 - Controller: Soho\Products\Base\GroupsControllerAdmin (product-groups-admin)
 - Controller file: vendor/soho/products/src/GroupsControllerAdmin.php
@@ -14636,22 +14047,18 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 1. Title (text)
   - DOM name: `group_title`
   - Model field: Title / `mosaic_title` / Text
-  - Screenshot: pages/130-cp-product-groups-admin-edit-1-8a8e887d/images/field-001-title.png
+  - Screenshot: pages/130-cp-product-groups-admin-edit-id-8a8e887d/images/field-001-title.png
 - 2. Status optional (select)
   - DOM name: `group_status`
-  - Screenshot: pages/130-cp-product-groups-admin-edit-1-8a8e887d/images/field-002-status-optional.png
+  - Screenshot: pages/130-cp-product-groups-admin-edit-id-8a8e887d/images/field-002-status-optional.png
 - 3. Configurable / Modular (checkbox)
   - DOM name: `group_types[]`
-  - Screenshot: pages/130-cp-product-groups-admin-edit-1-8a8e887d/images/field-003-configurable-modular.png
 - 4. Content (checkbox)
   - DOM name: `group_types[]`
-  - Screenshot: pages/130-cp-product-groups-admin-edit-1-8a8e887d/images/field-004-content.png
 - 5. Cross-Sell (checkbox)
   - DOM name: `group_types[]`
-  - Screenshot: pages/130-cp-product-groups-admin-edit-1-8a8e887d/images/field-005-cross-sell.png
 - 6. Promotion (checkbox)
   - DOM name: `group_types[]`
-  - Screenshot: pages/130-cp-product-groups-admin-edit-1-8a8e887d/images/field-006-promotion.png
 
 ### Source References
 
@@ -14779,11 +14186,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Price Lists
 
-- URL: https://dev.soho-home.local/cp/product-price-list-admin/view/100224
+- URL: https://dev.soho-home.local/cp/product-price-list-admin/view/:id
 - Documentation route key: https://dev.soho-home.local|cp|product-price-list-admin|view|product-price-list-admin/view/:identifier
-- Draft doc: pages/132-cp-product-price-list-admin-view-100224-fa33320f/README.md
+- Draft doc: pages/132-cp-product-price-list-admin-view-id-fa33320f/README.md
 - Code analysis doc: .vscode/code-docs/cp-product-price-list-admin-view-view.md
-- Page screenshots: pages/132-cp-product-price-list-admin-view-100224-fa33320f/images/page-desktop.png
+- Page screenshots: pages/132-cp-product-price-list-admin-view-id-fa33320f/images/page-desktop.png
 - Field count: 1
 - Controller: Soho\Products\Base\PriceListControllerAdmin (product-price-list-admin)
 - Controller file: vendor/soho/products/src/PriceListControllerAdmin.php
@@ -14797,7 +14204,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. Includes Tax (checkbox)
   - Model field: Includes Tax / `includes_tax` / Checkbox
-  - Screenshot: pages/132-cp-product-price-list-admin-view-100224-fa33320f/images/field-001-includes-tax.png
 
 ### Source References
 
@@ -14942,19 +14348,15 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 1. Delivery (textarea)
   - DOM name: `settings_delivery`
   - Model field: Delivery / `delivery` / RichText
-  - Screenshot: pages/134-cp-product-settings-admin-31616840/images/field-001-delivery.png
 - 2. Delivery (Reimagined) (textarea)
   - DOM name: `settings_pdp_delivery_content`
   - Model field: Delivery (Reimagined) / `pdp_delivery_content` / RichText
-  - Screenshot: pages/134-cp-product-settings-admin-31616840/images/field-002-delivery-reimagined.png
 - 3. Returns (Reimagined) (textarea)
   - DOM name: `settings_pdp_returns_content`
   - Model field: Returns (Reimagined) / `pdp_returns_content` / RichText
-  - Screenshot: pages/134-cp-product-settings-admin-31616840/images/field-003-returns-reimagined.png
 - 4. Unshippable Country Popup (textarea)
   - DOM name: `settings_unshippable_popup`
   - Model field: Unshippable Country Popup / `unshippable_popup` / RichText
-  - Screenshot: pages/134-cp-product-settings-admin-31616840/images/field-004-unshippable-country-popup.png
 
 ### Source References
 
@@ -15099,7 +14501,7 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - Draft doc: pages/136-cp-products-admin-edit-new-77b6c49c/README.md
 - Code analysis doc: .vscode/code-docs/cp-products-admin-edit-new.md
 - Page screenshots: pages/136-cp-products-admin-edit-new-77b6c49c/images/page-desktop.png
-- Field count: 109
+- Field count: 108
 - Controller: App\Products\ProductsControllerAdmin (products-admin)
 - Controller file: src/Products/ProductsControllerAdmin.php
 - Action method: editAction (inherited or unresolved)
@@ -15127,410 +14529,316 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-004-status.png
 - 5. Is Module? (checkbox)
   - DOM name: `product_is_module`
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-005-is-module.png
-- 6. input (text)
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-006-input.png
-- 7. Restriction UK optional (select)
+- 6. Restriction UK optional (select)
   - DOM name: `product_restriction_uk`
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-007-restriction-uk-optional.png
-- 8. Restriction EU optional (select)
+  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-006-restriction-uk-optional.png
+- 7. Restriction EU optional (select)
   - DOM name: `product_restriction_eu`
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-008-restriction-eu-optional.png
-- 9. Restriction US optional (select)
+  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-007-restriction-eu-optional.png
+- 8. Restriction US optional (select)
   - DOM name: `product_restriction_us`
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-009-restriction-us-optional.png
-- 10. Message UK optional (select)
+  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-008-restriction-us-optional.png
+- 9. Message UK optional (select)
   - DOM name: `product_message_uk`
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-010-message-uk-optional.png
-- 11. Message EU optional (select)
+  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-009-message-uk-optional.png
+- 10. Message EU optional (select)
   - DOM name: `product_message_eu`
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-011-message-eu-optional.png
-- 12. Message US optional (select)
+  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-010-message-eu-optional.png
+- 11. Message US optional (select)
   - DOM name: `product_message_us`
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-012-message-us-optional.png
-- 13. Variant 1 optional (select)
+  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-011-message-us-optional.png
+- 12. Variant 1 optional (select)
   - DOM name: `product_variant_1`
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-013-variant-1-optional.png
-- 14. Variant 2 optional (select)
+  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-012-variant-1-optional.png
+- 13. Variant 2 optional (select)
   - DOM name: `product_variant_2`
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-014-variant-2-optional.png
-- 15. Variant 3 optional (select)
+  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-013-variant-2-optional.png
+- 14. Variant 3 optional (select)
   - DOM name: `product_variant_3`
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-015-variant-3-optional.png
-- 16. product_google_category_autocomplete (text)
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-016-product-google-category-autocomplete.png
-- 17. Range (text)
+  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-014-variant-3-optional.png
+- 15. product_google_category_autocomplete (text)
+  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-015-product-google-category-autocomplete.png
+- 16. Range (text)
   - DOM name: `product_range`
   - Model field: Range / `range` / Text
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-017-range.png
-- 18. Type (text)
+  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-016-range.png
+- 17. Type (text)
   - DOM name: `product_type`
   - Model field: Type / `type` / Text
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-018-type.png
-- 19. Featured in Sourcebook? (checkbox)
+  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-017-type.png
+- 18. Featured in Sourcebook? (checkbox)
   - DOM name: `product_is_sourcebook`
   - Model field: Featured in Sourcebook? / `is_sourcebook` / Checkbox
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-019-featured-in-sourcebook.png
-- 20. Soho House Manchester (checkbox)
+- 19. Soho House Manchester (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-020-soho-house-manchester.png
-- 21. Barcelona Pool House (checkbox)
+- 20. Barcelona Pool House (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-021-barcelona-pool-house.png
-- 22. Ibiza Farmhouse (checkbox)
+- 21. Ibiza Farmhouse (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-022-ibiza-farmhouse.png
-- 23. Soho House New York (checkbox)
+- 22. Soho House New York (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-023-soho-house-new-york.png
-- 24. Babington House (checkbox)
+- 23. Babington House (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-024-babington-house.png
-- 25. Soho House Barcelona (checkbox)
+- 24. Soho House Barcelona (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-025-soho-house-barcelona.png
-- 26. Soho House Tokyo (checkbox)
+- 25. Soho House Tokyo (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-026-soho-house-tokyo.png
-- 27. Little Beach House Malibu (checkbox)
+- 26. Little Beach House Malibu (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-027-little-beach-house-malibu.png
-- 28. Soho House São Paulo (checkbox)
+- 27. Soho House São Paulo (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-028-soho-house-s-o-paulo.png
-- 29. Soho House Rome (checkbox)
+- 28. Soho House Rome (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-029-soho-house-rome.png
-- 30. Soho House Portland (checkbox)
+- 29. Soho House Portland (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-030-soho-house-portland.png
-- 31. Soho House 40 Greek Street (checkbox)
+- 30. Soho House 40 Greek Street (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-031-soho-house-40-greek-street.png
-- 32. Soho House Mexico City (checkbox)
+- 31. Soho House Mexico City (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-032-soho-house-mexico-city.png
-- 33. Soho House Paris (checkbox)
+- 32. Soho House Paris (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-033-soho-house-paris.png
-- 34. Soho House Nashville (checkbox)
+- 33. Soho House Nashville (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-034-soho-house-nashville.png
-- 35. Soho House Hong Kong (checkbox)
+- 34. Soho House Hong Kong (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-035-soho-house-hong-kong.png
-- 36. 180 House (checkbox)
+- 35. 180 House (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-036-180-house.png
-- 37. Soho Warehouse (checkbox)
+- 36. Soho Warehouse (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-037-soho-warehouse.png
-- 38. Soho House Stockholm (checkbox)
+- 37. Soho House Stockholm (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-038-soho-house-stockholm.png
-- 39. Soho House Bangkok (checkbox)
+- 38. Soho House Bangkok (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-039-soho-house-bangkok.png
-- 40. Soho House Copenhagen (checkbox)
+- 39. Soho House Copenhagen (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-040-soho-house-copenhagen.png
-- 41. Soho Farmhouse (checkbox)
+- 40. Soho Farmhouse (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-041-soho-farmhouse.png
-- 42. Soho House Holloway (checkbox)
+- 41. Soho House Holloway (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-042-soho-house-holloway.png
-- 43. Brighton Beach House (checkbox)
+- 42. Brighton Beach House (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-043-brighton-beach-house.png
-- 44. Soho House Austin (checkbox)
+- 43. Soho House Austin (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-044-soho-house-austin.png
-- 45. Soho House Berlin (checkbox)
+- 44. Soho House Berlin (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-045-soho-house-berlin.png
-- 46. White City House (checkbox)
+- 45. White City House (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-046-white-city-house.png
-- 47. Soho House Amsterdam (checkbox)
+- 46. Soho House Amsterdam (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-047-soho-house-amsterdam.png
-- 48. Soho House Chicago (checkbox)
+- 47. Soho House Chicago (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-048-soho-house-chicago.png
-- 49. Shoreditch House (checkbox)
+- 48. Shoreditch House (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-049-shoreditch-house.png
-- 50. DUMBO House (checkbox)
+- 49. DUMBO House (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-050-dumbo-house.png
-- 51. Soho Roc House (checkbox)
+- 50. Soho Roc House (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-051-soho-roc-house.png
-- 52. Soho House Mumbai (checkbox)
+- 51. Soho House Mumbai (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-052-soho-house-mumbai.png
-- 53. Soho Beach House Miami (checkbox)
+- 52. Soho Beach House Miami (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-053-soho-beach-house-miami.png
-- 54. Little House Balham (checkbox)
+- 53. Little House Balham (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-054-little-house-balham.png
-- 55. 76 Dean Street (checkbox)
+- 54. 76 Dean Street (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-055-76-dean-street.png
-- 56. Soho Beach House Canouan (checkbox)
+- 55. Soho Beach House Canouan (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-056-soho-beach-house-canouan.png
-- 57. Kettner's (checkbox)
+- 56. Kettner's (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-057-kettner-s.png
-- 58. Soho House Istanbul (checkbox)
+- 57. Soho House Istanbul (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-058-soho-house-istanbul.png
-- 59. Soho House Tel Aviv, Jaffa (checkbox)
+- 58. Soho House Tel Aviv, Jaffa (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-059-soho-house-tel-aviv-jaffa.png
-- 60. Little Beach House Barcelona (checkbox)
+- 59. Little Beach House Barcelona (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-060-little-beach-house-barcelona.png
-- 61. Little House Mayfair (checkbox)
+- 60. Little House Mayfair (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-061-little-house-mayfair.png
-- 62. Soho House Los Cabos (checkbox)
+- 61. Soho House Los Cabos (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-062-soho-house-los-cabos.png
-- 63. Soho House Lisbon (checkbox)
+- 62. Soho House Lisbon (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-063-soho-house-lisbon.png
-- 64. House Pool Towel, Madrid (checkbox)
+- 63. House Pool Towel, Madrid (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-064-house-pool-towel-madrid.png
-- 65. High Road House (checkbox)
+- 64. High Road House (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-065-high-road-house.png
-- 66. The Ned (checkbox)
+- 65. The Ned (checkbox)
   - DOM name: `product_houses[]`
   - Model field: Houses / `houses` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-066-the-ned.png
-- 67. Home fragrance (checkbox)
+- 66. Home fragrance (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-067-home-fragrance.png
-- 68. Ultimate Gifts (checkbox)
+- 67. Ultimate Gifts (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-068-ultimate-gifts.png
-- 69. Bathroom collection (checkbox)
+- 68. Bathroom collection (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-069-bathroom-collection.png
-- 70. Stocking Fillers (checkbox)
+- 69. Stocking Fillers (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-070-stocking-fillers.png
-- 71. Crystal Glassware (checkbox)
+- 70. Crystal Glassware (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-071-crystal-glassware.png
-- 72. M.A.H Gallery collection preview (checkbox)
+- 71. M.A.H Gallery collection preview (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-072-m-a-h-gallery-collection-preview.png
-- 73. Bathroom Lighting (checkbox)
+- 72. Bathroom Lighting (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-073-bathroom-lighting.png
-- 74. Sleepwear & Textiles Gifts (checkbox)
+- 73. Sleepwear & Textiles Gifts (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-074-sleepwear-and-textiles-gifts.png
-- 75. Home bar (checkbox)
+- 74. Home bar (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-075-home-bar.png
-- 76. Bathroom Collection (checkbox)
+- 75. Bathroom Collection (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-076-bathroom-collection.png
-- 77. Gifts for Hosts (checkbox)
+- 76. Gifts for Hosts (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-077-gifts-for-hosts.png
-- 78. Complete your living space (checkbox)
+- 77. Complete your living space (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-078-complete-your-living-space.png
-- 79. Bathroom Mirrors (checkbox)
+- 78. Bathroom Mirrors (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-079-bathroom-mirrors.png
-- 80. Shelving and accessories (checkbox)
+- 79. Shelving and accessories (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-080-shelving-and-accessories.png
-- 81. Cocktail & Drinks Sets (checkbox)
+- 80. Cocktail & Drinks Sets (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-081-cocktail-and-drinks-sets.png
-- 82. Our new outdoor collection (checkbox)
+- 81. Our new outdoor collection (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-082-our-new-outdoor-collection.png
-- 83. Silverware (checkbox)
+- 82. Silverware (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-083-silverware.png
-- 84. Signature Gifts (checkbox)
+- 83. Signature Gifts (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-084-signature-gifts.png
-- 85. Wild at Heart x Soho House (checkbox)
+- 84. Wild at Heart x Soho House (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-085-wild-at-heart-x-soho-house.png
-- 86. Soho House Portland collection (checkbox)
+- 85. Soho House Portland collection (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-086-soho-house-portland-collection.png
-- 87. Bringing the House home (checkbox)
+- 86. Bringing the House home (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-087-bringing-the-house-home.png
-- 88. Seating (checkbox)
+- 87. Seating (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-088-seating.png
-- 89. As seen in the Houses (checkbox)
+- 88. As seen in the Houses (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-089-as-seen-in-the-houses.png
-- 90. Personalisation (checkbox)
+- 89. Personalisation (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-090-personalisation.png
-- 91. Made to Order (checkbox)
+- 90. Made to Order (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-091-made-to-order.png
-- 92. Furniture (checkbox)
+- 91. Furniture (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-092-furniture.png
-- 93. Home decor (checkbox)
+- 92. Home decor (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-093-home-decor.png
-- 94. Gifts under £250 (checkbox)
+- 93. Gifts under £250 (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-094-gifts-under-250.png
-- 95. Wedding Gifts (checkbox)
+- 94. Wedding Gifts (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-095-wedding-gifts.png
-- 96. Abstract (checkbox)
+- 95. Abstract (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-096-abstract.png
-- 97. Minimalist (checkbox)
+- 96. Minimalist (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-097-minimalist.png
-- 98. Maximalist (checkbox)
+- 97. Maximalist (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-098-maximalist.png
-- 99. Landscape (checkbox)
+- 98. Landscape (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-099-landscape.png
-- 100. Geometric (checkbox)
+- 99. Geometric (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-100-geometric.png
-- 101. Figurative (checkbox)
+- 100. Figurative (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-101-figurative.png
-- 102. Entryway (checkbox)
+- 101. Entryway (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-102-entryway.png
-- 103. Leather & Oud (checkbox)
+- 102. Leather & Oud (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-103-leather-and-oud.png
-- 104. Bergamot & Mandarin Zest (checkbox)
+- 103. Bergamot & Mandarin Zest (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-104-bergamot-and-mandarin-zest.png
-- 105. Sicilian Thyme (checkbox)
+- 104. Sicilian Thyme (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-105-sicilian-thyme.png
-- 106. As seen in our book (checkbox)
+- 105. As seen in our book (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-106-as-seen-in-our-book.png
-- 107. Handcrafted in the US (checkbox)
+- 106. Handcrafted in the US (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-107-handcrafted-in-the-us.png
-- 108. New Collection Preview (checkbox)
+- 107. New Collection Preview (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-108-new-collection-preview.png
-- 109. Portable Lamps (checkbox)
+- 108. Portable Lamps (checkbox)
   - DOM name: `product_collections[]`
   - Model field: Collections / `collections` / ManyToMany
-  - Screenshot: pages/136-cp-products-admin-edit-new-77b6c49c/images/field-109-portable-lamps.png
 
 ### Source References
 
@@ -15673,11 +14981,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Product Badges
 
-- URL: https://dev.soho-home.local/cp/products-badges-admin/edit/1
+- URL: https://dev.soho-home.local/cp/products-badges-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|products-badges-admin|edit|products-badges-admin/edit/:identifier
-- Draft doc: pages/138-cp-products-badges-admin-edit-1-7373ea4d/README.md
+- Draft doc: pages/138-cp-products-badges-admin-edit-id-7373ea4d/README.md
 - Code analysis doc: .vscode/code-docs/cp-products-badges-admin-edit-existing.md
-- Page screenshots: pages/138-cp-products-badges-admin-edit-1-7373ea4d/images/page-desktop.png
+- Page screenshots: pages/138-cp-products-badges-admin-edit-id-7373ea4d/images/page-desktop.png
 - Field count: 5
 - Controller: App\Products\BadgesControllerAdmin (products-badges-admin)
 - Controller file: src/Products/BadgesControllerAdmin.php
@@ -15692,23 +15000,22 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 1. Name (text)
   - DOM name: `badge_name`
   - Model field: Name / `name` / Text
-  - Screenshot: pages/138-cp-products-badges-admin-edit-1-7373ea4d/images/field-001-name.png
+  - Screenshot: pages/138-cp-products-badges-admin-edit-id-7373ea4d/images/field-001-name.png
 - 2. Label Text (text)
   - DOM name: `badge_label_text`
   - Model field: Label Text / `label_text` / Text
-  - Screenshot: pages/138-cp-products-badges-admin-edit-1-7373ea4d/images/field-002-label-text.png
+  - Screenshot: pages/138-cp-products-badges-admin-edit-id-7373ea4d/images/field-002-label-text.png
 - 3. Enabled (checkbox)
   - DOM name: `badge_enabled`
   - Model field: Enabled / `enabled` / Checkbox
-  - Screenshot: pages/138-cp-products-badges-admin-edit-1-7373ea4d/images/field-003-enabled.png
 - 4. CSS Class optional (text)
   - DOM name: `badge_css_class`
   - Model field: CSS Class / `css_class` / Text
-  - Screenshot: pages/138-cp-products-badges-admin-edit-1-7373ea4d/images/field-004-css-class-optional.png
+  - Screenshot: pages/138-cp-products-badges-admin-edit-id-7373ea4d/images/field-004-css-class-optional.png
 - 5. Link URL optional (text)
   - DOM name: `badge_link_url`
   - Model field: Link URL / `link_url` / SiteLink
-  - Screenshot: pages/138-cp-products-badges-admin-edit-1-7373ea4d/images/field-005-link-url-optional.png
+  - Screenshot: pages/138-cp-products-badges-admin-edit-id-7373ea4d/images/field-005-link-url-optional.png
 
 ### Source References
 
@@ -15793,7 +15100,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/139-cp-products-messages-admin-2bdb2628/images/field-001-select.png
 - 2. inline_action (submit)
   - DOM name: `inline_action`
-  - Screenshot: pages/139-cp-products-messages-admin-2bdb2628/images/field-002-inline-action.png
 
 ### Source References
 
@@ -15847,11 +15153,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Product Messages
 
-- URL: https://dev.soho-home.local/cp/products-messages-admin/edit/10
+- URL: https://dev.soho-home.local/cp/products-messages-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|products-messages-admin|edit|products-messages-admin/edit/:identifier
-- Draft doc: pages/140-cp-products-messages-admin-edit-10-1417df6e/README.md
+- Draft doc: pages/140-cp-products-messages-admin-edit-id-1417df6e/README.md
 - Code analysis doc: .vscode/code-docs/cp-products-messages-admin-edit-existing.md
-- Page screenshots: pages/140-cp-products-messages-admin-edit-10-1417df6e/images/page-desktop.png
+- Page screenshots: pages/140-cp-products-messages-admin-edit-id-1417df6e/images/page-desktop.png
 - Field count: 3
 - Controller: Soho\Products\Base\MessagesAdminController (products-messages-admin)
 - Controller file: vendor/soho/products/src/MessagesAdminController.php
@@ -15866,15 +15172,15 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 1. Label (text)
   - DOM name: `message_label`
   - Model field: Label / `label` / Text
-  - Screenshot: pages/140-cp-products-messages-admin-edit-10-1417df6e/images/field-001-label.png
+  - Screenshot: pages/140-cp-products-messages-admin-edit-id-1417df6e/images/field-001-label.png
 - 2. Status (select)
   - DOM name: `message_status`
   - Model field: Status / `status` / Select
-  - Screenshot: pages/140-cp-products-messages-admin-edit-10-1417df6e/images/field-002-status.png
+  - Screenshot: pages/140-cp-products-messages-admin-edit-id-1417df6e/images/field-002-status.png
 - 3. Message (textarea)
   - DOM name: `message_message`
   - Model field: Message / `message` / TextArea
-  - Screenshot: pages/140-cp-products-messages-admin-edit-10-1417df6e/images/field-003-message.png
+  - Screenshot: pages/140-cp-products-messages-admin-edit-id-1417df6e/images/field-003-message.png
 
 ### Source References
 
@@ -16047,7 +15353,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 5. Intro optional (textarea)
   - DOM name: `listing_intro`
   - Model field: Intro / `intro` / RichText
-  - Screenshot: pages/142-cp-products-pre-filtered-listing-admin-edit-new-c6f8d348/images/field-005-intro-optional.png
 
 ### Source References
 
@@ -16129,16 +15434,12 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. inline[1][restriction_status] (select)
   - DOM name: `inline[1][restriction_status]`
-  - Screenshot: pages/143-cp-products-restrictions-admin-9307ec8b/images/field-001-inline-1-restriction-status.png
 - 2. inline[3][restriction_status] (select)
   - DOM name: `inline[3][restriction_status]`
-  - Screenshot: pages/143-cp-products-restrictions-admin-9307ec8b/images/field-002-inline-3-restriction-status.png
 - 3. inline[21][restriction_status] (select)
   - DOM name: `inline[21][restriction_status]`
-  - Screenshot: pages/143-cp-products-restrictions-admin-9307ec8b/images/field-003-inline-21-restriction-status.png
 - 4. inline_action (submit)
   - DOM name: `inline_action`
-  - Screenshot: pages/143-cp-products-restrictions-admin-9307ec8b/images/field-004-inline-action.png
 
 ### Source References
 
@@ -16192,11 +15493,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Product Restrictions
 
-- URL: https://dev.soho-home.local/cp/products-restrictions-admin/edit/1
+- URL: https://dev.soho-home.local/cp/products-restrictions-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|products-restrictions-admin|edit|products-restrictions-admin/edit/:identifier
-- Draft doc: pages/144-cp-products-restrictions-admin-edit-1-f63d5328/README.md
+- Draft doc: pages/144-cp-products-restrictions-admin-edit-id-f63d5328/README.md
 - Code analysis doc: .vscode/code-docs/cp-products-restrictions-admin-edit-existing.md
-- Page screenshots: pages/144-cp-products-restrictions-admin-edit-1-f63d5328/images/page-desktop.png
+- Page screenshots: pages/144-cp-products-restrictions-admin-edit-id-f63d5328/images/page-desktop.png
 - Field count: 3
 - Controller: Soho\Products\Base\RestrictionsAdminController (products-restrictions-admin)
 - Controller file: vendor/soho/products/src/RestrictionsAdminController.php
@@ -16211,15 +15512,15 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 1. Label (text)
   - DOM name: `restriction_label`
   - Model field: Label / `label` / Text
-  - Screenshot: pages/144-cp-products-restrictions-admin-edit-1-f63d5328/images/field-001-label.png
+  - Screenshot: pages/144-cp-products-restrictions-admin-edit-id-f63d5328/images/field-001-label.png
 - 2. Status (select)
   - DOM name: `restriction_status`
   - Model field: Status / `status` / Select
-  - Screenshot: pages/144-cp-products-restrictions-admin-edit-1-f63d5328/images/field-002-status.png
+  - Screenshot: pages/144-cp-products-restrictions-admin-edit-id-f63d5328/images/field-002-status.png
 - 3. Message (textarea)
   - DOM name: `restriction_message`
   - Model field: Message / `message` / TextArea
-  - Screenshot: pages/144-cp-products-restrictions-admin-edit-1-f63d5328/images/field-003-message.png
+  - Screenshot: pages/144-cp-products-restrictions-admin-edit-id-f63d5328/images/field-003-message.png
 
 ### Source References
 
@@ -16357,11 +15658,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Product Seasons
 
-- URL: https://dev.soho-home.local/cp/products-seasons-admin/edit/21
+- URL: https://dev.soho-home.local/cp/products-seasons-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|products-seasons-admin|edit|products-seasons-admin/edit/:identifier
-- Draft doc: pages/146-cp-products-seasons-admin-edit-21-5fa80e1a/README.md
+- Draft doc: pages/146-cp-products-seasons-admin-edit-id-5fa80e1a/README.md
 - Code analysis doc: .vscode/code-docs/cp-products-seasons-admin-edit-existing.md
-- Page screenshots: pages/146-cp-products-seasons-admin-edit-21-5fa80e1a/images/page-desktop.png
+- Page screenshots: pages/146-cp-products-seasons-admin-edit-id-5fa80e1a/images/page-desktop.png
 - Field count: 7
 - Controller: App\Products\SeasonsControllerAdmin (products-seasons-admin)
 - Controller file: src/Products/SeasonsControllerAdmin.php
@@ -16376,31 +15677,30 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 1. Name (text)
   - DOM name: `season_name`
   - Model field: Name / `name` / Text
-  - Screenshot: pages/146-cp-products-seasons-admin-edit-21-5fa80e1a/images/field-001-name.png
+  - Screenshot: pages/146-cp-products-seasons-admin-edit-id-5fa80e1a/images/field-001-name.png
 - 2. Badge Label optional (text)
   - DOM name: `season_badge_label`
   - Model field: Badge Label / `badge_label` / Text
-  - Screenshot: pages/146-cp-products-seasons-admin-edit-21-5fa80e1a/images/field-002-badge-label-optional.png
+  - Screenshot: pages/146-cp-products-seasons-admin-edit-id-5fa80e1a/images/field-002-badge-label-optional.png
 - 3. Badge CSS Class optional (text)
   - DOM name: `season_badge_css_class`
   - Model field: Badge CSS Class / `badge_css_class` / Text
-  - Screenshot: pages/146-cp-products-seasons-admin-edit-21-5fa80e1a/images/field-003-badge-css-class-optional.png
+  - Screenshot: pages/146-cp-products-seasons-admin-edit-id-5fa80e1a/images/field-003-badge-css-class-optional.png
 - 4. Link URL optional (text)
   - DOM name: `season_badge_link_url`
   - Model field: Link URL / `badge_link_url` / SiteLink
-  - Screenshot: pages/146-cp-products-seasons-admin-edit-21-5fa80e1a/images/field-004-link-url-optional.png
+  - Screenshot: pages/146-cp-products-seasons-admin-edit-id-5fa80e1a/images/field-004-link-url-optional.png
 - 5. Has Active Badge (checkbox)
   - DOM name: `season_badge_active`
   - Model field: Has Active Badge / `badge_active` / Checkbox
-  - Screenshot: pages/146-cp-products-seasons-admin-edit-21-5fa80e1a/images/field-005-has-active-badge.png
 - 6. Scheduled Start optional (datetime-local)
   - DOM name: `season_scheduled_start`
   - Model field: Scheduled Start / `scheduled_start` / DateTime
-  - Screenshot: pages/146-cp-products-seasons-admin-edit-21-5fa80e1a/images/field-006-scheduled-start-optional.png
+  - Screenshot: pages/146-cp-products-seasons-admin-edit-id-5fa80e1a/images/field-006-scheduled-start-optional.png
 - 7. Scheduled End optional (datetime-local)
   - DOM name: `season_scheduled_end`
   - Model field: Scheduled End / `scheduled_end` / DateTime
-  - Screenshot: pages/146-cp-products-seasons-admin-edit-21-5fa80e1a/images/field-007-scheduled-end-optional.png
+  - Screenshot: pages/146-cp-products-seasons-admin-edit-id-5fa80e1a/images/field-007-scheduled-end-optional.png
 
 ### Source References
 
@@ -16483,7 +15783,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 1. Active? (checkbox)
   - DOM name: `email_general_active`
   - Model field: Active? / `interiordesign_active` / Checkbox
-  - Screenshot: pages/147-cp-quoted-email-content-admin-1d74847a/images/field-001-active.png
 - 2. Subject Line (text)
   - DOM name: `email_general_subject`
   - Model field: Subject Line / `interiordesign_subject` / Text
@@ -16491,7 +15790,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 3. Email Body (textarea)
   - DOM name: `email_general_body`
   - Model field: Email Body / `interiordesign_body` / RichText
-  - Screenshot: pages/147-cp-quoted-email-content-admin-1d74847a/images/field-003-email-body.png
 
 ### Source References
 
@@ -16863,11 +16161,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Reason Groups
 
-- URL: https://dev.soho-home.local/cp/reason-groups-admin/edit/1
+- URL: https://dev.soho-home.local/cp/reason-groups-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|reason-groups-admin|edit|reason-groups-admin/edit/:identifier
-- Draft doc: pages/149-cp-reason-groups-admin-edit-1-cb4f1a10/README.md
+- Draft doc: pages/149-cp-reason-groups-admin-edit-id-cb4f1a10/README.md
 - Code analysis doc: .vscode/code-docs/cp-reason-groups-admin-edit-existing.md
-- Page screenshots: pages/149-cp-reason-groups-admin-edit-1-cb4f1a10/images/page-desktop.png
+- Page screenshots: pages/149-cp-reason-groups-admin-edit-id-cb4f1a10/images/page-desktop.png
 - Field count: 3
 - Controller: Soho\Ecom\Reasons\GroupsAdminController (reason-groups-admin)
 - Controller file: vendor/soho/ecom/src/Reasons/GroupsAdminController.php
@@ -16882,15 +16180,15 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 1. Name (text)
   - DOM name: `reason_group_name`
   - Model field: Name / `name` / Text
-  - Screenshot: pages/149-cp-reason-groups-admin-edit-1-cb4f1a10/images/field-001-name.png
+  - Screenshot: pages/149-cp-reason-groups-admin-edit-id-cb4f1a10/images/field-001-name.png
 - 2. Identifier (text)
   - DOM name: `reason_group_identifier`
   - Model field: Identifier / `identifier` / Text
-  - Screenshot: pages/149-cp-reason-groups-admin-edit-1-cb4f1a10/images/field-002-identifier.png
+  - Screenshot: pages/149-cp-reason-groups-admin-edit-id-cb4f1a10/images/field-002-identifier.png
 - 3. Status (select)
   - DOM name: `reason_group_status`
   - Model field: Status / `` / Select
-  - Screenshot: pages/149-cp-reason-groups-admin-edit-1-cb4f1a10/images/field-003-status.png
+  - Screenshot: pages/149-cp-reason-groups-admin-edit-id-cb4f1a10/images/field-003-status.png
 
 ### Source References
 
@@ -17154,45 +16452,32 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. inline[1][reason_filter] (select)
   - DOM name: `inline[1][reason_filter]`
-  - Screenshot: pages/150-cp-reasons-admin-97dbfa81/images/field-001-inline-1-reason-filter.png
 - 2. inline[89][reason_filter] (select)
   - DOM name: `inline[89][reason_filter]`
-  - Screenshot: pages/150-cp-reasons-admin-97dbfa81/images/field-002-inline-89-reason-filter.png
 - 3. inline[104][reason_filter] (select)
   - DOM name: `inline[104][reason_filter]`
-  - Screenshot: pages/150-cp-reasons-admin-97dbfa81/images/field-003-inline-104-reason-filter.png
 - 4. inline[2][reason_filter] (select)
   - DOM name: `inline[2][reason_filter]`
-  - Screenshot: pages/150-cp-reasons-admin-97dbfa81/images/field-004-inline-2-reason-filter.png
 - 5. inline[90][reason_filter] (select)
   - DOM name: `inline[90][reason_filter]`
-  - Screenshot: pages/150-cp-reasons-admin-97dbfa81/images/field-005-inline-90-reason-filter.png
 - 6. inline[105][reason_filter] (select)
   - DOM name: `inline[105][reason_filter]`
-  - Screenshot: pages/150-cp-reasons-admin-97dbfa81/images/field-006-inline-105-reason-filter.png
 - 7. inline[3][reason_filter] (select)
   - DOM name: `inline[3][reason_filter]`
-  - Screenshot: pages/150-cp-reasons-admin-97dbfa81/images/field-007-inline-3-reason-filter.png
 - 8. inline[91][reason_filter] (select)
   - DOM name: `inline[91][reason_filter]`
-  - Screenshot: pages/150-cp-reasons-admin-97dbfa81/images/field-008-inline-91-reason-filter.png
 - 9. inline[106][reason_filter] (select)
   - DOM name: `inline[106][reason_filter]`
-  - Screenshot: pages/150-cp-reasons-admin-97dbfa81/images/field-009-inline-106-reason-filter.png
 - 10. inline[4][reason_filter] (select)
   - DOM name: `inline[4][reason_filter]`
-  - Screenshot: pages/150-cp-reasons-admin-97dbfa81/images/field-010-inline-4-reason-filter.png
 - 11. inline[92][reason_filter] (select)
   - DOM name: `inline[92][reason_filter]`
-  - Screenshot: pages/150-cp-reasons-admin-97dbfa81/images/field-011-inline-92-reason-filter.png
 - 12. inline[107][reason_filter] (select)
   - DOM name: `inline[107][reason_filter]`
-  - Screenshot: pages/150-cp-reasons-admin-97dbfa81/images/field-012-inline-107-reason-filter.png
 - 13. select (select)
   - Screenshot: pages/150-cp-reasons-admin-97dbfa81/images/field-013-select.png
 - 14. inline_action (submit)
   - DOM name: `inline_action`
-  - Screenshot: pages/150-cp-reasons-admin-97dbfa81/images/field-014-inline-action.png
 
 ### Source References
 
@@ -17438,11 +16723,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Reasons
 
-- URL: https://dev.soho-home.local/cp/reasons-admin/edit/1
+- URL: https://dev.soho-home.local/cp/reasons-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|reasons-admin|edit|reasons-admin/edit/:identifier
-- Draft doc: pages/151-cp-reasons-admin-edit-1-d56b7f43/README.md
+- Draft doc: pages/151-cp-reasons-admin-edit-id-d56b7f43/README.md
 - Code analysis doc: .vscode/code-docs/cp-reasons-admin-edit-existing.md
-- Page screenshots: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/page-desktop.png
+- Page screenshots: pages/151-cp-reasons-admin-edit-id-d56b7f43/images/page-desktop.png
 - Field count: 38
 - Controller: Soho\Ecom\Reasons\ReasonsAdminController (reasons-admin)
 - Controller file: vendor/soho/ecom/src/Reasons/ReasonsAdminController.php
@@ -17457,155 +16742,123 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 1. Status (select)
   - DOM name: `reason_status`
   - Model field: Status / `` / Select
-  - Screenshot: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/field-001-status.png
+  - Screenshot: pages/151-cp-reasons-admin-edit-id-d56b7f43/images/field-001-status.png
 - 2. Group optional (select)
   - DOM name: `reason_group`
   - Model field: Group / `group` / LinkSimple
-  - Screenshot: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/field-002-group-optional.png
+  - Screenshot: pages/151-cp-reasons-admin-edit-id-d56b7f43/images/field-002-group-optional.png
 - 3. Context (select)
   - DOM name: `reason_context`
   - Model field: Context / `context` / SelectCallback
-  - Screenshot: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/field-003-context.png
+  - Screenshot: pages/151-cp-reasons-admin-edit-id-d56b7f43/images/field-003-context.png
 - 4. Reason (text)
   - DOM name: `reason_reason`
   - Model field: Reason / `reason` / Text
-  - Screenshot: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/field-004-reason.png
+  - Screenshot: pages/151-cp-reasons-admin-edit-id-d56b7f43/images/field-004-reason.png
 - 5. Filter (select)
   - DOM name: `reason_filter`
   - Model field: Filter / `` / SelectCallback
-  - Screenshot: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/field-005-filter.png
+  - Screenshot: pages/151-cp-reasons-admin-edit-id-d56b7f43/images/field-005-filter.png
 - 6. Superuser (checkbox)
   - DOM name: `reason_roles[]`
   - Model field: Roles / `roles` / SelectObjectMultiple
-  - Screenshot: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/field-006-superuser.png
 - 7. Admin (checkbox)
   - DOM name: `reason_roles[]`
   - Model field: Roles / `roles` / SelectObjectMultiple
-  - Screenshot: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/field-007-admin.png
 - 8. Product Master (checkbox)
   - DOM name: `reason_roles[]`
   - Model field: Roles / `roles` / SelectObjectMultiple
-  - Screenshot: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/field-008-product-master.png
 - 9. Customer Care (checkbox)
   - DOM name: `reason_roles[]`
   - Model field: Roles / `roles` / SelectObjectMultiple
-  - Screenshot: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/field-009-customer-care.png
 - 10. Marketing (checkbox)
   - DOM name: `reason_roles[]`
   - Model field: Roles / `roles` / SelectObjectMultiple
-  - Screenshot: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/field-010-marketing.png
 - 11. Content (checkbox)
   - DOM name: `reason_roles[]`
   - Model field: Roles / `roles` / SelectObjectMultiple
-  - Screenshot: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/field-011-content.png
 - 12. Interior Design (checkbox)
   - DOM name: `reason_roles[]`
   - Model field: Roles / `roles` / SelectObjectMultiple
-  - Screenshot: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/field-012-interior-design.png
 - 13. Retail - Amsterdam (checkbox)
   - DOM name: `reason_roles[]`
   - Model field: Roles / `roles` / SelectObjectMultiple
-  - Screenshot: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/field-013-retail-amsterdam.png
 - 14. Retail - Austin (checkbox)
   - DOM name: `reason_roles[]`
   - Model field: Roles / `roles` / SelectObjectMultiple
-  - Screenshot: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/field-014-retail-austin.png
 - 15. Retail - Bicester (checkbox)
   - DOM name: `reason_roles[]`
   - Model field: Roles / `roles` / SelectObjectMultiple
-  - Screenshot: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/field-015-retail-bicester.png
 - 16. Retail - Berlin (checkbox)
   - DOM name: `reason_roles[]`
   - Model field: Roles / `roles` / SelectObjectMultiple
-  - Screenshot: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/field-016-retail-berlin.png
 - 17. Retail - Carnaby (checkbox)
   - DOM name: `reason_roles[]`
   - Model field: Roles / `roles` / SelectObjectMultiple
-  - Screenshot: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/field-017-retail-carnaby.png
 - 18. Retail - Chicago Studio (checkbox)
   - DOM name: `reason_roles[]`
   - Model field: Roles / `roles` / SelectObjectMultiple
-  - Screenshot: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/field-018-retail-chicago-studio.png
 - 19. Retail - Dumbo (checkbox)
   - DOM name: `reason_roles[]`
   - Model field: Roles / `roles` / SelectObjectMultiple
-  - Screenshot: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/field-019-retail-dumbo.png
 - 20. Retail - Kings Road (checkbox)
   - DOM name: `reason_roles[]`
   - Model field: Roles / `roles` / SelectObjectMultiple
-  - Screenshot: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/field-020-retail-kings-road.png
 - 21. Retail - La Warehouse (checkbox)
   - DOM name: `reason_roles[]`
   - Model field: Roles / `roles` / SelectObjectMultiple
-  - Screenshot: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/field-021-retail-la-warehouse.png
 - 22. Retail - Melrose (checkbox)
   - DOM name: `reason_roles[]`
   - Model field: Roles / `roles` / SelectObjectMultiple
-  - Screenshot: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/field-022-retail-melrose.png
 - 23. Retail - Miami Beach House (checkbox)
   - DOM name: `reason_roles[]`
   - Model field: Roles / `roles` / SelectObjectMultiple
-  - Screenshot: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/field-023-retail-miami-beach-house.png
 - 24. Retail - Nashville (checkbox)
   - DOM name: `reason_roles[]`
   - Model field: Roles / `roles` / SelectObjectMultiple
-  - Screenshot: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/field-024-retail-nashville.png
 - 25. Retail - Rome (checkbox)
   - DOM name: `reason_roles[]`
   - Model field: Roles / `roles` / SelectObjectMultiple
-  - Screenshot: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/field-025-retail-rome.png
 - 26. Retail - Sample Sale (checkbox)
   - DOM name: `reason_roles[]`
   - Model field: Roles / `roles` / SelectObjectMultiple
-  - Screenshot: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/field-026-retail-sample-sale.png
 - 27. Retail - Training Uk (checkbox)
   - DOM name: `reason_roles[]`
   - Model field: Roles / `roles` / SelectObjectMultiple
-  - Screenshot: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/field-027-retail-training-uk.png
 - 28. Retail - Training Us (checkbox)
   - DOM name: `reason_roles[]`
   - Model field: Roles / `roles` / SelectObjectMultiple
-  - Screenshot: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/field-028-retail-training-us.png
 - 29. Retail - Westbourne Grove (checkbox)
   - DOM name: `reason_roles[]`
   - Model field: Roles / `roles` / SelectObjectMultiple
-  - Screenshot: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/field-029-retail-westbourne-grove.png
 - 30. Retail - Wholesale (checkbox)
   - DOM name: `reason_roles[]`
   - Model field: Roles / `roles` / SelectObjectMultiple
-  - Screenshot: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/field-030-retail-wholesale.png
 - 31. Retail - Woodshed (checkbox)
   - DOM name: `reason_roles[]`
   - Model field: Roles / `roles` / SelectObjectMultiple
-  - Screenshot: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/field-031-retail-woodshed.png
 - 32. Retail Supervisor (checkbox)
   - DOM name: `reason_roles[]`
   - Model field: Roles / `roles` / SelectObjectMultiple
-  - Screenshot: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/field-032-retail-supervisor.png
 - 33. Retail Manager (checkbox)
   - DOM name: `reason_roles[]`
   - Model field: Roles / `roles` / SelectObjectMultiple
-  - Screenshot: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/field-033-retail-manager.png
 - 34. Support Manager (checkbox)
   - DOM name: `reason_roles[]`
   - Model field: Roles / `roles` / SelectObjectMultiple
-  - Screenshot: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/field-034-support-manager.png
 - 35. Retail Assistant (checkbox)
   - DOM name: `reason_roles[]`
   - Model field: Roles / `roles` / SelectObjectMultiple
-  - Screenshot: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/field-035-retail-assistant.png
 - 36. Product Importer (checkbox)
   - DOM name: `reason_roles[]`
   - Model field: Roles / `roles` / SelectObjectMultiple
-  - Screenshot: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/field-036-product-importer.png
 - 37. Shipping Options (checkbox)
   - DOM name: `reason_roles[]`
   - Model field: Roles / `roles` / SelectObjectMultiple
-  - Screenshot: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/field-037-shipping-options.png
 - 38. Position (number)
   - DOM name: `reason_position`
   - Model field: Position / `position` / Int
-  - Screenshot: pages/151-cp-reasons-admin-edit-1-d56b7f43/images/field-038-position.png
+  - Screenshot: pages/151-cp-reasons-admin-edit-id-d56b7f43/images/field-038-position.png
 
 ### Source References
 
@@ -17874,13 +17127,10 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-003-inline-144-redirect-to.png
 - 4. inline[144][redirect_method] (select)
   - DOM name: `inline[144][redirect_method]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-004-inline-144-redirect-method.png
 - 5. inline[144][redirect_strip_params] (checkbox)
   - DOM name: `inline[144][redirect_strip_params]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-005-inline-144-redirect-strip-params.png
 - 6. inline[144][redirect_permanent] (checkbox)
   - DOM name: `inline[144][redirect_permanent]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-006-inline-144-redirect-permanent.png
 - 7. inline[152][redirect_from] (text)
   - DOM name: `inline[152][redirect_from]`
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-007-inline-152-redirect-from.png
@@ -17889,13 +17139,10 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-008-inline-152-redirect-to.png
 - 9. inline[152][redirect_method] (select)
   - DOM name: `inline[152][redirect_method]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-009-inline-152-redirect-method.png
 - 10. inline[152][redirect_strip_params] (checkbox)
   - DOM name: `inline[152][redirect_strip_params]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-010-inline-152-redirect-strip-params.png
 - 11. inline[152][redirect_permanent] (checkbox)
   - DOM name: `inline[152][redirect_permanent]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-011-inline-152-redirect-permanent.png
 - 12. inline[153][redirect_from] (text)
   - DOM name: `inline[153][redirect_from]`
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-012-inline-153-redirect-from.png
@@ -17904,13 +17151,10 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-013-inline-153-redirect-to.png
 - 14. inline[153][redirect_method] (select)
   - DOM name: `inline[153][redirect_method]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-014-inline-153-redirect-method.png
 - 15. inline[153][redirect_strip_params] (checkbox)
   - DOM name: `inline[153][redirect_strip_params]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-015-inline-153-redirect-strip-params.png
 - 16. inline[153][redirect_permanent] (checkbox)
   - DOM name: `inline[153][redirect_permanent]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-016-inline-153-redirect-permanent.png
 - 17. inline[154][redirect_from] (text)
   - DOM name: `inline[154][redirect_from]`
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-017-inline-154-redirect-from.png
@@ -17919,13 +17163,10 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-018-inline-154-redirect-to.png
 - 19. inline[154][redirect_method] (select)
   - DOM name: `inline[154][redirect_method]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-019-inline-154-redirect-method.png
 - 20. inline[154][redirect_strip_params] (checkbox)
   - DOM name: `inline[154][redirect_strip_params]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-020-inline-154-redirect-strip-params.png
 - 21. inline[154][redirect_permanent] (checkbox)
   - DOM name: `inline[154][redirect_permanent]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-021-inline-154-redirect-permanent.png
 - 22. inline[155][redirect_from] (text)
   - DOM name: `inline[155][redirect_from]`
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-022-inline-155-redirect-from.png
@@ -17934,13 +17175,10 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-023-inline-155-redirect-to.png
 - 24. inline[155][redirect_method] (select)
   - DOM name: `inline[155][redirect_method]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-024-inline-155-redirect-method.png
 - 25. inline[155][redirect_strip_params] (checkbox)
   - DOM name: `inline[155][redirect_strip_params]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-025-inline-155-redirect-strip-params.png
 - 26. inline[155][redirect_permanent] (checkbox)
   - DOM name: `inline[155][redirect_permanent]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-026-inline-155-redirect-permanent.png
 - 27. inline[158][redirect_from] (text)
   - DOM name: `inline[158][redirect_from]`
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-027-inline-158-redirect-from.png
@@ -17949,13 +17187,10 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-028-inline-158-redirect-to.png
 - 29. inline[158][redirect_method] (select)
   - DOM name: `inline[158][redirect_method]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-029-inline-158-redirect-method.png
 - 30. inline[158][redirect_strip_params] (checkbox)
   - DOM name: `inline[158][redirect_strip_params]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-030-inline-158-redirect-strip-params.png
 - 31. inline[158][redirect_permanent] (checkbox)
   - DOM name: `inline[158][redirect_permanent]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-031-inline-158-redirect-permanent.png
 - 32. inline[159][redirect_from] (text)
   - DOM name: `inline[159][redirect_from]`
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-032-inline-159-redirect-from.png
@@ -17964,13 +17199,10 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-033-inline-159-redirect-to.png
 - 34. inline[159][redirect_method] (select)
   - DOM name: `inline[159][redirect_method]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-034-inline-159-redirect-method.png
 - 35. inline[159][redirect_strip_params] (checkbox)
   - DOM name: `inline[159][redirect_strip_params]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-035-inline-159-redirect-strip-params.png
 - 36. inline[159][redirect_permanent] (checkbox)
   - DOM name: `inline[159][redirect_permanent]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-036-inline-159-redirect-permanent.png
 - 37. inline[160][redirect_from] (text)
   - DOM name: `inline[160][redirect_from]`
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-037-inline-160-redirect-from.png
@@ -17979,13 +17211,10 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-038-inline-160-redirect-to.png
 - 39. inline[160][redirect_method] (select)
   - DOM name: `inline[160][redirect_method]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-039-inline-160-redirect-method.png
 - 40. inline[160][redirect_strip_params] (checkbox)
   - DOM name: `inline[160][redirect_strip_params]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-040-inline-160-redirect-strip-params.png
 - 41. inline[160][redirect_permanent] (checkbox)
   - DOM name: `inline[160][redirect_permanent]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-041-inline-160-redirect-permanent.png
 - 42. inline[161][redirect_from] (text)
   - DOM name: `inline[161][redirect_from]`
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-042-inline-161-redirect-from.png
@@ -17994,28 +17223,20 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-043-inline-161-redirect-to.png
 - 44. inline[161][redirect_method] (select)
   - DOM name: `inline[161][redirect_method]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-044-inline-161-redirect-method.png
 - 45. inline[161][redirect_strip_params] (checkbox)
   - DOM name: `inline[161][redirect_strip_params]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-045-inline-161-redirect-strip-params.png
 - 46. inline[161][redirect_permanent] (checkbox)
   - DOM name: `inline[161][redirect_permanent]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-046-inline-161-redirect-permanent.png
 - 47. inline[162][redirect_from] (text)
   - DOM name: `inline[162][redirect_from]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-047-inline-162-redirect-from.png
 - 48. inline[162][redirect_to] (text)
   - DOM name: `inline[162][redirect_to]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-048-inline-162-redirect-to.png
 - 49. inline[162][redirect_method] (select)
   - DOM name: `inline[162][redirect_method]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-049-inline-162-redirect-method.png
 - 50. inline[162][redirect_strip_params] (checkbox)
   - DOM name: `inline[162][redirect_strip_params]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-050-inline-162-redirect-strip-params.png
 - 51. inline[162][redirect_permanent] (checkbox)
   - DOM name: `inline[162][redirect_permanent]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-051-inline-162-redirect-permanent.png
 - 52. inline[163][redirect_from] (text)
   - DOM name: `inline[163][redirect_from]`
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-052-inline-163-redirect-from.png
@@ -18024,13 +17245,10 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-053-inline-163-redirect-to.png
 - 54. inline[163][redirect_method] (select)
   - DOM name: `inline[163][redirect_method]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-054-inline-163-redirect-method.png
 - 55. inline[163][redirect_strip_params] (checkbox)
   - DOM name: `inline[163][redirect_strip_params]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-055-inline-163-redirect-strip-params.png
 - 56. inline[163][redirect_permanent] (checkbox)
   - DOM name: `inline[163][redirect_permanent]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-056-inline-163-redirect-permanent.png
 - 57. inline[165][redirect_from] (text)
   - DOM name: `inline[165][redirect_from]`
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-057-inline-165-redirect-from.png
@@ -18039,13 +17257,10 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-058-inline-165-redirect-to.png
 - 59. inline[165][redirect_method] (select)
   - DOM name: `inline[165][redirect_method]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-059-inline-165-redirect-method.png
 - 60. inline[165][redirect_strip_params] (checkbox)
   - DOM name: `inline[165][redirect_strip_params]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-060-inline-165-redirect-strip-params.png
 - 61. inline[165][redirect_permanent] (checkbox)
   - DOM name: `inline[165][redirect_permanent]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-061-inline-165-redirect-permanent.png
 - 62. inline[166][redirect_from] (text)
   - DOM name: `inline[166][redirect_from]`
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-062-inline-166-redirect-from.png
@@ -18054,13 +17269,10 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-063-inline-166-redirect-to.png
 - 64. inline[166][redirect_method] (select)
   - DOM name: `inline[166][redirect_method]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-064-inline-166-redirect-method.png
 - 65. inline[166][redirect_strip_params] (checkbox)
   - DOM name: `inline[166][redirect_strip_params]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-065-inline-166-redirect-strip-params.png
 - 66. inline[166][redirect_permanent] (checkbox)
   - DOM name: `inline[166][redirect_permanent]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-066-inline-166-redirect-permanent.png
 - 67. inline[167][redirect_from] (text)
   - DOM name: `inline[167][redirect_from]`
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-067-inline-167-redirect-from.png
@@ -18069,13 +17281,10 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-068-inline-167-redirect-to.png
 - 69. inline[167][redirect_method] (select)
   - DOM name: `inline[167][redirect_method]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-069-inline-167-redirect-method.png
 - 70. inline[167][redirect_strip_params] (checkbox)
   - DOM name: `inline[167][redirect_strip_params]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-070-inline-167-redirect-strip-params.png
 - 71. inline[167][redirect_permanent] (checkbox)
   - DOM name: `inline[167][redirect_permanent]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-071-inline-167-redirect-permanent.png
 - 72. inline[168][redirect_from] (text)
   - DOM name: `inline[168][redirect_from]`
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-072-inline-168-redirect-from.png
@@ -18084,13 +17293,10 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-073-inline-168-redirect-to.png
 - 74. inline[168][redirect_method] (select)
   - DOM name: `inline[168][redirect_method]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-074-inline-168-redirect-method.png
 - 75. inline[168][redirect_strip_params] (checkbox)
   - DOM name: `inline[168][redirect_strip_params]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-075-inline-168-redirect-strip-params.png
 - 76. inline[168][redirect_permanent] (checkbox)
   - DOM name: `inline[168][redirect_permanent]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-076-inline-168-redirect-permanent.png
 - 77. inline[169][redirect_from] (text)
   - DOM name: `inline[169][redirect_from]`
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-077-inline-169-redirect-from.png
@@ -18099,13 +17305,10 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-078-inline-169-redirect-to.png
 - 79. inline[169][redirect_method] (select)
   - DOM name: `inline[169][redirect_method]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-079-inline-169-redirect-method.png
 - 80. inline[169][redirect_strip_params] (checkbox)
   - DOM name: `inline[169][redirect_strip_params]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-080-inline-169-redirect-strip-params.png
 - 81. inline[169][redirect_permanent] (checkbox)
   - DOM name: `inline[169][redirect_permanent]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-081-inline-169-redirect-permanent.png
 - 82. inline[171][redirect_from] (text)
   - DOM name: `inline[171][redirect_from]`
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-082-inline-171-redirect-from.png
@@ -18114,13 +17317,10 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-083-inline-171-redirect-to.png
 - 84. inline[171][redirect_method] (select)
   - DOM name: `inline[171][redirect_method]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-084-inline-171-redirect-method.png
 - 85. inline[171][redirect_strip_params] (checkbox)
   - DOM name: `inline[171][redirect_strip_params]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-085-inline-171-redirect-strip-params.png
 - 86. inline[171][redirect_permanent] (checkbox)
   - DOM name: `inline[171][redirect_permanent]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-086-inline-171-redirect-permanent.png
 - 87. inline[172][redirect_from] (text)
   - DOM name: `inline[172][redirect_from]`
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-087-inline-172-redirect-from.png
@@ -18129,28 +17329,20 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-088-inline-172-redirect-to.png
 - 89. inline[172][redirect_method] (select)
   - DOM name: `inline[172][redirect_method]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-089-inline-172-redirect-method.png
 - 90. inline[172][redirect_strip_params] (checkbox)
   - DOM name: `inline[172][redirect_strip_params]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-090-inline-172-redirect-strip-params.png
 - 91. inline[172][redirect_permanent] (checkbox)
   - DOM name: `inline[172][redirect_permanent]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-091-inline-172-redirect-permanent.png
 - 92. inline[173][redirect_from] (text)
   - DOM name: `inline[173][redirect_from]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-092-inline-173-redirect-from.png
 - 93. inline[173][redirect_to] (text)
   - DOM name: `inline[173][redirect_to]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-093-inline-173-redirect-to.png
 - 94. inline[173][redirect_method] (select)
   - DOM name: `inline[173][redirect_method]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-094-inline-173-redirect-method.png
 - 95. inline[173][redirect_strip_params] (checkbox)
   - DOM name: `inline[173][redirect_strip_params]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-095-inline-173-redirect-strip-params.png
 - 96. inline[173][redirect_permanent] (checkbox)
   - DOM name: `inline[173][redirect_permanent]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-096-inline-173-redirect-permanent.png
 - 97. inline[174][redirect_from] (text)
   - DOM name: `inline[174][redirect_from]`
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-097-inline-174-redirect-from.png
@@ -18159,13 +17351,10 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-098-inline-174-redirect-to.png
 - 99. inline[174][redirect_method] (select)
   - DOM name: `inline[174][redirect_method]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-099-inline-174-redirect-method.png
 - 100. inline[174][redirect_strip_params] (checkbox)
   - DOM name: `inline[174][redirect_strip_params]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-100-inline-174-redirect-strip-params.png
 - 101. inline[174][redirect_permanent] (checkbox)
   - DOM name: `inline[174][redirect_permanent]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-101-inline-174-redirect-permanent.png
 - 102. inline[176][redirect_from] (text)
   - DOM name: `inline[176][redirect_from]`
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-102-inline-176-redirect-from.png
@@ -18174,13 +17363,10 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-103-inline-176-redirect-to.png
 - 104. inline[176][redirect_method] (select)
   - DOM name: `inline[176][redirect_method]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-104-inline-176-redirect-method.png
 - 105. inline[176][redirect_strip_params] (checkbox)
   - DOM name: `inline[176][redirect_strip_params]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-105-inline-176-redirect-strip-params.png
 - 106. inline[176][redirect_permanent] (checkbox)
   - DOM name: `inline[176][redirect_permanent]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-106-inline-176-redirect-permanent.png
 - 107. inline[177][redirect_from] (text)
   - DOM name: `inline[177][redirect_from]`
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-107-inline-177-redirect-from.png
@@ -18189,13 +17375,10 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-108-inline-177-redirect-to.png
 - 109. inline[177][redirect_method] (select)
   - DOM name: `inline[177][redirect_method]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-109-inline-177-redirect-method.png
 - 110. inline[177][redirect_strip_params] (checkbox)
   - DOM name: `inline[177][redirect_strip_params]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-110-inline-177-redirect-strip-params.png
 - 111. inline[177][redirect_permanent] (checkbox)
   - DOM name: `inline[177][redirect_permanent]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-111-inline-177-redirect-permanent.png
 - 112. inline[178][redirect_from] (text)
   - DOM name: `inline[178][redirect_from]`
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-112-inline-178-redirect-from.png
@@ -18204,13 +17387,10 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-113-inline-178-redirect-to.png
 - 114. inline[178][redirect_method] (select)
   - DOM name: `inline[178][redirect_method]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-114-inline-178-redirect-method.png
 - 115. inline[178][redirect_strip_params] (checkbox)
   - DOM name: `inline[178][redirect_strip_params]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-115-inline-178-redirect-strip-params.png
 - 116. inline[178][redirect_permanent] (checkbox)
   - DOM name: `inline[178][redirect_permanent]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-116-inline-178-redirect-permanent.png
 - 117. inline[180][redirect_from] (text)
   - DOM name: `inline[180][redirect_from]`
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-117-inline-180-redirect-from.png
@@ -18219,10 +17399,8 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/152-cp-redirects-7f08f116/images/field-118-inline-180-redirect-to.png
 - 119. inline[180][redirect_method] (select)
   - DOM name: `inline[180][redirect_method]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-119-inline-180-redirect-method.png
 - 120. inline[180][redirect_strip_params] (checkbox)
   - DOM name: `inline[180][redirect_strip_params]`
-  - Screenshot: pages/152-cp-redirects-7f08f116/images/field-120-inline-180-redirect-strip-params.png
 - 121. inline[180][redirect_permanent] (checkbox)
   - DOM name: `inline[180][redirect_permanent]`
 - 122. inline[181][redirect_from] (text)
@@ -18295,11 +17473,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Redirects
 
-- URL: https://dev.soho-home.local/cp/redirects/edit/144
+- URL: https://dev.soho-home.local/cp/redirects/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|redirects|edit|redirects/edit/:identifier
-- Draft doc: pages/153-cp-redirects-edit-144-6dcf7cfc/README.md
+- Draft doc: pages/153-cp-redirects-edit-id-6dcf7cfc/README.md
 - Code analysis doc: .vscode/code-docs/cp-redirects-edit-existing.md
-- Page screenshots: pages/153-cp-redirects-edit-144-6dcf7cfc/images/page-desktop.png
+- Page screenshots: pages/153-cp-redirects-edit-id-6dcf7cfc/images/page-desktop.png
 - Field count: 5
 - Controller: App\Redirects\AdminController (redirects)
 - Controller file: src/Redirects/AdminController.php
@@ -18309,19 +17487,17 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. From (text)
   - DOM name: `redirect_from`
-  - Screenshot: pages/153-cp-redirects-edit-144-6dcf7cfc/images/field-001-from.png
+  - Screenshot: pages/153-cp-redirects-edit-id-6dcf7cfc/images/field-001-from.png
 - 2. To optional (text)
   - DOM name: `redirect_to`
-  - Screenshot: pages/153-cp-redirects-edit-144-6dcf7cfc/images/field-002-to-optional.png
+  - Screenshot: pages/153-cp-redirects-edit-id-6dcf7cfc/images/field-002-to-optional.png
 - 3. Method (select)
   - DOM name: `redirect_method`
-  - Screenshot: pages/153-cp-redirects-edit-144-6dcf7cfc/images/field-003-method.png
+  - Screenshot: pages/153-cp-redirects-edit-id-6dcf7cfc/images/field-003-method.png
 - 4. Strip query parameters (checkbox)
   - DOM name: `redirect_strip_params`
-  - Screenshot: pages/153-cp-redirects-edit-144-6dcf7cfc/images/field-004-strip-query-parameters.png
 - 5. Permanent (checkbox)
   - DOM name: `redirect_permanent`
-  - Screenshot: pages/153-cp-redirects-edit-144-6dcf7cfc/images/field-005-permanent.png
 
 ### Source References
 
@@ -18334,15 +17510,13 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - Documentation route key: https://dev.soho-home.local|cp|reporting_payments-admin|index|reporting_payments-admin
 - Draft doc: pages/154-cp-reporting-payments-admin-0fba571b/README.md
 - Page screenshots: pages/154-cp-reporting-payments-admin-0fba571b/images/page-desktop.png
-- Field count: 2
+- Field count: 1
 - Controller: unresolved
 
 ### DOM Fields
 
 - 1. select (select)
   - Screenshot: pages/154-cp-reporting-payments-admin-0fba571b/images/field-001-select.png
-- 2. select (select)
-  - Screenshot: pages/154-cp-reporting-payments-admin-0fba571b/images/field-002-select.png
 
 ## Returns
 
@@ -18613,11 +17787,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Returns
 
-- URL: https://dev.soho-home.local/cp/returns-admin/view/36913
+- URL: https://dev.soho-home.local/cp/returns-admin/view/:id
 - Documentation route key: https://dev.soho-home.local|cp|returns-admin|view|returns-admin/view/:identifier
-- Draft doc: pages/156-cp-returns-admin-view-36913-2bdad3f2/README.md
+- Draft doc: pages/156-cp-returns-admin-view-id-2bdad3f2/README.md
 - Code analysis doc: .vscode/code-docs/cp-returns-admin-view-view.md
-- Page screenshots: pages/156-cp-returns-admin-view-36913-2bdad3f2/images/page-desktop.png
+- Page screenshots: pages/156-cp-returns-admin-view-id-2bdad3f2/images/page-desktop.png
 - Field count: 0
 - Controller: Soho\Ecom\Returns\AdminController (returns-admin)
 - Controller file: vendor/soho/ecom/src/Returns/AdminController.php
@@ -18879,7 +18053,7 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - Draft doc: pages/157-cp-returns-queue-admin-079753c9/README.md
 - Code analysis doc: .vscode/code-docs/cp-returns-queue-admin.md
 - Page screenshots: pages/157-cp-returns-queue-admin-079753c9/images/page-desktop.png
-- Field count: 2
+- Field count: 1
 - Controller: Soho\Ecom\Returns\QueueAdminController (returns_queue-admin)
 - Controller file: vendor/soho/ecom/src/Returns/QueueAdminController.php
 - Action method: indexAction (inherited or unresolved)
@@ -18893,8 +18067,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 1. Keyword search (text)
   - DOM name: `search`
   - Screenshot: pages/157-cp-returns-queue-admin-079753c9/images/field-001-keyword-search.png
-- 2. select (select)
-  - Screenshot: pages/157-cp-returns-queue-admin-079753c9/images/field-002-select.png
 
 ### Source References
 
@@ -19140,11 +18312,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Returns Queue
 
-- URL: https://dev.soho-home.local/cp/returns_queue-admin/view/30479
+- URL: https://dev.soho-home.local/cp/returns_queue-admin/view/:id
 - Documentation route key: https://dev.soho-home.local|cp|returns_queue-admin|view|returns_queue-admin/view/:identifier
-- Draft doc: pages/158-cp-returns-queue-admin-view-30479-6ea2ae48/README.md
+- Draft doc: pages/158-cp-returns-queue-admin-view-id-6ea2ae48/README.md
 - Code analysis doc: .vscode/code-docs/cp-returns-queue-admin-view-view.md
-- Page screenshots: pages/158-cp-returns-queue-admin-view-30479-6ea2ae48/images/page-desktop.png
+- Page screenshots: pages/158-cp-returns-queue-admin-view-id-6ea2ae48/images/page-desktop.png
 - Field count: 0
 - Controller: Soho\Ecom\Returns\QueueAdminController (returns_queue-admin)
 - Controller file: vendor/soho/ecom/src/Returns/QueueAdminController.php
@@ -19658,11 +18830,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Return Stories
 
-- URL: https://dev.soho-home.local/cp/returns_stories-admin/edit/1
+- URL: https://dev.soho-home.local/cp/returns_stories-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|returns_stories-admin|edit|returns_stories-admin/edit/:identifier
-- Draft doc: pages/160-cp-returns-stories-admin-edit-1-9076842a/README.md
+- Draft doc: pages/160-cp-returns-stories-admin-edit-id-9076842a/README.md
 - Code analysis doc: .vscode/code-docs/cp-returns-stories-admin-edit-existing.md
-- Page screenshots: pages/160-cp-returns-stories-admin-edit-1-9076842a/images/page-desktop.png
+- Page screenshots: pages/160-cp-returns-stories-admin-edit-id-9076842a/images/page-desktop.png
 - Field count: 5
 - Controller: Soho\Ecom\Returns\StoriesAdminController (returns_stories-admin)
 - Controller file: vendor/soho/ecom/src/Returns/StoriesAdminController.php
@@ -19676,22 +18848,22 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. Label (text)
   - DOM name: `story_label`
-  - Screenshot: pages/160-cp-returns-stories-admin-edit-1-9076842a/images/field-001-label.png
+  - Screenshot: pages/160-cp-returns-stories-admin-edit-id-9076842a/images/field-001-label.png
 - 2. Default Action (select)
   - DOM name: `story_default_action`
-  - Screenshot: pages/160-cp-returns-stories-admin-edit-1-9076842a/images/field-002-default-action.png
+  - Screenshot: pages/160-cp-returns-stories-admin-edit-id-9076842a/images/field-002-default-action.png
 - 3. Default Reason (select)
   - DOM name: `story_default_reason`
   - Model field: Default Reason / `default_reason` / SelectCallback
-  - Screenshot: pages/160-cp-returns-stories-admin-edit-1-9076842a/images/field-003-default-reason.png
+  - Screenshot: pages/160-cp-returns-stories-admin-edit-id-9076842a/images/field-003-default-reason.png
 - 4. Warehouse Mapping optional (select)
   - DOM name: `story_mapping`
   - Model field: Warehouse Mapping / `mapping` / SelectCallback
-  - Screenshot: pages/160-cp-returns-stories-admin-edit-1-9076842a/images/field-004-warehouse-mapping-optional.png
+  - Screenshot: pages/160-cp-returns-stories-admin-edit-id-9076842a/images/field-004-warehouse-mapping-optional.png
 - 5. Status (select)
   - DOM name: `story_status`
   - Model field: Status / `` / Select
-  - Screenshot: pages/160-cp-returns-stories-admin-edit-1-9076842a/images/field-005-status.png
+  - Screenshot: pages/160-cp-returns-stories-admin-edit-id-9076842a/images/field-005-status.png
 
 ### Source References
 
@@ -20002,7 +19174,7 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - Draft doc: pages/163-cp-shipments-admin-1f0c092f/README.md
 - Code analysis doc: .vscode/code-docs/cp-shipments-admin.md
 - Page screenshots: pages/163-cp-shipments-admin-1f0c092f/images/page-desktop.png
-- Field count: 2
+- Field count: 1
 - Controller: App\Ecom\ShipmentsAdminController (shipments-admin)
 - Controller file: src/Ecom/ShipmentsAdminController.php
 - Action method: indexAction (inherited or unresolved)
@@ -20016,8 +19188,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 1. Keyword search (text)
   - DOM name: `search`
   - Screenshot: pages/163-cp-shipments-admin-1f0c092f/images/field-001-keyword-search.png
-- 2. select (select)
-  - Screenshot: pages/163-cp-shipments-admin-1f0c092f/images/field-002-select.png
 
 ### Source References
 
@@ -20133,11 +19303,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Shipments
 
-- URL: https://dev.soho-home.local/cp/shipments-admin/edit/612853
+- URL: https://dev.soho-home.local/cp/shipments-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|shipments-admin|edit|shipments-admin/edit/:identifier
-- Draft doc: pages/164-cp-shipments-admin-edit-612853-550ff726/README.md
+- Draft doc: pages/164-cp-shipments-admin-edit-id-550ff726/README.md
 - Code analysis doc: .vscode/code-docs/cp-shipments-admin-edit-existing.md
-- Page screenshots: pages/164-cp-shipments-admin-edit-612853-550ff726/images/page-desktop.png
+- Page screenshots: pages/164-cp-shipments-admin-edit-id-550ff726/images/page-desktop.png
 - Field count: 2
 - Controller: App\Ecom\ShipmentsAdminController (shipments-admin)
 - Controller file: src/Ecom/ShipmentsAdminController.php
@@ -20151,10 +19321,10 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. Tracking URL optional (text)
   - DOM name: `shipment_tracking_url`
-  - Screenshot: pages/164-cp-shipments-admin-edit-612853-550ff726/images/field-001-tracking-url-optional.png
+  - Screenshot: pages/164-cp-shipments-admin-edit-id-550ff726/images/field-001-tracking-url-optional.png
 - 2. Courier Override optional (text)
   - DOM name: `shipment_courier_override`
-  - Screenshot: pages/164-cp-shipments-admin-edit-612853-550ff726/images/field-002-courier-override-optional.png
+  - Screenshot: pages/164-cp-shipments-admin-edit-id-550ff726/images/field-002-courier-override-optional.png
 
 ### Source References
 
@@ -20275,7 +19445,7 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - Draft doc: pages/165-cp-shipping-admin-1deed73f/README.md
 - Code analysis doc: .vscode/code-docs/cp-shipping-admin.md
 - Page screenshots: pages/165-cp-shipping-admin-1deed73f/images/page-desktop.png
-- Field count: 3
+- Field count: 2
 - Controller: App\Ecom\Shipping\OptionsAdmin (shipping-admin)
 - Controller file: src/Ecom/Shipping/OptionsAdmin.php
 - Action method: indexAction (inherited or unresolved)
@@ -20291,8 +19461,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/165-cp-shipping-admin-1deed73f/images/field-001-keyword-search.png
 - 2. select (select)
   - Screenshot: pages/165-cp-shipping-admin-1deed73f/images/field-002-select.png
-- 3. select (select)
-  - Screenshot: pages/165-cp-shipping-admin-1deed73f/images/field-003-select.png
 
 ### Source References
 
@@ -20408,11 +19576,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Shipping Options
 
-- URL: https://dev.soho-home.local/cp/shipping-admin/edit/1
+- URL: https://dev.soho-home.local/cp/shipping-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|shipping-admin|edit|shipping-admin/edit/:identifier
-- Draft doc: pages/166-cp-shipping-admin-edit-1-d086a580/README.md
+- Draft doc: pages/166-cp-shipping-admin-edit-id-d086a580/README.md
 - Code analysis doc: .vscode/code-docs/cp-shipping-admin-edit-existing.md
-- Page screenshots: pages/166-cp-shipping-admin-edit-1-d086a580/images/page-desktop.png
+- Page screenshots: pages/166-cp-shipping-admin-edit-id-d086a580/images/page-desktop.png
 - Field count: 107
 - Controller: App\Ecom\Shipping\OptionsAdmin (shipping-admin)
 - Controller file: src/Ecom/Shipping/OptionsAdmin.php
@@ -20426,329 +19594,238 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. Title (text)
   - DOM name: `shipping_option_title`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-001-title.png
+  - Screenshot: pages/166-cp-shipping-admin-edit-id-d086a580/images/field-001-title.png
 - 2. Display Title (text)
   - DOM name: `shipping_option_display_title`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-002-display-title.png
+  - Screenshot: pages/166-cp-shipping-admin-edit-id-d086a580/images/field-002-display-title.png
 - 3. Supplier (Dropship Only) optional (select)
   - DOM name: `shipping_option_supplier`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-003-supplier-dropship-only-optional.png
+  - Screenshot: pages/166-cp-shipping-admin-edit-id-d086a580/images/field-003-supplier-dropship-only-optional.png
 - 4. Status (select)
   - DOM name: `shipping_option_status`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-004-status.png
+  - Screenshot: pages/166-cp-shipping-admin-edit-id-d086a580/images/field-004-status.png
 - 5. Show in POS (checkbox)
   - DOM name: `shipping_option_show_in_pos`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-005-show-in-pos.png
 - 6. Show in CP Shop (checkbox)
   - DOM name: `shipping_option_show_in_cp_shop`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-006-show-in-cp-shop.png
 - 7. Allow Personalised Items (checkbox)
   - DOM name: `shipping_option_allows_personalised_items`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-007-allow-personalised-items.png
 - 8. Service (select)
   - DOM name: `shipping_option_service`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-008-service.png
+  - Screenshot: pages/166-cp-shipping-admin-edit-id-d086a580/images/field-008-service.png
 - 9. Client optional (select)
   - DOM name: `shipping_option_client`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-009-client-optional.png
+  - Screenshot: pages/166-cp-shipping-admin-edit-id-d086a580/images/field-009-client-optional.png
 - 10. Client Email optional (text)
   - DOM name: `shipping_option_client_email`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-010-client-email-optional.png
+  - Screenshot: pages/166-cp-shipping-admin-edit-id-d086a580/images/field-010-client-email-optional.png
 - 11. Offer Nominated Day (checkbox)
   - DOM name: `shipping_option_allow_nominated_day`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-011-offer-nominated-day.png
 - 12. Take Away (No Stock) (checkbox)
   - DOM name: `shipping_option_shipment_type[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-012-take-away-no-stock.png
 - 13. Regular (checkbox)
   - DOM name: `shipping_option_shipment_type[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-013-regular.png
 - 14. Backorder (checkbox)
   - DOM name: `shipping_option_shipment_type[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-014-backorder.png
 - 15. 2 Man (checkbox)
   - DOM name: `shipping_option_shipment_type[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-015-2-man.png
 - 16. Assisted Lift (checkbox)
   - DOM name: `shipping_option_shipment_type[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-016-assisted-lift.png
 - 17. Swatch (checkbox)
   - DOM name: `shipping_option_shipment_type[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-017-swatch.png
 - 18. 2 Man (Backorder) (checkbox)
   - DOM name: `shipping_option_shipment_type[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-018-2-man-backorder.png
 - 19. Assisted Lift (Backorder) (checkbox)
   - DOM name: `shipping_option_shipment_type[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-019-assisted-lift-backorder.png
 - 20. Dropship (checkbox)
   - DOM name: `shipping_option_shipment_type[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-020-dropship.png
 - 21. Dropship MTO (checkbox)
   - DOM name: `shipping_option_shipment_type[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-021-dropship-mto.png
 - 22. Paint (checkbox)
   - DOM name: `shipping_option_shipment_type[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-022-paint.png
 - 23. Paint (Sample) (checkbox)
   - DOM name: `shipping_option_shipment_type[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-023-paint-sample.png
 - 24. Transfer (checkbox)
   - DOM name: `shipping_option_shipment_type[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-024-transfer.png
 - 25. Transfer Backorder (checkbox)
   - DOM name: `shipping_option_shipment_type[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-025-transfer-backorder.png
 - 26. Transfer 2 Man (checkbox)
   - DOM name: `shipping_option_shipment_type[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-026-transfer-2-man.png
 - 27. Transfer 2 Man Backorder (checkbox)
   - DOM name: `shipping_option_shipment_type[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-027-transfer-2-man-backorder.png
 - 28. Transfer Assisted Lift (checkbox)
   - DOM name: `shipping_option_shipment_type[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-028-transfer-assisted-lift.png
 - 29. Transfer Assisted Lift Backorder (checkbox)
   - DOM name: `shipping_option_shipment_type[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-029-transfer-assisted-lift-backorder.png
 - 30. Consolidated Shipping (checkbox)
   - DOM name: `shipping_option_consolidated_shipping`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-030-consolidated-shipping.png
 - 31. United Kingdom (Remote Areas) (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-031-united-kingdom-remote-areas.png
 - 32. United Kingdom (Northern Ireland) (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-032-united-kingdom-northern-ireland.png
 - 33. United States (Remote States) (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-033-united-states-remote-states.png
 - 34. Isle of Man (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-034-isle-of-man.png
 - 35. Isle of wight (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-035-isle-of-wight.png
 - 36. Scotland (Islands) (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-036-scotland-islands.png
 - 37. London Postcodes M25 (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-037-london-postcodes-m25.png
 - 38. United Kingdom (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-038-united-kingdom.png
 - 39. United States (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-039-united-states.png
 - 40. Australia (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-040-australia.png
 - 41. Austria (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-041-austria.png
 - 42. Belgium (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-042-belgium.png
 - 43. Bosnia and Herzegovina (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-043-bosnia-and-herzegovina.png
 - 44. Canada (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-044-canada.png
 - 45. Croatia (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-045-croatia.png
 - 46. Cyprus (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-046-cyprus.png
 - 47. Czech Republic (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-047-czech-republic.png
 - 48. Denmark (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-048-denmark.png
 - 49. Finland (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-049-finland.png
 - 50. France (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-050-france.png
 - 51. Germany (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-051-germany.png
 - 52. Greece (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-052-greece.png
 - 53. Guernsey (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-053-guernsey.png
 - 54. Hong Kong (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-054-hong-kong.png
 - 55. Hungary (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-055-hungary.png
 - 56. Iceland (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-056-iceland.png
 - 57. Ireland (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-057-ireland.png
 - 58. Italy (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-058-italy.png
 - 59. Jersey (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-059-jersey.png
 - 60. Latvia (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-060-latvia.png
 - 61. Liechtenstein (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-061-liechtenstein.png
 - 62. Luxembourg (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-062-luxembourg.png
 - 63. Macedonia (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-063-macedonia.png
 - 64. Malta (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-064-malta.png
 - 65. Lithuania (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-065-lithuania.png
 - 66. Moldova (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-066-moldova.png
 - 67. Monaco (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-067-monaco.png
 - 68. Montenegro (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-068-montenegro.png
 - 69. Netherlands (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-069-netherlands.png
 - 70. New Zealand (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-070-new-zealand.png
 - 71. Norway (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-071-norway.png
 - 72. Poland (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-072-poland.png
 - 73. Portugal (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-073-portugal.png
 - 74. Romania (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-074-romania.png
 - 75. San Marino (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-075-san-marino.png
 - 76. Serbia (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-076-serbia.png
 - 77. Singapore (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-077-singapore.png
 - 78. Spain (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-078-spain.png
 - 79. Sweden (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-079-sweden.png
 - 80. Switzerland (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-080-switzerland.png
 - 81. UAE (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-081-uae.png
 - 82. Ukraine (checkbox)
   - DOM name: `shipping_option_countries[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-082-ukraine.png
 - 83. shipping_option_cutoff_time[hour] (select)
   - DOM name: `shipping_option_cutoff_time[hour]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-083-shipping-option-cutoff-time-hour.png
+  - Screenshot: pages/166-cp-shipping-admin-edit-id-d086a580/images/field-083-shipping-option-cutoff-time-hour.png
 - 84. shipping_option_cutoff_time[minute] (select)
   - DOM name: `shipping_option_cutoff_time[minute]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-084-shipping-option-cutoff-time-minute.png
 - 85. shipping_option_cutoff_time[second] (select)
   - DOM name: `shipping_option_cutoff_time[second]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-085-shipping-option-cutoff-time-second.png
 - 86. Monday (checkbox)
   - DOM name: `shipping_option_dispatch_days[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-086-monday.png
 - 87. Tuesday (checkbox)
   - DOM name: `shipping_option_dispatch_days[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-087-tuesday.png
 - 88. Wednesday (checkbox)
   - DOM name: `shipping_option_dispatch_days[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-088-wednesday.png
 - 89. Thursday (checkbox)
   - DOM name: `shipping_option_dispatch_days[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-089-thursday.png
 - 90. Friday (checkbox)
   - DOM name: `shipping_option_dispatch_days[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-090-friday.png
 - 91. Saturday (checkbox)
   - DOM name: `shipping_option_dispatch_days[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-091-saturday.png
 - 92. Sunday (checkbox)
   - DOM name: `shipping_option_dispatch_days[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-092-sunday.png
 - 93. Monday (checkbox)
   - DOM name: `shipping_option_delivery_days[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-093-monday.png
 - 94. Tuesday (checkbox)
   - DOM name: `shipping_option_delivery_days[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-094-tuesday.png
 - 95. Wednesday (checkbox)
   - DOM name: `shipping_option_delivery_days[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-095-wednesday.png
 - 96. Thursday (checkbox)
   - DOM name: `shipping_option_delivery_days[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-096-thursday.png
 - 97. Friday (checkbox)
   - DOM name: `shipping_option_delivery_days[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-097-friday.png
 - 98. Saturday (checkbox)
   - DOM name: `shipping_option_delivery_days[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-098-saturday.png
 - 99. Sunday (checkbox)
   - DOM name: `shipping_option_delivery_days[]`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-099-sunday.png
 - 100. Minimum dispatch days optional (number)
   - DOM name: `shipping_option_min_dispatch`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-100-minimum-dispatch-days-optional.png
+  - Screenshot: pages/166-cp-shipping-admin-edit-id-d086a580/images/field-100-minimum-dispatch-days-optional.png
 - 101. Maximum dispatch days optional (number)
   - DOM name: `shipping_option_max_dispatch`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-101-maximum-dispatch-days-optional.png
+  - Screenshot: pages/166-cp-shipping-admin-edit-id-d086a580/images/field-101-maximum-dispatch-days-optional.png
 - 102. Minimum transit days optional (number)
   - DOM name: `shipping_option_min_transit`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-102-minimum-transit-days-optional.png
+  - Screenshot: pages/166-cp-shipping-admin-edit-id-d086a580/images/field-102-minimum-transit-days-optional.png
 - 103. Maximum transit days (number)
   - DOM name: `shipping_option_max_transit`
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-103-maximum-transit-days.png
+  - Screenshot: pages/166-cp-shipping-admin-edit-id-d086a580/images/field-103-maximum-transit-days.png
 - 104. Min Tier optional (number)
   - DOM name: `shipping_option_min_tier`
   - Model field: Min Tier / `min_tier` / Int
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-104-min-tier-optional.png
+  - Screenshot: pages/166-cp-shipping-admin-edit-id-d086a580/images/field-104-min-tier-optional.png
 - 105. Max Tier optional (number)
   - DOM name: `shipping_option_max_tier`
   - Model field: Max Tier / `max_tier` / Int
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-105-max-tier-optional.png
+  - Screenshot: pages/166-cp-shipping-admin-edit-id-d086a580/images/field-105-max-tier-optional.png
 - 106. Min weight (kg) optional (number)
   - DOM name: `shipping_option_min_weight`
   - Model field: Min weight (kg) / `min_weight` / Float
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-106-min-weight-kg-optional.png
+  - Screenshot: pages/166-cp-shipping-admin-edit-id-d086a580/images/field-106-min-weight-kg-optional.png
 - 107. Max weight (kg) optional (number)
   - DOM name: `shipping_option_max_weight`
   - Model field: Max weight (kg) / `max_weight` / Float
-  - Screenshot: pages/166-cp-shipping-admin-edit-1-d086a580/images/field-107-max-weight-kg-optional.png
+  - Screenshot: pages/166-cp-shipping-admin-edit-id-d086a580/images/field-107-max-weight-kg-optional.png
 
 ### Source References
 
@@ -21123,11 +20200,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Shipping Client Log
 
-- URL: https://dev.soho-home.local/cp/shipping-client-log-admin/edit/29912
+- URL: https://dev.soho-home.local/cp/shipping-client-log-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|shipping-client-log-admin|edit|shipping-client-log-admin/edit/:identifier
-- Draft doc: pages/168-cp-shipping-client-log-admin-edit-29912-02cd508f/README.md
+- Draft doc: pages/168-cp-shipping-client-log-admin-edit-id-02cd508f/README.md
 - Code analysis doc: .vscode/code-docs/cp-shipping-client-log-admin-edit-existing.md
-- Page screenshots: pages/168-cp-shipping-client-log-admin-edit-29912-02cd508f/images/page-desktop.png
+- Page screenshots: pages/168-cp-shipping-client-log-admin-edit-id-02cd508f/images/page-desktop.png
 - Field count: 0
 - Controller: Soho\Ecom\Shipping\Controller\ClientLogAdmin (shipping-client-log-admin)
 - Controller file: vendor/soho/ecom/src/Shipping/Controller/ClientLogAdmin.php
@@ -21648,11 +20725,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Shipping Country Groups
 
-- URL: https://dev.soho-home.local/cp/shipping-country-groups-admin/edit/1
+- URL: https://dev.soho-home.local/cp/shipping-country-groups-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|shipping-country-groups-admin|edit|shipping-country-groups-admin/edit/:identifier
-- Draft doc: pages/170-cp-shipping-country-groups-admin-edit-1-c123e654/README.md
+- Draft doc: pages/170-cp-shipping-country-groups-admin-edit-id-c123e654/README.md
 - Code analysis doc: .vscode/code-docs/cp-shipping-country-groups-admin-edit-existing.md
-- Page screenshots: pages/170-cp-shipping-country-groups-admin-edit-1-c123e654/images/page-desktop.png
+- Page screenshots: pages/170-cp-shipping-country-groups-admin-edit-id-c123e654/images/page-desktop.png
 - Field count: 19
 - Controller: Soho\Ecom\Shipping\Controller\CountryGroupsAdmin (shipping-country-groups-admin)
 - Controller file: vendor/soho/ecom/src/Shipping/Controller/CountryGroupsAdmin.php
@@ -21667,64 +20744,62 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 1. Name (text)
   - DOM name: `group_name`
   - Model field: Name / `name` / Text
-  - Screenshot: pages/170-cp-shipping-country-groups-admin-edit-1-c123e654/images/field-001-name.png
+  - Screenshot: pages/170-cp-shipping-country-groups-admin-edit-id-c123e654/images/field-001-name.png
 - 2. Status (select)
   - DOM name: `group_status`
   - Model field: Status / `` / Select
-  - Screenshot: pages/170-cp-shipping-country-groups-admin-edit-1-c123e654/images/field-002-status.png
+  - Screenshot: pages/170-cp-shipping-country-groups-admin-edit-id-c123e654/images/field-002-status.png
 - 3. Code (text)
   - DOM name: `group_code`
   - Model field: Code / `code` / Text
-  - Screenshot: pages/170-cp-shipping-country-groups-admin-edit-1-c123e654/images/field-003-code.png
+  - Screenshot: pages/170-cp-shipping-country-groups-admin-edit-id-c123e654/images/field-003-code.png
 - 4. Country (select)
   - DOM name: `group_country`
   - Model field: Country / `country` / SelectCallback
-  - Screenshot: pages/170-cp-shipping-country-groups-admin-edit-1-c123e654/images/field-004-country.png
+  - Screenshot: pages/170-cp-shipping-country-groups-admin-edit-id-c123e654/images/field-004-country.png
 - 5. group_states[0][] (text)
   - DOM name: `group_states[0][]`
-  - Screenshot: pages/170-cp-shipping-country-groups-admin-edit-1-c123e654/images/field-005-group-states-0.png
+  - Screenshot: pages/170-cp-shipping-country-groups-admin-edit-id-c123e654/images/field-005-group-states-0.png
 - 6. group_postcode_prefixes[0][] (text)
   - DOM name: `group_postcode_prefixes[0][]`
-  - Screenshot: pages/170-cp-shipping-country-groups-admin-edit-1-c123e654/images/field-006-group-postcode-prefixes-0.png
+  - Screenshot: pages/170-cp-shipping-country-groups-admin-edit-id-c123e654/images/field-006-group-postcode-prefixes-0.png
 - 7. group_postcode_prefixes[1][] (text)
   - DOM name: `group_postcode_prefixes[1][]`
-  - Screenshot: pages/170-cp-shipping-country-groups-admin-edit-1-c123e654/images/field-007-group-postcode-prefixes-1.png
+  - Screenshot: pages/170-cp-shipping-country-groups-admin-edit-id-c123e654/images/field-007-group-postcode-prefixes-1.png
 - 8. group_postcode_prefixes[2][] (text)
   - DOM name: `group_postcode_prefixes[2][]`
-  - Screenshot: pages/170-cp-shipping-country-groups-admin-edit-1-c123e654/images/field-008-group-postcode-prefixes-2.png
+  - Screenshot: pages/170-cp-shipping-country-groups-admin-edit-id-c123e654/images/field-008-group-postcode-prefixes-2.png
 - 9. group_postcode_prefixes[3][] (text)
   - DOM name: `group_postcode_prefixes[3][]`
-  - Screenshot: pages/170-cp-shipping-country-groups-admin-edit-1-c123e654/images/field-009-group-postcode-prefixes-3.png
 - 10. group_postcode_prefixes[4][] (text)
   - DOM name: `group_postcode_prefixes[4][]`
-  - Screenshot: pages/170-cp-shipping-country-groups-admin-edit-1-c123e654/images/field-010-group-postcode-prefixes-4.png
+  - Screenshot: pages/170-cp-shipping-country-groups-admin-edit-id-c123e654/images/field-010-group-postcode-prefixes-4.png
 - 11. group_postcode_prefixes[5][] (text)
   - DOM name: `group_postcode_prefixes[5][]`
-  - Screenshot: pages/170-cp-shipping-country-groups-admin-edit-1-c123e654/images/field-011-group-postcode-prefixes-5.png
+  - Screenshot: pages/170-cp-shipping-country-groups-admin-edit-id-c123e654/images/field-011-group-postcode-prefixes-5.png
 - 12. group_postcode_prefixes[6][] (text)
   - DOM name: `group_postcode_prefixes[6][]`
-  - Screenshot: pages/170-cp-shipping-country-groups-admin-edit-1-c123e654/images/field-012-group-postcode-prefixes-6.png
+  - Screenshot: pages/170-cp-shipping-country-groups-admin-edit-id-c123e654/images/field-012-group-postcode-prefixes-6.png
 - 13. group_postcode_prefixes[7][] (text)
   - DOM name: `group_postcode_prefixes[7][]`
-  - Screenshot: pages/170-cp-shipping-country-groups-admin-edit-1-c123e654/images/field-013-group-postcode-prefixes-7.png
+  - Screenshot: pages/170-cp-shipping-country-groups-admin-edit-id-c123e654/images/field-013-group-postcode-prefixes-7.png
 - 14. group_postcode_prefixes[8][] (text)
   - DOM name: `group_postcode_prefixes[8][]`
-  - Screenshot: pages/170-cp-shipping-country-groups-admin-edit-1-c123e654/images/field-014-group-postcode-prefixes-8.png
+  - Screenshot: pages/170-cp-shipping-country-groups-admin-edit-id-c123e654/images/field-014-group-postcode-prefixes-8.png
 - 15. group_postcode_prefixes[9][] (text)
   - DOM name: `group_postcode_prefixes[9][]`
-  - Screenshot: pages/170-cp-shipping-country-groups-admin-edit-1-c123e654/images/field-015-group-postcode-prefixes-9.png
+  - Screenshot: pages/170-cp-shipping-country-groups-admin-edit-id-c123e654/images/field-015-group-postcode-prefixes-9.png
 - 16. group_postcode_prefixes[10][] (text)
   - DOM name: `group_postcode_prefixes[10][]`
-  - Screenshot: pages/170-cp-shipping-country-groups-admin-edit-1-c123e654/images/field-016-group-postcode-prefixes-10.png
+  - Screenshot: pages/170-cp-shipping-country-groups-admin-edit-id-c123e654/images/field-016-group-postcode-prefixes-10.png
 - 17. group_postcode_prefixes[11][] (text)
   - DOM name: `group_postcode_prefixes[11][]`
-  - Screenshot: pages/170-cp-shipping-country-groups-admin-edit-1-c123e654/images/field-017-group-postcode-prefixes-11.png
+  - Screenshot: pages/170-cp-shipping-country-groups-admin-edit-id-c123e654/images/field-017-group-postcode-prefixes-11.png
 - 18. group_postcode_prefixes[12][] (text)
   - DOM name: `group_postcode_prefixes[12][]`
-  - Screenshot: pages/170-cp-shipping-country-groups-admin-edit-1-c123e654/images/field-018-group-postcode-prefixes-12.png
+  - Screenshot: pages/170-cp-shipping-country-groups-admin-edit-id-c123e654/images/field-018-group-postcode-prefixes-12.png
 - 19. group_postcode_prefixes[13][] (text)
   - DOM name: `group_postcode_prefixes[13][]`
-  - Screenshot: pages/170-cp-shipping-country-groups-admin-edit-1-c123e654/images/field-019-group-postcode-prefixes-13.png
 
 ### Source References
 
@@ -21989,31 +21064,24 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 1. LGW - Gatwick (checkbox)
   - DOM name: `setting_enabled_depos[]`
   - Model field: Enabled Depos / `enabled_depos` / SelectMultiple
-  - Screenshot: pages/171-cp-shipping-duo-settings-admin-58b063fb/images/field-001-lgw-gatwick.png
 - 2. BRS - Bristol (checkbox)
   - DOM name: `setting_enabled_depos[]`
   - Model field: Enabled Depos / `enabled_depos` / SelectMultiple
-  - Screenshot: pages/171-cp-shipping-duo-settings-admin-58b063fb/images/field-002-brs-bristol.png
 - 3. IPW - Ipswitch (checkbox)
   - DOM name: `setting_enabled_depos[]`
   - Model field: Enabled Depos / `enabled_depos` / SelectMultiple
-  - Screenshot: pages/171-cp-shipping-duo-settings-admin-58b063fb/images/field-003-ipw-ipswitch.png
 - 4. GLA - Coatbridge (checkbox)
   - DOM name: `setting_enabled_depos[]`
   - Model field: Enabled Depos / `enabled_depos` / SelectMultiple
-  - Screenshot: pages/171-cp-shipping-duo-settings-admin-58b063fb/images/field-004-gla-coatbridge.png
 - 5. NCL - Gateshead (checkbox)
   - DOM name: `setting_enabled_depos[]`
   - Model field: Enabled Depos / `enabled_depos` / SelectMultiple
-  - Screenshot: pages/171-cp-shipping-duo-settings-admin-58b063fb/images/field-005-ncl-gateshead.png
 - 6. ORM - Northampton (checkbox)
   - DOM name: `setting_enabled_depos[]`
   - Model field: Enabled Depos / `enabled_depos` / SelectMultiple
-  - Screenshot: pages/171-cp-shipping-duo-settings-admin-58b063fb/images/field-006-orm-northampton.png
 - 7. Fetch Extended Dates? (checkbox)
   - DOM name: `setting_extended_dates`
   - Model field: Fetch Extended Dates? / `extended_dates` / Checkbox
-  - Screenshot: pages/171-cp-shipping-duo-settings-admin-58b063fb/images/field-007-fetch-extended-dates.png
 - 8. Minimum delivery day optional (number)
   - DOM name: `setting_min_delivery_day`
   - Model field: Minimum delivery day / `min_delivery_day` / Int
@@ -23069,11 +22137,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Shipping Holidays
 
-- URL: https://dev.soho-home.local/cp/shipping-holidays-admin/edit/404
+- URL: https://dev.soho-home.local/cp/shipping-holidays-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|shipping-holidays-admin|edit|shipping-holidays-admin/edit/:identifier
-- Draft doc: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/README.md
+- Draft doc: pages/175-cp-shipping-holidays-admin-edit-id-bc22f9a9/README.md
 - Code analysis doc: .vscode/code-docs/cp-shipping-holidays-admin-edit-existing.md
-- Page screenshots: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/page-desktop.png
+- Page screenshots: pages/175-cp-shipping-holidays-admin-edit-id-bc22f9a9/images/page-desktop.png
 - Field count: 70
 - Controller: Soho\Ecom\Shipping\Controller\HolidaysAdmin (shipping-holidays-admin)
 - Controller file: vendor/soho/ecom/src/Shipping/Controller/HolidaysAdmin.php
@@ -23088,283 +22156,216 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 1. Title optional (text)
   - DOM name: `shipping_holiday_title`
   - Model field: Title / `title` / Text
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-001-title-optional.png
+  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-id-bc22f9a9/images/field-001-title-optional.png
 - 2. Date (date)
   - DOM name: `shipping_holiday_date`
   - Model field: Date / `date` / Date
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-002-date.png
+  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-id-bc22f9a9/images/field-002-date.png
 - 3. Notes optional (text)
   - DOM name: `shipping_holiday_notes`
   - Model field: Notes / `notes` / Text
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-003-notes-optional.png
+  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-id-bc22f9a9/images/field-003-notes-optional.png
 - 4. Enabled (checkbox)
   - DOM name: `shipping_holiday_enabled`
   - Model field: Enabled / `enabled` / Checkbox
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-004-enabled.png
 - 5. United Kingdom (Highlands) (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-005-united-kingdom-highlands.png
 - 6. United Kingdom (Remote Areas) (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-006-united-kingdom-remote-areas.png
 - 7. United Kingdom (Northern Ireland) (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-007-united-kingdom-northern-ireland.png
 - 8. United States (Remote States) (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-008-united-states-remote-states.png
 - 9. United States - Quoted (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-009-united-states-quoted.png
 - 10. Greek Islands (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-010-greek-islands.png
 - 11. Jersey (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-011-jersey.png
 - 12. Guernsey (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-012-guernsey.png
 - 13. Isle of Man (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-013-isle-of-man.png
 - 14. Isle of wight (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-014-isle-of-wight.png
 - 15. Scotland (Islands) (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-015-scotland-islands.png
 - 16. Balearic Islands (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-016-balearic-islands.png
 - 17. Canary Islands (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-017-canary-islands.png
 - 18. Madeira (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-018-madeira.png
 - 19. Sicily (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-019-sicily.png
 - 20. Bay of Naples (Capri etc) (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-020-bay-of-naples-capri-etc.png
 - 21. Sardinia (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-021-sardinia.png
 - 22. Corsia (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-022-corsia.png
 - 23. Crete (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-023-crete.png
 - 24. Ionian Islands (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-024-ionian-islands.png
 - 25. Cyclades and South Aegean (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-025-cyclades-and-south-aegean.png
 - 26. London Postcodes M25 (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-026-london-postcodes-m25.png
 - 27. United Kingdom (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-027-united-kingdom.png
 - 28. United States (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-028-united-states.png
 - 29. Australia (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-029-australia.png
 - 30. Austria (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-030-austria.png
 - 31. Belgium (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-031-belgium.png
 - 32. Bosnia and Herzegovina (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-032-bosnia-and-herzegovina.png
 - 33. Canada (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-033-canada.png
 - 34. Croatia (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-034-croatia.png
 - 35. Cyprus (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-035-cyprus.png
 - 36. Czech Republic (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-036-czech-republic.png
 - 37. Denmark (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-037-denmark.png
 - 38. Finland (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-038-finland.png
 - 39. France (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-039-france.png
 - 40. Germany (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-040-germany.png
 - 41. Greece (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-041-greece.png
 - 42. Guernsey (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-042-guernsey.png
 - 43. Hong Kong (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-043-hong-kong.png
 - 44. Hungary (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-044-hungary.png
 - 45. Iceland (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-045-iceland.png
 - 46. Ireland (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-046-ireland.png
 - 47. Italy (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-047-italy.png
 - 48. Latvia (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-048-latvia.png
 - 49. Liechtenstein (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-049-liechtenstein.png
 - 50. Luxembourg (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-050-luxembourg.png
 - 51. Macedonia (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-051-macedonia.png
 - 52. Malta (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-052-malta.png
 - 53. Lithuania (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-053-lithuania.png
 - 54. Moldova (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-054-moldova.png
 - 55. Monaco (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-055-monaco.png
 - 56. Montenegro (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-056-montenegro.png
 - 57. Netherlands (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-057-netherlands.png
 - 58. New Zealand (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-058-new-zealand.png
 - 59. Norway (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-059-norway.png
 - 60. Poland (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-060-poland.png
 - 61. Portugal (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-061-portugal.png
 - 62. Romania (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-062-romania.png
 - 63. San Marino (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-063-san-marino.png
 - 64. Serbia (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-064-serbia.png
 - 65. Singapore (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-065-singapore.png
 - 66. Spain (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-066-spain.png
 - 67. Sweden (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-067-sweden.png
 - 68. Switzerland (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-068-switzerland.png
 - 69. UAE (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-069-uae.png
 - 70. Ukraine (checkbox)
   - DOM name: `shipping_holiday_locations[]`
   - Model field: Locations / `locations` / SelectMultipleCallback
-  - Screenshot: pages/175-cp-shipping-holidays-admin-edit-404-bc22f9a9/images/field-070-ukraine.png
 
 ### Source References
 
@@ -23653,7 +22654,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 7. Notify WMS on Export Failure (checkbox)
   - DOM name: `setting_notify_wms_failures`
   - Model field: Notify WMS on Export Failure / `notify_wms_failures` / Checkbox
-  - Screenshot: pages/176-cp-shipping-wincanton-settings-admin-ae622c90/images/field-007-notify-wms-on-export-failure.png
 
 ### Source References
 
@@ -23931,12 +22931,12 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Spaces
 
-- URL: https://dev.soho-home.local/cp/spaces-admin/edit/50
+- URL: https://dev.soho-home.local/cp/spaces-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|spaces-admin|edit|spaces-admin/edit/:identifier
-- Draft doc: pages/178-cp-spaces-admin-edit-50-c85f7117/README.md
+- Draft doc: pages/178-cp-spaces-admin-edit-id-c85f7117/README.md
 - Code analysis doc: .vscode/code-docs/cp-spaces-admin-edit-existing.md
-- Page screenshots: pages/178-cp-spaces-admin-edit-50-c85f7117/images/page-desktop.png
-- Field count: 11
+- Page screenshots: pages/178-cp-spaces-admin-edit-id-c85f7117/images/page-desktop.png
+- Field count: 10
 - Controller: App\Spaces\AdminController (spaces-admin)
 - Controller file: src/Spaces/AdminController.php
 - Action method: editAction (inherited or unresolved)
@@ -23949,40 +22949,34 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. UK (checkbox)
   - DOM name: `space_uk`
-  - Screenshot: pages/178-cp-spaces-admin-edit-50-c85f7117/images/field-001-uk.png
 - 2. EU (checkbox)
   - DOM name: `space_eu`
-  - Screenshot: pages/178-cp-spaces-admin-edit-50-c85f7117/images/field-002-eu.png
 - 3. US (checkbox)
   - DOM name: `space_us`
-  - Screenshot: pages/178-cp-spaces-admin-edit-50-c85f7117/images/field-003-us.png
 - 4. Status optional (select)
   - DOM name: `space_status`
-  - Screenshot: pages/178-cp-spaces-admin-edit-50-c85f7117/images/field-004-status-optional.png
+  - Screenshot: pages/178-cp-spaces-admin-edit-id-c85f7117/images/field-004-status-optional.png
 - 5. Title (text)
   - DOM name: `space_title`
   - Model field: Title / `` / Text
-  - Screenshot: pages/178-cp-spaces-admin-edit-50-c85f7117/images/field-005-title.png
+  - Screenshot: pages/178-cp-spaces-admin-edit-id-c85f7117/images/field-005-title.png
 - 6. Intro optional (textarea)
   - DOM name: `space_intro`
   - Model field: Intro / `` / TextArea
-  - Screenshot: pages/178-cp-spaces-admin-edit-50-c85f7117/images/field-006-intro-optional.png
+  - Screenshot: pages/178-cp-spaces-admin-edit-id-c85f7117/images/field-006-intro-optional.png
 - 7. Url name optional (text)
   - DOM name: `space_urlname`
   - Model field: Url name / `urlname` / UrlName
-  - Screenshot: pages/178-cp-spaces-admin-edit-50-c85f7117/images/field-007-url-name-optional.png
-- 8. input (text)
-  - Screenshot: pages/178-cp-spaces-admin-edit-50-c85f7117/images/field-008-input.png
-- 9. space_products-list-selectized (text)
-  - Screenshot: pages/178-cp-spaces-admin-edit-50-c85f7117/images/field-009-space-products-list-selectized.png
-- 10. Product Image Order optional (select)
+  - Screenshot: pages/178-cp-spaces-admin-edit-id-c85f7117/images/field-007-url-name-optional.png
+- 8. space_products-list-selectized (text)
+  - Screenshot: pages/178-cp-spaces-admin-edit-id-c85f7117/images/field-008-space-products-list-selectized.png
+- 9. Product Image Order optional (select)
   - DOM name: `space_product_card_image_order`
   - Model field: Product Image Order / `product_card_image_order` / SelectCallback
-  - Screenshot: pages/178-cp-spaces-admin-edit-50-c85f7117/images/field-010-product-image-order-optional.png
-- 11. Display Anchor Menu? (checkbox)
+  - Screenshot: pages/178-cp-spaces-admin-edit-id-c85f7117/images/field-009-product-image-order-optional.png
+- 10. Display Anchor Menu? (checkbox)
   - DOM name: `space_anchor_menu`
   - Model field: Display Anchor Menu? / `anchor_menu` / Checkbox
-  - Screenshot: pages/178-cp-spaces-admin-edit-50-c85f7117/images/field-011-display-anchor-menu.png
 
 ### Source References
 
@@ -24012,70 +23006,48 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. inline[6][settings_uk] (checkbox)
   - DOM name: `inline[6][settings_uk]`
-  - Screenshot: pages/179-cp-sticky-popups-admin-b2e12f3e/images/field-001-inline-6-settings-uk.png
 - 2. inline[6][settings_eu] (checkbox)
   - DOM name: `inline[6][settings_eu]`
-  - Screenshot: pages/179-cp-sticky-popups-admin-b2e12f3e/images/field-002-inline-6-settings-eu.png
 - 3. inline[6][settings_us] (checkbox)
   - DOM name: `inline[6][settings_us]`
-  - Screenshot: pages/179-cp-sticky-popups-admin-b2e12f3e/images/field-003-inline-6-settings-us.png
 - 4. inline[2][settings_uk] (checkbox)
   - DOM name: `inline[2][settings_uk]`
-  - Screenshot: pages/179-cp-sticky-popups-admin-b2e12f3e/images/field-004-inline-2-settings-uk.png
 - 5. inline[2][settings_eu] (checkbox)
   - DOM name: `inline[2][settings_eu]`
-  - Screenshot: pages/179-cp-sticky-popups-admin-b2e12f3e/images/field-005-inline-2-settings-eu.png
 - 6. inline[2][settings_us] (checkbox)
   - DOM name: `inline[2][settings_us]`
-  - Screenshot: pages/179-cp-sticky-popups-admin-b2e12f3e/images/field-006-inline-2-settings-us.png
 - 7. inline[4][settings_uk] (checkbox)
   - DOM name: `inline[4][settings_uk]`
-  - Screenshot: pages/179-cp-sticky-popups-admin-b2e12f3e/images/field-007-inline-4-settings-uk.png
 - 8. inline[4][settings_eu] (checkbox)
   - DOM name: `inline[4][settings_eu]`
-  - Screenshot: pages/179-cp-sticky-popups-admin-b2e12f3e/images/field-008-inline-4-settings-eu.png
 - 9. inline[4][settings_us] (checkbox)
   - DOM name: `inline[4][settings_us]`
-  - Screenshot: pages/179-cp-sticky-popups-admin-b2e12f3e/images/field-009-inline-4-settings-us.png
 - 10. inline[1][settings_uk] (checkbox)
   - DOM name: `inline[1][settings_uk]`
-  - Screenshot: pages/179-cp-sticky-popups-admin-b2e12f3e/images/field-010-inline-1-settings-uk.png
 - 11. inline[1][settings_eu] (checkbox)
   - DOM name: `inline[1][settings_eu]`
-  - Screenshot: pages/179-cp-sticky-popups-admin-b2e12f3e/images/field-011-inline-1-settings-eu.png
 - 12. inline[1][settings_us] (checkbox)
   - DOM name: `inline[1][settings_us]`
-  - Screenshot: pages/179-cp-sticky-popups-admin-b2e12f3e/images/field-012-inline-1-settings-us.png
 - 13. inline[7][settings_uk] (checkbox)
   - DOM name: `inline[7][settings_uk]`
-  - Screenshot: pages/179-cp-sticky-popups-admin-b2e12f3e/images/field-013-inline-7-settings-uk.png
 - 14. inline[7][settings_eu] (checkbox)
   - DOM name: `inline[7][settings_eu]`
-  - Screenshot: pages/179-cp-sticky-popups-admin-b2e12f3e/images/field-014-inline-7-settings-eu.png
 - 15. inline[7][settings_us] (checkbox)
   - DOM name: `inline[7][settings_us]`
-  - Screenshot: pages/179-cp-sticky-popups-admin-b2e12f3e/images/field-015-inline-7-settings-us.png
 - 16. inline[5][settings_uk] (checkbox)
   - DOM name: `inline[5][settings_uk]`
-  - Screenshot: pages/179-cp-sticky-popups-admin-b2e12f3e/images/field-016-inline-5-settings-uk.png
 - 17. inline[5][settings_eu] (checkbox)
   - DOM name: `inline[5][settings_eu]`
-  - Screenshot: pages/179-cp-sticky-popups-admin-b2e12f3e/images/field-017-inline-5-settings-eu.png
 - 18. inline[5][settings_us] (checkbox)
   - DOM name: `inline[5][settings_us]`
-  - Screenshot: pages/179-cp-sticky-popups-admin-b2e12f3e/images/field-018-inline-5-settings-us.png
 - 19. inline[3][settings_uk] (checkbox)
   - DOM name: `inline[3][settings_uk]`
-  - Screenshot: pages/179-cp-sticky-popups-admin-b2e12f3e/images/field-019-inline-3-settings-uk.png
 - 20. inline[3][settings_eu] (checkbox)
   - DOM name: `inline[3][settings_eu]`
-  - Screenshot: pages/179-cp-sticky-popups-admin-b2e12f3e/images/field-020-inline-3-settings-eu.png
 - 21. inline[3][settings_us] (checkbox)
   - DOM name: `inline[3][settings_us]`
-  - Screenshot: pages/179-cp-sticky-popups-admin-b2e12f3e/images/field-021-inline-3-settings-us.png
 - 22. inline_action (submit)
   - DOM name: `inline_action`
-  - Screenshot: pages/179-cp-sticky-popups-admin-b2e12f3e/images/field-022-inline-action.png
 
 ### Source References
 
@@ -24091,11 +23063,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Sticky Popups
 
-- URL: https://dev.soho-home.local/cp/sticky-popups-admin/edit/6
+- URL: https://dev.soho-home.local/cp/sticky-popups-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|sticky-popups-admin|edit|sticky-popups-admin/edit/:identifier
-- Draft doc: pages/180-cp-sticky-popups-admin-edit-6-d0777fda/README.md
+- Draft doc: pages/180-cp-sticky-popups-admin-edit-id-d0777fda/README.md
 - Code analysis doc: .vscode/code-docs/cp-sticky-popups-admin-edit-existing.md
-- Page screenshots: pages/180-cp-sticky-popups-admin-edit-6-d0777fda/images/page-desktop.png
+- Page screenshots: pages/180-cp-sticky-popups-admin-edit-id-d0777fda/images/page-desktop.png
 - Field count: 20
 - Controller: App\Frame\StickyPopupsAdminController (sticky-popups-admin)
 - Controller file: src/Frame/StickyPopupsAdminController.php
@@ -24109,76 +23081,66 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. Scheduled Start optional (datetime-local)
   - DOM name: `settings_scheduled_start`
-  - Screenshot: pages/180-cp-sticky-popups-admin-edit-6-d0777fda/images/field-001-scheduled-start-optional.png
+  - Screenshot: pages/180-cp-sticky-popups-admin-edit-id-d0777fda/images/field-001-scheduled-start-optional.png
 - 2. Scheduled End optional (datetime-local)
   - DOM name: `settings_scheduled_end`
-  - Screenshot: pages/180-cp-sticky-popups-admin-edit-6-d0777fda/images/field-002-scheduled-end-optional.png
+  - Screenshot: pages/180-cp-sticky-popups-admin-edit-id-d0777fda/images/field-002-scheduled-end-optional.png
 - 3. UK (checkbox)
   - DOM name: `settings_uk`
-  - Screenshot: pages/180-cp-sticky-popups-admin-edit-6-d0777fda/images/field-003-uk.png
 - 4. EU (checkbox)
   - DOM name: `settings_eu`
-  - Screenshot: pages/180-cp-sticky-popups-admin-edit-6-d0777fda/images/field-004-eu.png
 - 5. US (checkbox)
   - DOM name: `settings_us`
-  - Screenshot: pages/180-cp-sticky-popups-admin-edit-6-d0777fda/images/field-005-us.png
 - 6. Title (text)
   - DOM name: `settings_title`
   - Model field: Title / `title` / Text
-  - Screenshot: pages/180-cp-sticky-popups-admin-edit-6-d0777fda/images/field-006-title.png
+  - Screenshot: pages/180-cp-sticky-popups-admin-edit-id-d0777fda/images/field-006-title.png
 - 7. unidentified (checkbox)
   - DOM name: `settings_persona[]`
   - Model field: Persona / `persona` / SelectMultipleCallback
-  - Screenshot: pages/180-cp-sticky-popups-admin-edit-6-d0777fda/images/field-007-unidentified.png
 - 8. non-member (checkbox)
   - DOM name: `settings_persona[]`
   - Model field: Persona / `persona` / SelectMultipleCallback
-  - Screenshot: pages/180-cp-sticky-popups-admin-edit-6-d0777fda/images/field-008-non-member.png
 - 9. friends (checkbox)
   - DOM name: `settings_persona[]`
   - Model field: Persona / `persona` / SelectMultipleCallback
-  - Screenshot: pages/180-cp-sticky-popups-admin-edit-6-d0777fda/images/field-009-friends.png
 - 10. member (checkbox)
   - DOM name: `settings_persona[]`
   - Model field: Persona / `persona` / SelectMultipleCallback
-  - Screenshot: pages/180-cp-sticky-popups-admin-edit-6-d0777fda/images/field-010-member.png
 - 11. staff (checkbox)
   - DOM name: `settings_persona[]`
   - Model field: Persona / `persona` / SelectMultipleCallback
-  - Screenshot: pages/180-cp-sticky-popups-admin-edit-6-d0777fda/images/field-011-staff.png
 - 12. trade (checkbox)
   - DOM name: `settings_persona[]`
   - Model field: Persona / `persona` / SelectMultipleCallback
-  - Screenshot: pages/180-cp-sticky-popups-admin-edit-6-d0777fda/images/field-012-trade.png
 - 13. Status (select)
   - DOM name: `settings_status`
   - Model field: Status / `status` / Select
-  - Screenshot: pages/180-cp-sticky-popups-admin-edit-6-d0777fda/images/field-013-status.png
+  - Screenshot: pages/180-cp-sticky-popups-admin-edit-id-d0777fda/images/field-013-status.png
 - 14. Message optional (text)
   - DOM name: `settings_message`
   - Model field: Message / `message` / Text
-  - Screenshot: pages/180-cp-sticky-popups-admin-edit-6-d0777fda/images/field-014-message-optional.png
+  - Screenshot: pages/180-cp-sticky-popups-admin-edit-id-d0777fda/images/field-014-message-optional.png
 - 15. Link (text)
   - DOM name: `settings_button[link]`
-  - Screenshot: pages/180-cp-sticky-popups-admin-edit-6-d0777fda/images/field-015-link.png
+  - Screenshot: pages/180-cp-sticky-popups-admin-edit-id-d0777fda/images/field-015-link.png
 - 16. Label (text)
   - DOM name: `settings_button[label]`
-  - Screenshot: pages/180-cp-sticky-popups-admin-edit-6-d0777fda/images/field-016-label.png
+  - Screenshot: pages/180-cp-sticky-popups-admin-edit-id-d0777fda/images/field-016-label.png
 - 17. Open in new tab (checkbox)
   - DOM name: `settings_button[target]`
-  - Screenshot: pages/180-cp-sticky-popups-admin-edit-6-d0777fda/images/field-017-open-in-new-tab.png
 - 18. Trigger Height optional (number)
   - DOM name: `settings_trigger_height`
   - Model field: Trigger Height / `trigger_height` / Int
-  - Screenshot: pages/180-cp-sticky-popups-admin-edit-6-d0777fda/images/field-018-trigger-height-optional.png
+  - Screenshot: pages/180-cp-sticky-popups-admin-edit-id-d0777fda/images/field-018-trigger-height-optional.png
 - 19. Delay (seconds) optional (number)
   - DOM name: `settings_delay`
   - Model field: Delay (seconds) / `delay` / Int
-  - Screenshot: pages/180-cp-sticky-popups-admin-edit-6-d0777fda/images/field-019-delay-seconds-optional.png
+  - Screenshot: pages/180-cp-sticky-popups-admin-edit-id-d0777fda/images/field-019-delay-seconds-optional.png
 - 20. Colour (select)
   - DOM name: `settings_colour`
   - Model field: Colour / `colour` / Select
-  - Screenshot: pages/180-cp-sticky-popups-admin-edit-6-d0777fda/images/field-020-colour.png
+  - Screenshot: pages/180-cp-sticky-popups-admin-edit-id-d0777fda/images/field-020-colour.png
 
 ### Source References
 
@@ -24266,11 +23228,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Stock
 
-- URL: https://dev.soho-home.local/cp/stock-admin/edit/1
+- URL: https://dev.soho-home.local/cp/stock-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|stock-admin|edit|stock-admin/edit/:identifier
-- Draft doc: pages/182-cp-stock-admin-edit-1-5f5372eb/README.md
+- Draft doc: pages/182-cp-stock-admin-edit-id-5f5372eb/README.md
 - Code analysis doc: .vscode/code-docs/cp-stock-admin-edit-existing.md
-- Page screenshots: pages/182-cp-stock-admin-edit-1-5f5372eb/images/page-desktop.png
+- Page screenshots: pages/182-cp-stock-admin-edit-id-5f5372eb/images/page-desktop.png
 - Field count: 1
 - Controller: Soho\Products\Base\StockControllerAdmin (stock-admin)
 - Controller file: vendor/soho/products/src/StockControllerAdmin.php
@@ -24284,7 +23246,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. In stock? (checkbox)
   - Model field: In stock? / `in_stock` / Checkbox
-  - Screenshot: pages/182-cp-stock-admin-edit-1-5f5372eb/images/field-001-in-stock.png
 
 ### Source References
 
@@ -24865,11 +23826,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Stock Notifications
 
-- URL: https://dev.soho-home.local/cp/stock-notifications-admin/edit/248964
+- URL: https://dev.soho-home.local/cp/stock-notifications-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|stock-notifications-admin|edit|stock-notifications-admin/edit/:identifier
-- Draft doc: pages/185-cp-stock-notifications-admin-edit-248964-14aff7b9/README.md
+- Draft doc: pages/185-cp-stock-notifications-admin-edit-id-14aff7b9/README.md
 - Code analysis doc: .vscode/code-docs/cp-stock-notifications-admin-edit-existing.md
-- Page screenshots: pages/185-cp-stock-notifications-admin-edit-248964-14aff7b9/images/page-desktop.png
+- Page screenshots: pages/185-cp-stock-notifications-admin-edit-id-14aff7b9/images/page-desktop.png
 - Field count: 1
 - Controller: Soho\Ecom\Controller\StockNotificationsAdmin (stock-notifications-admin)
 - Controller file: vendor/soho/ecom/src/Controller/StockNotificationsAdmin.php
@@ -24884,7 +23845,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 1. Optin (checkbox)
   - DOM name: `notification_optin`
   - Model field: Optin / `notification_optin` / Permission
-  - Screenshot: pages/185-cp-stock-notifications-admin-edit-248964-14aff7b9/images/field-001-optin.png
 
 ### Source References
 
@@ -25150,7 +24110,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - DOM name: `search`
   - Screenshot: pages/186-cp-stockists-enquiry-admin-cde18a80/images/field-001-keyword-search.png
 - 2. select (select)
-  - Screenshot: pages/186-cp-stockists-enquiry-admin-cde18a80/images/field-002-select.png
 
 ### Source References
 
@@ -25164,11 +24123,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Stockist Enquiries (Legacy)
 
-- URL: https://dev.soho-home.local/cp/stockists-enquiry-admin/view/416
+- URL: https://dev.soho-home.local/cp/stockists-enquiry-admin/view/:id
 - Documentation route key: https://dev.soho-home.local|cp|stockists-enquiry-admin|view|stockists-enquiry-admin/view/:identifier
-- Draft doc: pages/187-cp-stockists-enquiry-admin-view-416-8fca1c95/README.md
+- Draft doc: pages/187-cp-stockists-enquiry-admin-view-id-8fca1c95/README.md
 - Code analysis doc: .vscode/code-docs/cp-stockists-enquiry-admin-view-view.md
-- Page screenshots: pages/187-cp-stockists-enquiry-admin-view-416-8fca1c95/images/page-desktop.png
+- Page screenshots: pages/187-cp-stockists-enquiry-admin-view-id-8fca1c95/images/page-desktop.png
 - Field count: 0
 - Controller: App\Stockists\EnquiryControllerAdmin (stockists-enquiry-admin)
 - Controller file: src/Stockists/EnquiryControllerAdmin.php
@@ -25342,7 +24301,7 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - Draft doc: pages/190-cp-stockitems-admin-c542d405/README.md
 - Code analysis doc: .vscode/code-docs/cp-stockitems-admin.md
 - Page screenshots: pages/190-cp-stockitems-admin-c542d405/images/page-desktop.png
-- Field count: 2
+- Field count: 1
 - Controller: App\Products\StockItemsControllerAdmin (stockitems-admin)
 - Controller file: src/Products/StockItemsControllerAdmin.php
 - Action method: indexAction (inherited or unresolved)
@@ -25356,8 +24315,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 1. Keyword search (text)
   - DOM name: `search`
   - Screenshot: pages/190-cp-stockitems-admin-c542d405/images/field-001-keyword-search.png
-- 2. select (select)
-  - Screenshot: pages/190-cp-stockitems-admin-c542d405/images/field-002-select.png
 
 ### Source References
 
@@ -25506,11 +24463,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## SKU Attributes
 
-- URL: https://dev.soho-home.local/cp/stockitems-attributes-admin/edit/3585
+- URL: https://dev.soho-home.local/cp/stockitems-attributes-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|stockitems-attributes-admin|edit|stockitems-attributes-admin/edit/:identifier
-- Draft doc: pages/192-cp-stockitems-attributes-admin-edit-3585-550bb43a/README.md
+- Draft doc: pages/192-cp-stockitems-attributes-admin-edit-id-550bb43a/README.md
 - Code analysis doc: .vscode/code-docs/cp-stockitems-attributes-admin-edit-existing.md
-- Page screenshots: pages/192-cp-stockitems-attributes-admin-edit-3585-550bb43a/images/page-desktop.png
+- Page screenshots: pages/192-cp-stockitems-attributes-admin-edit-id-550bb43a/images/page-desktop.png
 - Field count: 0
 - Controller: App\Products\StockItemAttributesControllerAdmin (stockitems-attributes-admin)
 - Controller file: src/Products/StockItemAttributesControllerAdmin.php
@@ -25587,7 +24544,7 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - Draft doc: pages/193-cp-store-admin-998dd625/README.md
 - Code analysis doc: .vscode/code-docs/cp-store-admin.md
 - Page screenshots: pages/193-cp-store-admin-998dd625/images/page-desktop.png
-- Field count: 3
+- Field count: 2
 - Controller: App\Ecom\StoreControllerAdmin (store-admin)
 - Controller file: src/Ecom/StoreControllerAdmin.php
 - Action method: indexAction
@@ -25599,8 +24556,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
   - Screenshot: pages/193-cp-store-admin-998dd625/images/field-001-keyword-search.png
 - 2. select (select)
   - Screenshot: pages/193-cp-store-admin-998dd625/images/field-002-select.png
-- 3. select (select)
-  - Screenshot: pages/193-cp-store-admin-998dd625/images/field-003-select.png
 
 ### Source References
 
@@ -25713,11 +24668,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Orders
 
-- URL: https://dev.soho-home.local/cp/store-admin/show/622273
+- URL: https://dev.soho-home.local/cp/store-admin/show/:id
 - Documentation route key: https://dev.soho-home.local|cp|store-admin|show|store-admin/show/:identifier
-- Draft doc: pages/194-cp-store-admin-show-622273-03c4a77f/README.md
+- Draft doc: pages/194-cp-store-admin-show-id-03c4a77f/README.md
 - Code analysis doc: .vscode/code-docs/cp-store-admin-show.md
-- Page screenshots: pages/194-cp-store-admin-show-622273-03c4a77f/images/page-desktop.png
+- Page screenshots: pages/194-cp-store-admin-show-id-03c4a77f/images/page-desktop.png
 - Field count: 2
 - Controller: App\Ecom\StoreControllerAdmin (store-admin)
 - Controller file: src/Ecom/StoreControllerAdmin.php
@@ -25726,9 +24681,9 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 ### DOM Fields
 
 - 1. select_retail_flag (select)
-  - Screenshot: pages/194-cp-store-admin-show-622273-03c4a77f/images/field-001-select-retail-flag.png
+  - Screenshot: pages/194-cp-store-admin-show-id-03c4a77f/images/field-001-select-retail-flag.png
 - 2. Search for admin... (text)
-  - Screenshot: pages/194-cp-store-admin-show-622273-03c4a77f/images/field-002-search-for-admin.png
+  - Screenshot: pages/194-cp-store-admin-show-id-03c4a77f/images/field-002-search-for-admin.png
 
 ### Source References
 
@@ -25872,11 +24827,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Structured Audit
 
-- URL: https://dev.soho-home.local/cp/structured-audit-admin/view/24747344
+- URL: https://dev.soho-home.local/cp/structured-audit-admin/view/:id
 - Documentation route key: https://dev.soho-home.local|cp|structured-audit-admin|view|structured-audit-admin/view/:identifier
-- Draft doc: pages/196-cp-structured-audit-admin-view-24747344-7a039e8e/README.md
+- Draft doc: pages/196-cp-structured-audit-admin-view-id-7a039e8e/README.md
 - Code analysis doc: .vscode/code-docs/cp-structured-audit-admin-view-view.md
-- Page screenshots: pages/196-cp-structured-audit-admin-view-24747344-7a039e8e/images/page-desktop.png
+- Page screenshots: pages/196-cp-structured-audit-admin-view-id-7a039e8e/images/page-desktop.png
 - Field count: 0
 - Controller: D3R\StructuredAudit\AspectAdminController (structured-audit-admin)
 - Controller file: vendor/d3r/structured-audit/src/AspectAdminController.php
@@ -25895,27 +24850,13 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - model: vendor/d3r/structured-audit/src/Model/ItemAspect.php
 - model-xml: vendor/d3r/structured-audit/src/Model/ItemAspect.xml
 
-## CP Styleguide
-
-- URL: https://dev.soho-home.local/cp/styleguide-admin
-- Documentation route key: https://dev.soho-home.local|cp|styleguide-admin|index|styleguide-admin
-- Draft doc: pages/197-cp-styleguide-admin-dba34b54/README.md
-- Page screenshots: pages/197-cp-styleguide-admin-dba34b54/images/page-desktop.png
-- Field count: 1
-- Controller: unresolved
-
-### DOM Fields
-
-- 1. Search... (text)
-  - Screenshot: pages/197-cp-styleguide-admin-dba34b54/images/field-001-search.png
-
 ## Supplier Holidays
 
 - URL: https://dev.soho-home.local/cp/supplier-holidays-admin
 - Documentation route key: https://dev.soho-home.local|cp|supplier-holidays-admin|index|supplier-holidays-admin
-- Draft doc: pages/198-cp-supplier-holidays-admin-298f7ec1/README.md
+- Draft doc: pages/197-cp-supplier-holidays-admin-298f7ec1/README.md
 - Code analysis doc: .vscode/code-docs/cp-supplier-holidays-admin.md
-- Page screenshots: pages/198-cp-supplier-holidays-admin-298f7ec1/images/page-desktop.png
+- Page screenshots: pages/197-cp-supplier-holidays-admin-298f7ec1/images/page-desktop.png
 - Field count: 0
 - Controller: Soho\Ecom\Supplier\Controller\HolidaysAdmin (supplier-holidays-admin)
 - Controller file: vendor/soho/ecom/src/Supplier/Controller/HolidaysAdmin.php
@@ -26171,9 +25112,9 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - URL: https://dev.soho-home.local/cp/supplier-holidays-admin/edit/new
 - Documentation route key: https://dev.soho-home.local|cp|supplier-holidays-admin|edit|supplier-holidays-admin/edit/:identifier
-- Draft doc: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/README.md
+- Draft doc: pages/198-cp-supplier-holidays-admin-edit-new-9c01f78f/README.md
 - Code analysis doc: .vscode/code-docs/cp-supplier-holidays-admin-edit-new.md
-- Page screenshots: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/page-desktop.png
+- Page screenshots: pages/198-cp-supplier-holidays-admin-edit-new-9c01f78f/images/page-desktop.png
 - Field count: 395
 - Controller: Soho\Ecom\Supplier\Controller\HolidaysAdmin (supplier-holidays-admin)
 - Controller file: vendor/soho/ecom/src/Supplier/Controller/HolidaysAdmin.php
@@ -26188,483 +25129,367 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 1. Title (text)
   - DOM name: `supplier_holiday_title`
   - Model field: Title / `title` / Text
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-001-title.png
+  - Screenshot: pages/198-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-001-title.png
 - 2. Date From (date)
   - DOM name: `supplier_holiday_date_from`
   - Model field: Date From / `date_from` / Date
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-002-date-from.png
+  - Screenshot: pages/198-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-002-date-from.png
 - 3. Date To (date)
   - DOM name: `supplier_holiday_date_to`
   - Model field: Date To / `date_to` / Date
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-003-date-to.png
+  - Screenshot: pages/198-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-003-date-to.png
 - 4. Buffer Days optional (number)
   - DOM name: `supplier_holiday_extra_days`
   - Model field: Buffer Days / `extra_days` / Int
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-004-buffer-days-optional.png
+  - Screenshot: pages/198-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-004-buffer-days-optional.png
 - 5. Enabled (checkbox)
   - DOM name: `supplier_holiday_enabled`
   - Model field: Enabled / `enabled` / Checkbox
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-005-enabled.png
 - 6. ACV (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-006-acv.png
 - 7. Faianças Ramos (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-007-faian-as-ramos.png
 - 8. Anthropologie (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-008-anthropologie.png
 - 9. Culinary Concepts (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-009-culinary-concepts.png
 - 10. Dynatech Exports (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-010-dynatech-exports.png
 - 11. Chung Mao (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-011-chung-mao.png
 - 12. Newgate (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-012-newgate.png
 - 13. Eastern Living International (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-013-eastern-living-international.png
 - 14. Reliance Enterprise (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-014-reliance-enterprise.png
 - 15. Charles Farris (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-015-charles-farris.png
 - 16. Zound Industries (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-016-zound-industries.png
 - 17. Archivist Gallery (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-017-archivist-gallery.png
 - 18. Gayatri (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-018-gayatri.png
 - 19. Brass World Export (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-019-brass-world-export.png
 - 20. Contract Candles (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-020-contract-candles.png
 - 21. Ashleigh & Burwood (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-021-ashleigh-and-burwood.png
 - 22. Syloon (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-022-syloon.png
 - 23. Phil Dansk (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-023-phil-dansk.png
 - 24. Jealous (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-024-jealous.png
 - 25. Dynatech Impex (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-025-dynatech-impex.png
 - 26. DVC (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-026-dvc.png
 - 27. Vasicol (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-027-vasicol.png
 - 28. Bradshaw (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-028-bradshaw.png
 - 29. Italsed (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-029-italsed.png
 - 30. Luteca (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-030-luteca.png
 - 31. Oliver B (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-031-oliver-b.png
 - 32. ADB Furniture (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-032-adb-furniture.png
 - 33. South Sea Deck Chair (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-033-south-sea-deck-chair.png
 - 34. Brass World (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-034-brass-world.png
 - 35. The Indian Furniture Company (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-035-the-indian-furniture-company.png
 - 36. Resource Decor (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-036-resource-decor.png
 - 37. Anthropologie USA (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-037-anthropologie-usa.png
 - 38. The Cotswold Bed Co (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-038-the-cotswold-bed-co.png
 - 39. Malawi Cane Furniture UK (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-039-malawi-cane-furniture-uk.png
 - 40. Contract Furniture By Design (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-040-contract-furniture-by-design.png
 - 41. One World Trading (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-041-one-world-trading.png
 - 42. Anthropologie UK (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-042-anthropologie-uk.png
 - 43. Hypnos (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-043-hypnos.png
 - 44. Four Seasons (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-044-four-seasons.png
 - 45. Dare Studio (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-045-dare-studio.png
 - 46. Dar Lighting (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-046-dar-lighting.png
 - 47. TLDC (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-047-tldc.png
 - 48. Sogni Di Cristallo (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-048-sogni-di-cristallo.png
 - 49. Retouch lighting (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-049-retouch-lighting.png
 - 50. Modern Home (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-050-modern-home.png
 - 51. Ramos (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-051-ramos.png
 - 52. Corep (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-052-corep.png
 - 53. Vight (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-053-vight.png
 - 54. Richard Taylor (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-054-richard-taylor.png
 - 55. JT Home (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-055-jt-home.png
 - 56. Shing Wai (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-056-shing-wai.png
 - 57. Fermoie (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-057-fermoie.png
 - 58. Garden Trading (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-058-garden-trading.png
 - 59. Original Btc (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-059-original-btc.png
 - 60. Samarkand (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-060-samarkand.png
 - 61. Tala (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-061-tala.png
 - 62. Phaidon (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-062-phaidon.png
 - 63. Berkmann (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-063-berkmann.png
 - 64. SOHO HOME (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-064-soho-home.png
 - 65. Steklarna Rogaska D.D (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-065-steklarna-rogaska-d-d.png
 - 66. Qualia (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-066-qualia.png
 - 67. BeHome (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-067-behome.png
 - 68. Horizon (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-068-horizon.png
 - 69. Arun Silver (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-069-arun-silver.png
 - 70. Union Victors (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-070-union-victors.png
 - 71. Sterklarna Rogaska (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-071-sterklarna-rogaska.png
 - 72. Burgess & Leigh (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-072-burgess-and-leigh.png
 - 73. Triburg (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-073-triburg.png
 - 74. Innoart (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-074-innoart.png
 - 75. Watra Alicja (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-075-watra-alicja.png
 - 76. Copal (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-076-copal.png
 - 77. Cerages Investimentos Sa (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-077-cerages-investimentos-sa.png
 - 78. The Vintage List (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-078-the-vintage-list.png
 - 79. Deartis (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-079-deartis.png
 - 80. Everit (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-080-everit.png
 - 81. Val do Sol (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-081-val-do-sol.png
 - 82. Etna (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-082-etna.png
 - 83. CP Squared Inc (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-083-cp-squared-inc.png
 - 84. Good Always (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-084-good-always.png
 - 85. Geos (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-085-geos.png
 - 86. Henry Dean Nv (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-086-henry-dean-nv.png
 - 87. Grestel (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-087-grestel.png
 - 88. Ceramirupe (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-088-ceramirupe.png
 - 89. The Olive Wood Man (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-089-the-olive-wood-man.png
 - 90. Qualia Glass Inc (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-090-qualia-glass-inc.png
 - 91. RCR Cristalleria Italiana Spa (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-091-rcr-cristalleria-italiana-spa.png
 - 92. Shiyu (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-092-shiyu.png
 - 93. Hualian (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-093-hualian.png
 - 94. Keen Hing (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-094-keen-hing.png
 - 95. Hafiz Exports (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-095-hafiz-exports.png
 - 96. Frette (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-096-frette.png
 - 97. Tradelinens Ltd (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-097-tradelinens-ltd.png
 - 98. Downright (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-098-downright.png
 - 99. DA Textiles (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-099-da-textiles.png
 - 100. Ernemet (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-100-ernemet.png
 - 101. May-Lean (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-101-may-lean.png
 - 102. Jaipur Rugs (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-102-jaipur-rugs.png
 - 103. London House Rugs (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-103-london-house-rugs.png
 - 104. Abraham Moons (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-104-abraham-moons.png
 - 105. ABC Home (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-105-abc-home.png
 - 106. Bowron (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-106-bowron.png
 - 107. Johnstons of Elgin (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-107-johnstons-of-elgin.png
 - 108. Moray Cashmere (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-108-moray-cashmere.png
 - 109. TAL (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-109-tal.png
 - 110. Obeetee (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-110-obeetee.png
 - 111. West End Knitwear (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-111-west-end-knitwear.png
 - 112. Botex (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-112-botex.png
 - 113. Eke (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-113-eke.png
 - 114. Zak and Fox (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-114-zak-and-fox.png
 - 115. Raj Overseas (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-115-raj-overseas.png
 - 116. Linens China (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-116-linens-china.png
 - 117. Hangzhou Qinghong Footwear co (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-117-hangzhou-qinghong-footwear-co.png
 - 118. Seyma Sengil Ozansoy (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-118-seyma-sengil-ozansoy.png
 - 119. Sanko Euro (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-119-sanko-euro.png
 - 120. Alps Industries Limited (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
-  - Screenshot: pages/199-cp-supplier-holidays-admin-edit-new-9c01f78f/images/field-120-alps-industries-limited.png
 - 121. Aelia Towel (checkbox)
   - DOM name: `supplier_holiday_suppliers[]`
   - Model field: Suppliers / `suppliers` / SelectMultipleCallback
@@ -27737,9 +26562,9 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - URL: https://dev.soho-home.local/cp/suppliers-admin
 - Documentation route key: https://dev.soho-home.local|cp|suppliers-admin|index|suppliers-admin
-- Draft doc: pages/200-cp-suppliers-admin-bd3828fc/README.md
+- Draft doc: pages/199-cp-suppliers-admin-bd3828fc/README.md
 - Code analysis doc: .vscode/code-docs/cp-suppliers-admin.md
-- Page screenshots: pages/200-cp-suppliers-admin-bd3828fc/images/page-desktop.png
+- Page screenshots: pages/199-cp-suppliers-admin-bd3828fc/images/page-desktop.png
 - Field count: 2
 - Controller: Soho\Products\Base\SuppliersControllerAdmin (suppliers-admin)
 - Controller file: vendor/soho/products/src/SuppliersControllerAdmin.php
@@ -27753,9 +26578,9 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. Keyword search (text)
   - DOM name: `search`
-  - Screenshot: pages/200-cp-suppliers-admin-bd3828fc/images/field-001-keyword-search.png
+  - Screenshot: pages/199-cp-suppliers-admin-bd3828fc/images/field-001-keyword-search.png
 - 2. select (select)
-  - Screenshot: pages/200-cp-suppliers-admin-bd3828fc/images/field-002-select.png
+  - Screenshot: pages/199-cp-suppliers-admin-bd3828fc/images/field-002-select.png
 
 ### Source References
 
@@ -27811,11 +26636,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Suppliers
 
-- URL: https://dev.soho-home.local/cp/suppliers-admin/edit/1
+- URL: https://dev.soho-home.local/cp/suppliers-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|suppliers-admin|edit|suppliers-admin/edit/:identifier
-- Draft doc: pages/201-cp-suppliers-admin-edit-1-6a23bf22/README.md
+- Draft doc: pages/200-cp-suppliers-admin-edit-id-6a23bf22/README.md
 - Code analysis doc: .vscode/code-docs/cp-suppliers-admin-edit-existing.md
-- Page screenshots: pages/201-cp-suppliers-admin-edit-1-6a23bf22/images/page-desktop.png
+- Page screenshots: pages/200-cp-suppliers-admin-edit-id-6a23bf22/images/page-desktop.png
 - Field count: 23
 - Controller: Soho\Products\Base\SuppliersControllerAdmin (suppliers-admin)
 - Controller file: vendor/soho/products/src/SuppliersControllerAdmin.php
@@ -27829,79 +26654,76 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. Name (text)
   - DOM name: `supplier_name`
-  - Screenshot: pages/201-cp-suppliers-admin-edit-1-6a23bf22/images/field-001-name.png
+  - Screenshot: pages/200-cp-suppliers-admin-edit-id-6a23bf22/images/field-001-name.png
 - 2. Supplier Code optional (text)
   - DOM name: `supplier_code`
-  - Screenshot: pages/201-cp-suppliers-admin-edit-1-6a23bf22/images/field-002-supplier-code-optional.png
+  - Screenshot: pages/200-cp-suppliers-admin-edit-id-6a23bf22/images/field-002-supplier-code-optional.png
 - 3. Dropship Via Warehouse (checkbox)
   - DOM name: `supplier_dropship_via_warehouse`
-  - Screenshot: pages/201-cp-suppliers-admin-edit-1-6a23bf22/images/field-003-dropship-via-warehouse.png
 - 4. DC Code optional (text)
   - DOM name: `supplier_dc_code`
-  - Screenshot: pages/201-cp-suppliers-admin-edit-1-6a23bf22/images/field-004-dc-code-optional.png
+  - Screenshot: pages/200-cp-suppliers-admin-edit-id-6a23bf22/images/field-004-dc-code-optional.png
 - 5. Bypass Warehouse Held Status (checkbox)
   - DOM name: `supplier_bypass_dropship_hold`
-  - Screenshot: pages/201-cp-suppliers-admin-edit-1-6a23bf22/images/field-005-bypass-warehouse-held-status.png
 - 6. supplier_notification_email[] (text)
   - DOM name: `supplier_notification_email[]`
-  - Screenshot: pages/201-cp-suppliers-admin-edit-1-6a23bf22/images/field-006-supplier-notification-email.png
+  - Screenshot: pages/200-cp-suppliers-admin-edit-id-6a23bf22/images/field-006-supplier-notification-email.png
 - 7. Send Dropship Report? (checkbox)
   - DOM name: `supplier_send_dropship_report`
-  - Screenshot: pages/201-cp-suppliers-admin-edit-1-6a23bf22/images/field-007-send-dropship-report.png
 - 8. First name optional (text)
   - DOM name: `supplier_first_name`
-  - Screenshot: pages/201-cp-suppliers-admin-edit-1-6a23bf22/images/field-008-first-name-optional.png
+  - Screenshot: pages/200-cp-suppliers-admin-edit-id-6a23bf22/images/field-008-first-name-optional.png
 - 9. Last name optional (text)
   - DOM name: `supplier_last_name`
-  - Screenshot: pages/201-cp-suppliers-admin-edit-1-6a23bf22/images/field-009-last-name-optional.png
+  - Screenshot: pages/200-cp-suppliers-admin-edit-id-6a23bf22/images/field-009-last-name-optional.png
 - 10. Line 1 optional (text)
   - DOM name: `supplier_line_1`
-  - Screenshot: pages/201-cp-suppliers-admin-edit-1-6a23bf22/images/field-010-line-1-optional.png
+  - Screenshot: pages/200-cp-suppliers-admin-edit-id-6a23bf22/images/field-010-line-1-optional.png
 - 11. Line 2 optional (text)
   - DOM name: `supplier_line_2`
-  - Screenshot: pages/201-cp-suppliers-admin-edit-1-6a23bf22/images/field-011-line-2-optional.png
+  - Screenshot: pages/200-cp-suppliers-admin-edit-id-6a23bf22/images/field-011-line-2-optional.png
 - 12. City optional (text)
   - DOM name: `supplier_city`
-  - Screenshot: pages/201-cp-suppliers-admin-edit-1-6a23bf22/images/field-012-city-optional.png
+  - Screenshot: pages/200-cp-suppliers-admin-edit-id-6a23bf22/images/field-012-city-optional.png
 - 13. County optional (text)
   - DOM name: `supplier_county`
-  - Screenshot: pages/201-cp-suppliers-admin-edit-1-6a23bf22/images/field-013-county-optional.png
+  - Screenshot: pages/200-cp-suppliers-admin-edit-id-6a23bf22/images/field-013-county-optional.png
 - 14. State optional (text)
   - DOM name: `supplier_state`
-  - Screenshot: pages/201-cp-suppliers-admin-edit-1-6a23bf22/images/field-014-state-optional.png
+  - Screenshot: pages/200-cp-suppliers-admin-edit-id-6a23bf22/images/field-014-state-optional.png
 - 15. Postcode optional (text)
   - DOM name: `supplier_postcode`
-  - Screenshot: pages/201-cp-suppliers-admin-edit-1-6a23bf22/images/field-015-postcode-optional.png
+  - Screenshot: pages/200-cp-suppliers-admin-edit-id-6a23bf22/images/field-015-postcode-optional.png
 - 16. Country optional (select)
   - DOM name: `supplier_country_code`
-  - Screenshot: pages/201-cp-suppliers-admin-edit-1-6a23bf22/images/field-016-country-optional.png
+  - Screenshot: pages/200-cp-suppliers-admin-edit-id-6a23bf22/images/field-016-country-optional.png
 - 17. Telephone optional (text)
   - DOM name: `supplier_telephone`
-  - Screenshot: pages/201-cp-suppliers-admin-edit-1-6a23bf22/images/field-017-telephone-optional.png
+  - Screenshot: pages/200-cp-suppliers-admin-edit-id-6a23bf22/images/field-017-telephone-optional.png
 - 18. Min Lead Days (UK) optional (number)
   - DOM name: `supplier_min_lead`
   - Model field: Min Lead Days (UK) / `min_lead` / Int
-  - Screenshot: pages/201-cp-suppliers-admin-edit-1-6a23bf22/images/field-018-min-lead-days-uk-optional.png
+  - Screenshot: pages/200-cp-suppliers-admin-edit-id-6a23bf22/images/field-018-min-lead-days-uk-optional.png
 - 19. Max Lead Days (UK) optional (number)
   - DOM name: `supplier_max_lead`
   - Model field: Max Lead Days (UK) / `max_lead` / Int
-  - Screenshot: pages/201-cp-suppliers-admin-edit-1-6a23bf22/images/field-019-max-lead-days-uk-optional.png
+  - Screenshot: pages/200-cp-suppliers-admin-edit-id-6a23bf22/images/field-019-max-lead-days-uk-optional.png
 - 20. Min Lead Days (EU) optional (number)
   - DOM name: `supplier_min_lead_eu`
   - Model field: Min Lead Days (EU) / `min_lead_eu` / Int
-  - Screenshot: pages/201-cp-suppliers-admin-edit-1-6a23bf22/images/field-020-min-lead-days-eu-optional.png
+  - Screenshot: pages/200-cp-suppliers-admin-edit-id-6a23bf22/images/field-020-min-lead-days-eu-optional.png
 - 21. Max Lead Days (EU) optional (number)
   - DOM name: `supplier_max_lead_eu`
   - Model field: Max Lead Days (EU) / `max_lead_eu` / Int
-  - Screenshot: pages/201-cp-suppliers-admin-edit-1-6a23bf22/images/field-021-max-lead-days-eu-optional.png
+  - Screenshot: pages/200-cp-suppliers-admin-edit-id-6a23bf22/images/field-021-max-lead-days-eu-optional.png
 - 22. Min Lead Days (US) optional (number)
   - DOM name: `supplier_min_lead_us`
   - Model field: Min Lead Days (US) / `min_lead_us` / Int
-  - Screenshot: pages/201-cp-suppliers-admin-edit-1-6a23bf22/images/field-022-min-lead-days-us-optional.png
+  - Screenshot: pages/200-cp-suppliers-admin-edit-id-6a23bf22/images/field-022-min-lead-days-us-optional.png
 - 23. Max Lead Days (US) optional (number)
   - DOM name: `supplier_max_lead_us`
   - Model field: Max Lead Days (US) / `max_lead_us` / Int
-  - Screenshot: pages/201-cp-suppliers-admin-edit-1-6a23bf22/images/field-023-max-lead-days-us-optional.png
+  - Screenshot: pages/200-cp-suppliers-admin-edit-id-6a23bf22/images/field-023-max-lead-days-us-optional.png
 
 ### Source References
 
@@ -27959,9 +26781,9 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - URL: https://dev.soho-home.local/cp/swatches
 - Documentation route key: https://dev.soho-home.local|cp|swatches|index|swatches
-- Draft doc: pages/202-cp-swatches-716721cf/README.md
+- Draft doc: pages/201-cp-swatches-716721cf/README.md
 - Code analysis doc: .vscode/code-docs/cp-swatches.md
-- Page screenshots: pages/202-cp-swatches-716721cf/images/page-desktop.png
+- Page screenshots: pages/201-cp-swatches-716721cf/images/page-desktop.png
 - Field count: 39
 - Controller: App\Swatches\Controller (swatches)
 - Controller file: src/Swatches/Controller.php
@@ -27971,120 +26793,83 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. Keyword search (text)
   - DOM name: `search`
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-001-keyword-search.png
+  - Screenshot: pages/201-cp-swatches-716721cf/images/field-001-keyword-search.png
 - 2. inline[1][swatch_uk] (checkbox)
   - DOM name: `inline[1][swatch_uk]`
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-002-inline-1-swatch-uk.png
 - 3. inline[1][swatch_eu] (checkbox)
   - DOM name: `inline[1][swatch_eu]`
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-003-inline-1-swatch-eu.png
 - 4. inline[1][swatch_us] (checkbox)
   - DOM name: `inline[1][swatch_us]`
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-004-inline-1-swatch-us.png
 - 5. inline[2][swatch_uk] (checkbox)
   - DOM name: `inline[2][swatch_uk]`
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-005-inline-2-swatch-uk.png
 - 6. inline[2][swatch_eu] (checkbox)
   - DOM name: `inline[2][swatch_eu]`
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-006-inline-2-swatch-eu.png
 - 7. inline[2][swatch_us] (checkbox)
   - DOM name: `inline[2][swatch_us]`
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-007-inline-2-swatch-us.png
 - 8. inline[3][swatch_uk] (checkbox)
   - DOM name: `inline[3][swatch_uk]`
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-008-inline-3-swatch-uk.png
 - 9. inline[3][swatch_eu] (checkbox)
   - DOM name: `inline[3][swatch_eu]`
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-009-inline-3-swatch-eu.png
 - 10. inline[3][swatch_us] (checkbox)
   - DOM name: `inline[3][swatch_us]`
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-010-inline-3-swatch-us.png
 - 11. inline[4][swatch_uk] (checkbox)
   - DOM name: `inline[4][swatch_uk]`
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-011-inline-4-swatch-uk.png
 - 12. inline[4][swatch_eu] (checkbox)
   - DOM name: `inline[4][swatch_eu]`
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-012-inline-4-swatch-eu.png
 - 13. inline[4][swatch_us] (checkbox)
   - DOM name: `inline[4][swatch_us]`
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-013-inline-4-swatch-us.png
 - 14. inline[5][swatch_uk] (checkbox)
   - DOM name: `inline[5][swatch_uk]`
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-014-inline-5-swatch-uk.png
 - 15. inline[5][swatch_eu] (checkbox)
   - DOM name: `inline[5][swatch_eu]`
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-015-inline-5-swatch-eu.png
 - 16. inline[5][swatch_us] (checkbox)
   - DOM name: `inline[5][swatch_us]`
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-016-inline-5-swatch-us.png
 - 17. inline[6][swatch_uk] (checkbox)
   - DOM name: `inline[6][swatch_uk]`
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-017-inline-6-swatch-uk.png
 - 18. inline[6][swatch_eu] (checkbox)
   - DOM name: `inline[6][swatch_eu]`
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-018-inline-6-swatch-eu.png
 - 19. inline[6][swatch_us] (checkbox)
   - DOM name: `inline[6][swatch_us]`
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-019-inline-6-swatch-us.png
 - 20. inline[7][swatch_uk] (checkbox)
   - DOM name: `inline[7][swatch_uk]`
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-020-inline-7-swatch-uk.png
 - 21. inline[7][swatch_eu] (checkbox)
   - DOM name: `inline[7][swatch_eu]`
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-021-inline-7-swatch-eu.png
 - 22. inline[7][swatch_us] (checkbox)
   - DOM name: `inline[7][swatch_us]`
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-022-inline-7-swatch-us.png
 - 23. inline[8][swatch_uk] (checkbox)
   - DOM name: `inline[8][swatch_uk]`
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-023-inline-8-swatch-uk.png
 - 24. inline[8][swatch_eu] (checkbox)
   - DOM name: `inline[8][swatch_eu]`
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-024-inline-8-swatch-eu.png
 - 25. inline[8][swatch_us] (checkbox)
   - DOM name: `inline[8][swatch_us]`
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-025-inline-8-swatch-us.png
 - 26. inline[9][swatch_uk] (checkbox)
   - DOM name: `inline[9][swatch_uk]`
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-026-inline-9-swatch-uk.png
 - 27. inline[9][swatch_eu] (checkbox)
   - DOM name: `inline[9][swatch_eu]`
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-027-inline-9-swatch-eu.png
 - 28. inline[9][swatch_us] (checkbox)
   - DOM name: `inline[9][swatch_us]`
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-028-inline-9-swatch-us.png
 - 29. inline[10][swatch_uk] (checkbox)
   - DOM name: `inline[10][swatch_uk]`
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-029-inline-10-swatch-uk.png
 - 30. inline[10][swatch_eu] (checkbox)
   - DOM name: `inline[10][swatch_eu]`
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-030-inline-10-swatch-eu.png
 - 31. inline[10][swatch_us] (checkbox)
   - DOM name: `inline[10][swatch_us]`
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-031-inline-10-swatch-us.png
 - 32. inline[11][swatch_uk] (checkbox)
   - DOM name: `inline[11][swatch_uk]`
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-032-inline-11-swatch-uk.png
 - 33. inline[11][swatch_eu] (checkbox)
   - DOM name: `inline[11][swatch_eu]`
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-033-inline-11-swatch-eu.png
 - 34. inline[11][swatch_us] (checkbox)
   - DOM name: `inline[11][swatch_us]`
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-034-inline-11-swatch-us.png
 - 35. inline[12][swatch_uk] (checkbox)
   - DOM name: `inline[12][swatch_uk]`
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-035-inline-12-swatch-uk.png
 - 36. inline[12][swatch_eu] (checkbox)
   - DOM name: `inline[12][swatch_eu]`
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-036-inline-12-swatch-eu.png
 - 37. inline[12][swatch_us] (checkbox)
   - DOM name: `inline[12][swatch_us]`
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-037-inline-12-swatch-us.png
 - 38. select (select)
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-038-select.png
+  - Screenshot: pages/201-cp-swatches-716721cf/images/field-038-select.png
 - 39. inline_action (submit)
   - DOM name: `inline_action`
-  - Screenshot: pages/202-cp-swatches-716721cf/images/field-039-inline-action.png
 
 ### Source References
 
@@ -28094,11 +26879,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Swatches
 
-- URL: https://dev.soho-home.local/cp/swatches/edit/1
+- URL: https://dev.soho-home.local/cp/swatches/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|swatches|edit|swatches/edit/:identifier
-- Draft doc: pages/203-cp-swatches-edit-1-74e0ebd2/README.md
+- Draft doc: pages/202-cp-swatches-edit-id-74e0ebd2/README.md
 - Code analysis doc: .vscode/code-docs/cp-swatches-edit-existing.md
-- Page screenshots: pages/203-cp-swatches-edit-1-74e0ebd2/images/page-desktop.png
+- Page screenshots: pages/202-cp-swatches-edit-id-74e0ebd2/images/page-desktop.png
 - Field count: 11
 - Controller: App\Swatches\Controller (swatches)
 - Controller file: src/Swatches/Controller.php
@@ -28108,37 +26893,32 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. Code (text)
   - DOM name: `swatch_code`
-  - Screenshot: pages/203-cp-swatches-edit-1-74e0ebd2/images/field-001-code.png
+  - Screenshot: pages/202-cp-swatches-edit-id-74e0ebd2/images/field-001-code.png
 - 2. Title (text)
   - DOM name: `swatch_title`
-  - Screenshot: pages/203-cp-swatches-edit-1-74e0ebd2/images/field-002-title.png
+  - Screenshot: pages/202-cp-swatches-edit-id-74e0ebd2/images/field-002-title.png
 - 3. Header Text optional (textarea)
   - DOM name: `swatch_header_copy`
-  - Screenshot: pages/203-cp-swatches-edit-1-74e0ebd2/images/field-003-header-text-optional.png
 - 4. Description optional (textarea)
   - DOM name: `swatch_description`
-  - Screenshot: pages/203-cp-swatches-edit-1-74e0ebd2/images/field-004-description-optional.png
 - 5. Colour (text)
   - DOM name: `swatch_colour`
-  - Screenshot: pages/203-cp-swatches-edit-1-74e0ebd2/images/field-005-colour.png
+  - Screenshot: pages/202-cp-swatches-edit-id-74e0ebd2/images/field-005-colour.png
 - 6. Status (select)
   - DOM name: `swatch_status`
-  - Screenshot: pages/203-cp-swatches-edit-1-74e0ebd2/images/field-006-status.png
+  - Screenshot: pages/202-cp-swatches-edit-id-74e0ebd2/images/field-006-status.png
 - 7. UK (checkbox)
   - DOM name: `swatch_uk`
-  - Screenshot: pages/203-cp-swatches-edit-1-74e0ebd2/images/field-007-uk.png
 - 8. EU (checkbox)
   - DOM name: `swatch_eu`
-  - Screenshot: pages/203-cp-swatches-edit-1-74e0ebd2/images/field-008-eu.png
 - 9. US (checkbox)
   - DOM name: `swatch_us`
-  - Screenshot: pages/203-cp-swatches-edit-1-74e0ebd2/images/field-009-us.png
 - 10. Material (select)
   - DOM name: `swatch_material`
-  - Screenshot: pages/203-cp-swatches-edit-1-74e0ebd2/images/field-010-material.png
+  - Screenshot: pages/202-cp-swatches-edit-id-74e0ebd2/images/field-010-material.png
 - 11. Products Link optional (text)
   - DOM name: `swatch_products_link`
-  - Screenshot: pages/203-cp-swatches-edit-1-74e0ebd2/images/field-011-products-link-optional.png
+  - Screenshot: pages/202-cp-swatches-edit-id-74e0ebd2/images/field-011-products-link-optional.png
 
 ### Source References
 
@@ -28150,9 +26930,9 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - URL: https://dev.soho-home.local/cp/swatches-materials-admin
 - Documentation route key: https://dev.soho-home.local|cp|swatches-materials-admin|index|swatches-materials-admin
-- Draft doc: pages/204-cp-swatches-materials-admin-b455ec72/README.md
+- Draft doc: pages/203-cp-swatches-materials-admin-b455ec72/README.md
 - Code analysis doc: .vscode/code-docs/cp-swatches-materials-admin.md
-- Page screenshots: pages/204-cp-swatches-materials-admin-b455ec72/images/page-desktop.png
+- Page screenshots: pages/203-cp-swatches-materials-admin-b455ec72/images/page-desktop.png
 - Field count: 1
 - Controller: App\Swatches\MaterialsControllerAdmin (swatches-materials-admin)
 - Controller file: src/Swatches/MaterialsControllerAdmin.php
@@ -28165,7 +26945,7 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 ### DOM Fields
 
 - 1. select (select)
-  - Screenshot: pages/204-cp-swatches-materials-admin-b455ec72/images/field-001-select.png
+  - Screenshot: pages/203-cp-swatches-materials-admin-b455ec72/images/field-001-select.png
 
 ### Source References
 
@@ -28175,11 +26955,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Swatch Materials
 
-- URL: https://dev.soho-home.local/cp/swatches-materials-admin/edit/8
+- URL: https://dev.soho-home.local/cp/swatches-materials-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|swatches-materials-admin|edit|swatches-materials-admin/edit/:identifier
-- Draft doc: pages/205-cp-swatches-materials-admin-edit-8-ff372bc0/README.md
+- Draft doc: pages/204-cp-swatches-materials-admin-edit-id-ff372bc0/README.md
 - Code analysis doc: .vscode/code-docs/cp-swatches-materials-admin-edit-existing.md
-- Page screenshots: pages/205-cp-swatches-materials-admin-edit-8-ff372bc0/images/page-desktop.png
+- Page screenshots: pages/204-cp-swatches-materials-admin-edit-id-ff372bc0/images/page-desktop.png
 - Field count: 2
 - Controller: App\Swatches\MaterialsControllerAdmin (swatches-materials-admin)
 - Controller file: src/Swatches/MaterialsControllerAdmin.php
@@ -28193,9 +26973,9 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. Name (text)
   - DOM name: `material_name`
-  - Screenshot: pages/205-cp-swatches-materials-admin-edit-8-ff372bc0/images/field-001-name.png
+  - Screenshot: pages/204-cp-swatches-materials-admin-edit-id-ff372bc0/images/field-001-name.png
 - 2. select (select)
-  - Screenshot: pages/205-cp-swatches-materials-admin-edit-8-ff372bc0/images/field-002-select.png
+  - Screenshot: pages/204-cp-swatches-materials-admin-edit-id-ff372bc0/images/field-002-select.png
 
 ### Source References
 
@@ -28207,10 +26987,10 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - URL: https://dev.soho-home.local/cp/swatches-orders
 - Documentation route key: https://dev.soho-home.local|cp|swatches-orders|index|swatches-orders
-- Draft doc: pages/206-cp-swatches-orders-58b39d52/README.md
+- Draft doc: pages/205-cp-swatches-orders-58b39d52/README.md
 - Code analysis doc: .vscode/code-docs/cp-swatches-orders.md
-- Page screenshots: pages/206-cp-swatches-orders-58b39d52/images/page-desktop.png
-- Field count: 2
+- Page screenshots: pages/205-cp-swatches-orders-58b39d52/images/page-desktop.png
+- Field count: 1
 - Controller: App\Swatches\OrdersControllerAdmin (swatches-orders)
 - Controller file: src/Swatches/OrdersControllerAdmin.php
 - Action method: indexAction (inherited or unresolved)
@@ -28223,9 +27003,7 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. Keyword search (text)
   - DOM name: `search`
-  - Screenshot: pages/206-cp-swatches-orders-58b39d52/images/field-001-keyword-search.png
-- 2. select (select)
-  - Screenshot: pages/206-cp-swatches-orders-58b39d52/images/field-002-select.png
+  - Screenshot: pages/205-cp-swatches-orders-58b39d52/images/field-001-keyword-search.png
 
 ### Source References
 
@@ -28235,11 +27013,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Swatch Orders
 
-- URL: https://dev.soho-home.local/cp/swatches-orders/view/38784
+- URL: https://dev.soho-home.local/cp/swatches-orders/view/:id
 - Documentation route key: https://dev.soho-home.local|cp|swatches-orders|view|swatches-orders/view/:identifier
-- Draft doc: pages/207-cp-swatches-orders-view-38784-ce023776/README.md
+- Draft doc: pages/206-cp-swatches-orders-view-id-ce023776/README.md
 - Code analysis doc: .vscode/code-docs/cp-swatches-orders-view-view.md
-- Page screenshots: pages/207-cp-swatches-orders-view-38784-ce023776/images/page-desktop.png
+- Page screenshots: pages/206-cp-swatches-orders-view-id-ce023776/images/page-desktop.png
 - Field count: 1
 - Controller: App\Swatches\OrdersControllerAdmin (swatches-orders)
 - Controller file: src/Swatches/OrdersControllerAdmin.php
@@ -28253,7 +27031,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. Optin (checkbox)
   - DOM name: `order_optin`
-  - Screenshot: pages/207-cp-swatches-orders-view-38784-ce023776/images/field-001-optin.png
 
 ### Source References
 
@@ -28265,9 +27042,9 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - URL: https://dev.soho-home.local/cp/trade-tier-settings-admin
 - Documentation route key: https://dev.soho-home.local|cp|trade-tier-settings-admin|index|trade-tier-settings-admin
-- Draft doc: pages/208-cp-trade-tier-settings-admin-02ef419f/README.md
+- Draft doc: pages/207-cp-trade-tier-settings-admin-02ef419f/README.md
 - Code analysis doc: .vscode/code-docs/cp-trade-tier-settings-admin.md
-- Page screenshots: pages/208-cp-trade-tier-settings-admin-02ef419f/images/page-desktop.png
+- Page screenshots: pages/207-cp-trade-tier-settings-admin-02ef419f/images/page-desktop.png
 - Field count: 2
 - Controller: Soho\Ecom\Controller\TradeTierSettingsAdmin (trade-tier-settings-admin)
 - Controller file: vendor/soho/ecom/src/Controller/TradeTierSettingsAdmin.php
@@ -28282,11 +27059,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 1. Active From optional (date)
   - DOM name: `tier_active_from`
   - Model field: Active From / `active_from` / Date
-  - Screenshot: pages/208-cp-trade-tier-settings-admin-02ef419f/images/field-001-active-from-optional.png
+  - Screenshot: pages/207-cp-trade-tier-settings-admin-02ef419f/images/field-001-active-from-optional.png
 - 2. Spend Timeframe optional (select)
   - DOM name: `tier_timeframe`
   - Model field: Spend Timeframe / `timeframe` / SelectCallback
-  - Screenshot: pages/208-cp-trade-tier-settings-admin-02ef419f/images/field-002-spend-timeframe-optional.png
+  - Screenshot: pages/207-cp-trade-tier-settings-admin-02ef419f/images/field-002-spend-timeframe-optional.png
 
 ### Source References
 
@@ -28534,9 +27311,9 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - URL: https://dev.soho-home.local/cp/trade-tiers-admin
 - Documentation route key: https://dev.soho-home.local|cp|trade-tiers-admin|index|trade-tiers-admin
-- Draft doc: pages/209-cp-trade-tiers-admin-ca98400b/README.md
+- Draft doc: pages/208-cp-trade-tiers-admin-ca98400b/README.md
 - Code analysis doc: .vscode/code-docs/cp-trade-tiers-admin.md
-- Page screenshots: pages/209-cp-trade-tiers-admin-ca98400b/images/page-desktop.png
+- Page screenshots: pages/208-cp-trade-tiers-admin-ca98400b/images/page-desktop.png
 - Field count: 0
 - Controller: Soho\Ecom\Controller\TradeTiersAdmin (trade-tiers-admin)
 - Controller file: vendor/soho/ecom/src/Controller/TradeTiersAdmin.php
@@ -28790,11 +27567,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Trade Tiers
 
-- URL: https://dev.soho-home.local/cp/trade-tiers-admin/edit/1
+- URL: https://dev.soho-home.local/cp/trade-tiers-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|trade-tiers-admin|edit|trade-tiers-admin/edit/:identifier
-- Draft doc: pages/210-cp-trade-tiers-admin-edit-1-9437078d/README.md
+- Draft doc: pages/209-cp-trade-tiers-admin-edit-id-9437078d/README.md
 - Code analysis doc: .vscode/code-docs/cp-trade-tiers-admin-edit-existing.md
-- Page screenshots: pages/210-cp-trade-tiers-admin-edit-1-9437078d/images/page-desktop.png
+- Page screenshots: pages/209-cp-trade-tiers-admin-edit-id-9437078d/images/page-desktop.png
 - Field count: 5
 - Controller: Soho\Ecom\Controller\TradeTiersAdmin (trade-tiers-admin)
 - Controller file: vendor/soho/ecom/src/Controller/TradeTiersAdmin.php
@@ -28809,23 +27586,23 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - 1. Name (text)
   - DOM name: `tier_name`
   - Model field: Name / `name` / Text
-  - Screenshot: pages/210-cp-trade-tiers-admin-edit-1-9437078d/images/field-001-name.png
+  - Screenshot: pages/209-cp-trade-tiers-admin-edit-id-9437078d/images/field-001-name.png
 - 2. Status (select)
   - DOM name: `tier_status`
   - Model field: Status / `status` / SelectCallback
-  - Screenshot: pages/210-cp-trade-tiers-admin-edit-1-9437078d/images/field-002-status.png
+  - Screenshot: pages/209-cp-trade-tiers-admin-edit-id-9437078d/images/field-002-status.png
 - 3. Type (select)
   - DOM name: `tier_type`
   - Model field: Type / `type` / SelectCallback
-  - Screenshot: pages/210-cp-trade-tiers-admin-edit-1-9437078d/images/field-003-type.png
+  - Screenshot: pages/209-cp-trade-tiers-admin-edit-id-9437078d/images/field-003-type.png
 - 4. Currency (select)
   - DOM name: `tier_currency`
   - Model field: Currency / `currency` / SelectCallback
-  - Screenshot: pages/210-cp-trade-tiers-admin-edit-1-9437078d/images/field-004-currency.png
+  - Screenshot: pages/209-cp-trade-tiers-admin-edit-id-9437078d/images/field-004-currency.png
 - 5. Min Spend Limit (number)
   - DOM name: `tier_min_spend_limit`
   - Model field: Min Spend Limit / `min_spend_limit` / Float
-  - Screenshot: pages/210-cp-trade-tiers-admin-edit-1-9437078d/images/field-005-min-spend-limit.png
+  - Screenshot: pages/209-cp-trade-tiers-admin-edit-id-9437078d/images/field-005-min-spend-limit.png
 
 ### Source References
 
@@ -29069,14 +27846,14 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - model: vendor/soho/ecom/src/Model/TradeTier.php
 - model-xml: vendor/soho/ecom/src/Model/TradeTier.xml
 
-## Voucher Dispatches
+## Vouchers Dispatches
 
 - URL: https://dev.soho-home.local/cp/vouchers-dispatches-admin
 - Documentation route key: https://dev.soho-home.local|cp|vouchers-dispatches-admin|index|vouchers-dispatches-admin
-- Draft doc: pages/211-cp-vouchers-dispatches-admin-9e214357/README.md
+- Draft doc: pages/210-cp-vouchers-dispatches-admin-9e214357/README.md
 - Code analysis doc: .vscode/code-docs/cp-vouchers-dispatches-admin.md
-- Page screenshots: pages/211-cp-vouchers-dispatches-admin-9e214357/images/page-desktop.png
-- Field count: 1
+- Page screenshots: pages/210-cp-vouchers-dispatches-admin-9e214357/images/page-desktop.png
+- Field count: 0
 - Controller: Soho\Vouchers\Report\DispatchesController (vouchers-dispatches-admin)
 - Controller file: vendor/soho/vouchers/src/Report/DispatchesController.php
 - Action method: indexAction (inherited or unresolved)
@@ -29084,11 +27861,6 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - Model file: unresolved
 - Model XML: unresolved
 - Model item prefix: unresolved
-
-### DOM Fields
-
-- 1. select (select)
-  - Screenshot: pages/211-cp-vouchers-dispatches-admin-9e214357/images/field-001-select.png
 
 ### Source References
 
@@ -29105,13 +27877,13 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 - referenced-class: vendor/soho/vouchers/src/Report/OrdersController.php
 - referenced-class: vendor/soho/vouchers/src/Report/DispatchesController.php
 
-## Voucher Liabilities
+## Voucher Liability Report
 
 - URL: https://dev.soho-home.local/cp/vouchers-liability-admin
 - Documentation route key: https://dev.soho-home.local|cp|vouchers-liability-admin|index|vouchers-liability-admin
-- Draft doc: pages/212-cp-vouchers-liability-admin-23dd93b9/README.md
+- Draft doc: pages/211-cp-vouchers-liability-admin-23dd93b9/README.md
 - Code analysis doc: .vscode/code-docs/cp-vouchers-liability-admin.md
-- Page screenshots: pages/212-cp-vouchers-liability-admin-23dd93b9/images/page-desktop.png
+- Page screenshots: pages/211-cp-vouchers-liability-admin-23dd93b9/images/page-desktop.png
 - Field count: 0
 - Controller: Soho\Vouchers\Report\LiabilityController (vouchers-liability-admin)
 - Controller file: vendor/soho/vouchers/src/Report/LiabilityController.php
@@ -29140,9 +27912,9 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - URL: https://dev.soho-home.local/cp/vouchers-orders-admin
 - Documentation route key: https://dev.soho-home.local|cp|vouchers-orders-admin|index|vouchers-orders-admin
-- Draft doc: pages/213-cp-vouchers-orders-admin-a6218ed0/README.md
+- Draft doc: pages/212-cp-vouchers-orders-admin-a6218ed0/README.md
 - Code analysis doc: .vscode/code-docs/cp-vouchers-orders-admin.md
-- Page screenshots: pages/213-cp-vouchers-orders-admin-a6218ed0/images/page-desktop.png
+- Page screenshots: pages/212-cp-vouchers-orders-admin-a6218ed0/images/page-desktop.png
 - Field count: 0
 - Controller: Soho\Vouchers\Report\OrdersController (vouchers-orders-admin)
 - Controller file: vendor/soho/vouchers/src/Report/OrdersController.php
@@ -29171,9 +27943,9 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - URL: https://dev.soho-home.local/cp/webhook-log-admin
 - Documentation route key: https://dev.soho-home.local|cp|webhook-log-admin|index|webhook-log-admin
-- Draft doc: pages/214-cp-webhook-log-admin-e3ec6a69/README.md
+- Draft doc: pages/213-cp-webhook-log-admin-e3ec6a69/README.md
 - Code analysis doc: .vscode/code-docs/cp-webhook-log-admin.md
-- Page screenshots: pages/214-cp-webhook-log-admin-e3ec6a69/images/page-desktop.png
+- Page screenshots: pages/213-cp-webhook-log-admin-e3ec6a69/images/page-desktop.png
 - Field count: 0
 - Controller: Controllers\WebhookControllerAdmin (webhook-log-admin)
 - Controller file: unresolved
@@ -29186,11 +27958,11 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 ## Webhooks Log
 
-- URL: https://dev.soho-home.local/cp/webhook-log-admin/edit/2539610
+- URL: https://dev.soho-home.local/cp/webhook-log-admin/edit/:id
 - Documentation route key: https://dev.soho-home.local|cp|webhook-log-admin|edit|webhook-log-admin/edit/:identifier
-- Draft doc: pages/215-cp-webhook-log-admin-edit-2539610-497e71c4/README.md
+- Draft doc: pages/214-cp-webhook-log-admin-edit-id-497e71c4/README.md
 - Code analysis doc: .vscode/code-docs/cp-webhook-log-admin-edit-existing.md
-- Page screenshots: pages/215-cp-webhook-log-admin-edit-2539610-497e71c4/images/page-desktop.png
+- Page screenshots: pages/214-cp-webhook-log-admin-edit-id-497e71c4/images/page-desktop.png
 - Field count: 0
 - Controller: Controllers\WebhookControllerAdmin (webhook-log-admin)
 - Controller file: unresolved
@@ -29205,9 +27977,9 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - URL: https://dev.soho-home.local/cp/image-asset-admin/pages
 - Documentation route key: https://dev.soho-home.local|cp|image-asset-admin|pages|image-asset-admin/pages
-- Draft doc: pages/216-cp-image-asset-admin-pages-c25fa6b0/README.md
+- Draft doc: pages/215-cp-image-asset-admin-pages-c25fa6b0/README.md
 - Code analysis doc: .vscode/code-docs/cp-image-asset-admin-pages.md
-- Page screenshots: pages/216-cp-image-asset-admin-pages-c25fa6b0/images/page-desktop.png
+- Page screenshots: pages/215-cp-image-asset-admin-pages-c25fa6b0/images/page-desktop.png
 - Field count: 2
 - Controller: Controller\AdminController (image-asset-admin)
 - Controller file: unresolved
@@ -29217,723 +27989,10 @@ Use this file as the handoff for Codex to produce final operator documentation. 
 
 - 1. Keyword search (text)
   - DOM name: `search`
-  - Screenshot: pages/216-cp-image-asset-admin-pages-c25fa6b0/images/field-001-keyword-search.png
+  - Screenshot: pages/215-cp-image-asset-admin-pages-c25fa6b0/images/field-001-keyword-search.png
 - 2. select (select)
-  - Screenshot: pages/216-cp-image-asset-admin-pages-c25fa6b0/images/field-002-select.png
+  - Screenshot: pages/215-cp-image-asset-admin-pages-c25fa6b0/images/field-002-select.png
 
 ### Source References
 
 - provider: src/ImageAssets/Provider.php
-
-## CP Styleguide
-
-- URL: https://dev.soho-home.local/cp/styleguide-admin/colours
-- Documentation route key: https://dev.soho-home.local|cp|styleguide-admin|colours|styleguide-admin/colours
-- Draft doc: pages/217-cp-styleguide-admin-colours-ba1d95c1/README.md
-- Page screenshots: pages/217-cp-styleguide-admin-colours-ba1d95c1/images/page-desktop.png
-- Field count: 1
-- Controller: unresolved
-
-### DOM Fields
-
-- 1. Search... (text)
-  - Screenshot: pages/217-cp-styleguide-admin-colours-ba1d95c1/images/field-001-search.png
-
-## CP Styleguide
-
-- URL: https://dev.soho-home.local/cp/styleguide-admin/typography
-- Documentation route key: https://dev.soho-home.local|cp|styleguide-admin|typography|styleguide-admin/typography
-- Draft doc: pages/218-cp-styleguide-admin-typography-832e16ca/README.md
-- Page screenshots: pages/218-cp-styleguide-admin-typography-832e16ca/images/page-desktop.png
-- Field count: 1
-- Controller: unresolved
-
-### DOM Fields
-
-- 1. Search... (text)
-  - Screenshot: pages/218-cp-styleguide-admin-typography-832e16ca/images/field-001-search.png
-
-## CP Styleguide
-
-- URL: https://dev.soho-home.local/cp/styleguide-admin/icons
-- Documentation route key: https://dev.soho-home.local|cp|styleguide-admin|icons|styleguide-admin/icons
-- Draft doc: pages/219-cp-styleguide-admin-icons-a994acf8/README.md
-- Page screenshots: pages/219-cp-styleguide-admin-icons-a994acf8/images/page-desktop.png
-- Field count: 1
-- Controller: unresolved
-
-### DOM Fields
-
-- 1. Search... (text)
-  - Screenshot: pages/219-cp-styleguide-admin-icons-a994acf8/images/field-001-search.png
-
-## CP Styleguide
-
-- URL: https://dev.soho-home.local/cp/styleguide-admin/buttons
-- Documentation route key: https://dev.soho-home.local|cp|styleguide-admin|buttons|styleguide-admin/buttons
-- Draft doc: pages/220-cp-styleguide-admin-buttons-da6eaafb/README.md
-- Page screenshots: pages/220-cp-styleguide-admin-buttons-da6eaafb/images/page-desktop.png
-- Field count: 2
-- Controller: unresolved
-
-### DOM Fields
-
-- 1. Search... (text)
-  - Screenshot: pages/220-cp-styleguide-admin-buttons-da6eaafb/images/field-001-search.png
-- 2. Input text (text)
-  - Screenshot: pages/220-cp-styleguide-admin-buttons-da6eaafb/images/field-002-input-text.png
-
-## CP Styleguide
-
-- URL: https://dev.soho-home.local/cp/styleguide-admin/loaders
-- Documentation route key: https://dev.soho-home.local|cp|styleguide-admin|loaders|styleguide-admin/loaders
-- Draft doc: pages/221-cp-styleguide-admin-loaders-0ac016ee/README.md
-- Page screenshots: pages/221-cp-styleguide-admin-loaders-0ac016ee/images/page-desktop.png
-- Field count: 1
-- Controller: unresolved
-
-### DOM Fields
-
-- 1. Search... (text)
-  - Screenshot: pages/221-cp-styleguide-admin-loaders-0ac016ee/images/field-001-search.png
-
-## CP Styleguide
-
-- URL: https://dev.soho-home.local/cp/styleguide-admin/z-index
-- Documentation route key: https://dev.soho-home.local|cp|styleguide-admin|zIndex|styleguide-admin/zIndex
-- Draft doc: pages/222-cp-styleguide-admin-z-index-4860a309/README.md
-- Page screenshots: pages/222-cp-styleguide-admin-z-index-4860a309/images/page-desktop.png
-- Field count: 1
-- Controller: unresolved
-
-### DOM Fields
-
-- 1. Search... (text)
-  - Screenshot: pages/222-cp-styleguide-admin-z-index-4860a309/images/field-001-search.png
-
-## CP Styleguide
-
-- URL: https://dev.soho-home.local/cp/styleguide-admin/indicators
-- Documentation route key: https://dev.soho-home.local|cp|styleguide-admin|indicators|styleguide-admin/indicators
-- Draft doc: pages/223-cp-styleguide-admin-indicators-2a2e3114/README.md
-- Page screenshots: pages/223-cp-styleguide-admin-indicators-2a2e3114/images/page-desktop.png
-- Field count: 1
-- Controller: unresolved
-
-### DOM Fields
-
-- 1. Search... (text)
-  - Screenshot: pages/223-cp-styleguide-admin-indicators-2a2e3114/images/field-001-search.png
-
-## CP Styleguide
-
-- URL: https://dev.soho-home.local/cp/styleguide-admin/tags
-- Documentation route key: https://dev.soho-home.local|cp|styleguide-admin|tags|styleguide-admin/tags
-- Draft doc: pages/224-cp-styleguide-admin-tags-fc1e358c/README.md
-- Page screenshots: pages/224-cp-styleguide-admin-tags-fc1e358c/images/page-desktop.png
-- Field count: 1
-- Controller: unresolved
-
-### DOM Fields
-
-- 1. Search... (text)
-  - Screenshot: pages/224-cp-styleguide-admin-tags-fc1e358c/images/field-001-search.png
-
-## CP Styleguide
-
-- URL: https://dev.soho-home.local/cp/styleguide-admin/column
-- Documentation route key: https://dev.soho-home.local|cp|styleguide-admin|column|styleguide-admin/column
-- Draft doc: pages/225-cp-styleguide-admin-column-eee2fd5a/README.md
-- Page screenshots: pages/225-cp-styleguide-admin-column-eee2fd5a/images/page-desktop.png
-- Field count: 1
-- Controller: unresolved
-
-### DOM Fields
-
-- 1. Search... (text)
-  - Screenshot: pages/225-cp-styleguide-admin-column-eee2fd5a/images/field-001-search.png
-
-## CP Styleguide
-
-- URL: https://dev.soho-home.local/cp/styleguide-admin/row
-- Documentation route key: https://dev.soho-home.local|cp|styleguide-admin|row|styleguide-admin/row
-- Draft doc: pages/226-cp-styleguide-admin-row-342caeed/README.md
-- Page screenshots: pages/226-cp-styleguide-admin-row-342caeed/images/page-desktop.png
-- Field count: 1
-- Controller: unresolved
-
-### DOM Fields
-
-- 1. Search... (text)
-  - Screenshot: pages/226-cp-styleguide-admin-row-342caeed/images/field-001-search.png
-
-## CP Styleguide
-
-- URL: https://dev.soho-home.local/cp/styleguide-admin/grid
-- Documentation route key: https://dev.soho-home.local|cp|styleguide-admin|grid|styleguide-admin/grid
-- Draft doc: pages/227-cp-styleguide-admin-grid-b21092e1/README.md
-- Page screenshots: pages/227-cp-styleguide-admin-grid-b21092e1/images/page-desktop.png
-- Field count: 1
-- Controller: unresolved
-
-### DOM Fields
-
-- 1. Search... (text)
-  - Screenshot: pages/227-cp-styleguide-admin-grid-b21092e1/images/field-001-search.png
-
-## CP Styleguide
-
-- URL: https://dev.soho-home.local/cp/styleguide-admin/section
-- Documentation route key: https://dev.soho-home.local|cp|styleguide-admin|section|styleguide-admin/section
-- Draft doc: pages/228-cp-styleguide-admin-section-8d343c50/README.md
-- Page screenshots: pages/228-cp-styleguide-admin-section-8d343c50/images/page-desktop.png
-- Field count: 1
-- Controller: unresolved
-
-### DOM Fields
-
-- 1. Search... (text)
-  - Screenshot: pages/228-cp-styleguide-admin-section-8d343c50/images/field-001-search.png
-
-## CP Styleguide
-
-- URL: https://dev.soho-home.local/cp/styleguide-admin/text-field
-- Documentation route key: https://dev.soho-home.local|cp|styleguide-admin|textField|styleguide-admin/textField
-- Draft doc: pages/229-cp-styleguide-admin-text-field-48351975/README.md
-- Page screenshots: pages/229-cp-styleguide-admin-text-field-48351975/images/page-desktop.png
-- Field count: 4
-- Controller: unresolved
-
-### DOM Fields
-
-- 1. Search... (text)
-  - Screenshot: pages/229-cp-styleguide-admin-text-field-48351975/images/field-001-search.png
-- 2. Example (text)
-  - DOM name: `example_example`
-  - Screenshot: pages/229-cp-styleguide-admin-text-field-48351975/images/field-002-example.png
-- 3. Example (text)
-  - DOM name: `example_example`
-  - Screenshot: pages/229-cp-styleguide-admin-text-field-48351975/images/field-003-example.png
-- 4. Example (text)
-  - DOM name: `example_example`
-  - Screenshot: pages/229-cp-styleguide-admin-text-field-48351975/images/field-004-example.png
-
-## CP Styleguide
-
-- URL: https://dev.soho-home.local/cp/styleguide-admin/textarea-field
-- Documentation route key: https://dev.soho-home.local|cp|styleguide-admin|textareaField|styleguide-admin/textareaField
-- Draft doc: pages/230-cp-styleguide-admin-textarea-field-70061e8f/README.md
-- Page screenshots: pages/230-cp-styleguide-admin-textarea-field-70061e8f/images/page-desktop.png
-- Field count: 4
-- Controller: unresolved
-
-### DOM Fields
-
-- 1. Search... (text)
-  - Screenshot: pages/230-cp-styleguide-admin-textarea-field-70061e8f/images/field-001-search.png
-- 2. Example (textarea)
-  - DOM name: `example_example`
-  - Screenshot: pages/230-cp-styleguide-admin-textarea-field-70061e8f/images/field-002-example.png
-- 3. Example (textarea)
-  - DOM name: `example_example`
-  - Screenshot: pages/230-cp-styleguide-admin-textarea-field-70061e8f/images/field-003-example.png
-- 4. Example (textarea)
-  - DOM name: `example_example`
-  - Screenshot: pages/230-cp-styleguide-admin-textarea-field-70061e8f/images/field-004-example.png
-
-## CP Styleguide
-
-- URL: https://dev.soho-home.local/cp/styleguide-admin/int-field
-- Documentation route key: https://dev.soho-home.local|cp|styleguide-admin|intField|styleguide-admin/intField
-- Draft doc: pages/231-cp-styleguide-admin-int-field-825d1a46/README.md
-- Page screenshots: pages/231-cp-styleguide-admin-int-field-825d1a46/images/page-desktop.png
-- Field count: 4
-- Controller: unresolved
-
-### DOM Fields
-
-- 1. Search... (text)
-  - Screenshot: pages/231-cp-styleguide-admin-int-field-825d1a46/images/field-001-search.png
-- 2. Example (number)
-  - DOM name: `example_example`
-  - Screenshot: pages/231-cp-styleguide-admin-int-field-825d1a46/images/field-002-example.png
-- 3. Example (number)
-  - DOM name: `example_example`
-  - Screenshot: pages/231-cp-styleguide-admin-int-field-825d1a46/images/field-003-example.png
-- 4. Example (number)
-  - DOM name: `example_example`
-  - Screenshot: pages/231-cp-styleguide-admin-int-field-825d1a46/images/field-004-example.png
-
-## CP Styleguide
-
-- URL: https://dev.soho-home.local/cp/styleguide-admin/select-field
-- Documentation route key: https://dev.soho-home.local|cp|styleguide-admin|selectField|styleguide-admin/selectField
-- Draft doc: pages/232-cp-styleguide-admin-select-field-7417121b/README.md
-- Page screenshots: pages/232-cp-styleguide-admin-select-field-7417121b/images/page-desktop.png
-- Field count: 5
-- Controller: unresolved
-
-### DOM Fields
-
-- 1. Search... (text)
-  - Screenshot: pages/232-cp-styleguide-admin-select-field-7417121b/images/field-001-search.png
-- 2. Example (select)
-  - DOM name: `example_example`
-  - Screenshot: pages/232-cp-styleguide-admin-select-field-7417121b/images/field-002-example.png
-- 3. Example (select)
-  - DOM name: `example_example`
-  - Screenshot: pages/232-cp-styleguide-admin-select-field-7417121b/images/field-003-example.png
-- 4. Example (select)
-  - DOM name: `example_example`
-  - Screenshot: pages/232-cp-styleguide-admin-select-field-7417121b/images/field-004-example.png
-- 5. Autocomplete_example_example_autocomplete (text)
-  - Screenshot: pages/232-cp-styleguide-admin-select-field-7417121b/images/field-005-autocomplete-example-example-autocomplete.png
-
-## CP Styleguide
-
-- URL: https://dev.soho-home.local/cp/styleguide-admin/checkbox-field
-- Documentation route key: https://dev.soho-home.local|cp|styleguide-admin|checkboxField|styleguide-admin/checkboxField
-- Draft doc: pages/233-cp-styleguide-admin-checkbox-field-a3fe2c1d/README.md
-- Page screenshots: pages/233-cp-styleguide-admin-checkbox-field-a3fe2c1d/images/page-desktop.png
-- Field count: 5
-- Controller: unresolved
-
-### DOM Fields
-
-- 1. Search... (text)
-  - Screenshot: pages/233-cp-styleguide-admin-checkbox-field-a3fe2c1d/images/field-001-search.png
-- 2. Example (checkbox)
-  - DOM name: `example_example`
-  - Screenshot: pages/233-cp-styleguide-admin-checkbox-field-a3fe2c1d/images/field-002-example.png
-- 3. Example (checkbox)
-  - DOM name: `example_example`
-  - Screenshot: pages/233-cp-styleguide-admin-checkbox-field-a3fe2c1d/images/field-003-example.png
-- 4. Example (checkbox)
-  - DOM name: `example_example`
-  - Screenshot: pages/233-cp-styleguide-admin-checkbox-field-a3fe2c1d/images/field-004-example.png
-- 5. Example (checkbox)
-  - Screenshot: pages/233-cp-styleguide-admin-checkbox-field-a3fe2c1d/images/field-005-example.png
-
-## CP Styleguide
-
-- URL: https://dev.soho-home.local/cp/styleguide-admin/select-multiple-field
-- Documentation route key: https://dev.soho-home.local|cp|styleguide-admin|selectMultipleField|styleguide-admin/selectMultipleField
-- Draft doc: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/README.md
-- Page screenshots: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/images/page-desktop.png
-- Field count: 37
-- Controller: unresolved
-
-### DOM Fields
-
-- 1. Search... (text)
-  - Screenshot: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/images/field-001-search.png
-- 2. January (checkbox)
-  - DOM name: `example_example[]`
-  - Screenshot: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/images/field-002-january.png
-- 3. February (checkbox)
-  - DOM name: `example_example[]`
-  - Screenshot: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/images/field-003-february.png
-- 4. March (checkbox)
-  - DOM name: `example_example[]`
-  - Screenshot: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/images/field-004-march.png
-- 5. April (checkbox)
-  - DOM name: `example_example[]`
-  - Screenshot: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/images/field-005-april.png
-- 6. May (checkbox)
-  - DOM name: `example_example[]`
-  - Screenshot: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/images/field-006-may.png
-- 7. June (checkbox)
-  - DOM name: `example_example[]`
-  - Screenshot: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/images/field-007-june.png
-- 8. July (checkbox)
-  - DOM name: `example_example[]`
-  - Screenshot: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/images/field-008-july.png
-- 9. August (checkbox)
-  - DOM name: `example_example[]`
-  - Screenshot: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/images/field-009-august.png
-- 10. September (checkbox)
-  - DOM name: `example_example[]`
-  - Screenshot: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/images/field-010-september.png
-- 11. October (checkbox)
-  - DOM name: `example_example[]`
-  - Screenshot: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/images/field-011-october.png
-- 12. November (checkbox)
-  - DOM name: `example_example[]`
-  - Screenshot: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/images/field-012-november.png
-- 13. December (checkbox)
-  - DOM name: `example_example[]`
-  - Screenshot: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/images/field-013-december.png
-- 14. January (checkbox)
-  - DOM name: `example_example[]`
-  - Screenshot: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/images/field-014-january.png
-- 15. February (checkbox)
-  - DOM name: `example_example[]`
-  - Screenshot: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/images/field-015-february.png
-- 16. March (checkbox)
-  - DOM name: `example_example[]`
-  - Screenshot: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/images/field-016-march.png
-- 17. April (checkbox)
-  - DOM name: `example_example[]`
-  - Screenshot: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/images/field-017-april.png
-- 18. May (checkbox)
-  - DOM name: `example_example[]`
-  - Screenshot: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/images/field-018-may.png
-- 19. June (checkbox)
-  - DOM name: `example_example[]`
-  - Screenshot: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/images/field-019-june.png
-- 20. July (checkbox)
-  - DOM name: `example_example[]`
-  - Screenshot: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/images/field-020-july.png
-- 21. August (checkbox)
-  - DOM name: `example_example[]`
-  - Screenshot: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/images/field-021-august.png
-- 22. September (checkbox)
-  - DOM name: `example_example[]`
-  - Screenshot: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/images/field-022-september.png
-- 23. October (checkbox)
-  - DOM name: `example_example[]`
-  - Screenshot: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/images/field-023-october.png
-- 24. November (checkbox)
-  - DOM name: `example_example[]`
-  - Screenshot: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/images/field-024-november.png
-- 25. December (checkbox)
-  - DOM name: `example_example[]`
-  - Screenshot: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/images/field-025-december.png
-- 26. January (checkbox)
-  - DOM name: `example_example[]`
-  - Screenshot: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/images/field-026-january.png
-- 27. February (checkbox)
-  - DOM name: `example_example[]`
-  - Screenshot: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/images/field-027-february.png
-- 28. March (checkbox)
-  - DOM name: `example_example[]`
-  - Screenshot: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/images/field-028-march.png
-- 29. April (checkbox)
-  - DOM name: `example_example[]`
-  - Screenshot: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/images/field-029-april.png
-- 30. May (checkbox)
-  - DOM name: `example_example[]`
-  - Screenshot: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/images/field-030-may.png
-- 31. June (checkbox)
-  - DOM name: `example_example[]`
-  - Screenshot: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/images/field-031-june.png
-- 32. July (checkbox)
-  - DOM name: `example_example[]`
-  - Screenshot: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/images/field-032-july.png
-- 33. August (checkbox)
-  - DOM name: `example_example[]`
-  - Screenshot: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/images/field-033-august.png
-- 34. September (checkbox)
-  - DOM name: `example_example[]`
-  - Screenshot: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/images/field-034-september.png
-- 35. October (checkbox)
-  - DOM name: `example_example[]`
-  - Screenshot: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/images/field-035-october.png
-- 36. November (checkbox)
-  - DOM name: `example_example[]`
-  - Screenshot: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/images/field-036-november.png
-- 37. December (checkbox)
-  - DOM name: `example_example[]`
-  - Screenshot: pages/234-cp-styleguide-admin-select-multiple-field-25ecafe5/images/field-037-december.png
-
-## CP Styleguide
-
-- URL: https://dev.soho-home.local/cp/styleguide-admin/select-model-multiple-field
-- Documentation route key: https://dev.soho-home.local|cp|styleguide-admin|selectModelMultipleField|styleguide-admin/selectModelMultipleField
-- Draft doc: pages/235-cp-styleguide-admin-select-model-multiple-field-c5a09e29/README.md
-- Page screenshots: pages/235-cp-styleguide-admin-select-model-multiple-field-c5a09e29/images/page-desktop.png
-- Field count: 5
-- Controller: unresolved
-
-### DOM Fields
-
-- 1. Search... (text)
-  - Screenshot: pages/235-cp-styleguide-admin-select-model-multiple-field-c5a09e29/images/field-001-search.png
-- 2. input (text)
-  - Screenshot: pages/235-cp-styleguide-admin-select-model-multiple-field-c5a09e29/images/field-002-input.png
-- 3. input (text)
-  - Screenshot: pages/235-cp-styleguide-admin-select-model-multiple-field-c5a09e29/images/field-003-input.png
-- 4. input (text)
-  - Screenshot: pages/235-cp-styleguide-admin-select-model-multiple-field-c5a09e29/images/field-004-input.png
-- 5. input (text)
-  - Screenshot: pages/235-cp-styleguide-admin-select-model-multiple-field-c5a09e29/images/field-005-input.png
-
-## CP Styleguide
-
-- URL: https://dev.soho-home.local/cp/styleguide-admin/linksimple-field
-- Documentation route key: https://dev.soho-home.local|cp|styleguide-admin|linksimpleField|styleguide-admin/linksimpleField
-- Draft doc: pages/236-cp-styleguide-admin-linksimple-field-96dbe949/README.md
-- Page screenshots: pages/236-cp-styleguide-admin-linksimple-field-96dbe949/images/page-desktop.png
-- Field count: 6
-- Controller: unresolved
-
-### DOM Fields
-
-- 1. Search... (text)
-  - Screenshot: pages/236-cp-styleguide-admin-linksimple-field-96dbe949/images/field-001-search.png
-- 2. Example Admin User (select)
-  - DOM name: `admin_favourite_user`
-  - Screenshot: pages/236-cp-styleguide-admin-linksimple-field-96dbe949/images/field-002-example-admin-user.png
-- 3. Example Admin User (select)
-  - DOM name: `admin_favourite_user`
-  - Screenshot: pages/236-cp-styleguide-admin-linksimple-field-96dbe949/images/field-003-example-admin-user.png
-- 4. Example Admin User (select)
-  - DOM name: `admin_favourite_user`
-  - Screenshot: pages/236-cp-styleguide-admin-linksimple-field-96dbe949/images/field-004-example-admin-user.png
-- 5. Example Admin User (text)
-  - Screenshot: pages/236-cp-styleguide-admin-linksimple-field-96dbe949/images/field-005-example-admin-user.png
-- 6. Example Admin User (text)
-  - Screenshot: pages/236-cp-styleguide-admin-linksimple-field-96dbe949/images/field-006-example-admin-user.png
-
-## CP Styleguide
-
-- URL: https://dev.soho-home.local/cp/styleguide-admin/asset-field
-- Documentation route key: https://dev.soho-home.local|cp|styleguide-admin|assetField|styleguide-admin/assetField
-- Draft doc: pages/237-cp-styleguide-admin-asset-field-c845edf3/README.md
-- Page screenshots: pages/237-cp-styleguide-admin-asset-field-c845edf3/images/page-desktop.png
-- Field count: 1
-- Controller: unresolved
-
-### DOM Fields
-
-- 1. Search... (text)
-  - Screenshot: pages/237-cp-styleguide-admin-asset-field-c845edf3/images/field-001-search.png
-
-## CP Styleguide
-
-- URL: https://dev.soho-home.local/cp/styleguide-admin/repeater-field
-- Documentation route key: https://dev.soho-home.local|cp|styleguide-admin|repeaterField|styleguide-admin/repeaterField
-- Draft doc: pages/238-cp-styleguide-admin-repeater-field-688cac90/README.md
-- Page screenshots: pages/238-cp-styleguide-admin-repeater-field-688cac90/images/page-desktop.png
-- Field count: 4
-- Controller: unresolved
-
-### DOM Fields
-
-- 1. Search... (text)
-  - Screenshot: pages/238-cp-styleguide-admin-repeater-field-688cac90/images/field-001-search.png
-- 2. example_example[0][] (text)
-  - DOM name: `example_example[0][]`
-  - Screenshot: pages/238-cp-styleguide-admin-repeater-field-688cac90/images/field-002-example-example-0.png
-- 3. example_example[0][] (text)
-  - DOM name: `example_example[0][]`
-  - Screenshot: pages/238-cp-styleguide-admin-repeater-field-688cac90/images/field-003-example-example-0.png
-- 4. example_example[0][] (text)
-  - DOM name: `example_example[0][]`
-  - Screenshot: pages/238-cp-styleguide-admin-repeater-field-688cac90/images/field-004-example-example-0.png
-
-## CP Styleguide
-
-- URL: https://dev.soho-home.local/cp/styleguide-admin/intltel-field
-- Documentation route key: https://dev.soho-home.local|cp|styleguide-admin|intltelField|styleguide-admin/intltelField
-- Draft doc: pages/239-cp-styleguide-admin-intltel-field-209a349d/README.md
-- Page screenshots: pages/239-cp-styleguide-admin-intltel-field-209a349d/images/page-desktop.png
-- Field count: 4
-- Controller: unresolved
-
-### DOM Fields
-
-- 1. Search... (text)
-  - Screenshot: pages/239-cp-styleguide-admin-intltel-field-209a349d/images/field-001-search.png
-- 2. 07400 123456 (tel)
-  - DOM name: `example_example_input`
-  - Screenshot: pages/239-cp-styleguide-admin-intltel-field-209a349d/images/field-002-07400-123456.png
-- 3. 07400 123456 (tel)
-  - DOM name: `example_example_input`
-  - Screenshot: pages/239-cp-styleguide-admin-intltel-field-209a349d/images/field-003-07400-123456.png
-- 4. Some placeholder text (tel)
-  - DOM name: `example_example_input`
-  - Screenshot: pages/239-cp-styleguide-admin-intltel-field-209a349d/images/field-004-some-placeholder-text.png
-
-## CP Styleguide
-
-- URL: https://dev.soho-home.local/cp/styleguide-admin/tags-field
-- Documentation route key: https://dev.soho-home.local|cp|styleguide-admin|tagsField|styleguide-admin/tagsField
-- Draft doc: pages/240-cp-styleguide-admin-tags-field-e3c7ea68/README.md
-- Page screenshots: pages/240-cp-styleguide-admin-tags-field-e3c7ea68/images/page-desktop.png
-- Field count: 4
-- Controller: unresolved
-
-### DOM Fields
-
-- 1. Search... (text)
-  - Screenshot: pages/240-cp-styleguide-admin-tags-field-e3c7ea68/images/field-001-search.png
-- 2. basic_example_tags-list-selectized (text)
-  - Screenshot: pages/240-cp-styleguide-admin-tags-field-e3c7ea68/images/field-002-basic-example-tags-list-selectized.png
-- 3. error_example_tags-list-selectized (text)
-  - Screenshot: pages/240-cp-styleguide-admin-tags-field-e3c7ea68/images/field-003-error-example-tags-list-selectized.png
-- 4. label_example_tags-list-selectized (text)
-  - Screenshot: pages/240-cp-styleguide-admin-tags-field-e3c7ea68/images/field-004-label-example-tags-list-selectized.png
-
-## CP Styleguide
-
-- URL: https://dev.soho-home.local/cp/styleguide-admin/json-field
-- Documentation route key: https://dev.soho-home.local|cp|styleguide-admin|jsonField|styleguide-admin/jsonField
-- Draft doc: pages/241-cp-styleguide-admin-json-field-00eba047/README.md
-- Page screenshots: pages/241-cp-styleguide-admin-json-field-00eba047/images/page-desktop.png
-- Field count: 1
-- Controller: unresolved
-
-### DOM Fields
-
-- 1. Search... (text)
-  - Screenshot: pages/241-cp-styleguide-admin-json-field-00eba047/images/field-001-search.png
-
-## CP Styleguide
-
-- URL: https://dev.soho-home.local/cp/styleguide-admin/tables
-- Documentation route key: https://dev.soho-home.local|cp|styleguide-admin|tables|styleguide-admin/tables
-- Draft doc: pages/242-cp-styleguide-admin-tables-21cd479e/README.md
-- Page screenshots: pages/242-cp-styleguide-admin-tables-21cd479e/images/page-desktop.png
-- Field count: 1
-- Controller: unresolved
-
-### DOM Fields
-
-- 1. Search... (text)
-  - Screenshot: pages/242-cp-styleguide-admin-tables-21cd479e/images/field-001-search.png
-
-## CP Styleguide
-
-- URL: https://dev.soho-home.local/cp/styleguide-admin/highlights
-- Documentation route key: https://dev.soho-home.local|cp|styleguide-admin|highlights|styleguide-admin/highlights
-- Draft doc: pages/243-cp-styleguide-admin-highlights-76e47639/README.md
-- Page screenshots: pages/243-cp-styleguide-admin-highlights-76e47639/images/page-desktop.png
-- Field count: 1
-- Controller: unresolved
-
-### DOM Fields
-
-- 1. Search... (text)
-  - Screenshot: pages/243-cp-styleguide-admin-highlights-76e47639/images/field-001-search.png
-
-## CP Styleguide
-
-- URL: https://dev.soho-home.local/cp/styleguide-admin/sidebar
-- Documentation route key: https://dev.soho-home.local|cp|styleguide-admin|sidebar|styleguide-admin/sidebar
-- Draft doc: pages/244-cp-styleguide-admin-sidebar-f21a94c2/README.md
-- Page screenshots: pages/244-cp-styleguide-admin-sidebar-f21a94c2/images/page-desktop.png
-- Field count: 1
-- Controller: unresolved
-
-### DOM Fields
-
-- 1. Search... (text)
-  - Screenshot: pages/244-cp-styleguide-admin-sidebar-f21a94c2/images/field-001-search.png
-
-## CP Styleguide
-
-- URL: https://dev.soho-home.local/cp/styleguide-admin/popover
-- Documentation route key: https://dev.soho-home.local|cp|styleguide-admin|popover|styleguide-admin/popover
-- Draft doc: pages/245-cp-styleguide-admin-popover-14911747/README.md
-- Page screenshots: pages/245-cp-styleguide-admin-popover-14911747/images/page-desktop.png
-- Field count: 1
-- Controller: unresolved
-
-### DOM Fields
-
-- 1. Search... (text)
-  - Screenshot: pages/245-cp-styleguide-admin-popover-14911747/images/field-001-search.png
-
-## CP Styleguide
-
-- URL: https://dev.soho-home.local/cp/styleguide-admin/autocomplete
-- Documentation route key: https://dev.soho-home.local|cp|styleguide-admin|autocomplete|styleguide-admin/autocomplete
-- Draft doc: pages/246-cp-styleguide-admin-autocomplete-e0ca7ab5/README.md
-- Page screenshots: pages/246-cp-styleguide-admin-autocomplete-e0ca7ab5/images/page-desktop.png
-- Field count: 7
-- Controller: unresolved
-
-### DOM Fields
-
-- 1. Search... (text)
-  - Screenshot: pages/246-cp-styleguide-admin-autocomplete-e0ca7ab5/images/field-001-search.png
-- 2. Basic autocomplete (text)
-  - Screenshot: pages/246-cp-styleguide-admin-autocomplete-e0ca7ab5/images/field-002-basic-autocomplete.png
-- 3. Select country (text)
-  - Screenshot: pages/246-cp-styleguide-admin-autocomplete-e0ca7ab5/images/field-003-select-country.png
-- 4. select-autocomplete-example-select (select)
-  - Screenshot: pages/246-cp-styleguide-admin-autocomplete-e0ca7ab5/images/field-004-select-autocomplete-example-select.png
-- 5. AJAX country (text)
-  - Screenshot: pages/246-cp-styleguide-admin-autocomplete-e0ca7ab5/images/field-005-ajax-country.png
-- 6. Country as ISO 2 (text)
-  - Screenshot: pages/246-cp-styleguide-admin-autocomplete-e0ca7ab5/images/field-006-country-as-iso-2.png
-- 7. example (text)
-  - DOM name: `example`
-  - Screenshot: pages/246-cp-styleguide-admin-autocomplete-e0ca7ab5/images/field-007-example.png
-
-## CP Styleguide
-
-- URL: https://dev.soho-home.local/cp/styleguide-admin/overlays
-- Documentation route key: https://dev.soho-home.local|cp|styleguide-admin|overlays|styleguide-admin/overlays
-- Draft doc: pages/247-cp-styleguide-admin-overlays-ce2a7f2b/README.md
-- Page screenshots: pages/247-cp-styleguide-admin-overlays-ce2a7f2b/images/page-desktop.png
-- Field count: 1
-- Controller: unresolved
-
-### DOM Fields
-
-- 1. Search... (text)
-  - Screenshot: pages/247-cp-styleguide-admin-overlays-ce2a7f2b/images/field-001-search.png
-
-## CP Styleguide
-
-- URL: https://dev.soho-home.local/cp/styleguide-admin/dialogs
-- Documentation route key: https://dev.soho-home.local|cp|styleguide-admin|dialogs|styleguide-admin/dialogs
-- Draft doc: pages/248-cp-styleguide-admin-dialogs-5ae1dd5a/README.md
-- Page screenshots: pages/248-cp-styleguide-admin-dialogs-5ae1dd5a/images/page-desktop.png
-- Field count: 1
-- Controller: unresolved
-
-### DOM Fields
-
-- 1. Search... (text)
-  - Screenshot: pages/248-cp-styleguide-admin-dialogs-5ae1dd5a/images/field-001-search.png
-
-## CP Styleguide
-
-- URL: https://dev.soho-home.local/cp/styleguide-admin/date-picker
-- Documentation route key: https://dev.soho-home.local|cp|styleguide-admin|datePicker|styleguide-admin/datePicker
-- Draft doc: pages/249-cp-styleguide-admin-date-picker-62623216/README.md
-- Page screenshots: pages/249-cp-styleguide-admin-date-picker-62623216/images/page-desktop.png
-- Field count: 1
-- Controller: unresolved
-
-### DOM Fields
-
-- 1. Search... (text)
-  - Screenshot: pages/249-cp-styleguide-admin-date-picker-62623216/images/field-001-search.png
-
-## CP Styleguide
-
-- URL: https://dev.soho-home.local/cp/styleguide-admin/quantity-selector
-- Documentation route key: https://dev.soho-home.local|cp|styleguide-admin|quantitySelector|styleguide-admin/quantitySelector
-- Draft doc: pages/250-cp-styleguide-admin-quantity-selector-44cf9e02/README.md
-- Page screenshots: pages/250-cp-styleguide-admin-quantity-selector-44cf9e02/images/page-desktop.png
-- Field count: 3
-- Controller: unresolved
-
-### DOM Fields
-
-- 1. Search... (text)
-  - Screenshot: pages/250-cp-styleguide-admin-quantity-selector-44cf9e02/images/field-001-search.png
-- 2. qty (number)
-  - DOM name: `qty`
-  - Screenshot: pages/250-cp-styleguide-admin-quantity-selector-44cf9e02/images/field-002-qty.png
-- 3. qty (number)
-  - DOM name: `qty`
-  - Screenshot: pages/250-cp-styleguide-admin-quantity-selector-44cf9e02/images/field-003-qty.png
-
-## CP Styleguide
-
-- URL: https://dev.soho-home.local/cp/styleguide-admin/actions-popover
-- Documentation route key: https://dev.soho-home.local|cp|styleguide-admin|actionsPopover|styleguide-admin/actionsPopover
-- Draft doc: pages/251-cp-styleguide-admin-actions-popover-4acbfe7a/README.md
-- Page screenshots: pages/251-cp-styleguide-admin-actions-popover-4acbfe7a/images/page-desktop.png
-- Field count: 1
-- Controller: unresolved
-
-### DOM Fields
-
-- 1. Search... (text)
-  - Screenshot: pages/251-cp-styleguide-admin-actions-popover-4acbfe7a/images/field-001-search.png

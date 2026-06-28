@@ -4,7 +4,7 @@
 
 URL: [https://sohohome.com/cp/product-filters-admin](https://sohohome.com/cp/product-filters-admin)
 
-Filters covers the admin screen used to review and maintain filters.
+Product filter
 
 ![Filters overview](images/page-desktop.png)
 
@@ -12,12 +12,11 @@ Filters covers the admin screen used to review and maintain filters.
 
 ## Related Pages
 
-- [Edit Filter](../128-cp-product-filters-admin-edit-1-00904b24/README.md): Open an existing filter when you need to check the setup or make a change.
+- [Edit Filter](../128-cp-product-filters-admin-edit-id-00904b24/README.md): Open an existing filter when you need to check the setup or make a change.
 
 ## Using This Page
 
-1. Open Filters from the CP navigation.
-2. Search or filter until you find the filter you need.
+1. Search or filter until you find the filter you need.
 
 ## What You Can Do
 
@@ -25,9 +24,7 @@ Filters covers the admin screen used to review and maintain filters.
 
 Search or filter the visible fields to find the filter you need.
 
-- Field: Title
-- Field: Type
-- Field: Param
+- Visible fields include Title, Type, and Param.
 
 Example rows:
 

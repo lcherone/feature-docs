@@ -17,8 +17,7 @@ Admin listing with visual merchandising added on
 
 ## Using This Page
 
-1. Open SKUs from the CP navigation.
-2. Search or filter until you find the SKU you need.
+1. Search or filter until you find the SKU you need.
 
 ## What You Can Do
 
@@ -26,18 +25,7 @@ Admin listing with visual merchandising added on
 
 Search or filter the visible fields to find the SKU you need.
 
-- Field: Title
-- Field: UK
-- Field: EU
-- Field: US
-- Field: Discontinued UK
-- Field: Discontinued EU
-- Field: Discontinued US
-- Field: Allow transfer from UK to EU
-- Field: Status
-- Field: UK Default?
-- Field: EU Default?
-- Field: US Default?
+- Visible fields include Title, UK, EU, US, Discontinued UK, Discontinued EU, Discontinued US, and Allow transfer from UK to EU.
 
 Example rows:
 
@@ -47,24 +35,6 @@ Example rows:
 |  | Belmont Bed, King, Velvet, Truffle, UK | Yes | No | No | No |
 |  | Belmont Bed, Superking, Velvet, Truffle UK | Yes | No | No | No |
 
-## Key Settings
+## Page Sections
 
-The sections below highlight the settings people are most likely to change.
-
-### SKUs
-
-#### select
-
-![select](images/field-002-select.png)
-
-*select setting*
-
-Choose the option that matches this select.
-
-**Options:** Load saved view, Sale Items
-
-## Available Actions
-
-- Import csv
 - Brand Folder
-- Manage saved views

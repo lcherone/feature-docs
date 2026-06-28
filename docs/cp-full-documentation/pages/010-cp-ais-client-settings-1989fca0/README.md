@@ -31,29 +31,17 @@ Use the fields on this screen to make the change, then save once the values are 
 
 #### Disable Outbound BC Sync
 
-![Disable Outbound BC Sync](images/field-001-disable-outbound-bc-sync.png)
-
-*Disable Outbound BC Sync setting*
-
 Turn this on when the answer should be yes. Leave it off when it should not apply.
 
 #### Disable Inbound Pricing BC Sync
-
-![Disable Inbound Pricing BC Sync](images/field-002-disable-inbound-pricing-bc-sync.png)
-
-*Disable Inbound Pricing BC Sync setting*
 
 Turn this on when the answer should be yes. Leave it off when it should not apply.
 
 #### Disable Inbound Product BC Sync
 
-![Disable Inbound Product BC Sync](images/field-003-disable-inbound-product-bc-sync.png)
-
-*Disable Inbound Product BC Sync setting*
-
 Turn this on when the answer should be yes. Leave it off when it should not apply.
 
-## Available Actions
+## Page Sections
 
 - Sync Settings
 - Payload Schedule

@@ -1,10 +1,10 @@
 # SKUs with Issues
 
-[Home](../../index.md) / SKUs with Issues
+[Home](../../index.md) / SKUs With Issues
 
 URL: [https://sohohome.com/cp/stockitem-issues-admin](https://sohohome.com/cp/stockitem-issues-admin)
 
-SKUs with Issues covers the admin screen used to review and maintain skus with issues.
+Local implementation of stock item
 
 ![SKUs with Issues overview](images/page-desktop.png)
 
@@ -18,8 +18,7 @@ SKUs with Issues covers the admin screen used to review and maintain skus with i
 
 ## Using This Page
 
-1. Open SKUs with Issues from the CP navigation.
-2. Scan the fields in the table to find the skus with issue you need.
+1. Scan the fields in the table to find the skus with issue you need.
 
 ## What You Can Do
 
@@ -27,18 +26,7 @@ SKUs with Issues covers the admin screen used to review and maintain skus with i
 
 Review the visible fields to check what already exists.
 
-- Field: Title
-- Field: Sku
-- Field: Product Status
-- Field: SKU Status
-- Field: SKU Desc. Character Count
-- Field: Group Desc. Character Count
-- Field: UK
-- Field: EU
-- Field: US
-- Field: Created
-- Field: Updated
-- Field: First Active
+- Visible fields include Title, Sku, Product Status, SKU Status, SKU Desc. Character Count, Group Desc. Character Count, UK, and EU.
 
 Example rows:
 
@@ -48,7 +36,7 @@ Example rows:
 | Bassett Bergamot & Mandarin Zest Candle, Large 600g | 74508962 | Active | Inactive | 424 |  |
 | Bassett Leather & Oud Candle, Large 600g | 74508948 | Active | Inactive | 399 |  |
 
-## Available Actions
+## Page Sections
 
 - Content
 - Locale

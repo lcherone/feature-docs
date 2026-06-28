@@ -20,8 +20,7 @@ Admin listing with visual merchandising added on
 
 ## Using This Page
 
-1. Open Products from the CP navigation.
-2. Search or filter until you find the product you need.
+1. Search or filter until you find the product you need.
 
 ## What You Can Do
 
@@ -29,12 +28,7 @@ Admin listing with visual merchandising added on
 
 Search or filter the visible fields to find the product you need.
 
-- Field: Title
-- Field: Category
-- Field: Status
-- Field: Created
-- Field: Range
-- Field: Type
+- Visible fields include Title, Category, Status, Created, Range, and Type.
 
 Example rows:
 
