@@ -1,0 +1,60 @@
+{
+  "siteName": "Soho Home CP",
+  "generatedAt": "2026-06-28T00:19:55.806Z",
+  "runDir": "/Volumes/casey/shares/clients/soho-home/dev/releases/20231009091323/.vscode/feature-docs/docs/stockitem-create-ready-check",
+  "pageCount": 1,
+  "crawl": {
+    "skippedDuplicateRoutes": 0,
+    "skippedDisallowedUrls": 0
+  },
+  "pages": [
+    {
+      "title": "SKUs",
+      "indexTitle": "Create SKU",
+      "description": "Admin listing with visual merchandising added on",
+      "url": "https://dev.soho-home.local/cp/stockitems-admin/edit/new",
+      "publicUrl": "https://sohohome.com/cp/stockitems-admin/edit/new",
+      "routeKey": "https://dev.soho-home.local|cp|stockitems-admin|edit|stockitems-admin/edit/:identifier",
+      "routeMetadata": null,
+      "slug": "001-cp-stockitems-admin-edit-new-4e7222a9",
+      "docFile": "pages/001-cp-stockitems-admin-edit-new-4e7222a9/README.md",
+      "codeDocFile": ".vscode/code-docs/cp-stockitems-admin-edit-new.md",
+      "relatedPages": [],
+      "screenshots": [
+        "pages/001-cp-stockitems-admin-edit-new-4e7222a9/images/page-desktop.png"
+      ],
+      "fieldScreenshots": [],
+      "fieldCount": 0,
+      "codeContext": {
+        "route": {
+          "controllerAlias": "stockitems-admin",
+          "action": "edit",
+          "pattern": ""
+        },
+        "controller": {
+          "alias": "stockitems-admin",
+          "className": "App\\Products\\StockItemsControllerAdmin",
+          "file": "src/Products/StockItemsControllerAdmin.php",
+          "actionMethod": "editAction",
+          "hasActionMethod": true
+        },
+        "model": {
+          "alias": "StockItem",
+          "className": "App\\Products\\Model\\StockItem",
+          "file": "src/Products/Model/StockItem.php",
+          "xmlFile": "src/Products/Model/StockItem.xml",
+          "itemName": "stockitem",
+          "tableName": "stockitems"
+        },
+        "featureSummary": {
+          "description": "Admin listing with visual merchandising added on",
+          "notes": [
+            "After this has been updated.",
+            "The key fields are Item Category, Main Category, URL, Is new?, and Season, which explain what the record is for and how it can be used."
+          ]
+        }
+      },
+      "technicalError": ""
+    }
+  ]
+}

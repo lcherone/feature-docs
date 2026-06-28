@@ -1,0 +1,12 @@
+{
+  "siteName": "Soho Home CP",
+  "generatedAt": "2026-06-28T00:21:08.321Z",
+  "runDir": "/Volumes/casey/shares/clients/soho-home/dev/releases/20231009091323/.vscode/feature-docs/docs/stockitem-create-skip-check",
+  "pageCount": 0,
+  "crawl": {
+    "skippedDuplicateRoutes": 0,
+    "skippedDisallowedUrls": 0,
+    "skippedInaccessibleUrls": 1
+  },
+  "pages": []
+}

@@ -425,6 +425,10 @@ async function getInaccessiblePageReason(page, response) {
     return "access denied";
   }
 
+  if (/\b(an exception has been thrown|whoops\\exception|stack frames|runtimeerror|fatal error)\b/i.test(searchableText)) {
+    return "application error";
+  }
+
   return "";
 }
 
@@ -552,6 +556,7 @@ async function waitForReadySelector(page) {
   }
 
   await page.waitForSelector(config.readySelector, {
+    state: config.readySelector === "body" ? "attached" : "visible",
     timeout: Number(config.readyTimeoutMs || 15000),
   });
 }
@@ -1991,13 +1996,26 @@ function referenceDocSummaries(references) {
 }
 
 function isThinCodeSummary(summary) {
-  return /^(provider for this package|model|controller|admin controller)\.?$/i.test(summary)
+  const text = markdownText(summary);
+
+  return /^(provider for this package|model|controller|admin controller)\.?$/i.test(text)
+    || /\b(dependency provider|provider for|controller class|controller admin)\b/i.test(text)
+    || /\badmin controller\b/i.test(text) && !/\b(manages|manage|lists|list|records|controls|shows|provides|allows|summarises|summarizes)\b/i.test(text)
+    || /^controller for\b/i.test(text)
+    || /^products admin controller\.?$/i.test(text)
+    || /^customer admin controller\.?$/i.test(text)
+    || /^add the fields\.?$/i.test(text)
+    || /^list the attribute labels?\.?$/i.test(text)
     || /^webhooks? token model\.?$/i.test(summary)
-    || /^tokens?\.?$/i.test(summary);
+    || /^tokens?\.?$/i.test(text);
 }
 
 function humaniseCodeSummary(title, summary) {
-  return summary
+  return markdownText(summary)
+    .replace(/\bAdmin Controller Class\b/gi, "")
+    .replace(/\bAdmin Controller\b/gi, "")
+    .replace(/\bController Admin\b/gi, "")
+    .replace(/\bController Class\b/gi, "")
     .replace(/^Admin controller to list the /i, `${title} lists `)
     .replace(/^Admin controller to list /i, `${title} lists `)
     .replace(/\.$/, ".")
@@ -2963,23 +2981,25 @@ function isCollectionChildPage(pageDoc) {
 }
 
 function collectionPageDescription(pageDoc) {
-  return cleanCollectionDescription(pageDoc.codeContext?.featureSummary?.description)
-    || cleanCollectionDescription(pageDoc.analysis?.purpose)
+  return cleanCollectionDescription(pageDoc.codeContext?.featureSummary?.description, pageDoc.title)
+    || cleanCollectionDescription(pageDoc.analysis?.purpose, pageDoc.title)
     || fallbackCollectionDescription(pageDoc);
 }
 
-function cleanCollectionDescription(value) {
+function cleanCollectionDescription(value, title = "") {
   const text = markdownText(value);
 
   if (!text) {
     return "";
   }
 
-  if (/^(start here|use create new|open an existing|this screen gives admins|review\b)/i.test(text)) {
+  if (/^(start here|use create new|open an existing|this screen gives admins|review\b)/i.test(text)
+    || isThinCodeSummary(text)
+  ) {
     return "";
   }
 
-  return text;
+  return humaniseCodeSummary(title, text);
 }
 
 function fallbackCollectionDescription(pageDoc) {
@@ -3770,6 +3790,7 @@ function writeSummary(pages) {
     crawl: {
       skippedDuplicateRoutes: crawlStats.skippedDuplicateRoutes,
       skippedDisallowedUrls: crawlStats.skippedDisallowedUrls,
+      skippedInaccessibleUrls: crawlStats.skippedInaccessibleUrls,
     },
     pages: pages.map((pageDoc) => ({
       title: pageDoc.title,
@@ -3812,13 +3833,27 @@ function writeSummary(pages) {
           itemName: pageDoc.codeContext.model.itemName || "",
           tableName: pageDoc.codeContext.model.tableName || "",
         } : null,
-        featureSummary: pageDoc.codeContext?.featureSummary || null,
+        featureSummary: summaryFeatureSummary(pageDoc),
       },
       technicalError: pageDoc.technicalError,
     })),
   };
 
   writeFileSync(path.join(runDir, "summary.json"), `${JSON.stringify(summary, null, 2)}\n`);
+}
+
+function summaryFeatureSummary(pageDoc) {
+  const featureSummary = pageDoc.codeContext?.featureSummary;
+
+  if (!featureSummary) {
+    return null;
+  }
+
+  return {
+    ...featureSummary,
+    description: cleanCollectionDescription(featureSummary.description, pageDoc.title)
+      || fallbackCollectionDescription(pageDoc),
+  };
 }
 
 function buildEmptyExtract(url, technicalError) {
