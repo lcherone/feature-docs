@@ -1,0 +1,50 @@
+{
+  "siteName": "Soho Home CP",
+  "generatedAt": "2026-06-27T22:32:55.680Z",
+  "runDir": "/Volumes/casey/shares/clients/soho-home/dev/releases/20231009091323/.vscode/feature-docs/docs/webhook-tokens-context-check",
+  "pageCount": 1,
+  "crawl": {
+    "skippedDuplicateRoutes": 2,
+    "skippedDisallowedUrls": 0
+  },
+  "pages": [
+    {
+      "title": "AIS Webhook Token",
+      "url": "https://dev.soho-home.local/cp/ais-webhooks-tokens-admin",
+      "routeKey": "https://dev.soho-home.local|cp|ais-webhooks-tokens-admin|index|ais-webhooks-tokens-admin",
+      "routeMetadata": null,
+      "slug": "001-cp-ais-webhooks-tokens-admin-a0f873de",
+      "docFile": "pages/001-cp-ais-webhooks-tokens-admin-a0f873de/README.md",
+      "screenshots": [
+        "pages/001-cp-ais-webhooks-tokens-admin-a0f873de/images/page-desktop.png"
+      ],
+      "fieldScreenshots": [
+        "pages/001-cp-ais-webhooks-tokens-admin-a0f873de/images/field-001-keyword-search.png"
+      ],
+      "fieldCount": 1,
+      "codeContext": {
+        "route": {
+          "controllerAlias": "ais-webhooks-tokens-admin",
+          "action": "index",
+          "pattern": ""
+        },
+        "controller": {
+          "alias": "ais-webhooks-tokens-admin",
+          "className": "D3R\\AISWebhooks\\Controllers\\TokenControllerAdmin",
+          "file": "vendor/d3r/ais-webhooks/src/Controllers/TokenControllerAdmin.php",
+          "actionMethod": "indexAction",
+          "hasActionMethod": false
+        },
+        "model": {
+          "alias": "AIS_Webhooks_Token",
+          "className": "D3R\\AISWebhooks\\Model\\Token",
+          "file": "vendor/d3r/ais-webhooks/src/Model/Token.php",
+          "xmlFile": "vendor/d3r/ais-webhooks/src/Model/Token.xml",
+          "itemName": "token",
+          "tableName": "ais_webhooks_tokens"
+        }
+      },
+      "technicalError": ""
+    }
+  ]
+}

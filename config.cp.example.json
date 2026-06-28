@@ -1,0 +1,88 @@
+{
+  "siteName": "Soho Home CP",
+  "baseUrl": "https://dev.soho-home.local",
+  "publicBaseUrl": "https://sohohome.com",
+  "startUrls": [],
+  "routeSource": {
+    "type": "cp-site-tree",
+    "path": "actions/cp-site-tree-routes.php",
+    "enabled": true,
+    "includeHidden": false
+  },
+  "outputDir": "docs",
+  "codeDocs": {
+    "enabled": true,
+    "outputDir": "../code-docs"
+  },
+  "ignoreHTTPSErrors": true,
+  "waitUntil": "networkidle",
+  "readySelector": "body",
+  "postNavigateWaitMs": 750,
+  "timeoutMs": 45000,
+  "auth": {
+    "type": "admin",
+    "emailEnv": "FEATURE_DOCS_ADMIN_EMAIL"
+  },
+  "crawl": {
+    "enabled": true,
+    "maxPages": 20,
+    "expandCrud": true,
+    "clientVisibleCrudOnly": true,
+    "dedupeDynamicRoutes": true,
+    "discoverControllerActions": true,
+    "linkSelector": "nav a, .sidebar a, .menu a, .admin-menu a, #admin-menu a, [role=\"navigation\"] a",
+    "includePatterns": [
+      "^/cp"
+    ],
+    "excludePatterns": [
+      "logout",
+      "delete",
+      "remove",
+      "export",
+      "download",
+      "print",
+      "impersonate",
+      "action=",
+      "token=",
+      "\\.(pdf|zip|jpg|jpeg|png|gif|webp|svg)$"
+    ]
+  },
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1100,
+      "height": 768,
+      "fullPage": false,
+      "zoom": 0.75
+    }
+  ],
+  "maxFieldScreenshotsPerPage": 120,
+  "fieldScreenshotPaddingPx": 8,
+  "humanDocs": {
+    "fieldDetailThreshold": 12,
+    "maxKeyFields": 24,
+    "maxInlineFieldScreenshots": 8,
+    "maxVisibleOptions": 12,
+    "includePageDetails": false,
+    "includeFieldReference": false,
+    "includeFieldTechnicalDetails": false,
+    "includeTechnicalReferences": false,
+    "includeReviewNotes": false
+  },
+  "codeAnalysis": {
+    "enabled": true,
+    "maxFileBytes": 60000,
+    "providerGlobs": [
+      "src/Provider.php",
+      "src/*/Provider.php",
+      "vendor/d3r/*/src/Provider.php",
+      "vendor/d3r/*/src/*/Provider.php",
+      "vendor/soho/*/src/Provider.php",
+      "vendor/soho/*/src/*/Provider.php",
+      "vendor/soho/ecom/src/Provider.php",
+      "vendor/soho/products/src/Provider.php",
+      "vendor/soho/ecom/src/*/Provider.php",
+      "vendor/soho/products/src/*/Provider.php"
+    ]
+  }
+}

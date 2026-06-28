@@ -1,0 +1,30 @@
+{
+  "siteName": "Soho Home",
+  "generatedAt": "2026-06-27T20:30:45.395Z",
+  "runDir": "/Volumes/casey/shares/clients/soho-home/dev/releases/20231009091323/.vscode/feature-docs/docs/customer-care-smoke",
+  "pageCount": 1,
+  "pages": [
+    {
+      "title": "Customer Care",
+      "url": "https://dev.soho-home.local/customer-care",
+      "slug": "001-customer-care-1385f503",
+      "docFile": "pages/001-customer-care-1385f503/README.md",
+      "screenshots": [
+        "pages/001-customer-care-1385f503/images/page-desktop.png"
+      ],
+      "fieldScreenshots": [],
+      "fieldCount": 0,
+      "codeContext": {
+        "controller": {
+          "alias": "customer-care",
+          "className": "App\\CustomerCare\\Controller",
+          "file": "src/CustomerCare/Controller.php",
+          "actionMethod": "indexAction",
+          "hasActionMethod": true
+        },
+        "model": null
+      },
+      "technicalError": ""
+    }
+  ]
+}

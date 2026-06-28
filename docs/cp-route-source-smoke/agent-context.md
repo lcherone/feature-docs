@@ -1,0 +1,132 @@
+# Soho Home CP Feature Docs Agent Context
+
+Generated: 2026-06-27T20:54:52.638Z
+
+Use this file as the handoff for Codex to produce final operator documentation. Read the referenced controller, model, XML, and view files before finalising page purpose, field behaviour, validation, and side effects.
+
+## Favourites
+
+- URL: https://dev.soho-home.local/cp
+- Draft doc: pages/001-cp-55815406/README.md
+- Page screenshots: pages/001-cp-55815406/images/page-desktop.png
+- Field count: 39
+- Controller: unresolved
+
+### DOM Fields
+
+- 1. Search (text)
+  - Screenshot: pages/001-cp-55815406/images/field-001-search.png
+- 2. Jump to (datetime-local)
+  - DOM name: `date`
+  - Screenshot: pages/001-cp-55815406/images/field-002-jump-to.png
+- 3. inline[4][hero_uk] (checkbox)
+  - DOM name: `inline[4][hero_uk]`
+  - Screenshot: pages/001-cp-55815406/images/field-003-inline-4-hero-uk.png
+- 4. inline[4][hero_eu] (checkbox)
+  - DOM name: `inline[4][hero_eu]`
+  - Screenshot: pages/001-cp-55815406/images/field-004-inline-4-hero-eu.png
+- 5. inline[4][hero_us] (checkbox)
+  - DOM name: `inline[4][hero_us]`
+  - Screenshot: pages/001-cp-55815406/images/field-005-inline-4-hero-us.png
+- 6. inline[4][hero_status] (select)
+  - DOM name: `inline[4][hero_status]`
+  - Screenshot: pages/001-cp-55815406/images/field-006-inline-4-hero-status.png
+- 7. inline[5][hero_uk] (checkbox)
+  - DOM name: `inline[5][hero_uk]`
+  - Screenshot: pages/001-cp-55815406/images/field-007-inline-5-hero-uk.png
+- 8. inline[5][hero_eu] (checkbox)
+  - DOM name: `inline[5][hero_eu]`
+  - Screenshot: pages/001-cp-55815406/images/field-008-inline-5-hero-eu.png
+- 9. inline[5][hero_us] (checkbox)
+  - DOM name: `inline[5][hero_us]`
+  - Screenshot: pages/001-cp-55815406/images/field-009-inline-5-hero-us.png
+- 10. inline[5][hero_status] (select)
+  - DOM name: `inline[5][hero_status]`
+  - Screenshot: pages/001-cp-55815406/images/field-010-inline-5-hero-status.png
+- 11. inline[186][hero_uk] (checkbox)
+  - DOM name: `inline[186][hero_uk]`
+  - Screenshot: pages/001-cp-55815406/images/field-011-inline-186-hero-uk.png
+- 12. inline[186][hero_eu] (checkbox)
+  - DOM name: `inline[186][hero_eu]`
+  - Screenshot: pages/001-cp-55815406/images/field-012-inline-186-hero-eu.png
+- 13. inline[186][hero_us] (checkbox)
+  - DOM name: `inline[186][hero_us]`
+  - Screenshot: pages/001-cp-55815406/images/field-013-inline-186-hero-us.png
+- 14. inline[186][hero_status] (select)
+  - DOM name: `inline[186][hero_status]`
+  - Screenshot: pages/001-cp-55815406/images/field-014-inline-186-hero-status.png
+- 15. inline[1][hero_uk] (checkbox)
+  - DOM name: `inline[1][hero_uk]`
+  - Screenshot: pages/001-cp-55815406/images/field-015-inline-1-hero-uk.png
+- 16. inline[1][hero_eu] (checkbox)
+  - DOM name: `inline[1][hero_eu]`
+  - Screenshot: pages/001-cp-55815406/images/field-016-inline-1-hero-eu.png
+- 17. inline[1][hero_us] (checkbox)
+  - DOM name: `inline[1][hero_us]`
+  - Screenshot: pages/001-cp-55815406/images/field-017-inline-1-hero-us.png
+- 18. inline[1][hero_status] (select)
+  - DOM name: `inline[1][hero_status]`
+  - Screenshot: pages/001-cp-55815406/images/field-018-inline-1-hero-status.png
+- 19. inline[8][hero_uk] (checkbox)
+  - DOM name: `inline[8][hero_uk]`
+  - Screenshot: pages/001-cp-55815406/images/field-019-inline-8-hero-uk.png
+- 20. inline[8][hero_eu] (checkbox)
+  - DOM name: `inline[8][hero_eu]`
+  - Screenshot: pages/001-cp-55815406/images/field-020-inline-8-hero-eu.png
+- 21. inline[8][hero_us] (checkbox)
+  - DOM name: `inline[8][hero_us]`
+  - Screenshot: pages/001-cp-55815406/images/field-021-inline-8-hero-us.png
+- 22. inline[8][hero_status] (select)
+  - DOM name: `inline[8][hero_status]`
+  - Screenshot: pages/001-cp-55815406/images/field-022-inline-8-hero-status.png
+- 23. inline[7][hero_uk] (checkbox)
+  - DOM name: `inline[7][hero_uk]`
+  - Screenshot: pages/001-cp-55815406/images/field-023-inline-7-hero-uk.png
+- 24. inline[7][hero_eu] (checkbox)
+  - DOM name: `inline[7][hero_eu]`
+  - Screenshot: pages/001-cp-55815406/images/field-024-inline-7-hero-eu.png
+- 25. inline[7][hero_us] (checkbox)
+  - DOM name: `inline[7][hero_us]`
+  - Screenshot: pages/001-cp-55815406/images/field-025-inline-7-hero-us.png
+- 26. inline[7][hero_status] (select)
+  - DOM name: `inline[7][hero_status]`
+  - Screenshot: pages/001-cp-55815406/images/field-026-inline-7-hero-status.png
+- 27. inline[2][hero_uk] (checkbox)
+  - DOM name: `inline[2][hero_uk]`
+  - Screenshot: pages/001-cp-55815406/images/field-027-inline-2-hero-uk.png
+- 28. inline[2][hero_eu] (checkbox)
+  - DOM name: `inline[2][hero_eu]`
+  - Screenshot: pages/001-cp-55815406/images/field-028-inline-2-hero-eu.png
+- 29. inline[2][hero_us] (checkbox)
+  - DOM name: `inline[2][hero_us]`
+  - Screenshot: pages/001-cp-55815406/images/field-029-inline-2-hero-us.png
+- 30. inline[2][hero_status] (select)
+  - DOM name: `inline[2][hero_status]`
+  - Screenshot: pages/001-cp-55815406/images/field-030-inline-2-hero-status.png
+- 31. inline[6][hero_uk] (checkbox)
+  - DOM name: `inline[6][hero_uk]`
+  - Screenshot: pages/001-cp-55815406/images/field-031-inline-6-hero-uk.png
+- 32. inline[6][hero_eu] (checkbox)
+  - DOM name: `inline[6][hero_eu]`
+  - Screenshot: pages/001-cp-55815406/images/field-032-inline-6-hero-eu.png
+- 33. inline[6][hero_us] (checkbox)
+  - DOM name: `inline[6][hero_us]`
+  - Screenshot: pages/001-cp-55815406/images/field-033-inline-6-hero-us.png
+- 34. inline[6][hero_status] (select)
+  - DOM name: `inline[6][hero_status]`
+  - Screenshot: pages/001-cp-55815406/images/field-034-inline-6-hero-status.png
+- 35. inline[161][hero_uk] (checkbox)
+  - DOM name: `inline[161][hero_uk]`
+  - Screenshot: pages/001-cp-55815406/images/field-035-inline-161-hero-uk.png
+- 36. inline[161][hero_eu] (checkbox)
+  - DOM name: `inline[161][hero_eu]`
+  - Screenshot: pages/001-cp-55815406/images/field-036-inline-161-hero-eu.png
+- 37. inline[161][hero_us] (checkbox)
+  - DOM name: `inline[161][hero_us]`
+  - Screenshot: pages/001-cp-55815406/images/field-037-inline-161-hero-us.png
+- 38. inline[161][hero_status] (select)
+  - DOM name: `inline[161][hero_status]`
+  - Screenshot: pages/001-cp-55815406/images/field-038-inline-161-hero-status.png
+- 39. hero_inline_action (submit)
+  - DOM name: `hero_inline_action`
+  - Screenshot: pages/001-cp-55815406/images/field-039-hero-inline-action.png

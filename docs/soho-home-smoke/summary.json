@@ -1,0 +1,20 @@
+{
+  "siteName": "Soho Home",
+  "generatedAt": "2026-06-27T20:18:04.607Z",
+  "runDir": "/Volumes/casey/shares/clients/soho-home/dev/releases/20231009091323/.vscode/feature-docs/docs/soho-home-smoke",
+  "pageCount": 1,
+  "pages": [
+    {
+      "title": "Further reductions",
+      "url": "https://dev.soho-home.local/",
+      "slug": "001-page-17916f12",
+      "docFile": "pages/001-page-17916f12/README.md",
+      "screenshots": [
+        "pages/001-page-17916f12/images/page-desktop.png"
+      ],
+      "fieldScreenshots": [],
+      "fieldCount": 0,
+      "technicalError": ""
+    }
+  ]
+}

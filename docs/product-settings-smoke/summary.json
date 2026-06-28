@@ -1,0 +1,67 @@
+{
+  "siteName": "Soho Home CP",
+  "generatedAt": "2026-06-27T20:56:04.632Z",
+  "runDir": "/Volumes/casey/shares/clients/soho-home/dev/releases/20231009091323/.vscode/feature-docs/docs/product-settings-smoke",
+  "pageCount": 1,
+  "pages": [
+    {
+      "title": "Product Settings",
+      "url": "https://dev.soho-home.local/cp/product-settings-admin",
+      "slug": "001-cp-product-settings-admin-31616840",
+      "docFile": "pages/001-cp-product-settings-admin-31616840/README.md",
+      "screenshots": [
+        "pages/001-cp-product-settings-admin-31616840/images/page-desktop.png"
+      ],
+      "fieldScreenshots": [
+        "pages/001-cp-product-settings-admin-31616840/images/field-001-search.png",
+        "pages/001-cp-product-settings-admin-31616840/images/field-002-jump-to.png",
+        "pages/001-cp-product-settings-admin-31616840/images/field-003-delivery.png",
+        "pages/001-cp-product-settings-admin-31616840/images/field-004-rich-text-editor.png",
+        "pages/001-cp-product-settings-admin-31616840/images/field-005-p.png",
+        "pages/001-cp-product-settings-admin-31616840/images/field-006-p.png",
+        "pages/001-cp-product-settings-admin-31616840/images/field-007-delivery-reimagined.png",
+        "pages/001-cp-product-settings-admin-31616840/images/field-008-rich-text-editor.png",
+        "pages/001-cp-product-settings-admin-31616840/images/field-009-p.png",
+        "pages/001-cp-product-settings-admin-31616840/images/field-010-p.png",
+        "pages/001-cp-product-settings-admin-31616840/images/field-011-p.png",
+        "pages/001-cp-product-settings-admin-31616840/images/field-012-p.png",
+        "pages/001-cp-product-settings-admin-31616840/images/field-013-p.png",
+        "pages/001-cp-product-settings-admin-31616840/images/field-014-p.png",
+        "pages/001-cp-product-settings-admin-31616840/images/field-015-p.png",
+        "pages/001-cp-product-settings-admin-31616840/images/field-016-returns-reimagined.png",
+        "pages/001-cp-product-settings-admin-31616840/images/field-017-rich-text-editor.png",
+        "pages/001-cp-product-settings-admin-31616840/images/field-018-p.png",
+        "pages/001-cp-product-settings-admin-31616840/images/field-019-p.png",
+        "pages/001-cp-product-settings-admin-31616840/images/field-020-p.png",
+        "pages/001-cp-product-settings-admin-31616840/images/field-021-p.png",
+        "pages/001-cp-product-settings-admin-31616840/images/field-022-p.png",
+        "pages/001-cp-product-settings-admin-31616840/images/field-023-unshippable-country-popup.png",
+        "pages/001-cp-product-settings-admin-31616840/images/field-024-rich-text-editor.png",
+        "pages/001-cp-product-settings-admin-31616840/images/field-025-p.png",
+        "pages/001-cp-product-settings-admin-31616840/images/field-026-rxcompositioncutter0.png",
+        "pages/001-cp-product-settings-admin-31616840/images/field-027-rxcompositioncutter1.png",
+        "pages/001-cp-product-settings-admin-31616840/images/field-028-rxcompositioncutter2.png",
+        "pages/001-cp-product-settings-admin-31616840/images/field-029-rxcompositioncutter3.png"
+      ],
+      "fieldCount": 29,
+      "codeContext": {
+        "controller": {
+          "alias": "product-settings-admin",
+          "className": "Soho\\Products\\Base\\SettingsControllerAdmin",
+          "file": "vendor/soho/products/src/SettingsControllerAdmin.php",
+          "actionMethod": "indexAction",
+          "hasActionMethod": true
+        },
+        "model": {
+          "alias": "Product_Settings",
+          "className": "App\\Products\\Model\\Settings",
+          "file": "src/Products/Model/Settings.php",
+          "xmlFile": "src/Products/Model/Settings.xml",
+          "itemName": "settings",
+          "tableName": "product_settings"
+        }
+      },
+      "technicalError": ""
+    }
+  ]
+}

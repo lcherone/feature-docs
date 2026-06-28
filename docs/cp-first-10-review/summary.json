@@ -1,0 +1,635 @@
+{
+  "siteName": "Soho Home CP",
+  "generatedAt": "2026-06-27T23:23:33.226Z",
+  "runDir": "/Volumes/casey/shares/clients/soho-home/dev/releases/20231009091323/.vscode/feature-docs/docs/cp-first-10-review",
+  "pageCount": 10,
+  "crawl": {
+    "skippedDuplicateRoutes": 69,
+    "skippedDisallowedUrls": 0
+  },
+  "pages": [
+    {
+      "title": "Access Tokens",
+      "indexTitle": "Access Tokens",
+      "description": "Access Tokens store integration access and refresh tokens for services that need authenticated API calls.",
+      "url": "https://dev.soho-home.local/cp/access-tokens",
+      "publicUrl": "https://sohohome.com/cp/access-tokens",
+      "routeKey": "https://dev.soho-home.local|cp|access-tokens|index|access-tokens",
+      "routeMetadata": {
+        "title": "Access Tokens",
+        "path": [
+          "Access Tokens"
+        ],
+        "source": "admin-tabs"
+      },
+      "slug": "001-cp-access-tokens-c852f881",
+      "docFile": "pages/001-cp-access-tokens-c852f881/README.md",
+      "codeDocFile": ".vscode/code-docs/cp-access-tokens.md",
+      "relatedPages": [
+        {
+          "title": "Edit Access Token",
+          "docFile": "pages/002-cp-access-tokens-edit-35373-f9f6d2ce/README.md",
+          "url": "https://dev.soho-home.local/cp/access-tokens/edit/35373",
+          "publicUrl": "https://sohohome.com/cp/access-tokens/edit/35373"
+        }
+      ],
+      "screenshots": [
+        "pages/001-cp-access-tokens-c852f881/images/page-desktop.png"
+      ],
+      "fieldScreenshots": [
+        "pages/001-cp-access-tokens-c852f881/images/field-001-select.png"
+      ],
+      "fieldCount": 1,
+      "codeContext": {
+        "route": {
+          "controllerAlias": "access-tokens",
+          "action": "index",
+          "pattern": ""
+        },
+        "controller": {
+          "alias": "access-tokens",
+          "className": "D3R\\OAuth\\Controller\\Admin\\Tokens",
+          "file": "vendor/d3r/oauth/src/Controller/Admin/Tokens.php",
+          "actionMethod": "indexAction",
+          "hasActionMethod": false
+        },
+        "model": {
+          "alias": "OAuth_AccessToken",
+          "className": "D3R\\OAuth\\Model\\AccessToken",
+          "file": "vendor/d3r/oauth/src/Model/AccessToken.php",
+          "xmlFile": "vendor/d3r/oauth/src/Model/AccessToken.xml",
+          "itemName": "token",
+          "tableName": "access_tokens"
+        },
+        "featureSummary": {
+          "description": "Access Tokens store integration access and refresh tokens for services that need authenticated API calls.",
+          "notes": [
+            "Each record belongs to a service and instance, which lets separate integrations keep their own credentials.",
+            "Expiry dates help identify tokens that may need to be refreshed before an integration stops working.",
+            "The key fields are Service, Instance, Token, Refresh Token, and Expires, which explain what the record is for and how it can be used."
+          ]
+        }
+      },
+      "technicalError": ""
+    },
+    {
+      "title": "Access Tokens",
+      "indexTitle": "Edit Access Token",
+      "description": "Access Tokens store integration access and refresh tokens for services that need authenticated API calls.",
+      "url": "https://dev.soho-home.local/cp/access-tokens/edit/35373",
+      "publicUrl": "https://sohohome.com/cp/access-tokens/edit/35373",
+      "routeKey": "https://dev.soho-home.local|cp|access-tokens|edit|access-tokens/edit/:identifier",
+      "routeMetadata": {
+        "title": "Access Tokens",
+        "path": [
+          "Access Tokens"
+        ],
+        "source": "admin-tabs"
+      },
+      "slug": "002-cp-access-tokens-edit-35373-f9f6d2ce",
+      "docFile": "pages/002-cp-access-tokens-edit-35373-f9f6d2ce/README.md",
+      "codeDocFile": ".vscode/code-docs/cp-access-tokens-edit-existing.md",
+      "relatedPages": [
+        {
+          "title": "Access Tokens",
+          "docFile": "pages/001-cp-access-tokens-c852f881/README.md",
+          "url": "https://dev.soho-home.local/cp/access-tokens",
+          "publicUrl": "https://sohohome.com/cp/access-tokens"
+        }
+      ],
+      "screenshots": [
+        "pages/002-cp-access-tokens-edit-35373-f9f6d2ce/images/page-desktop.png"
+      ],
+      "fieldScreenshots": [
+        "pages/002-cp-access-tokens-edit-35373-f9f6d2ce/images/field-001-service.png",
+        "pages/002-cp-access-tokens-edit-35373-f9f6d2ce/images/field-002-instance.png",
+        "pages/002-cp-access-tokens-edit-35373-f9f6d2ce/images/field-003-token.png",
+        "pages/002-cp-access-tokens-edit-35373-f9f6d2ce/images/field-004-refresh-token-optional.png",
+        "pages/002-cp-access-tokens-edit-35373-f9f6d2ce/images/field-005-expires-optional.png"
+      ],
+      "fieldCount": 5,
+      "codeContext": {
+        "route": {
+          "controllerAlias": "access-tokens",
+          "action": "edit",
+          "pattern": ""
+        },
+        "controller": {
+          "alias": "access-tokens",
+          "className": "D3R\\OAuth\\Controller\\Admin\\Tokens",
+          "file": "vendor/d3r/oauth/src/Controller/Admin/Tokens.php",
+          "actionMethod": "editAction",
+          "hasActionMethod": false
+        },
+        "model": {
+          "alias": "OAuth_AccessToken",
+          "className": "D3R\\OAuth\\Model\\AccessToken",
+          "file": "vendor/d3r/oauth/src/Model/AccessToken.php",
+          "xmlFile": "vendor/d3r/oauth/src/Model/AccessToken.xml",
+          "itemName": "token",
+          "tableName": "access_tokens"
+        },
+        "featureSummary": {
+          "description": "Access Tokens store integration access and refresh tokens for services that need authenticated API calls.",
+          "notes": [
+            "Each record belongs to a service and instance, which lets separate integrations keep their own credentials.",
+            "Expiry dates help identify tokens that may need to be refreshed before an integration stops working.",
+            "The key fields are Service, Instance, Token, Refresh Token, and Expires, which explain what the record is for and how it can be used."
+          ]
+        }
+      },
+      "technicalError": ""
+    },
+    {
+      "title": "Accounting Logs (Sage & Avalara)",
+      "indexTitle": "Accounting Logs (Sage & Avalara)",
+      "description": "Accounting Logs (Sage & Avalara) record Sage and Avalara accounting activity so integration issues and resolution status can be reviewed.",
+      "url": "https://dev.soho-home.local/cp/accounting-logs",
+      "publicUrl": "https://sohohome.com/cp/accounting-logs",
+      "routeKey": "https://dev.soho-home.local|cp|accounting-logs|index|accounting-logs",
+      "routeMetadata": {
+        "title": "Accounting Logs (Sage & Avalara)",
+        "path": [
+          "Accounting Logs",
+          "Accounting Logs (Sage & Avalara)"
+        ],
+        "source": "admin-tabs"
+      },
+      "slug": "003-cp-accounting-logs-140ba15d",
+      "docFile": "pages/003-cp-accounting-logs-140ba15d/README.md",
+      "codeDocFile": ".vscode/code-docs/cp-accounting-logs.md",
+      "relatedPages": [
+        {
+          "title": "Edit Accounting Logs (Sage & Avalara)",
+          "docFile": "pages/004-cp-accounting-logs-edit-881987-e9d3b5ea/README.md",
+          "url": "https://dev.soho-home.local/cp/accounting-logs/edit/881987",
+          "publicUrl": "https://sohohome.com/cp/accounting-logs/edit/881987"
+        }
+      ],
+      "screenshots": [
+        "pages/003-cp-accounting-logs-140ba15d/images/page-desktop.png"
+      ],
+      "fieldScreenshots": [
+        "pages/003-cp-accounting-logs-140ba15d/images/field-001-keyword-search.png"
+      ],
+      "fieldCount": 1,
+      "codeContext": {
+        "route": {
+          "controllerAlias": "accounting-logs",
+          "action": "index",
+          "pattern": ""
+        },
+        "controller": {
+          "alias": "accounting-logs",
+          "className": "Soho\\Accounting\\Logger\\AdminController",
+          "file": "vendor/soho/accounting/src/Logger/AdminController.php",
+          "actionMethod": "indexAction",
+          "hasActionMethod": false
+        },
+        "model": {
+          "alias": "Logging_Accounting",
+          "className": "Soho\\Accounting\\Logger\\Model",
+          "file": "vendor/soho/accounting/src/Logger/Model.php",
+          "xmlFile": "vendor/soho/accounting/src/Logger/Model.xml",
+          "itemName": "log",
+          "tableName": "accounting_logs"
+        },
+        "featureSummary": {
+          "description": "Accounting Logs (Sage & Avalara) record Sage and Avalara accounting activity so integration issues and resolution status can be reviewed.",
+          "notes": [
+            "The key fields are Order Reference, Log, Order, Entity, and Message, which explain what the record is for and how it can be used."
+          ]
+        }
+      },
+      "technicalError": ""
+    },
+    {
+      "title": "Accounting Logs (Sage & Avalara)",
+      "indexTitle": "Edit Accounting Logs (Sage & Avalara)",
+      "description": "Accounting Logs (Sage & Avalara) record Sage and Avalara accounting activity so integration issues and resolution status can be reviewed.",
+      "url": "https://dev.soho-home.local/cp/accounting-logs/edit/881987",
+      "publicUrl": "https://sohohome.com/cp/accounting-logs/edit/881987",
+      "routeKey": "https://dev.soho-home.local|cp|accounting-logs|edit|accounting-logs/edit/:identifier",
+      "routeMetadata": {
+        "title": "Accounting Logs (Sage & Avalara)",
+        "path": [
+          "Accounting Logs",
+          "Accounting Logs (Sage & Avalara)"
+        ],
+        "source": "admin-tabs"
+      },
+      "slug": "004-cp-accounting-logs-edit-881987-e9d3b5ea",
+      "docFile": "pages/004-cp-accounting-logs-edit-881987-e9d3b5ea/README.md",
+      "codeDocFile": ".vscode/code-docs/cp-accounting-logs-edit-existing.md",
+      "relatedPages": [
+        {
+          "title": "Accounting Logs (Sage & Avalara)",
+          "docFile": "pages/003-cp-accounting-logs-140ba15d/README.md",
+          "url": "https://dev.soho-home.local/cp/accounting-logs",
+          "publicUrl": "https://sohohome.com/cp/accounting-logs"
+        }
+      ],
+      "screenshots": [
+        "pages/004-cp-accounting-logs-edit-881987-e9d3b5ea/images/page-desktop.png"
+      ],
+      "fieldScreenshots": [
+        "pages/004-cp-accounting-logs-edit-881987-e9d3b5ea/images/field-001-manual-issue-status.png",
+        "pages/004-cp-accounting-logs-edit-881987-e9d3b5ea/images/field-002-dev-notes-optional.png",
+        "pages/004-cp-accounting-logs-edit-881987-e9d3b5ea/images/field-003-resolved-with-jira-ticket-optional.png"
+      ],
+      "fieldCount": 3,
+      "codeContext": {
+        "route": {
+          "controllerAlias": "accounting-logs",
+          "action": "edit",
+          "pattern": ""
+        },
+        "controller": {
+          "alias": "accounting-logs",
+          "className": "Soho\\Accounting\\Logger\\AdminController",
+          "file": "vendor/soho/accounting/src/Logger/AdminController.php",
+          "actionMethod": "editAction",
+          "hasActionMethod": false
+        },
+        "model": {
+          "alias": "Logging_Accounting",
+          "className": "Soho\\Accounting\\Logger\\Model",
+          "file": "vendor/soho/accounting/src/Logger/Model.php",
+          "xmlFile": "vendor/soho/accounting/src/Logger/Model.xml",
+          "itemName": "log",
+          "tableName": "accounting_logs"
+        },
+        "featureSummary": {
+          "description": "Accounting Logs (Sage & Avalara) record Sage and Avalara accounting activity so integration issues and resolution status can be reviewed.",
+          "notes": [
+            "The key fields are Order Reference, Log, Order, Entity, and Message, which explain what the record is for and how it can be used."
+          ]
+        }
+      },
+      "technicalError": ""
+    },
+    {
+      "title": "Adjustments",
+      "indexTitle": "Adjustments",
+      "description": "Adjustments summarise order adjustments and related finance-system transfer activity for review.",
+      "url": "https://dev.soho-home.local/cp/adjustments-summary-admin",
+      "publicUrl": "https://sohohome.com/cp/adjustments-summary-admin",
+      "routeKey": "https://dev.soho-home.local|cp|adjustments-summary-admin|index|adjustments-summary-admin",
+      "routeMetadata": {
+        "title": "Adjustments",
+        "path": [
+          "Store",
+          "Adjustments"
+        ],
+        "source": "admin-tabs"
+      },
+      "slug": "005-cp-adjustments-summary-admin-6754dd0f",
+      "docFile": "pages/005-cp-adjustments-summary-admin-6754dd0f/README.md",
+      "codeDocFile": ".vscode/code-docs/cp-adjustments-summary-admin.md",
+      "relatedPages": [
+        {
+          "title": "Edit Adjustment",
+          "docFile": "pages/006-cp-adjustments-summary-admin-edit-91213-5ab58d27/README.md",
+          "url": "https://dev.soho-home.local/cp/adjustments-summary-admin/edit/91213",
+          "publicUrl": "https://sohohome.com/cp/adjustments-summary-admin/edit/91213"
+        }
+      ],
+      "screenshots": [
+        "pages/005-cp-adjustments-summary-admin-6754dd0f/images/page-desktop.png"
+      ],
+      "fieldScreenshots": [
+        "pages/005-cp-adjustments-summary-admin-6754dd0f/images/field-001-keyword-search.png"
+      ],
+      "fieldCount": 1,
+      "codeContext": {
+        "route": {
+          "controllerAlias": "adjustments-summary-admin",
+          "action": "index",
+          "pattern": ""
+        },
+        "controller": {
+          "alias": "adjustments-summary-admin",
+          "className": "Soho\\Ecom\\Controller\\AdjustmentSummaryAdmin",
+          "file": "vendor/soho/ecom/src/Controller/AdjustmentSummaryAdmin.php",
+          "actionMethod": "indexAction",
+          "hasActionMethod": false
+        },
+        "model": {
+          "alias": "Store_Adjustment_Summary",
+          "className": "Soho\\Ecom\\Model\\AdjustmentSummary",
+          "file": "vendor/soho/ecom/src/Model/AdjustmentSummary.php",
+          "xmlFile": "vendor/soho/ecom/src/Model/AdjustmentSummary.xml",
+          "itemName": "summary",
+          "tableName": "store_adjustments_summary"
+        },
+        "featureSummary": {
+          "description": "Adjustments summarise order adjustments and related finance-system transfer activity for review.",
+          "notes": [
+            "Makes sure the transfer property is set appropriately.",
+            "The key fields are Order, Sub order number, Status, Flags, and Overall Value, which explain what the record is for and how it can be used."
+          ]
+        }
+      },
+      "technicalError": ""
+    },
+    {
+      "title": "Adjustments",
+      "indexTitle": "Edit Adjustment",
+      "description": "Adjustments summarise order adjustments and related finance-system transfer activity for review.",
+      "url": "https://dev.soho-home.local/cp/adjustments-summary-admin/edit/91213",
+      "publicUrl": "https://sohohome.com/cp/adjustments-summary-admin/edit/91213",
+      "routeKey": "https://dev.soho-home.local|cp|adjustments-summary-admin|edit|adjustments-summary-admin/edit/:identifier",
+      "routeMetadata": {
+        "title": "Adjustments",
+        "path": [
+          "Store",
+          "Adjustments"
+        ],
+        "source": "admin-tabs"
+      },
+      "slug": "006-cp-adjustments-summary-admin-edit-91213-5ab58d27",
+      "docFile": "pages/006-cp-adjustments-summary-admin-edit-91213-5ab58d27/README.md",
+      "codeDocFile": ".vscode/code-docs/cp-adjustments-summary-admin-edit-existing.md",
+      "relatedPages": [
+        {
+          "title": "Adjustments",
+          "docFile": "pages/005-cp-adjustments-summary-admin-6754dd0f/README.md",
+          "url": "https://dev.soho-home.local/cp/adjustments-summary-admin",
+          "publicUrl": "https://sohohome.com/cp/adjustments-summary-admin"
+        }
+      ],
+      "screenshots": [
+        "pages/006-cp-adjustments-summary-admin-edit-91213-5ab58d27/images/page-desktop.png"
+      ],
+      "fieldScreenshots": [
+        "pages/006-cp-adjustments-summary-admin-edit-91213-5ab58d27/images/field-001-transaction-mismatch.png"
+      ],
+      "fieldCount": 1,
+      "codeContext": {
+        "route": {
+          "controllerAlias": "adjustments-summary-admin",
+          "action": "edit",
+          "pattern": ""
+        },
+        "controller": {
+          "alias": "adjustments-summary-admin",
+          "className": "Soho\\Ecom\\Controller\\AdjustmentSummaryAdmin",
+          "file": "vendor/soho/ecom/src/Controller/AdjustmentSummaryAdmin.php",
+          "actionMethod": "editAction",
+          "hasActionMethod": false
+        },
+        "model": {
+          "alias": "Store_Adjustment_Summary",
+          "className": "Soho\\Ecom\\Model\\AdjustmentSummary",
+          "file": "vendor/soho/ecom/src/Model/AdjustmentSummary.php",
+          "xmlFile": "vendor/soho/ecom/src/Model/AdjustmentSummary.xml",
+          "itemName": "summary",
+          "tableName": "store_adjustments_summary"
+        },
+        "featureSummary": {
+          "description": "Adjustments summarise order adjustments and related finance-system transfer activity for review.",
+          "notes": [
+            "Makes sure the transfer property is set appropriately.",
+            "The key fields are Order, Sub order number, Status, Flags, and Overall Value, which explain what the record is for and how it can be used."
+          ]
+        }
+      },
+      "technicalError": ""
+    },
+    {
+      "title": "Outbound API Logs",
+      "indexTitle": "Outbound API Logs",
+      "description": "Outbound API Logs record outbound AIS API requests so sent data, failures, and debug activity can be reviewed.",
+      "url": "https://dev.soho-home.local/cp/ais-client-outbound-logs",
+      "publicUrl": "https://sohohome.com/cp/ais-client-outbound-logs",
+      "routeKey": "https://dev.soho-home.local|cp|ais-client-outbound-logs|index|ais-client-outbound-logs",
+      "routeMetadata": {
+        "title": "Outbound API Logs",
+        "path": [
+          "AIS",
+          "Outbound API Logs"
+        ],
+        "source": "admin-tabs"
+      },
+      "slug": "007-cp-ais-client-outbound-logs-458c975b",
+      "docFile": "pages/007-cp-ais-client-outbound-logs-458c975b/README.md",
+      "codeDocFile": ".vscode/code-docs/cp-ais-client-outbound-logs.md",
+      "relatedPages": [
+        {
+          "title": "Edit Outbound API Log",
+          "docFile": "pages/008-cp-ais-client-outbound-logs-edit-715174-2dd14f8c/README.md",
+          "url": "https://dev.soho-home.local/cp/ais-client-outbound-logs/edit/715174",
+          "publicUrl": "https://sohohome.com/cp/ais-client-outbound-logs/edit/715174"
+        }
+      ],
+      "screenshots": [
+        "pages/007-cp-ais-client-outbound-logs-458c975b/images/page-desktop.png"
+      ],
+      "fieldScreenshots": [
+        "pages/007-cp-ais-client-outbound-logs-458c975b/images/field-001-keyword-search.png",
+        "pages/007-cp-ais-client-outbound-logs-458c975b/images/field-002-select.png"
+      ],
+      "fieldCount": 2,
+      "codeContext": {
+        "route": {
+          "controllerAlias": "ais-client-outbound-logs",
+          "action": "index",
+          "pattern": ""
+        },
+        "controller": {
+          "alias": "ais-client-outbound-logs",
+          "className": "D3R\\AISClient\\Logger\\OutboundControllerAdmin",
+          "file": "vendor/d3r/ais-client/src/Logger/OutboundControllerAdmin.php",
+          "actionMethod": "indexAction",
+          "hasActionMethod": false
+        },
+        "model": {
+          "alias": "AIS_Client_Logger_Model_OutboundLog",
+          "className": "Soho\\AIS\\Client\\Logger\\Model\\OutboundLog",
+          "file": "vendor/soho/ais/src/Client/Logger/Model/OutboundLog.php",
+          "xmlFile": "",
+          "itemName": "",
+          "tableName": "ais_client_logs"
+        },
+        "featureSummary": {
+          "description": "Outbound API Logs record outbound AIS API requests so sent data, failures, and debug activity can be reviewed.",
+          "notes": []
+        }
+      },
+      "technicalError": ""
+    },
+    {
+      "title": "Outbound API Logs",
+      "indexTitle": "Edit Outbound API Log",
+      "description": "Outbound API Logs record outbound AIS API requests so sent data, failures, and debug activity can be reviewed.",
+      "url": "https://dev.soho-home.local/cp/ais-client-outbound-logs/edit/715174",
+      "publicUrl": "https://sohohome.com/cp/ais-client-outbound-logs/edit/715174",
+      "routeKey": "https://dev.soho-home.local|cp|ais-client-outbound-logs|edit|ais-client-outbound-logs/edit/:identifier",
+      "routeMetadata": {
+        "title": "Outbound API Logs",
+        "path": [
+          "AIS",
+          "Outbound API Logs"
+        ],
+        "source": "admin-tabs"
+      },
+      "slug": "008-cp-ais-client-outbound-logs-edit-715174-2dd14f8c",
+      "docFile": "pages/008-cp-ais-client-outbound-logs-edit-715174-2dd14f8c/README.md",
+      "codeDocFile": ".vscode/code-docs/cp-ais-client-outbound-logs-edit-existing.md",
+      "relatedPages": [
+        {
+          "title": "Outbound API Logs",
+          "docFile": "pages/007-cp-ais-client-outbound-logs-458c975b/README.md",
+          "url": "https://dev.soho-home.local/cp/ais-client-outbound-logs",
+          "publicUrl": "https://sohohome.com/cp/ais-client-outbound-logs"
+        }
+      ],
+      "screenshots": [
+        "pages/008-cp-ais-client-outbound-logs-edit-715174-2dd14f8c/images/page-desktop.png"
+      ],
+      "fieldScreenshots": [
+        "pages/008-cp-ais-client-outbound-logs-edit-715174-2dd14f8c/images/field-001-manual-issue-status.png"
+      ],
+      "fieldCount": 1,
+      "codeContext": {
+        "route": {
+          "controllerAlias": "ais-client-outbound-logs",
+          "action": "edit",
+          "pattern": ""
+        },
+        "controller": {
+          "alias": "ais-client-outbound-logs",
+          "className": "D3R\\AISClient\\Logger\\OutboundControllerAdmin",
+          "file": "vendor/d3r/ais-client/src/Logger/OutboundControllerAdmin.php",
+          "actionMethod": "editAction",
+          "hasActionMethod": true
+        },
+        "model": {
+          "alias": "AIS_Client_Logger_Model_OutboundLog",
+          "className": "Soho\\AIS\\Client\\Logger\\Model\\OutboundLog",
+          "file": "vendor/soho/ais/src/Client/Logger/Model/OutboundLog.php",
+          "xmlFile": "",
+          "itemName": "",
+          "tableName": "ais_client_logs"
+        },
+        "featureSummary": {
+          "description": "Outbound API Logs record outbound AIS API requests so sent data, failures, and debug activity can be reviewed.",
+          "notes": []
+        }
+      },
+      "technicalError": ""
+    },
+    {
+      "title": "Product API Logs",
+      "indexTitle": "Product API Logs",
+      "description": "Product API Logs record product-related AIS API activity so product sync issues can be investigated.",
+      "url": "https://dev.soho-home.local/cp/ais-client-product-logs",
+      "publicUrl": "https://sohohome.com/cp/ais-client-product-logs",
+      "routeKey": "https://dev.soho-home.local|cp|ais-client-product-logs|index|ais-client-product-logs",
+      "routeMetadata": {
+        "title": "Product API Logs",
+        "path": [
+          "AIS",
+          "Product API Logs"
+        ],
+        "source": "admin-tabs"
+      },
+      "slug": "009-cp-ais-client-product-logs-c8cce05a",
+      "docFile": "pages/009-cp-ais-client-product-logs-c8cce05a/README.md",
+      "codeDocFile": ".vscode/code-docs/cp-ais-client-product-logs.md",
+      "relatedPages": [],
+      "screenshots": [
+        "pages/009-cp-ais-client-product-logs-c8cce05a/images/page-desktop.png"
+      ],
+      "fieldScreenshots": [
+        "pages/009-cp-ais-client-product-logs-c8cce05a/images/field-001-keyword-search.png"
+      ],
+      "fieldCount": 1,
+      "codeContext": {
+        "route": {
+          "controllerAlias": "ais-client-product-logs",
+          "action": "index",
+          "pattern": ""
+        },
+        "controller": {
+          "alias": "ais-client-product-logs",
+          "className": "D3R\\AISClient\\Logger\\ProductControllerAdmin",
+          "file": "vendor/d3r/ais-client/src/Logger/ProductControllerAdmin.php",
+          "actionMethod": "indexAction",
+          "hasActionMethod": false
+        },
+        "model": {
+          "alias": "AIS_Client_Logger_Model_ProductLog",
+          "className": "Soho\\AIS\\Client\\Logger\\Model\\ProductLog",
+          "file": "vendor/soho/ais/src/Client/Logger/Model/ProductLog.php",
+          "xmlFile": "",
+          "itemName": "",
+          "tableName": "ais_client_product_logs"
+        },
+        "featureSummary": {
+          "description": "Product API Logs record product-related AIS API activity so product sync issues can be investigated.",
+          "notes": []
+        }
+      },
+      "technicalError": ""
+    },
+    {
+      "title": "Client API Settings",
+      "indexTitle": "Client API Settings",
+      "description": "Client API Settings control AIS client sync behaviour, including Business Central sync and scheduled pricing update settings.",
+      "url": "https://dev.soho-home.local/cp/ais-client-settings",
+      "publicUrl": "https://sohohome.com/cp/ais-client-settings",
+      "routeKey": "https://dev.soho-home.local|cp|ais-client-settings|index|ais-client-settings",
+      "routeMetadata": {
+        "title": "Client API Settings",
+        "path": [
+          "AIS",
+          "Client API Settings"
+        ],
+        "source": "admin-tabs"
+      },
+      "slug": "010-cp-ais-client-settings-1989fca0",
+      "docFile": "pages/010-cp-ais-client-settings-1989fca0/README.md",
+      "codeDocFile": ".vscode/code-docs/cp-ais-client-settings.md",
+      "relatedPages": [],
+      "screenshots": [
+        "pages/010-cp-ais-client-settings-1989fca0/images/page-desktop.png"
+      ],
+      "fieldScreenshots": [
+        "pages/010-cp-ais-client-settings-1989fca0/images/field-001-disable-outbound-bc-sync.png",
+        "pages/010-cp-ais-client-settings-1989fca0/images/field-002-disable-inbound-pricing-bc-sync.png",
+        "pages/010-cp-ais-client-settings-1989fca0/images/field-003-disable-inbound-product-bc-sync.png"
+      ],
+      "fieldCount": 3,
+      "codeContext": {
+        "route": {
+          "controllerAlias": "ais-client-settings",
+          "action": "index",
+          "pattern": ""
+        },
+        "controller": {
+          "alias": "ais-client-settings",
+          "className": "D3R\\AISClient\\Settings\\ControllerAdmin",
+          "file": "vendor/d3r/ais-client/src/Settings/ControllerAdmin.php",
+          "actionMethod": "indexAction",
+          "hasActionMethod": false
+        },
+        "model": {
+          "alias": "AIS_Client_Settings_Model_Settings",
+          "className": "Soho\\AIS\\Client\\Settings\\Model\\Settings",
+          "file": "vendor/soho/ais/src/Client/Settings/Model/Settings.php",
+          "xmlFile": "vendor/soho/ais/src/Client/Settings/Model/Settings.xml",
+          "itemName": "s",
+          "tableName": "ais_client_settings"
+        },
+        "featureSummary": {
+          "description": "Client API Settings control AIS client sync behaviour, including Business Central sync and scheduled pricing update settings.",
+          "notes": [
+            "The key fields are Send Shipment Transfer (mins), Disable Scheduled Pricing Updates, Scheduled Pricing Update Frequency, Last Scheduled Pricing Update, and Scheduled Pricing Report Recipients, which explain what the record is for and how it can be used."
+          ]
+        }
+      },
+      "technicalError": ""
+    }
+  ]
+}

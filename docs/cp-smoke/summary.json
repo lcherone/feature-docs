@@ -1,0 +1,64 @@
+{
+  "siteName": "Soho Home CP",
+  "generatedAt": "2026-06-27T20:31:45.098Z",
+  "runDir": "/Volumes/casey/shares/clients/soho-home/dev/releases/20231009091323/.vscode/feature-docs/docs/cp-smoke",
+  "pageCount": 1,
+  "pages": [
+    {
+      "title": "Favourites",
+      "url": "https://dev.soho-home.local/cp",
+      "slug": "001-cp-55815406",
+      "docFile": "pages/001-cp-55815406/README.md",
+      "screenshots": [
+        "pages/001-cp-55815406/images/page-desktop.png"
+      ],
+      "fieldScreenshots": [
+        "pages/001-cp-55815406/images/field-001-search.png",
+        "pages/001-cp-55815406/images/field-002-jump-to.png",
+        "pages/001-cp-55815406/images/field-003-inline-4-hero-uk.png",
+        "pages/001-cp-55815406/images/field-004-inline-4-hero-eu.png",
+        "pages/001-cp-55815406/images/field-005-inline-4-hero-us.png",
+        "pages/001-cp-55815406/images/field-006-inline-4-hero-status.png",
+        "pages/001-cp-55815406/images/field-007-inline-5-hero-uk.png",
+        "pages/001-cp-55815406/images/field-008-inline-5-hero-eu.png",
+        "pages/001-cp-55815406/images/field-009-inline-5-hero-us.png",
+        "pages/001-cp-55815406/images/field-010-inline-5-hero-status.png",
+        "pages/001-cp-55815406/images/field-011-inline-186-hero-uk.png",
+        "pages/001-cp-55815406/images/field-012-inline-186-hero-eu.png",
+        "pages/001-cp-55815406/images/field-013-inline-186-hero-us.png",
+        "pages/001-cp-55815406/images/field-014-inline-186-hero-status.png",
+        "pages/001-cp-55815406/images/field-015-inline-1-hero-uk.png",
+        "pages/001-cp-55815406/images/field-016-inline-1-hero-eu.png",
+        "pages/001-cp-55815406/images/field-017-inline-1-hero-us.png",
+        "pages/001-cp-55815406/images/field-018-inline-1-hero-status.png",
+        "pages/001-cp-55815406/images/field-019-inline-8-hero-uk.png",
+        "pages/001-cp-55815406/images/field-020-inline-8-hero-eu.png",
+        "pages/001-cp-55815406/images/field-021-inline-8-hero-us.png",
+        "pages/001-cp-55815406/images/field-022-inline-8-hero-status.png",
+        "pages/001-cp-55815406/images/field-023-inline-7-hero-uk.png",
+        "pages/001-cp-55815406/images/field-024-inline-7-hero-eu.png",
+        "pages/001-cp-55815406/images/field-025-inline-7-hero-us.png",
+        "pages/001-cp-55815406/images/field-026-inline-7-hero-status.png",
+        "pages/001-cp-55815406/images/field-027-inline-2-hero-uk.png",
+        "pages/001-cp-55815406/images/field-028-inline-2-hero-eu.png",
+        "pages/001-cp-55815406/images/field-029-inline-2-hero-us.png",
+        "pages/001-cp-55815406/images/field-030-inline-2-hero-status.png",
+        "pages/001-cp-55815406/images/field-031-inline-6-hero-uk.png",
+        "pages/001-cp-55815406/images/field-032-inline-6-hero-eu.png",
+        "pages/001-cp-55815406/images/field-033-inline-6-hero-us.png",
+        "pages/001-cp-55815406/images/field-034-inline-6-hero-status.png",
+        "pages/001-cp-55815406/images/field-035-inline-161-hero-uk.png",
+        "pages/001-cp-55815406/images/field-036-inline-161-hero-eu.png",
+        "pages/001-cp-55815406/images/field-037-inline-161-hero-us.png",
+        "pages/001-cp-55815406/images/field-038-inline-161-hero-status.png",
+        "pages/001-cp-55815406/images/field-039-hero-inline-action.png"
+      ],
+      "fieldCount": 39,
+      "codeContext": {
+        "controller": null,
+        "model": null
+      },
+      "technicalError": ""
+    }
+  ]
+}

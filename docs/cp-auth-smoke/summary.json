@@ -1,0 +1,82 @@
+{
+  "siteName": "Soho Home CP",
+  "generatedAt": "2026-06-27T23:39:36.928Z",
+  "runDir": "/Volumes/casey/shares/clients/soho-home/dev/releases/20231009091323/.vscode/feature-docs/docs/cp-auth-smoke",
+  "pageCount": 1,
+  "crawl": {
+    "skippedDuplicateRoutes": 0,
+    "skippedDisallowedUrls": 0
+  },
+  "pages": [
+    {
+      "title": "cp",
+      "indexTitle": "cp",
+      "description": "cp lets admins find and review existing cp.",
+      "url": "https://dev.soho-home.local/cp",
+      "publicUrl": "https://sohohome.com/cp",
+      "routeKey": "https://dev.soho-home.local/cp",
+      "routeMetadata": null,
+      "slug": "001-cp-55815406",
+      "docFile": "pages/001-cp-55815406/README.md",
+      "codeDocFile": "",
+      "relatedPages": [],
+      "screenshots": [
+        "pages/001-cp-55815406/images/page-desktop.png"
+      ],
+      "fieldScreenshots": [
+        "pages/001-cp-55815406/images/field-001-inline-4-hero-uk.png",
+        "pages/001-cp-55815406/images/field-002-inline-4-hero-eu.png",
+        "pages/001-cp-55815406/images/field-003-inline-4-hero-us.png",
+        "pages/001-cp-55815406/images/field-004-inline-4-hero-status.png",
+        "pages/001-cp-55815406/images/field-005-inline-5-hero-uk.png",
+        "pages/001-cp-55815406/images/field-006-inline-5-hero-eu.png",
+        "pages/001-cp-55815406/images/field-007-inline-5-hero-us.png",
+        "pages/001-cp-55815406/images/field-008-inline-5-hero-status.png",
+        "pages/001-cp-55815406/images/field-009-inline-186-hero-uk.png",
+        "pages/001-cp-55815406/images/field-010-inline-186-hero-eu.png",
+        "pages/001-cp-55815406/images/field-011-inline-186-hero-us.png",
+        "pages/001-cp-55815406/images/field-012-inline-186-hero-status.png",
+        "pages/001-cp-55815406/images/field-013-inline-1-hero-uk.png",
+        "pages/001-cp-55815406/images/field-014-inline-1-hero-eu.png",
+        "pages/001-cp-55815406/images/field-015-inline-1-hero-us.png",
+        "pages/001-cp-55815406/images/field-016-inline-1-hero-status.png",
+        "pages/001-cp-55815406/images/field-017-inline-8-hero-uk.png",
+        "pages/001-cp-55815406/images/field-018-inline-8-hero-eu.png",
+        "pages/001-cp-55815406/images/field-019-inline-8-hero-us.png",
+        "pages/001-cp-55815406/images/field-020-inline-8-hero-status.png",
+        "pages/001-cp-55815406/images/field-021-inline-7-hero-uk.png",
+        "pages/001-cp-55815406/images/field-022-inline-7-hero-eu.png",
+        "pages/001-cp-55815406/images/field-023-inline-7-hero-us.png",
+        "pages/001-cp-55815406/images/field-024-inline-7-hero-status.png",
+        "pages/001-cp-55815406/images/field-025-inline-2-hero-uk.png",
+        "pages/001-cp-55815406/images/field-026-inline-2-hero-eu.png",
+        "pages/001-cp-55815406/images/field-027-inline-2-hero-us.png",
+        "pages/001-cp-55815406/images/field-028-inline-2-hero-status.png",
+        "pages/001-cp-55815406/images/field-029-inline-6-hero-uk.png",
+        "pages/001-cp-55815406/images/field-030-inline-6-hero-eu.png",
+        "pages/001-cp-55815406/images/field-031-inline-6-hero-us.png",
+        "pages/001-cp-55815406/images/field-032-inline-6-hero-status.png",
+        "pages/001-cp-55815406/images/field-033-inline-161-hero-uk.png",
+        "pages/001-cp-55815406/images/field-034-inline-161-hero-eu.png",
+        "pages/001-cp-55815406/images/field-035-inline-161-hero-us.png",
+        "pages/001-cp-55815406/images/field-036-inline-161-hero-status.png",
+        "pages/001-cp-55815406/images/field-037-hero-inline-action.png"
+      ],
+      "fieldCount": 37,
+      "codeContext": {
+        "route": {
+          "controllerAlias": "",
+          "action": "index",
+          "pattern": ""
+        },
+        "controller": null,
+        "model": null,
+        "featureSummary": {
+          "description": "",
+          "notes": []
+        }
+      },
+      "technicalError": ""
+    }
+  ]
+}

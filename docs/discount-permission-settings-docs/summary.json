@@ -1,0 +1,110 @@
+{
+  "siteName": "Soho Home CP",
+  "generatedAt": "2026-06-27T21:26:36.405Z",
+  "runDir": "/Volumes/casey/shares/clients/soho-home/dev/releases/20231009091323/.vscode/feature-docs/docs/discount-permission-settings-docs",
+  "pageCount": 3,
+  "pages": [
+    {
+      "title": "Discount Permission Settings",
+      "url": "https://dev.soho-home.local/cp/discount-permission-settings-admin",
+      "slug": "001-cp-discount-permission-settings-admin-71eed775",
+      "docFile": "pages/001-cp-discount-permission-settings-admin-71eed775/README.md",
+      "screenshots": [
+        "pages/001-cp-discount-permission-settings-admin-71eed775/images/page-desktop.png"
+      ],
+      "fieldScreenshots": [
+        "pages/001-cp-discount-permission-settings-admin-71eed775/images/field-001-search.png",
+        "pages/001-cp-discount-permission-settings-admin-71eed775/images/field-002-jump-to.png"
+      ],
+      "fieldCount": 2,
+      "codeContext": {
+        "controller": {
+          "alias": "discount-permission-settings-admin",
+          "className": "Soho\\Ecom\\CustomDiscount\\Controller\\PermissionSettingsAdminController",
+          "file": "vendor/soho/ecom/src/CustomDiscount/Controller/PermissionSettingsAdminController.php",
+          "actionMethod": "indexAction",
+          "hasActionMethod": false
+        },
+        "model": {
+          "alias": "CustomDiscount_DiscountPermissionSettings",
+          "className": "Soho\\Ecom\\CustomDiscount\\Model\\DiscountPermissionSettings",
+          "file": "vendor/soho/ecom/src/CustomDiscount/Model/DiscountPermissionSettings.php",
+          "xmlFile": "vendor/soho/ecom/src/CustomDiscount/Model/DiscountPermissionSettings.xml",
+          "itemName": "discount_permission_settings",
+          "tableName": "custom_discount_permission_settings"
+        }
+      },
+      "technicalError": ""
+    },
+    {
+      "title": "Discount Permission Settings",
+      "url": "https://dev.soho-home.local/cp/discount-permission-settings-admin/edit/new",
+      "slug": "002-cp-discount-permission-settings-admin-edit-new-1ad35cc5",
+      "docFile": "pages/002-cp-discount-permission-settings-admin-edit-new-1ad35cc5/README.md",
+      "screenshots": [
+        "pages/002-cp-discount-permission-settings-admin-edit-new-1ad35cc5/images/page-desktop.png"
+      ],
+      "fieldScreenshots": [
+        "pages/002-cp-discount-permission-settings-admin-edit-new-1ad35cc5/images/field-001-search.png",
+        "pages/002-cp-discount-permission-settings-admin-edit-new-1ad35cc5/images/field-002-jump-to.png",
+        "pages/002-cp-discount-permission-settings-admin-edit-new-1ad35cc5/images/field-003-role.png",
+        "pages/002-cp-discount-permission-settings-admin-edit-new-1ad35cc5/images/field-004-max-discount-percentage.png",
+        "pages/002-cp-discount-permission-settings-admin-edit-new-1ad35cc5/images/field-005-max-discount-amount-optional.png"
+      ],
+      "fieldCount": 5,
+      "codeContext": {
+        "controller": {
+          "alias": "discount-permission-settings-admin",
+          "className": "Soho\\Ecom\\CustomDiscount\\Controller\\PermissionSettingsAdminController",
+          "file": "vendor/soho/ecom/src/CustomDiscount/Controller/PermissionSettingsAdminController.php",
+          "actionMethod": "editAction",
+          "hasActionMethod": false
+        },
+        "model": {
+          "alias": "CustomDiscount_DiscountPermissionSettings",
+          "className": "Soho\\Ecom\\CustomDiscount\\Model\\DiscountPermissionSettings",
+          "file": "vendor/soho/ecom/src/CustomDiscount/Model/DiscountPermissionSettings.php",
+          "xmlFile": "vendor/soho/ecom/src/CustomDiscount/Model/DiscountPermissionSettings.xml",
+          "itemName": "discount_permission_settings",
+          "tableName": "custom_discount_permission_settings"
+        }
+      },
+      "technicalError": ""
+    },
+    {
+      "title": "Discount Permission Settings",
+      "url": "https://dev.soho-home.local/cp/discount-permission-settings-admin/edit/1",
+      "slug": "003-cp-discount-permission-settings-admin-edit-1-4014e007",
+      "docFile": "pages/003-cp-discount-permission-settings-admin-edit-1-4014e007/README.md",
+      "screenshots": [
+        "pages/003-cp-discount-permission-settings-admin-edit-1-4014e007/images/page-desktop.png"
+      ],
+      "fieldScreenshots": [
+        "pages/003-cp-discount-permission-settings-admin-edit-1-4014e007/images/field-001-search.png",
+        "pages/003-cp-discount-permission-settings-admin-edit-1-4014e007/images/field-002-jump-to.png",
+        "pages/003-cp-discount-permission-settings-admin-edit-1-4014e007/images/field-003-role.png",
+        "pages/003-cp-discount-permission-settings-admin-edit-1-4014e007/images/field-004-max-discount-percentage.png",
+        "pages/003-cp-discount-permission-settings-admin-edit-1-4014e007/images/field-005-max-discount-amount-optional.png"
+      ],
+      "fieldCount": 5,
+      "codeContext": {
+        "controller": {
+          "alias": "discount-permission-settings-admin",
+          "className": "Soho\\Ecom\\CustomDiscount\\Controller\\PermissionSettingsAdminController",
+          "file": "vendor/soho/ecom/src/CustomDiscount/Controller/PermissionSettingsAdminController.php",
+          "actionMethod": "editAction",
+          "hasActionMethod": false
+        },
+        "model": {
+          "alias": "CustomDiscount_DiscountPermissionSettings",
+          "className": "Soho\\Ecom\\CustomDiscount\\Model\\DiscountPermissionSettings",
+          "file": "vendor/soho/ecom/src/CustomDiscount/Model/DiscountPermissionSettings.php",
+          "xmlFile": "vendor/soho/ecom/src/CustomDiscount/Model/DiscountPermissionSettings.xml",
+          "itemName": "discount_permission_settings",
+          "tableName": "custom_discount_permission_settings"
+        }
+      },
+      "technicalError": ""
+    }
+  ]
+}

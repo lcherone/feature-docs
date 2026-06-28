@@ -1,0 +1,11 @@
+{
+  "baseUrl": "https://your-domain.atlassian.net",
+  "username": "",
+  "apiToken": "",
+  "spaceKey": "PROJ",
+  "parentPageId": "",
+  "rootTitle": "",
+  "versionMessage": "Published by Soho Home Feature Docs",
+  "uploadImages": true,
+  "dryRun": true
+}

@@ -1,0 +1,28 @@
+{
+  "siteName": "Soho Home",
+  "generatedAt": "2026-06-27T20:52:32.314Z",
+  "runDir": "/Volumes/casey/shares/clients/soho-home/dev/releases/20231009091323/.vscode/feature-docs/docs/sample",
+  "pageCount": 1,
+  "pages": [
+    {
+      "title": "Sample Feature Settings",
+      "url": "file:///Volumes/casey/shares/clients/soho-home/dev/releases/20231009091323/.vscode/feature-docs/fixtures/sample-form.html",
+      "slug": "001-sample-form-html-67e335d1",
+      "docFile": "pages/001-sample-form-html-67e335d1/README.md",
+      "screenshots": [
+        "pages/001-sample-form-html-67e335d1/images/page-desktop.png"
+      ],
+      "fieldScreenshots": [
+        "pages/001-sample-form-html-67e335d1/images/field-001-feature-name.png",
+        "pages/001-sample-form-html-67e335d1/images/field-002-region.png",
+        "pages/001-sample-form-html-67e335d1/images/field-003-help-copy.png"
+      ],
+      "fieldCount": 3,
+      "codeContext": {
+        "controller": null,
+        "model": null
+      },
+      "technicalError": ""
+    }
+  ]
+}

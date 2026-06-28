@@ -1,0 +1,606 @@
+# Soho Home CP Feature Docs Agent Context
+
+Generated: 2026-06-27T21:59:28.708Z
+
+Use this file as the handoff for Codex to produce final operator documentation. Read the referenced controller, model, XML, and view files before finalising page purpose, field behaviour, validation, and side effects.
+
+## Products
+
+- URL: https://dev.soho-home.local/cp/products-admin
+- Documentation route key: https://dev.soho-home.local|cp|products-admin|index|products-admin
+- Draft doc: pages/001-cp-products-admin-27f8eb6b/README.md
+- Page screenshots: pages/001-cp-products-admin-27f8eb6b/images/page-desktop.png
+- Field count: 3
+- Controller: App\Products\ProductsControllerAdmin (products-admin)
+- Controller file: src/Products/ProductsControllerAdmin.php
+- Action method: indexAction (inherited or unresolved)
+- Model: Product => App\Products\Model\Product
+- Model file: src/Products/Model/Product.php
+- Model XML: src/Products/Model/Product.xml
+- Model item prefix: product
+
+### DOM Fields
+
+- 1. Search (text)
+  - Screenshot: pages/001-cp-products-admin-27f8eb6b/images/field-001-search.png
+- 2. Jump to (datetime-local)
+  - DOM name: `date`
+  - Screenshot: pages/001-cp-products-admin-27f8eb6b/images/field-002-jump-to.png
+- 3. Keyword search (text)
+  - DOM name: `search`
+  - Screenshot: pages/001-cp-products-admin-27f8eb6b/images/field-003-keyword-search.png
+
+### Source References
+
+- provider: src/Products/Provider.php
+- controller: src/Products/ProductsControllerAdmin.php
+- parent-controller: vendor/soho/products/src/ProductsControllerAdmin.php
+- model: src/Products/Model/Product.php
+- parent-model: vendor/soho/products/src/Model/Product.php
+- model-xml: src/Products/Model/Product.xml
+
+## Products
+
+- URL: https://dev.soho-home.local/cp/products-admin/edit/new
+- Documentation route key: https://dev.soho-home.local|cp|products-admin|edit|products-admin/edit/:identifier
+- Draft doc: pages/002-cp-products-admin-edit-new-77b6c49c/README.md
+- Page screenshots: pages/002-cp-products-admin-edit-new-77b6c49c/images/page-desktop.png
+- Field count: 111
+- Controller: App\Products\ProductsControllerAdmin (products-admin)
+- Controller file: src/Products/ProductsControllerAdmin.php
+- Action method: editAction (inherited or unresolved)
+- Matched route pattern: products-admin/edit/:identifier
+- Model: Product => App\Products\Model\Product
+- Model file: src/Products/Model/Product.php
+- Model XML: src/Products/Model/Product.xml
+- Model item prefix: product
+
+### DOM Fields
+
+- 1. Search (text)
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-001-search.png
+- 2. Jump to (datetime-local)
+  - DOM name: `date`
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-002-jump-to.png
+- 3. Title (text)
+  - DOM name: `product_title`
+  - Model field: Title / `title` / Text
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-003-title.png
+- 4. Category optional (select)
+  - DOM name: `product_category`
+  - Model field: Category / `category` / LinkSimple
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-004-category-optional.png
+- 5. Url Name optional (text)
+  - DOM name: `product_urlname`
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-005-url-name-optional.png
+- 6. Status (select)
+  - DOM name: `product_status`
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-006-status.png
+- 7. Is Module? (checkbox)
+  - DOM name: `product_is_module`
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-007-is-module.png
+- 8. input (text)
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-008-input.png
+- 9. Restriction UK optional (select)
+  - DOM name: `product_restriction_uk`
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-009-restriction-uk-optional.png
+- 10. Restriction EU optional (select)
+  - DOM name: `product_restriction_eu`
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-010-restriction-eu-optional.png
+- 11. Restriction US optional (select)
+  - DOM name: `product_restriction_us`
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-011-restriction-us-optional.png
+- 12. Message UK optional (select)
+  - DOM name: `product_message_uk`
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-012-message-uk-optional.png
+- 13. Message EU optional (select)
+  - DOM name: `product_message_eu`
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-013-message-eu-optional.png
+- 14. Message US optional (select)
+  - DOM name: `product_message_us`
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-014-message-us-optional.png
+- 15. Variant 1 optional (select)
+  - DOM name: `product_variant_1`
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-015-variant-1-optional.png
+- 16. Variant 2 optional (select)
+  - DOM name: `product_variant_2`
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-016-variant-2-optional.png
+- 17. Variant 3 optional (select)
+  - DOM name: `product_variant_3`
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-017-variant-3-optional.png
+- 18. product_google_category_autocomplete (text)
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-018-product-google-category-autocomplete.png
+- 19. Range (text)
+  - DOM name: `product_range`
+  - Model field: Range / `range` / Text
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-019-range.png
+- 20. Type (text)
+  - DOM name: `product_type`
+  - Model field: Type / `type` / Text
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-020-type.png
+- 21. Featured in Sourcebook? (checkbox)
+  - DOM name: `product_is_sourcebook`
+  - Model field: Featured in Sourcebook? / `is_sourcebook` / Checkbox
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-021-featured-in-sourcebook.png
+- 22. Soho House Manchester (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-022-soho-house-manchester.png
+- 23. Barcelona Pool House (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-023-barcelona-pool-house.png
+- 24. Ibiza Farmhouse (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-024-ibiza-farmhouse.png
+- 25. Soho House New York (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-025-soho-house-new-york.png
+- 26. Babington House (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-026-babington-house.png
+- 27. Soho House Barcelona (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-027-soho-house-barcelona.png
+- 28. Soho House Tokyo (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-028-soho-house-tokyo.png
+- 29. Little Beach House Malibu (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-029-little-beach-house-malibu.png
+- 30. Soho House São Paulo (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-030-soho-house-s-o-paulo.png
+- 31. Soho House Rome (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-031-soho-house-rome.png
+- 32. Soho House Portland (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-032-soho-house-portland.png
+- 33. Soho House 40 Greek Street (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-033-soho-house-40-greek-street.png
+- 34. Soho House Mexico City (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-034-soho-house-mexico-city.png
+- 35. Soho House Paris (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-035-soho-house-paris.png
+- 36. Soho House Nashville (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-036-soho-house-nashville.png
+- 37. Soho House Hong Kong (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-037-soho-house-hong-kong.png
+- 38. 180 House (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-038-180-house.png
+- 39. Soho Warehouse (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-039-soho-warehouse.png
+- 40. Soho House Stockholm (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-040-soho-house-stockholm.png
+- 41. Soho House Bangkok (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-041-soho-house-bangkok.png
+- 42. Soho House Copenhagen (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-042-soho-house-copenhagen.png
+- 43. Soho Farmhouse (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-043-soho-farmhouse.png
+- 44. Soho House Holloway (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-044-soho-house-holloway.png
+- 45. Brighton Beach House (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-045-brighton-beach-house.png
+- 46. Soho House Austin (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-046-soho-house-austin.png
+- 47. Soho House Berlin (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-047-soho-house-berlin.png
+- 48. White City House (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-048-white-city-house.png
+- 49. Soho House Amsterdam (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-049-soho-house-amsterdam.png
+- 50. Soho House Chicago (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-050-soho-house-chicago.png
+- 51. Shoreditch House (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-051-shoreditch-house.png
+- 52. DUMBO House (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-052-dumbo-house.png
+- 53. Soho Roc House (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-053-soho-roc-house.png
+- 54. Soho House Mumbai (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-054-soho-house-mumbai.png
+- 55. Soho Beach House Miami (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-055-soho-beach-house-miami.png
+- 56. Little House Balham (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-056-little-house-balham.png
+- 57. 76 Dean Street (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-057-76-dean-street.png
+- 58. Soho Beach House Canouan (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-058-soho-beach-house-canouan.png
+- 59. Kettner's (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-059-kettner-s.png
+- 60. Soho House Istanbul (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-060-soho-house-istanbul.png
+- 61. Soho House Tel Aviv, Jaffa (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-061-soho-house-tel-aviv-jaffa.png
+- 62. Little Beach House Barcelona (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-062-little-beach-house-barcelona.png
+- 63. Little House Mayfair (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-063-little-house-mayfair.png
+- 64. Soho House Los Cabos (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-064-soho-house-los-cabos.png
+- 65. Soho House Lisbon (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-065-soho-house-lisbon.png
+- 66. House Pool Towel, Madrid (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-066-house-pool-towel-madrid.png
+- 67. High Road House (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-067-high-road-house.png
+- 68. The Ned (checkbox)
+  - DOM name: `product_houses[]`
+  - Model field: Houses / `houses` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-068-the-ned.png
+- 69. Home fragrance (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-069-home-fragrance.png
+- 70. Ultimate Gifts (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-070-ultimate-gifts.png
+- 71. Bathroom collection (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-071-bathroom-collection.png
+- 72. Stocking Fillers (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-072-stocking-fillers.png
+- 73. Crystal Glassware (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-073-crystal-glassware.png
+- 74. M.A.H Gallery collection preview (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-074-m-a-h-gallery-collection-preview.png
+- 75. Bathroom Lighting (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-075-bathroom-lighting.png
+- 76. Sleepwear & Textiles Gifts (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-076-sleepwear-and-textiles-gifts.png
+- 77. Home bar (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-077-home-bar.png
+- 78. Bathroom Collection (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-078-bathroom-collection.png
+- 79. Gifts for Hosts (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-079-gifts-for-hosts.png
+- 80. Complete your living space (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-080-complete-your-living-space.png
+- 81. Bathroom Mirrors (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-081-bathroom-mirrors.png
+- 82. Shelving and accessories (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-082-shelving-and-accessories.png
+- 83. Cocktail & Drinks Sets (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-083-cocktail-and-drinks-sets.png
+- 84. Our new outdoor collection (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-084-our-new-outdoor-collection.png
+- 85. Silverware (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-085-silverware.png
+- 86. Signature Gifts (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-086-signature-gifts.png
+- 87. Wild at Heart x Soho House (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-087-wild-at-heart-x-soho-house.png
+- 88. Soho House Portland collection (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-088-soho-house-portland-collection.png
+- 89. Bringing the House home (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-089-bringing-the-house-home.png
+- 90. Seating (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-090-seating.png
+- 91. As seen in the Houses (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-091-as-seen-in-the-houses.png
+- 92. Personalisation (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-092-personalisation.png
+- 93. Made to Order (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-093-made-to-order.png
+- 94. Furniture (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-094-furniture.png
+- 95. Home decor (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-095-home-decor.png
+- 96. Gifts under £250 (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-096-gifts-under-250.png
+- 97. Wedding Gifts (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-097-wedding-gifts.png
+- 98. Abstract (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-098-abstract.png
+- 99. Minimalist (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-099-minimalist.png
+- 100. Maximalist (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-100-maximalist.png
+- 101. Landscape (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-101-landscape.png
+- 102. Geometric (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-102-geometric.png
+- 103. Figurative (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-103-figurative.png
+- 104. Entryway (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-104-entryway.png
+- 105. Leather & Oud (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-105-leather-and-oud.png
+- 106. Bergamot & Mandarin Zest (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-106-bergamot-and-mandarin-zest.png
+- 107. Sicilian Thyme (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-107-sicilian-thyme.png
+- 108. As seen in our book (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-108-as-seen-in-our-book.png
+- 109. Handcrafted in the US (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-109-handcrafted-in-the-us.png
+- 110. New Collection Preview (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-110-new-collection-preview.png
+- 111. Portable Lamps (checkbox)
+  - DOM name: `product_collections[]`
+  - Model field: Collections / `collections` / ManyToMany
+  - Screenshot: pages/002-cp-products-admin-edit-new-77b6c49c/images/field-111-portable-lamps.png
+
+### Source References
+
+- provider: src/Products/Provider.php
+- controller: src/Products/ProductsControllerAdmin.php
+- parent-controller: vendor/soho/products/src/ProductsControllerAdmin.php
+- model: src/Products/Model/Product.php
+- parent-model: vendor/soho/products/src/Model/Product.php
+- model-xml: src/Products/Model/Product.xml
+
+## Products
+
+- URL: https://dev.soho-home.local/cp/products-admin/uncategorised
+- Documentation route key: https://dev.soho-home.local|cp|products-admin|uncategorised|products-admin/uncategorised
+- Draft doc: pages/003-cp-products-admin-uncategorised-459d7bd9/README.md
+- Page screenshots: pages/003-cp-products-admin-uncategorised-459d7bd9/images/page-desktop.png
+- Field count: 29
+- Controller: App\Products\ProductsControllerAdmin (products-admin)
+- Controller file: src/Products/ProductsControllerAdmin.php
+- Action method: uncategorisedAction
+- Matched route pattern: products-admin/uncategorised
+- Model: Product => App\Products\Model\Product
+- Model file: src/Products/Model/Product.php
+- Model XML: src/Products/Model/Product.xml
+- Model item prefix: product
+
+### DOM Fields
+
+- 1. Search (text)
+  - Screenshot: pages/003-cp-products-admin-uncategorised-459d7bd9/images/field-001-search.png
+- 2. Jump to (datetime-local)
+  - DOM name: `date`
+  - Screenshot: pages/003-cp-products-admin-uncategorised-459d7bd9/images/field-002-jump-to.png
+- 3. Keyword search (text)
+  - DOM name: `search`
+  - Screenshot: pages/003-cp-products-admin-uncategorised-459d7bd9/images/field-003-keyword-search.png
+- 4. inline[474][product_category] (select)
+  - DOM name: `inline[474][product_category]`
+  - Screenshot: pages/003-cp-products-admin-uncategorised-459d7bd9/images/field-004-inline-474-product-category.png
+- 5. inline[487][product_category] (select)
+  - DOM name: `inline[487][product_category]`
+  - Screenshot: pages/003-cp-products-admin-uncategorised-459d7bd9/images/field-005-inline-487-product-category.png
+- 6. inline[605][product_category] (select)
+  - DOM name: `inline[605][product_category]`
+  - Screenshot: pages/003-cp-products-admin-uncategorised-459d7bd9/images/field-006-inline-605-product-category.png
+- 7. inline[2835][product_category] (select)
+  - DOM name: `inline[2835][product_category]`
+  - Screenshot: pages/003-cp-products-admin-uncategorised-459d7bd9/images/field-007-inline-2835-product-category.png
+- 8. inline[4725][product_category] (select)
+  - DOM name: `inline[4725][product_category]`
+  - Screenshot: pages/003-cp-products-admin-uncategorised-459d7bd9/images/field-008-inline-4725-product-category.png
+- 9. inline[6136][product_category] (select)
+  - DOM name: `inline[6136][product_category]`
+  - Screenshot: pages/003-cp-products-admin-uncategorised-459d7bd9/images/field-009-inline-6136-product-category.png
+- 10. inline[6137][product_category] (select)
+  - DOM name: `inline[6137][product_category]`
+  - Screenshot: pages/003-cp-products-admin-uncategorised-459d7bd9/images/field-010-inline-6137-product-category.png
+- 11. inline[6138][product_category] (select)
+  - DOM name: `inline[6138][product_category]`
+  - Screenshot: pages/003-cp-products-admin-uncategorised-459d7bd9/images/field-011-inline-6138-product-category.png
+- 12. inline[6332][product_category] (select)
+  - DOM name: `inline[6332][product_category]`
+  - Screenshot: pages/003-cp-products-admin-uncategorised-459d7bd9/images/field-012-inline-6332-product-category.png
+- 13. inline[6537][product_category] (select)
+  - DOM name: `inline[6537][product_category]`
+  - Screenshot: pages/003-cp-products-admin-uncategorised-459d7bd9/images/field-013-inline-6537-product-category.png
+- 14. inline[6872][product_category] (select)
+  - DOM name: `inline[6872][product_category]`
+  - Screenshot: pages/003-cp-products-admin-uncategorised-459d7bd9/images/field-014-inline-6872-product-category.png
+- 15. inline[7069][product_category] (select)
+  - DOM name: `inline[7069][product_category]`
+  - Screenshot: pages/003-cp-products-admin-uncategorised-459d7bd9/images/field-015-inline-7069-product-category.png
+- 16. inline[7353][product_category] (select)
+  - DOM name: `inline[7353][product_category]`
+  - Screenshot: pages/003-cp-products-admin-uncategorised-459d7bd9/images/field-016-inline-7353-product-category.png
+- 17. inline[7486][product_category] (select)
+  - DOM name: `inline[7486][product_category]`
+  - Screenshot: pages/003-cp-products-admin-uncategorised-459d7bd9/images/field-017-inline-7486-product-category.png
+- 18. inline[7519][product_category] (select)
+  - DOM name: `inline[7519][product_category]`
+  - Screenshot: pages/003-cp-products-admin-uncategorised-459d7bd9/images/field-018-inline-7519-product-category.png
+- 19. inline[7520][product_category] (select)
+  - DOM name: `inline[7520][product_category]`
+  - Screenshot: pages/003-cp-products-admin-uncategorised-459d7bd9/images/field-019-inline-7520-product-category.png
+- 20. inline[7521][product_category] (select)
+  - DOM name: `inline[7521][product_category]`
+  - Screenshot: pages/003-cp-products-admin-uncategorised-459d7bd9/images/field-020-inline-7521-product-category.png
+- 21. inline[7570][product_category] (select)
+  - DOM name: `inline[7570][product_category]`
+  - Screenshot: pages/003-cp-products-admin-uncategorised-459d7bd9/images/field-021-inline-7570-product-category.png
+- 22. inline[7715][product_category] (select)
+  - DOM name: `inline[7715][product_category]`
+  - Screenshot: pages/003-cp-products-admin-uncategorised-459d7bd9/images/field-022-inline-7715-product-category.png
+- 23. inline[8120][product_category] (select)
+  - DOM name: `inline[8120][product_category]`
+  - Screenshot: pages/003-cp-products-admin-uncategorised-459d7bd9/images/field-023-inline-8120-product-category.png
+- 24. inline[8257][product_category] (select)
+  - DOM name: `inline[8257][product_category]`
+  - Screenshot: pages/003-cp-products-admin-uncategorised-459d7bd9/images/field-024-inline-8257-product-category.png
+- 25. inline[8429][product_category] (select)
+  - DOM name: `inline[8429][product_category]`
+  - Screenshot: pages/003-cp-products-admin-uncategorised-459d7bd9/images/field-025-inline-8429-product-category.png
+- 26. inline[8696][product_category] (select)
+  - DOM name: `inline[8696][product_category]`
+  - Screenshot: pages/003-cp-products-admin-uncategorised-459d7bd9/images/field-026-inline-8696-product-category.png
+- 27. inline[8701][product_category] (select)
+  - DOM name: `inline[8701][product_category]`
+  - Screenshot: pages/003-cp-products-admin-uncategorised-459d7bd9/images/field-027-inline-8701-product-category.png
+- 28. select (select)
+  - Screenshot: pages/003-cp-products-admin-uncategorised-459d7bd9/images/field-028-select.png
+- 29. inline_action (submit)
+  - DOM name: `inline_action`
+  - Screenshot: pages/003-cp-products-admin-uncategorised-459d7bd9/images/field-029-inline-action.png
+
+### Source References
+
+- provider: src/Products/Provider.php
+- controller: src/Products/ProductsControllerAdmin.php
+- parent-controller: vendor/soho/products/src/ProductsControllerAdmin.php
+- model: src/Products/Model/Product.php
+- parent-model: vendor/soho/products/src/Model/Product.php
+- model-xml: src/Products/Model/Product.xml

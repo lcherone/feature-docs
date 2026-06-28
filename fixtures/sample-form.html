@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sample Feature Form</title>
+    <style>
+      body {
+        color: #1f2933;
+        font-family: Arial, sans-serif;
+        line-height: 1.5;
+        margin: 40px;
+      }
+
+      main {
+        max-width: 760px;
+      }
+
+      .field {
+        margin-bottom: 20px;
+      }
+
+      label,
+      legend {
+        display: block;
+        font-weight: 700;
+        margin-bottom: 6px;
+      }
+
+      input,
+      select,
+      textarea {
+        border: 1px solid #a7b0bb;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font: inherit;
+        padding: 10px;
+        width: 100%;
+      }
+
+      small {
+        color: #52606d;
+        display: block;
+        margin-top: 4px;
+      }
+
+      button {
+        background: #1f2933;
+        border: 0;
+        border-radius: 4px;
+        color: #fff;
+        font: inherit;
+        padding: 10px 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Sample Feature Settings</h1>
+      <p>Use this local fixture to verify that Feature Docs captures form fields and screenshots.</p>
+
+      <form action="/sample/save" method="post">
+        <div class="field">
+          <label for="feature-name">Feature name</label>
+          <input id="feature-name" name="feature_name" placeholder="Trade welcome banner" required>
+          <small id="feature-name-help">Shown as the internal label for this setting.</small>
+        </div>
+
+        <div class="field">
+          <label for="feature-region">Region</label>
+          <select id="feature-region" name="region" required>
+            <option value="">Choose a region</option>
+            <option value="uk">UK</option>
+            <option value="us">US</option>
+            <option value="eu">EU</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="feature-copy">Help copy</label>
+          <textarea id="feature-copy" name="help_copy" rows="5" placeholder="Explain the feature to admins"></textarea>
+        </div>
+
+        <button type="submit">Save settings</button>
+      </form>
+    </main>
+  </body>
+</html>
